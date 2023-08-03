@@ -4033,7 +4033,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mainSearch.-w-900 {
-  width: 900px;
+  width: 960px;
 }
 
 @media (max-width: 991px) {
