@@ -15,9 +15,8 @@
   <link rel="stylesheet" href="css/vendors.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <title>GoTrip</title>
+  <title>Gia </title>
 </head>
-
 <body>
   <div class="preloader js-preloader">
     <div class="preloader__wrap">
