@@ -12,5 +12,5 @@
   <link rel="stylesheet" href="css/vendors.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <title>Gia </title>
+  <title>Gia Trình</title>
 </head>
