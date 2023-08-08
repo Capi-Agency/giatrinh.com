@@ -21,20 +21,7 @@
               <div class="">></div>
             </div>
             <div class="col-auto">
-              <div class="">Miền Trung</div>
-            </div>
-            <div class="col-auto">
-              <div class="">></div>
-            </div>
-            <div class="col-auto">
-              <div class="text-dark-1">Nha Trang</div>
-            </div>
-            <div class="col-auto">
-              <div class="">></div>
-            </div>
-            <div class="col-auto">
-              <div class="text-dark-1">Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà Nội ( 4 Ngày 3 đêm) Bay
-                Vietnam airlines, Thứ 5,6,7 hàng tuần ) Tháng 5,6,7)</div>
+              <div class="">Chi tiết tour du lịch</div>
             </div>
           </div>
         </div>
@@ -97,19 +84,21 @@
               <h3 class="text-22 fw-500">CHƯƠNG TRÌNH TOUR</h3>
 
               <p class="text-dark-1 text-15 mt-20">
-              <p class="text-center">CHƯƠNG TRÌNH DU LỊCH HÈ 2020</p>
+              <div class="text-center fw-700">CHƯƠNG TRÌNH DU LỊCH HÈ 2020</div>
 
-              <p class="text-center">HÀ NỘI – CAM RANH – NINH THUẬN – NHA TRANG – HÀ NỘI</p>
+              <div class="text-center fw-700">HÀ NỘI – CAM RANH – NINH THUẬN – NHA TRANG – HÀ NỘI</div>
 
               <p class="text-center">Thời gian: 4 ngày 3 đêm</p>
               <p class="text-center">Phương tiện : Máy bay Vietnamairlines + Ô tô</p>
               <p class="text-center">Khởi hành : Thứ 5-6-7 hàng tuần</p>
 
-              Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
-              khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
-              gió biển phả vào người thật khó để quên. Đến Ninh Thuận, du khách mới nhận thấy đây là quê hương cây
-              đàn Chapi của nhạc sĩ Trần Tiến. Hang Rái, Vịnh Vĩnh Hy, Đồi Cát, Vườn Nho, Tháp Poklong Garai, Làng
-              gốm Bàu Trúc sẽ là những điểm nhấn khi đến với Ninh Thuận.
+              <div class="mt-10">
+                Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
+                khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
+                gió biển phả vào người thật khó để quên. Đến Ninh Thuận, du khách mới nhận thấy đây là quê hương cây
+                đàn Chapi của nhạc sĩ Trần Tiến. Hang Rái, Vịnh Vĩnh Hy, Đồi Cát, Vườn Nho, Tháp Poklong Garai, Làng
+                gốm Bàu Trúc sẽ là những điểm nhấn khi đến với Ninh Thuận.
+              </div>
               </p>
             </div>
             <img src="./img/tours/tour_detail.webp" alt="" srcset="">
