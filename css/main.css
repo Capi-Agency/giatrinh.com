@@ -3414,6 +3414,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 90px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: #000000 !important;
 }
 
 @media (max-width: 767px) {
@@ -3436,7 +3437,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header.is-menu-opened .is-menu-opened-hide {
-  opacity: 0;
+  opacity: 100;
   pointer-events: none;
 }
 
