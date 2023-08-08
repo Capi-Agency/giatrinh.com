@@ -54,15 +54,15 @@
                                                                 <div class="text-15 fw-500">Miền Bắc</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="hotel-list-1.html">Sapa</a></div>
+                                                                    <div><a class="subNav" href="hotel-list-1.html">Sapa</a></div>
 
-                                                                    <div><a href="hotel-list-2.html">Hà Giang</a></div>
+                                                                    <div><a class="subNav" href="hotel-list-2.html">Hà Giang</a></div>
 
-                                                                    <div><a href="hotel-half-map.html">Cao Bằng - Bắc Kạn</a></div>
+                                                                    <div><a class="subNav" href="hotel-half-map.html">Cao Bằng - Bắc Kạn</a></div>
 
-                                                                    <div><a href="hotel-grid-1.html">Mộc Châu - Mai Châu</a></div>
+                                                                    <div><a class="subNav" href="hotel-grid-1.html">Mộc Châu - Mai Châu</a></div>
 
-                                                                    <div><a href="hotel-grid-2.html">Yên Bái</a></div>
+                                                                    <div><a class="subNav" href="hotel-grid-2.html">Yên Bái</a></div>
 
                                                                 </div>
                                                             </div>
@@ -71,15 +71,15 @@
                                                                 <div class="text-15 fw-500">Miền Trung</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="hotel-single-1.html">Cửa Lò</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-1.html">Cửa Lò</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Sầm Sơn</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Sầm Sơn</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Nghệ An</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Nghệ An</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Thiên Cẩm</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Thiên Cẩm</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Huế</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Huế</a></div>
 
                                                                 </div>
                                                             </div>
@@ -88,15 +88,15 @@
                                                                 <div class="text-15 fw-500">Miền Nam</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="booking-pages.html">Booking Page</a></div>
+                                                                    <div><a class="subNav" href="booking-pages.html">Phú Quốc</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single v2</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Côn Đảo</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single v2</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Bến Tre</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single v2</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Cần Thơ</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single v2</a></div>
+                                                                    <div><a class="subNav"  href="hotel-single-2.html">Cà Mau</a></div>
 
                                                                 </div>
                                                             </div>
@@ -109,15 +109,15 @@
                                                                 <div class="text-15 fw-500 text-secondary">Đông Nam Á</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="hotel-list-1.html">Sapa</a></div>
+                                                                    <div><a class="subNav" href="hotel-list-1.html">Sapa</a></div>
 
-                                                                    <div><a href="hotel-list-2.html">Hà Giang</a></div>
+                                                                    <div><a class="subNav" href="hotel-list-2.html">Hà Giang</a></div>
 
-                                                                    <div><a href="hotel-half-map.html">Cao Bằng - Bắc Kạn</a></div>
+                                                                    <div><a class="subNav" href="hotel-half-map.html">Cao Bằng - Bắc Kạn</a></div>
 
-                                                                    <div><a href="hotel-grid-1.html">Mộc Châu - Mai Châu</a></div>
+                                                                    <div><a class="subNav" href="hotel-grid-1.html">Mộc Châu - Mai Châu</a></div>
 
-                                                                    <div><a href="hotel-grid-2.html">Yên Bái</a></div>
+                                                                    <div><a class="subNav" href="hotel-grid-2.html">Yên Bái</a></div>
 
                                                                 </div>
                                                             </div>
@@ -126,15 +126,15 @@
                                                                 <div class="text-15 fw-500">Đông Bắc Á</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="hotel-single-1.html">Cửa Lò</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-1.html">Cửa Lò</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Sầm Sơn</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Sầm Sơn</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Nghệ An</a></div>
+                                                                    <div><a  class="subNav" href="hotel-single-2.html">Nghệ An</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Thiên Cẩm</a></div>
+                                                                    <div><a  class="subNav" href="hotel-single-2.html">Thiên Cẩm</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Huế</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html">Huế</a></div>
 
                                                                 </div>
                                                             </div>
@@ -143,15 +143,15 @@
                                                                 <div class="text-15 fw-500">Châu Mĩ</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="booking-pages.html">Booking Page</a></div>
+                                                                    <div><a class="subNav" href="booking-pages.html">Mĩ</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
                                                                 </div>
                                                             </div>
@@ -160,15 +160,15 @@
                                                                 <div class="text-15 fw-500">Châu Âu</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="booking-pages.html">Booking Page</a></div>
+                                                                    <div><a class="subNav" href="booking-pages.html">Italia</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
                                                                 </div>
                                                             </div>
@@ -177,15 +177,15 @@
                                                                 <div class="text-15 fw-500">Châu Phi</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="booking-pages.html">Booking Page</a></div>
+                                                                    <div><a class="subNav" href="booking-pages.html">Kenya</a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
-                                                                    <div><a href="hotel-single-2.html">Hotel Single</a></div>
+                                                                    <div><a class="subNav" href="hotel-single-2.html"></a></div>
 
                                                                 </div>
                                                             </div>

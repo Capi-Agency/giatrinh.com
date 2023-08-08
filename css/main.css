@@ -620,18 +620,23 @@ img {
 }
 
 a {
-  color: inherit;
+  color: #E6E6E6;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
 }
-
+.subNav {
+  color: #000000;
+}
 a:hover {
+  color: white;
   text-decoration: none;
 }
-
+.subNav:hover {
+  color: #3554d1;
+}
 ul,
 li {
   list-style: none;
