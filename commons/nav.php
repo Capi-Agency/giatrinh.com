@@ -3,7 +3,7 @@
         <div class="row justify-between items-center">
             <div class="col-auto">
                 <div class="d-flex items-center">
-                    <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
+                    <a href="index.php" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
                         <img src="img/general/logo-light.svg" alt="logo icon">
                         <img src="img/general/logo-dark.svg" alt="logo icon">
                     </a>
@@ -19,6 +19,11 @@
                                         <a href="index.php">
                                             Trang Chủ
                                         </a>
+                                    </li>
+
+                                    <!-- Giới thiệu -->
+                                    <li>
+                                        <a href="aboutUs.php">Giới Thiệu</a>
                                     </li>
 
                                     <!-- Tour Trong Nước -->
@@ -128,7 +133,7 @@
                                                     <li><a href="tourList.php">Thái Lan</a></li>
 
                                                     <li><a href="tourList.php">Campuchia</a></li>
-                                                    
+
                                                     <li><a href="tourList.php">Lào</a></li>
 
                                                     <li><a href="tourList.php">Indonesia</a></li>
@@ -155,7 +160,7 @@
                                                     <li><a href="tourList.php">Đài Loan</a></li>
 
                                                     <li><a href="tourList.php">Hồng Kông</a></li>
-                                                    
+
                                                     <li><a href="tourList.php">Nhật Bản</a></li>
 
                                                     <li><a href="tourList.php">Trung Quốc</a></li>
@@ -192,104 +197,57 @@
                                         </ul>
 
                                     </li>
+
+                                    <!-- Kinh Nghiệm Du Lịch -->
                                     <li>
-                                        <a href="destinations.html">
-                                            Destinations
-                                        </a>
+                                        <a href="destinations.html">Kinh Nghiệm Du Lịch</a>
                                     </li>
-
+                                    <!-- Dịch vụ khác -->
                                     <li class="menu-item-has-children">
                                         <a data-barba="">
-                                            <span class="mr-10">Blog</span>
+                                            <span class="mr-10">Dịch vụ khác</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
-
                                         <ul class="subnav">
                                             <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Blog</a>
+                                                <a href="#"><i class="icon icon-chevron-sm-down"></i>Dịch vụ khác</a>
                                             </li>
 
-                                            <li><a href="blog-list-1.html">Blog list v1</a></li>
+                                            <!-- Vé Máy Bay -->
+                                            <li><a href="tourList.php">Vé Máy Bay</a></li>
 
-                                            <li><a href="blog-list-2.html">Blog list v2</a></li>
+                                            <!-- Thuê xe -->
+                                            <li><a href="tourList.php">Thuê Xe</a></li>
 
-                                            <li><a href="tourList.php">Blog single</a></li>
+                                            <!-- Visa -->
+                                            <li><a href="tourList.php">Bảo Hiểm</a></li>
 
-                                        </ul>
+                                            <!-- Tuyển Dụng XKLĐ -->
+                                            <li class="menu-item-has-children">
+                                                <a data-barba="">
+                                                    <span class="mr-10">Tuyển Dụng XKLĐ</span>
+                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
+                                                </a>
 
-                                    </li>
+                                                <ul class="subnav">
+                                                    <li class="subnav__backBtn js-nav-list-back">
+                                                        <a href="#">Tuyển Dụng XKLĐ</a>
+                                                    </li>
 
+                                                    <li><a href="tourList.php">Đi XKLĐ Nhật Bản</a></li>
 
-                                    <li class="menu-item-has-children">
-                                        <a data-barba="">
-                                            <span class="mr-10">Pages</span>
-                                            <i class="icon icon-chevron-sm-down"></i>
-                                        </a>
+                                                    <li><a href="tourList.php">Đi XKLĐ Đài Loan</a></li>
 
-                                        <ul class="subnav">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Pages</a>
+                                                    <li><a href="tourList.php">Đi XKLĐ Hàn Quốc</a></li>
+
+                                                    <li><a href="tourList.php">Đi XKLĐ Uzebekistan</a></li>
+                                                </ul>
+
                                             </li>
-
-                                            <li><a href="404.html">404</a></li>
-
-                                            <li><a href="about.html">About</a></li>
-
-                                            <li><a href="become-expert.html">Become expert</a></li>
-
-                                            <li><a href="help-center.html">Help center</a></li>
-
-                                            <li><a href="login.html">Login</a></li>
-
-                                            <li><a href="signup.html">Register</a></li>
-
-                                            <li><a href="terms.html">Terms</a></li>
-
-                                            <li><a href="invoice.html">Invoice</a></li>
-
-                                            <li><a href="ui-elements.html">UI elements</a></li>
-
                                         </ul>
-
                                     </li>
-
-
-                                    <li class="menu-item-has-children">
-                                        <a data-barba="">
-                                            <span class="mr-10">Dashboard</span>
-                                            <i class="icon icon-chevron-sm-down"></i>
-                                        </a>
-
-                                        <ul class="subnav">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Dashboard</a>
-                                            </li>
-
-                                            <li><a href="db-dashboard.html">Dashboard</a></li>
-
-                                            <li><a href="db-booking.html">Booking</a></li>
-
-                                            <li><a href="db-settings.html">Settings</a></li>
-
-                                            <li><a href="db-wishlist.html">Wishlist</a></li>
-
-                                            <li><a href="db-vendor-dashboard.html">Vendor dashboard</a></li>
-
-                                            <li><a href="db-vendor-add-hotel.html">Vendor add hotel</a></li>
-
-                                            <li><a href="db-vendor-booking.html">Vendor booking</a></li>
-
-                                            <li><a href="db-vendor-hotels.html">Vendor hotels</a></li>
-
-                                            <li><a href="db-vendor-recovery.html">Vendor recovery</a></li>
-
-                                        </ul>
-
-                                    </li>
-
-
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="tourContact.php">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -306,40 +264,15 @@
             <div class="col-auto">
                 <div class="d-flex items-center">
 
-                    <div class="row x-gap-20 items-center xxl:d-none">
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-14 text-white" data-x-click="currency">
-                                <span class="js-currencyMenu-mainTitle">USD</span>
-                                <i class="icon-chevron-sm-down text-7 ml-10"></i>
-                            </button>
-                        </div>
-
-                        <div class="col-auto">
-                            <div class="w-1 h-20 bg-white-20"></div>
-                        </div>
-
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-14 text-white" data-x-click="lang">
-                                <img src="img/general/lang.png" alt="image" class="rounded-full mr-10">
-                                <span class="js-language-mainTitle">United Kingdom</span>
-                                <i class="icon-chevron-sm-down text-7 ml-15"></i>
-                            </button>
-                        </div>
-                    </div>
-
-
                     <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                        <a href="login.html" class="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Become An Expert</a>
-                        <a href="signup.html" class="button px-30 fw-400 text-14 border-white -outline-white h-50 text-white ml-20">Sign In / Register</a>
+                        <a href="login.html" class="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
                     </div>
 
                     <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
-                        <div><a href="login.html" class="d-flex items-center icon-user text-inherit text-22"></a></div>
                         <div><button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
