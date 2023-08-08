@@ -3,7 +3,7 @@
         <div class="row justify-between items-center">
             <div class="col-auto">
                 <div class="d-flex items-center">
-                    <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
+                    <a href="index.php" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
                         <img src="img/general/logo-light.svg" alt="logo icon">
                         <img src="img/general/logo-dark.svg" alt="logo icon">
                     </a>
@@ -19,6 +19,11 @@
                                         <a href="index.php">
                                             Trang Chủ
                                         </a>
+                                    </li>
+
+                                    <!-- Giới thiệu -->
+                                    <li>
+                                        <a href="aboutUs.php">Giới Thiệu</a>
                                     </li>
 
                                     <!-- Tour Trong Nước -->
@@ -128,7 +133,7 @@
                                                     <li><a href="tourList.php">Thái Lan</a></li>
 
                                                     <li><a href="tourList.php">Campuchia</a></li>
-                                                    
+
                                                     <li><a href="tourList.php">Lào</a></li>
 
                                                     <li><a href="tourList.php">Indonesia</a></li>
@@ -155,7 +160,7 @@
                                                     <li><a href="tourList.php">Đài Loan</a></li>
 
                                                     <li><a href="tourList.php">Hồng Kông</a></li>
-                                                    
+
                                                     <li><a href="tourList.php">Nhật Bản</a></li>
 
                                                     <li><a href="tourList.php">Trung Quốc</a></li>
@@ -192,67 +197,87 @@
                                         </ul>
 
                                     </li>
+
+                                    <!-- Kinh Nghiệm Du Lịch -->
                                     <li>
-                                        <a href="destinations.html">
-                                            Destinations
-                                        </a>
+                                        <a href="destinations.html">Kinh Nghiệm Du Lịch</a>
                                     </li>
-
+                                    <!-- Tour Trong Nước -->
                                     <li class="menu-item-has-children">
                                         <a data-barba="">
-                                            <span class="mr-10">Blog</span>
+                                            <span class="mr-10">Tour Trong Nước</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
-
                                         <ul class="subnav">
                                             <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Blog</a>
+                                                <a href="#"><i class="icon icon-chevron-sm-down"></i>Tour Trong Nước</a>
                                             </li>
 
-                                            <li><a href="blog-list-1.html">Blog list v1</a></li>
+                                            <!-- Miền Bắc -->
+                                            <li class="menu-item-has-children">
+                                                <a data-barba="">
+                                                    <span class="mr-10">Miền Bắc</span>
+                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
+                                                </a>
 
-                                            <li><a href="blog-list-2.html">Blog list v2</a></li>
+                                                <ul class="subnav">
+                                                    <li class="subnav__backBtn js-nav-list-back">
+                                                        <a href="#">Miền Bắc</a>
+                                                    </li>
 
-                                            <li><a href="tourList.php">Blog single</a></li>
+                                                    <li><a href="tourList.php">Sapa</a></li>
 
+                                                    <li><a href="tourList.php">Hà Giang</a></li>
+
+                                                    <li><a href="tourList.php">Ninh Bình</a></li>
+                                                </ul>
+
+                                            </li>
+
+                                            <!-- Miền Trung -->
+                                            <li class="menu-item-has-children">
+                                                <a data-barba="">
+                                                    <span class="mr-10">Miền Trung</span>
+                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
+                                                </a>
+
+                                                <ul class="subnav">
+                                                    <li class="subnav__backBtn js-nav-list-back">
+                                                        <a href="#">Miền Trung</a>
+                                                    </li>
+
+                                                    <li><a href="tourList.php">Cửa Lò</a></li>
+
+                                                    <li><a href="tourList.php">Sầm Sơn</a></li>
+
+                                                    <li><a href="tourList.php">Nghệ An</a></li>
+                                                </ul>
+
+                                            </li>
+
+                                            <!-- Miền Nam -->
+                                            <li class="menu-item-has-children">
+                                                <a data-barba="">
+                                                    <span class="mr-10">Miền Nam</span>
+                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
+                                                </a>
+
+                                                <ul class="subnav">
+                                                    <li class="subnav__backBtn js-nav-list-back">
+                                                        <a href="#">Miền Nam</a>
+                                                    </li>
+
+                                                    <li><a href="tourList.php">Phú Quốc</a></li>
+
+                                                    <li><a href="tourList.php">Côn Đảo</a></li>
+
+                                                    <li><a href="tourList.php">Bến Tre</a></li>
+                                                </ul>
+
+                                            </li>
                                         </ul>
 
                                     </li>
-
-
-                                    <li class="menu-item-has-children">
-                                        <a data-barba="">
-                                            <span class="mr-10">Pages</span>
-                                            <i class="icon icon-chevron-sm-down"></i>
-                                        </a>
-
-                                        <ul class="subnav">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Pages</a>
-                                            </li>
-
-                                            <li><a href="404.html">404</a></li>
-
-                                            <li><a href="about.html">About</a></li>
-
-                                            <li><a href="become-expert.html">Become expert</a></li>
-
-                                            <li><a href="help-center.html">Help center</a></li>
-
-                                            <li><a href="login.html">Login</a></li>
-
-                                            <li><a href="signup.html">Register</a></li>
-
-                                            <li><a href="terms.html">Terms</a></li>
-
-                                            <li><a href="invoice.html">Invoice</a></li>
-
-                                            <li><a href="ui-elements.html">UI elements</a></li>
-
-                                        </ul>
-
-                                    </li>
-
 
                                     <li class="menu-item-has-children">
                                         <a data-barba="">
