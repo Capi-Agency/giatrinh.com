@@ -202,119 +202,52 @@
                                     <li>
                                         <a href="destinations.html">Kinh Nghiệm Du Lịch</a>
                                     </li>
-                                    <!-- Tour Trong Nước -->
+                                    <!-- Dịch vụ khác -->
                                     <li class="menu-item-has-children">
                                         <a data-barba="">
-                                            <span class="mr-10">Tour Trong Nước</span>
+                                            <span class="mr-10">Dịch vụ khác</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
                                         <ul class="subnav">
                                             <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i>Tour Trong Nước</a>
+                                                <a href="#"><i class="icon icon-chevron-sm-down"></i>Dịch vụ khác</a>
                                             </li>
 
-                                            <!-- Miền Bắc -->
+                                            <!-- Vé Máy Bay -->
+                                            <li><a href="tourList.php">Vé Máy Bay</a></li>
+
+                                            <!-- Thuê xe -->
+                                            <li><a href="tourList.php">Thuê Xe</a></li>
+
+                                            <!-- Visa -->
+                                            <li><a href="tourList.php">Bảo Hiểm</a></li>
+
+                                            <!-- Tuyển Dụng XKLĐ -->
                                             <li class="menu-item-has-children">
                                                 <a data-barba="">
-                                                    <span class="mr-10">Miền Bắc</span>
+                                                    <span class="mr-10">Tuyển Dụng XKLĐ</span>
                                                     <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
                                                 </a>
 
                                                 <ul class="subnav">
                                                     <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#">Miền Bắc</a>
+                                                        <a href="#">Tuyển Dụng XKLĐ</a>
                                                     </li>
 
-                                                    <li><a href="tourList.php">Sapa</a></li>
+                                                    <li><a href="tourList.php">Đi XKLĐ Nhật Bản</a></li>
 
-                                                    <li><a href="tourList.php">Hà Giang</a></li>
+                                                    <li><a href="tourList.php">Đi XKLĐ Đài Loan</a></li>
 
-                                                    <li><a href="tourList.php">Ninh Bình</a></li>
-                                                </ul>
+                                                    <li><a href="tourList.php">Đi XKLĐ Hàn Quốc</a></li>
 
-                                            </li>
-
-                                            <!-- Miền Trung -->
-                                            <li class="menu-item-has-children">
-                                                <a data-barba="">
-                                                    <span class="mr-10">Miền Trung</span>
-                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
-                                                </a>
-
-                                                <ul class="subnav">
-                                                    <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#">Miền Trung</a>
-                                                    </li>
-
-                                                    <li><a href="tourList.php">Cửa Lò</a></li>
-
-                                                    <li><a href="tourList.php">Sầm Sơn</a></li>
-
-                                                    <li><a href="tourList.php">Nghệ An</a></li>
-                                                </ul>
-
-                                            </li>
-
-                                            <!-- Miền Nam -->
-                                            <li class="menu-item-has-children">
-                                                <a data-barba="">
-                                                    <span class="mr-10">Miền Nam</span>
-                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
-                                                </a>
-
-                                                <ul class="subnav">
-                                                    <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#">Miền Nam</a>
-                                                    </li>
-
-                                                    <li><a href="tourList.php">Phú Quốc</a></li>
-
-                                                    <li><a href="tourList.php">Côn Đảo</a></li>
-
-                                                    <li><a href="tourList.php">Bến Tre</a></li>
+                                                    <li><a href="tourList.php">Đi XKLĐ Uzebekistan</a></li>
                                                 </ul>
 
                                             </li>
                                         </ul>
-
                                     </li>
-
-                                    <li class="menu-item-has-children">
-                                        <a data-barba="">
-                                            <span class="mr-10">Dashboard</span>
-                                            <i class="icon icon-chevron-sm-down"></i>
-                                        </a>
-
-                                        <ul class="subnav">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Dashboard</a>
-                                            </li>
-
-                                            <li><a href="db-dashboard.html">Dashboard</a></li>
-
-                                            <li><a href="db-booking.html">Booking</a></li>
-
-                                            <li><a href="db-settings.html">Settings</a></li>
-
-                                            <li><a href="db-wishlist.html">Wishlist</a></li>
-
-                                            <li><a href="db-vendor-dashboard.html">Vendor dashboard</a></li>
-
-                                            <li><a href="db-vendor-add-hotel.html">Vendor add hotel</a></li>
-
-                                            <li><a href="db-vendor-booking.html">Vendor booking</a></li>
-
-                                            <li><a href="db-vendor-hotels.html">Vendor hotels</a></li>
-
-                                            <li><a href="db-vendor-recovery.html">Vendor recovery</a></li>
-
-                                        </ul>
-
-                                    </li>
-
-
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="tourContact.php">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -331,40 +264,15 @@
             <div class="col-auto">
                 <div class="d-flex items-center">
 
-                    <div class="row x-gap-20 items-center xxl:d-none">
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-14 text-white" data-x-click="currency">
-                                <span class="js-currencyMenu-mainTitle">USD</span>
-                                <i class="icon-chevron-sm-down text-7 ml-10"></i>
-                            </button>
-                        </div>
-
-                        <div class="col-auto">
-                            <div class="w-1 h-20 bg-white-20"></div>
-                        </div>
-
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-14 text-white" data-x-click="lang">
-                                <img src="img/general/lang.png" alt="image" class="rounded-full mr-10">
-                                <span class="js-language-mainTitle">United Kingdom</span>
-                                <i class="icon-chevron-sm-down text-7 ml-15"></i>
-                            </button>
-                        </div>
-                    </div>
-
-
                     <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                        <a href="login.html" class="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Become An Expert</a>
-                        <a href="signup.html" class="button px-30 fw-400 text-14 border-white -outline-white h-50 text-white ml-20">Sign In / Register</a>
+                        <a href="login.html" class="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
                     </div>
 
                     <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
-                        <div><a href="login.html" class="d-flex items-center icon-user text-inherit text-22"></a></div>
                         <div><button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
