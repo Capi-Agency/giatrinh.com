@@ -200,7 +200,7 @@
 
                                     <!-- Kinh Nghiệm Du Lịch -->
                                     <li>
-                                        <a href="destinations.html">Kinh Nghiệm Du Lịch</a>
+                                        <a href="tourExp.php">Kinh Nghiệm Du Lịch</a>
                                     </li>
                                     <!-- Dịch vụ khác -->
                                     <li class="menu-item-has-children">
@@ -214,33 +214,33 @@
                                             </li>
 
                                             <!-- Vé Máy Bay -->
-                                            <li><a href="tourList.php">Vé Máy Bay</a></li>
+                                            <li><a href="servicePlane.php">Vé Máy Bay</a></li>
 
                                             <!-- Thuê xe -->
-                                            <li><a href="tourList.php">Thuê Xe</a></li>
+                                            <li><a href="serviceCar.php">Thuê Xe</a></li>
 
                                             <!-- Visa -->
-                                            <li><a href="tourList.php">Bảo Hiểm</a></li>
+                                            <li><a href="insurance.php">Bảo Hiểm</a></li>
 
                                             <!-- Tuyển Dụng XKLĐ -->
                                             <li class="menu-item-has-children">
-                                                <a data-barba="">
+                                                <a href="mainLabor.php" data-barba="">
                                                     <span class="mr-10">Tuyển Dụng XKLĐ</span>
                                                     <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
                                                 </a>
 
                                                 <ul class="subnav">
                                                     <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#">Tuyển Dụng XKLĐ</a>
+                                                        <a href="mainLabor.php">Tuyển Dụng XKLĐ</a>
                                                     </li>
 
-                                                    <li><a href="tourList.php">Đi XKLĐ Nhật Bản</a></li>
+                                                    <li><a href="laborJapan.php">Đi XKLĐ Nhật Bản</a></li>
 
-                                                    <li><a href="tourList.php">Đi XKLĐ Đài Loan</a></li>
+                                                    <li><a href="laborTaiwan.php">Đi XKLĐ Đài Loan</a></li>
 
-                                                    <li><a href="tourList.php">Đi XKLĐ Hàn Quốc</a></li>
+                                                    <li><a href="laborKorean.php">Đi XKLĐ Hàn Quốc</a></li>
 
-                                                    <li><a href="tourList.php">Đi XKLĐ Uzebekistan</a></li>
+                                                    <li><a href="laborUze.php">Đi XKLĐ Uzebekistan</a></li>
                                                 </ul>
 
                                             </li>
@@ -260,14 +260,11 @@
                 </div>
             </div>
 
-
             <div class="col-auto">
                 <div class="d-flex items-center">
-
                     <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                        <a href="login.html" class="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
+                        <a href="tourContact.php" class="button  px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
                     </div>
-
                     <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
                         <div><button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>
                     </div>
