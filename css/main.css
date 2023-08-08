@@ -3608,7 +3608,7 @@ h6 {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
   .header .header-menu .menu li {
     position: relative;
   }
@@ -3698,12 +3698,8 @@ h6 {
   }
   .header .header-menu .menu .mega__content {
     display: flex;
-    justify-content: space-between;
-  }
-  .header .header-menu .menu .mega__grid {
-    display: grid;
-    gap: 60px;
-    grid-template-columns: auto auto auto;
+    justify-content: start;
+    gap: 52px;
   }
   .header .header-menu .menu .mega__image {
     width: 270px;
