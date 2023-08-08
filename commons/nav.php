@@ -231,8 +231,10 @@
 
                                                 <ul class="subnav">
                                                     <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="mainLabor.php">Tuyển Dụng XKLĐ</a>
+                                                        <a>Xuất Khẩu Lao Động</a>
                                                     </li>
+
+                                                    <li><a href="mainLabor.php">Tuyển dụng XKLĐ</a></li>
 
                                                     <li><a href="laborJapan.php">Đi XKLĐ Nhật Bản</a></li>
 
