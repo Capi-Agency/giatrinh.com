@@ -5,9 +5,7 @@
 <body>
     <!-- Nav -->
     <?php include 'commons/nav.php';?>
-
     <!-- Body -->
-    
     <section class="pt-90">
       <div class="container">
         <div class="row y-gap-30">
@@ -18,15 +16,10 @@
 	<div class="entry-header-text entry-header-text-top  text-center">
 	   	<h6 class="entry-category is-xsmall">
 	<a href="https://hotrotuvanxkld.com/category/cac-chuong-trinh-xuat-khau-lao-dong/" rel="category tag">Các Chương Trình Xuất Khẩu Lao Động</a>, <a href="https://hotrotuvanxkld.com/category/thong-bao-moi/" rel="category tag">Thông Báo Mới</a></h6>
-
 <h1 class="entry-title">Thông Báo Tuyển Dụng Xuất Khẩu Lao Động Hàn Quốc</h1>
-<div class="entry-divider is-divider small"></div>
-
 <!-- .entry-meta -->
 	</div><!-- .entry-header -->
-
-    
-</header><!-- post-header -->
+        </header><!-- post-header -->
 
 		<div class="entry-content single-page">
 
