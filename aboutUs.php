@@ -7,6 +7,29 @@
     <?php include 'commons/nav.php';?>
 
     <!-- Body -->
+    <div class="header-margin"></div>
+    <section class="py-10 d-flex items-center bg-light-2">
+        <div class="container">
+            <div class="row y-gap-10 items-center justify-between">
+                <div class="col-auto">
+                    <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
+                        <div class="col-auto">
+                            <div class="">Trang chủ</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="">&gt;</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="">Kinh nghiệm du lịch</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+   
     <section data-anim="slide-up" class="layout-pt-md layout-pb-md is-in-view">
       <div class="container">
       <div class="row y-gap-40 justify-center text-center">
@@ -18,9 +41,6 @@
           <div class="col-xl-8 col-lg-10">
             <div class="">
               <h3 class="text-20 fw-500">Giới thiệu</h3>
-              <style> h3{
-                margin-top: 90px;
-              }</style> 
                 <div class="border-top-light pt-40 mt-40"></div>
               <div class="list-disc text-15 mt-30">
               <div class="rte">
