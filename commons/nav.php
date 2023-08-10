@@ -28,7 +28,7 @@
 
                                     <!-- Tour Du Lịch -->
                                     <li class="menu-item-has-children -has-mega-menu">
-                                        <a data-barba="">
+                                        <a href="tourList.php" data-barba="">
                                             <span class="mr-10">Tour Du Lịch</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
