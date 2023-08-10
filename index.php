@@ -3348,7 +3348,7 @@
     </section>
 
     <!-- Guarantee -->
-    <section class="layout-pt-md layout-pb-lg">
+    <section class="layout-pt-md">
         <div data-anim-wrap="" class="container animated">
             <div class="row y-gap-20 justify-between">
 
@@ -3734,7 +3734,7 @@
                 <div data-anim="slide-up" class="col-md-6 is-in-view">
 
                     <div class="ctaCard -type-1 rounded-4 ">
-                        <div class="ctaCard__image ratio ratio-63:55">
+                        <div class="ctaCard__image ratio ratio-16:9">
                             <img class="img-ratio js-lazy loaded" src="img/backgrounds/1.png" alt="image" data-ll-status="loaded">
                         </div>
 
@@ -3752,7 +3752,7 @@
                 <div data-anim="slide-up delay-1" class="col-md-6 is-in-view">
 
                     <div class="ctaCard -type-1 rounded-4 ">
-                        <div class="ctaCard__image ratio ratio-63:55">
+                        <div class="ctaCard__image ratio ratio-16:9">
                             <img class="img-ratio js-lazy loaded" src="img/backgrounds/2.png" alt="image" data-ll-status="loaded">
                         </div>
 
