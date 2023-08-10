@@ -8,6 +8,7 @@
     <?php include 'commons/nav.php'; ?>
 
     <!-- Body -->
+    <?php include 'breadcrumb.php'; ?>
     <section data-anim="slide-up" class="layout-pt-md is-in-view ">
         <div class="container py-60">
             <div class="row y-gap-40 justify-center ">
@@ -68,6 +69,8 @@
         </div>
 
     </section>
+
+
 
     <!-- Email -->
     <?php include 'commons/email.php'; ?>
