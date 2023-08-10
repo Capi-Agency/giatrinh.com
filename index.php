@@ -3332,7 +3332,7 @@
                                         </div>
 
                                         <div class="button-item">
-                                            <button class="mainSearch__submit button -dark-1 h-60 px-35 col-8 rounded-100 bg-blue-1 text-white">
+                                            <button class="mainSearch__submit button -dark-1 h-60 w-200 px-35 col-8 rounded-100 bg-blue-1 text-white">
                                                 <i class="icon-search text-20 mr-10"></i>
                                                 Tìm kiếm
                                             </button>

@@ -3984,7 +3984,8 @@ h6 {
 
 .mainSearch .button-grid {
   display: grid;
-  grid-template-columns: 1fr 250px 290px auto;
+  grid-template-columns: 320px 320px auto;
+  align-items: center;
 }
 
 .mainSearch .button-grid > * + * {
