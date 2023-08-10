@@ -1,31 +1,30 @@
 <div class="header-margin"></div>
-<section class="layout-pt-md layout-pb-md bg-dark-2">
-    <div class="container">
-        <div class="row y-gap-30 justify-between items-center">
-            <div class="col-auto">
-                <div class="row y-gap-20  flex-wrap items-center">
-                    <div class="col-auto">
-                        <div class="icon-newsletter text-60 sm:text-40 text-white"></div>
-                    </div>
-
-                    <div class="col-auto">
-                        <h4 class="text-26 text-white fw-600">Hành trình du lịch cho bạn bắt đầu từ đây</h4>
-                        <div class="text-white">Đăng ký nhận tin tức mới về du lịch ngay</div>
-                    </div>
-                </div>
+<section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
+      <div class="container">
+        <div class="row y-gap-10 items-center justify-between">
+          <div class="col-auto">
+            <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
+              <div class="col-auto">
+                <div class="">Europe</div>
+              </div>
+              <div class="col-auto">
+                <div class="">&gt;</div>
+              </div>
+              <div class="col-auto">
+                <div class="">United Kingdom (UK)</div>
+              </div>
+              <div class="col-auto">
+                <div class="">&gt;</div>
+              </div>
+              <div class="col-auto">
+                <div class="text-dark-1">London</div>
+              </div>
             </div>
+          </div>
 
-            <div class="col-auto">
-                <div class="single-field -w-410 d-flex x-gap-10 y-gap-20">
-                    <div>
-                        <input class="bg-white h-60" type="text" placeholder="Email của bạn">
-                    </div>
-
-                    <div>
-                        <button class="button -md h-60 bg-blue-1 text-white">Đăng ký</button>
-                    </div>
-                </div>
-            </div>
+          <div class="col-auto">
+            <a href="#" class="text-14 text-light-1">London Tourism: Best of London</a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
