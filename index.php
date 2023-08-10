@@ -3348,352 +3348,6 @@
         </div>
     </section>
 
-    <!-- Tour H Giá Chót -->
-    <section class="layout-pt-md layout-pb-md">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="col-auto">
-          <div class="sectionTitle -md">
-            <h2 class="sectionTitle__title">TOUR GIỜ CHÓT GIÁ TỐT</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row y-gap-30 pt-40 sm:pt-20">
-        <!-- card tour -->
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-
-          <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
-            <div class="tourCard__image">
-
-              <div class="cardImage ratio ratio-1:1">
-                <div class="cardImage__content">
-
-
-                  <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
-                    <div class="swiper-wrapper">
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/2.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/1.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/3.png" alt="image">
-                      </div>
-
-                    </div>
-
-                    <div class="cardImage-slider__pagination js-pagination"></div>
-
-                    <div class="cardImage-slider__nav -prev">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
-                        <i class="icon-chevron-left text-10"></i>
-                      </button>
-                    </div>
-
-                    <div class="cardImage-slider__nav -next">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
-                        <i class="icon-chevron-right text-10"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="cardImage__wishlist">
-                  <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                    <i class="icon-heart text-12"></i>
-                  </button>
-                </div>
-
-
-              </div>
-
-            </div>
-
-            <div class="tourCard__content mt-10">
-
-              <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
-                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
-                  đêm</span>
-              </h4>
-
-              <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
-                Tháng 5, 6, 7 </p>
-              <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
-                4 ngày 3 đêm </p>
-
-              <div class="row justify-between items-center pt-15">
-                <div class="col-auto">
-                  <div class="text-14 text-light-1">
-                    <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                    <span class="text-14 fw-600 text-white">Đặt tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-
-          <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
-            <div class="tourCard__image">
-
-              <div class="cardImage ratio ratio-1:1">
-                <div class="cardImage__content">
-
-
-                  <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
-                    <div class="swiper-wrapper">
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/2.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/1.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/3.png" alt="image">
-                      </div>
-
-                    </div>
-
-                    <div class="cardImage-slider__pagination js-pagination"></div>
-
-                    <div class="cardImage-slider__nav -prev">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
-                        <i class="icon-chevron-left text-10"></i>
-                      </button>
-                    </div>
-
-                    <div class="cardImage-slider__nav -next">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
-                        <i class="icon-chevron-right text-10"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="cardImage__wishlist">
-                  <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                    <i class="icon-heart text-12"></i>
-                  </button>
-                </div>
-
-
-              </div>
-
-            </div>
-
-            <div class="tourCard__content mt-10">
-
-              <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
-                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
-                  đêm</span>
-              </h4>
-
-              <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
-                Tháng 5, 6, 7 </p>
-              <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
-                4 ngày 3 đêm </p>
-
-              <div class="row justify-between items-center pt-15">
-                <div class="col-auto">
-                  <div class="text-14 text-light-1">
-                    <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                    <span class="text-14 fw-600 text-white">Đặt tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-
-          <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
-            <div class="tourCard__image">
-
-              <div class="cardImage ratio ratio-1:1">
-                <div class="cardImage__content">
-
-
-                  <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
-                    <div class="swiper-wrapper">
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/2.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/1.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/3.png" alt="image">
-                      </div>
-
-                    </div>
-
-                    <div class="cardImage-slider__pagination js-pagination"></div>
-
-                    <div class="cardImage-slider__nav -prev">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
-                        <i class="icon-chevron-left text-10"></i>
-                      </button>
-                    </div>
-
-                    <div class="cardImage-slider__nav -next">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
-                        <i class="icon-chevron-right text-10"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="cardImage__wishlist">
-                  <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                    <i class="icon-heart text-12"></i>
-                  </button>
-                </div>
-
-
-              </div>
-
-            </div>
-
-            <div class="tourCard__content mt-10">
-
-              <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
-                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
-                  đêm</span>
-              </h4>
-
-              <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
-                Tháng 5, 6, 7 </p>
-              <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
-                4 ngày 3 đêm </p>
-
-              <div class="row justify-between items-center pt-15">
-                <div class="col-auto">
-                  <div class="text-14 text-light-1">
-                    <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                    <span class="text-14 fw-600 text-white">Đặt tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-
-          <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
-            <div class="tourCard__image">
-
-              <div class="cardImage ratio ratio-1:1">
-                <div class="cardImage__content">
-
-
-                  <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
-                    <div class="swiper-wrapper">
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/2.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/1.png" alt="image">
-                      </div>
-
-                      <div class="swiper-slide">
-                        <img class="col-12" src="img/tours/3.png" alt="image">
-                      </div>
-
-                    </div>
-
-                    <div class="cardImage-slider__pagination js-pagination"></div>
-
-                    <div class="cardImage-slider__nav -prev">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
-                        <i class="icon-chevron-left text-10"></i>
-                      </button>
-                    </div>
-
-                    <div class="cardImage-slider__nav -next">
-                      <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
-                        <i class="icon-chevron-right text-10"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="cardImage__wishlist">
-                  <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                    <i class="icon-heart text-12"></i>
-                  </button>
-                </div>
-
-
-              </div>
-
-            </div>
-
-            <div class="tourCard__content mt-10">
-
-              <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
-                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
-                  đêm</span>
-              </h4>
-
-              <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
-                Tháng 5, 6, 7 </p>
-              <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
-                4 ngày 3 đêm </p>
-
-              <div class="row justify-between items-center pt-15">
-                <div class="col-auto">
-                  <div class="text-14 text-light-1">
-                    <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                    <span class="text-14 fw-600 text-white">Đặt tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-        <!-- end card tour -->
-      </div>
-    </div>
-  </section>
-
     <!-- Guarantee -->
     <section class="layout-pt-md layout-pb-lg">
         <div data-anim-wrap="" class="container animated">
@@ -3741,9 +3395,1756 @@
                             <p class="text-15 mt-10">Chúng tôi liên kết chặt chẽ với các đối tác, khảo sát định kỳ để đảm bảo chất lượng tốt nhất của dịch vụ</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour H Giá Chót -->
+    <section class="layout-pt-md layout-pb-md">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-auto">
+                    <div class="sectionTitle -md">
+                        <h2 class="sectionTitle__title">Tour giờ chót giá tốt</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row y-gap-30 pt-40 sm:pt-20">
+                <!-- card tour -->
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- end card tour -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="layout-pt-md layout-pb-md">
+        <div class="container">
+            <div class="row y-gap-20">
+                <div data-anim="slide-up" class="col-md-6 is-in-view">
+
+                    <div class="ctaCard -type-1 rounded-4 ">
+                        <div class="ctaCard__image ratio ratio-63:55">
+                            <img class="img-ratio js-lazy loaded" src="img/backgrounds/1.png" alt="image" data-ll-status="loaded">
+                        </div>
+
+                        <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
+                            <h4 class="text-40 lg:text-26 text-white">Những điều nên làm ở<br> Quảng Ninh</h4>
+
+                            <div class="d-inline-block mt-30">
+                                <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
+                <div data-anim="slide-up delay-1" class="col-md-6 is-in-view">
+
+                    <div class="ctaCard -type-1 rounded-4 ">
+                        <div class="ctaCard__image ratio ratio-63:55">
+                            <img class="img-ratio js-lazy loaded" src="img/backgrounds/2.png" alt="image" data-ll-status="loaded">
+                        </div>
+
+                        <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
+
+                            <div class="text-15 fw-500 text-white mb-10">Tận hưởng hè sale lớn</div>
+
+
+                            <h4 class="text-40 lg:text-26 text-white">Lên đến 70%</h4>
+
+                            <div class="d-inline-block mt-30">
+                                <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour trong Nước -->
+    <section class="layout-pt-md layout-pb-md">
+        <div class="container">
+            <!-- Title -->
+            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+                <div class="col-auto">
+                    <div class="sectionTitle -md">
+                        <h2 class="sectionTitle__title">Tour trong nước</h2>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+
+                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
+                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="row y-gap-30 pt-40 sm:pt-20">
+                <!-- card tour -->
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour quốc tế -->
+    <section class="layout-pt-md layout-pb-md">
+        <div class="container">
+            <!-- Title -->
+            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+                <div class="col-auto">
+                    <div class="sectionTitle -md">
+                        <h2 class="sectionTitle__title">Tour quốc tế</h2>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+
+                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
+                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="row y-gap-30 pt-40 sm:pt-20">
+                <!-- card tour -->
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                    <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <div class="tourCard__image">
+
+                            <div class="cardImage ratio ratio-1:1">
+                                <div class="cardImage__content">
+
+
+                                    <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/2.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/1.png" alt="image">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img class="col-12" src="img/tours/3.png" alt="image">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cardImage-slider__pagination js-pagination"></div>
+
+                                        <div class="cardImage-slider__nav -prev">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
+                                                <i class="icon-chevron-left text-10"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cardImage-slider__nav -next">
+                                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
+                                                <i class="icon-chevron-right text-10"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="cardImage__wishlist">
+                                    <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                        <i class="icon-heart text-12"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tourCard__content mt-10">
+
+                            <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                                <span>Hà Nội - Nha Trang - Đà Lạt - Hà Nội bay VNA, (tour ghép) tháng 5 , hành trình 4 ngày - 3
+                                    đêm</span>
+                            </h4>
+
+                            <p class="text-light-1 lh-14 text-14 mt-5">Lịch khởi hành:
+                                Tháng 5, 6, 7 </p>
+                            <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+                                4 ngày 3 đêm </p>
+
+                            <div class="row justify-between items-center pt-15">
+                                <div class="col-auto">
+                                    <div class="text-14 text-light-1">
+                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -3855,7 +5256,135 @@
         </div>
     </section>
 
+    <!-- Kinh nghiệm du lịch -->
+    <section class="layout-pt-md layout-pb-md">
+        <div data-anim-wrap="" class="container animated">
+            <!-- Title -->
+            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+                <div class="col-auto">
+                    <div class="sectionTitle -md">
+                        <h2 class="sectionTitle__title">Cảm hứng du lịch</h2>
+                        <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
+                    </div>
+                </div>
 
+                <div class="col-auto">
+
+                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
+                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Blog -->
+            <div class="row y-gap-30 pt-40 sm:pt-20">
+
+                <div data-anim="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/1.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div data-anim="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/2.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">Chinh phục đỉnh núi Tà Chì Nhù, Yên Bái - 'thiên đường nơi hạ giới'</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/3.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/3.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Ba Vì - lựa chọn hoàn hảo cho ngày cuối tuần</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/3.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">Đổi gió với 5 homestay ở Hà Nội 'cực chất' cho khách du lịch</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+
+                    <a href="" class="blogCard -type-1 d-block ">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                                <img class="img-ratio js-lazy loaded" src="img/blog/3.png" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="mt-20">
+                            <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Email -->
     <?php include 'commons/email.php'; ?>
