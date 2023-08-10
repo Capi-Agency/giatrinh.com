@@ -3513,13 +3513,6 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
-
                       </div>
 
                     </div>
@@ -3595,11 +3588,7 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
+                    
 
 
                       </div>
@@ -3648,13 +3637,6 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
-
                       </div>
 
                     </div>
@@ -3700,13 +3682,6 @@
 
 
                         </div>
-
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
 
                       </div>
 
@@ -3754,13 +3729,6 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
-
                       </div>
 
                     </div>
@@ -3806,13 +3774,6 @@
 
 
                         </div>
-
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
 
                       </div>
 
@@ -3860,13 +3821,6 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
-
                       </div>
 
                     </div>
@@ -3913,13 +3867,6 @@
 
                         </div>
 
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
-
                       </div>
 
                     </div>
@@ -3965,13 +3912,6 @@
 
 
                         </div>
-
-                        <div class="cardImage__wishlist">
-                          <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                            <i class="icon-heart text-12"></i>
-                          </button>
-                        </div>
-
 
                       </div>
 
