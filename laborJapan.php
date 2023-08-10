@@ -36,7 +36,7 @@
                                         <div class="entry-header-text entry-header-text-top  text-center">
                                             <h6 class="entry-category is-xsmall">
 
-                                                <h1 class="entry-title">Thông Báo Tuyển Dụng Lao Động Đi Làm Việc TạiNhật Bản</h1>
+                                                <h1 class="entry-title">Thông Báo Tuyển Dụng Lao Động Đi Làm Việc Tại Nhật Bản</h1>
                                                 <div class="entry-divider is-divider small"></div>
 
                                                 <!-- .entry-meta -->
