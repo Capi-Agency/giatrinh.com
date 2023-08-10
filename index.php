@@ -5170,12 +5170,19 @@
     <section class="layout-pt-sm layout-pb-md">
         <div data-anim-wrap="" class="container animated">
             <!-- Title -->
-            <div data-anim-child="slide-up delay-1" class="row is-in-view">
+            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
                 <div class="col-auto">
                     <div class="sectionTitle -md">
                         <h2 class="sectionTitle__title">Cảm hứng du lịch</h2>
                         <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
                     </div>
+                </div>
+
+                <div class="col-auto">
+                    <a href="#" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                        Xem tất cả
+                        <i class="icon-arrow-top-right ml-10"></i>
+                    </a>
                 </div>
             </div>
 
