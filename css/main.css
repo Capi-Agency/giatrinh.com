@@ -620,7 +620,7 @@ img {
 }
 
 a {
-  color: #E6E6E6;
+  color:black;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
@@ -631,7 +631,7 @@ a {
   color: #000000;
 }
 a:hover {
-  color: white;
+  color: #3554d1;
   text-decoration: none;
 }
 .subNav:hover {
