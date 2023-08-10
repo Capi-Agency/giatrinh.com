@@ -620,22 +620,16 @@ img {
 }
 
 a {
-  color: #E6E6E6;
+  color:inherit;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
 }
-.subNav {
-  color: #000000;
-}
 a:hover {
-  color: white;
-  text-decoration: none;
-}
-.subNav:hover {
   color: #3554d1;
+  text-decoration: none;
 }
 ul,
 li {
@@ -3449,7 +3443,6 @@ h6 {
   width: 100%;
   height: 90px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background-color: var(--color-dark-1) !important;
 }
 
 @media (max-width: 767px) {
