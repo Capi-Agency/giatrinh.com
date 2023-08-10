@@ -3861,12 +3861,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3938,12 +3938,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -4015,12 +4015,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -4092,17 +4092,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4168,17 +4169,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4244,17 +4246,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4320,17 +4323,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4396,17 +4400,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -4499,12 +4504,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -4576,12 +4581,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -4653,12 +4658,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -4730,17 +4735,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4806,17 +4812,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4882,17 +4889,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -4958,17 +4966,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
@@ -5034,17 +5043,18 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -5061,7 +5071,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
 
                 <div data-anim-child="slide-up delay-3" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
@@ -5158,64 +5167,22 @@
     </section>
 
     <!-- Kinh nghiệm du lịch -->
-    <section class="layout-pt-md layout-pb-md">
+    <section class="layout-pt-sm layout-pb-md">
         <div data-anim-wrap="" class="container animated">
             <!-- Title -->
-            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+            <div data-anim-child="slide-up delay-1" class="row is-in-view">
                 <div class="col-auto">
                     <div class="sectionTitle -md">
                         <h2 class="sectionTitle__title">Cảm hứng du lịch</h2>
                         <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
                     </div>
                 </div>
-
-                <div class="col-auto">
-
-                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
-                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
-                    </a>
-
-                </div>
             </div>
 
             <!-- Blog -->
-            <div class="row y-gap-30 pt-40 sm:pt-20">
+            <div class="row y-gap-30 pt-40">
 
-                <div data-anim="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
-
-                    <a href="" class="blogCard -type-1 d-block ">
-                        <div class="blogCard__image">
-                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
-                                <img class="img-ratio js-lazy loaded" src="img/blog/1.png" alt="image" data-ll-status="loaded">
-                            </div>
-                        </div>
-
-                        <div class="mt-20">
-                            <h4 class="text-dark-1 text-18 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</h4>
-                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
-
-                    <a href="" class="blogCard -type-1 d-block ">
-                        <div class="blogCard__image">
-                            <div class="ratio ratio-4:3 rounded-4 rounded-8">
-                                <img class="img-ratio js-lazy loaded" src="img/blog/2.png" alt="image" data-ll-status="loaded">
-                            </div>
-                        </div>
-
-                        <div class="mt-20">
-                            <h4 class="text-dark-1 text-18 fw-500">Chinh phục đỉnh núi Tà Chì Nhù, Yên Bái - 'thiên đường nơi hạ giới'</h4>
-                            <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+                <div data-anim="slide-up delay-5" class="col-lg-3 col-sm-6 is-in-view">
 
                     <a href="" class="blogCard -type-1 d-block ">
                         <div class="blogCard__image">
@@ -5232,7 +5199,7 @@
 
                 </div>
 
-                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+                <div data-anim="slide-up delay-5" class="col-lg-3 col-sm-6 is-in-view">
 
                     <a href="" class="blogCard -type-1 d-block ">
                         <div class="blogCard__image">
@@ -5242,14 +5209,14 @@
                         </div>
 
                         <div class="mt-20">
-                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Ba Vì - lựa chọn hoàn hảo cho ngày cuối tuần</h4>
+                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'</h4>
                             <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
                         </div>
                     </a>
 
                 </div>
 
-                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+                <div data-anim="slide-up delay-5" class="col-lg-3 col-sm-6 is-in-view">
 
                     <a href="" class="blogCard -type-1 d-block ">
                         <div class="blogCard__image">
@@ -5259,14 +5226,14 @@
                         </div>
 
                         <div class="mt-20">
-                            <h4 class="text-dark-1 text-18 fw-500">Đổi gió với 5 homestay ở Hà Nội 'cực chất' cho khách du lịch</h4>
+                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'</h4>
                             <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
                         </div>
                     </a>
 
                 </div>
 
-                <div data-anim="slide-up delay-5" class="col-lg-4 col-sm-6 is-in-view">
+                <div data-anim="slide-up delay-5" class="col-lg-3 col-sm-6 is-in-view">
 
                     <a href="" class="blogCard -type-1 d-block ">
                         <div class="blogCard__image">
@@ -5276,7 +5243,7 @@
                         </div>
 
                         <div class="mt-20">
-                            <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
+                            <h4 class="text-dark-1 text-18 fw-500">Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'</h4>
                             <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
                         </div>
                     </a>
