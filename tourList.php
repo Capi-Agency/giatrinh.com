@@ -10,6 +10,26 @@
   <!-- Body -->
   <div class="header-margin"></div>
   <!-- Breadcrumb -->
+  <section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
+    <div class="container">
+      <div class="row y-gap-10 items-center justify-between">
+        <div class="col-auto">
+          <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
+            <div class="col-auto">
+              <div class=""><a href="index.php">Trang chủ</a></div>
+            </div>
+            <div class="col-auto">
+              <div class="">&gt;</div>
+            </div>
+            <div class="col-auto">
+              <div class="text-dark-1"><a href="#">Danh sách Tour</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="layout-pt-md layout-pb-lg">
     <div class="container">
       <div class="row y-gap-30">
@@ -4739,7 +4759,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Email -->
   <?php include 'commons/email.php'; ?>
   <!-- Footer -->
