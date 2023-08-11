@@ -30,6 +30,60 @@
       </div>
     </div>
   </section>
+  <section class="pt-40">
+      <div class="container">
+        <div class="row y-gap-15 justify-between items-end">
+          <div class="col-auto">
+            <h1 class="text-30 fw-600">Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà Nội</h1>
+
+            <div class="row x-gap-20 y-gap-20 items-center pt-10">
+              <div class="col-auto">
+                <div class="d-flex items-center">
+                  <div class="d-flex x-gap-5 items-center">
+
+                    <i class="icon-star text-10 text-yellow-1"></i>
+
+                    <i class="icon-star text-10 text-yellow-1"></i>
+
+                    <i class="icon-star text-10 text-yellow-1"></i>
+
+                    <i class="icon-star text-10 text-yellow-1"></i>
+
+                    <i class="icon-star text-10 text-yellow-1"></i>
+
+                  </div>
+
+                  <div class="text-14 text-light-1 ml-10">38 đánh giá</div>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="row x-gap-10 items-center">
+                  <div class="col-auto">
+                    <div class="d-flex x-gap-5 items-center">
+                      <i class="icon-placeholder text-16 text-light-1"></i>
+                      <div class="text-15 text-light-1">Việt Nam</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="row x-gap-10 y-gap-10">
+              <div class="col-auto">
+                <button class="button px-15 py-10 -blue-1">
+                  <i class="icon-share mr-10"></i>
+                  Share
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <section class="pt-40 js-pin-container">
     <div class="container">
@@ -77,6 +131,49 @@
               <a href="img/gallery/1/5.png" class="js-gallery" data-gallery="gallery2"></a>
             </div>
           </div>
+          <h3 class="text-22 fw-500 mt-30">
+              Tour snapshot
+            </h3>
+
+            <div class="row y-gap-30 justify-between pt-20">
+
+              <div class="col-md-auto col-6">
+                <div class="d-flex">
+                  <i class="icon-clock text-22 text-blue-1 mr-10"></i>
+                  <div class="text-15 lh-15">
+                    Thời lượng:<br> 4 ngày 3 đêm
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-auto col-6">
+                <div class="d-flex">
+                  <i class="icon-customer text-22 text-blue-1 mr-10"></i>
+                  <div class="text-15 lh-15">
+                    Số lượng người:<br> Liên hệ
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-auto col-6">
+                <div class="d-flex">
+                  <i class="icon-route text-22 text-blue-1 mr-10"></i>
+                  <div class="text-15 lh-15">
+                    Di chuyển:<br> Vietnamairlines
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-auto col-6">
+                <div class="d-flex">
+                  <i class="icon-access-denied text-22 text-blue-1 mr-10"></i>
+                  <div class="text-15 lh-15">
+                    Free cancellation <br><a href='#' class='text-blue-1 underline'>Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           <div class="border-top-light mt-40 mb-40"></div>
 
           <div class="row x-gap-40 y-gap-40">
@@ -123,8 +220,7 @@
                       Loại tour
                     </div>
                     <div class="text-22 fw-500 mt-10">
-                      Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà Nội ( 4 Ngày 3 đêm) Bay Vietnam airlines, Thứ
-                      5,6,7 hàng tuần ) Tháng 5,6,7)
+                      Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà Nội
                     </div>
                   </div>
 
@@ -3431,8 +3527,7 @@
             <div class="w-360 lg:w-full d-flex flex-column items-center">
               <div class="px-30 py-30 rounded-4 border-light bg-white shadow-4">
                 <div class="text-14 text-light-1">
-                  <p class="text-20 fw-500 text-dark-1 ml-5">Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà
-                    Nội ( 4 Ngày 3 đêm) Bay Vietnam airlines, Thứ 5,6,7 hàng tuần ) Tháng 5,6,7)</p>
+                  <p class="text-20 fw-500 text-dark-1 ml-5"></p>
                 </div>
                 <div class="text-14 text-light-1">
                   <p class="text-20 fw-700 text-dark-1 ml-5">5.590.000đ</p>
@@ -4029,42 +4124,6 @@
   </section>
   <!-- end tour giờ chót -->
 
-  <!-- form liên lạc -->
-
-  <section class="layout-pt-md layout-pb-md bg-dark-2">
-    <div class="container">
-      <div class="row y-gap-30 justify-between items-center">
-        <div class="col-auto">
-          <div class="row y-gap-20  flex-wrap items-center">
-            <div class="col-auto">
-              <div class="icon-newsletter text-60 sm:text-40 text-white"></div>
-            </div>
-
-            <div class="col-auto">
-              <h4 class="text-26 text-white fw-600">Your Travel Journey Starts Here</h4>
-              <div class="text-white">Sign up and we'll send the best deals to you</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <div class="single-field -w-410 d-flex x-gap-10 y-gap-20">
-            <div>
-              <input class="bg-white h-60" type="text" placeholder="Your Email">
-            </div>
-
-            <div>
-              <button class="button -md h-60 bg-blue-1 text-white">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- hết form liên lạc -->
-
-  <!-- Email -->
-  <?php include 'commons/email.php'; ?>
   <!-- Footer -->
   <?php include 'commons/footer.php'; ?>
 </body>

@@ -4033,15 +4033,7 @@
 
                   <div class="row y-gap-10 items-center justify-between">
                     <div class="col-auto">
-
-                      <div class="d-flex items-center">
-                        <div class="form-checkbox ">
-                          <input type="checkbox" name="name">
-                          <div class="form-checkbox__mark">
-                            <div class="form-checkbox__icon icon-check"></div>
-                          </div>
-                        </div>
-
+                      
                         <div class="text-15 ml-10">Tiếng Nhật</div>
 
                       </div>
