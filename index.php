@@ -3740,7 +3740,7 @@
                             <h4 class="text-40 lg:text-26 text-white">Những điều nên làm ở<br> Quảng Ninh</h4>
 
                             <div class="d-inline-block mt-30">
-                                <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
+                                <a href="tourExp.php" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
                             </div>
                         </div>
                     </div>
