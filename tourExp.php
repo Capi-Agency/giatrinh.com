@@ -42,8 +42,9 @@
                 </div>
             </div>
 
-            <!-- Post List -->
+            <!-- Post -->
             <div data-anim-child="slide-up delay-2" class="tabs -pills-3 pt-30 js-tabs is-in-view">
+                <!-- Tags -->
                 <div class="tabs__controls row x-gap-10 justify-center js-tabs-controls">
 
                     <div class="col-auto">
@@ -68,6 +69,7 @@
 
                 </div>
 
+                <!-- Post List -->
                 <div class="tabs__content pt-30 js-tabs-content">
 
                     <div class="tabs__pane -tab-item-1 is-tab-el-active">
@@ -95,7 +97,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/vườn-Morning-Calm-ivivu-2-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -114,7 +116,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/Tam-Tháp-Đại-Lý-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -131,7 +133,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/hong-kong-convention-and-exhibition-centre-ivivu-2-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -148,7 +150,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/Gardens-by-the-Bay-ivivu1-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -165,7 +167,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/phố-cổ-Hồng-Nhai-Động-ivivu-2-370x215.jpeg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -182,7 +184,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/Merdeka-Square-ivivu1-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -199,7 +201,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/đảo-Nami-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
@@ -216,7 +218,7 @@
                                 <a href="" class="blogCard -type-1 d-block ">
                                     <div class="blogCard__image">
                                         <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/tour-tay-bac-3n2d-ivivu-16-370x215.jpg" alt="image" data-ll-status="loaded">
                                         </div>
                                     </div>
 
