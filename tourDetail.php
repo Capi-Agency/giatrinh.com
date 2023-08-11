@@ -4062,9 +4062,9 @@
     </div>
   </section>
   <!-- hết form liên lạc -->
-
   <!-- Email -->
   <?php include 'commons/email.php'; ?>
+
   <!-- Footer -->
   <?php include 'commons/footer.php'; ?>
 </body>
