@@ -11,7 +11,7 @@
     <!-- Banner + Search -->
     <section data-anim-wrap="" class="masthead -type-1 z-5 animated">
         <div data-anim-child="fade" class="masthead__bg is-in-view">
-            <img src="https://images.unsplash.com/photo-1570511298607-cb0653eb919f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2120&q=80" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+            <img src="https://images.unsplash.com/photo-1580775949272-1bdb8a95ac01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="image" class="js-lazy loaded" data-ll-status="loaded">
         </div>
 
         <div class="container">
@@ -20,8 +20,8 @@
                     
                     <!-- Title -->
                     <div class="text-center">
-                        <h1 data-anim-child="slide-up delay-4" class="text-60 lg:text-40 md:text-30 text-white is-in-view">Tìm kiếm nơi du lịch kế tiếp</h1>
-                        <p data-anim-child="slide-up delay-5" class="text-white mt-6 md:mt-10 is-in-view">Khám phá những địa điểm tuyệt vời với ưu đãi độc quyền</p>
+                        <h1 data-anim-child="slide-up delay-4" class="text-52 lg:text-40 md:text-30 text-white is-in-view">Khám phá hành trình cùng chúng tôi</h1>
+                        <p data-anim-child="slide-up delay-5" class="text-white mt-3 md:mt-10 is-in-view">Khám phá những địa điểm tuyệt vời với ưu đãi độc quyền</p>
                     </div>
 
                     <!-- Search -->
@@ -3789,7 +3789,7 @@
 
                 <div class="col-auto">
 
-                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
+                    <a href="tourList.php" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
                         Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
                     </a>
 
@@ -4431,7 +4431,7 @@
 
                 <div class="col-auto">
 
-                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
+                    <a href="tourList.php" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
                         Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
                     </a>
 
