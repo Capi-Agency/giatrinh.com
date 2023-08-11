@@ -1,4 +1,4 @@
-<header data-add-bg="bg-dark-1" class="header bg-green js-header" data-x="header" data-x-toggle="is-menu-opened">
+<header class="header bg-green js-header bg-dark-1" data-x="header" data-x-toggle="is-menu-opened">
     <div data-anim="fade" class="header__container px-30 sm:px-20 is-in-view">
         <div class="row justify-between items-center">
             <div class="col-auto">
