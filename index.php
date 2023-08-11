@@ -3415,6 +3415,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
                     <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <!-- Image -->
                         <div class="tourCard__image">
 
                             <div class="cardImage ratio ratio-1:1">
@@ -3455,14 +3456,12 @@
 
                                 </div>
 
-                                <div class="cardImage__wishlist">
-                                </div>
 
 
                             </div>
 
                         </div>
-
+                        <!-- Content -->
                         <div class="tourCard__content mt-10">
 
                             <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
@@ -3478,12 +3477,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3555,12 +3554,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3632,12 +3631,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3709,12 +3708,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3722,7 +3721,6 @@
                     </a>
 
                 </div>
-                <!-- end card tour -->
             </div>
         </div>
     </section>
@@ -3794,7 +3792,6 @@
                 </div>
             </div>
 
-            <!-- Row 1 -->
             <div class="row y-gap-30 pt-40 sm:pt-20">
                 <!-- card tour -->
                 <div class="col-xl-3 col-lg-3 col-sm-6">
