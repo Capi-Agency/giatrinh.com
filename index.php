@@ -17,20 +17,22 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-auto">
+                    
+                    <!-- Title -->
                     <div class="text-center">
                         <h1 data-anim-child="slide-up delay-4" class="text-60 lg:text-40 md:text-30 text-white is-in-view">Tìm kiếm nơi du lịch kế tiếp</h1>
                         <p data-anim-child="slide-up delay-5" class="text-white mt-6 md:mt-10 is-in-view">Khám phá những địa điểm tuyệt vời với ưu đãi độc quyền</p>
                     </div>
 
+                    <!-- Search -->
                     <div data-anim-child="slide-up delay-6" class="tabs -underline mt-60 js-tabs is-in-view">
-
                         <div class="tabs__content mt-30 md:mt-20 js-tabs-content">
 
                             <div class="tabs__pane -tab-item-1 is-tab-el-active">
 
                                 <div class="mainSearch bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-100">
                                     <div class="button-grid items-center">
-
+                                        <!-- Places -->
                                         <div class="searchMenu-loc px-30 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
 
                                             <div data-x-dd-click="searchMenu-loc">
@@ -73,7 +75,7 @@
                                             </div>
                                         </div>
 
-
+                                        <!-- Date -->
                                         <div class="searchMenu-date px-30 lg:py-20 lg:px-0 js-form-dd js-calendar">
 
                                             <div data-x-dd-click="searchMenu-date">
@@ -3330,6 +3332,8 @@
                                             </div>
                                         </div>
 
+
+                                        <!-- Search -->
                                         <div class="button-item">
                                             <button class="mainSearch__submit button -dark-1 h-60 w-200 px-35 col-8 rounded-100 bg-blue-1 text-white">
                                                 <i class="icon-search text-20 mr-10"></i>
