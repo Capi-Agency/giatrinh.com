@@ -9,8 +9,7 @@
     <!-- Body -->
 
 
-    <!-- Email -->
-    <?php include 'commons/email.php';?>
+
     <!-- Footer -->
     <?php include 'commons/footer.php';?>
 </body>
