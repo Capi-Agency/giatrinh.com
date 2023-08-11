@@ -9,6 +9,8 @@
 
     <!-- Body -->
     <div class="header-margin"></div>
+
+    <!-- Breadcrumb -->
     <section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
         <div class="container">
             <div class="row y-gap-10 items-center justify-between">
@@ -21,7 +23,7 @@
                             <div class="">&gt;</div>
                         </div>
                         <div class="col-auto">
-                            <div class="text-dark-1"><a href="#">Danh sách bài viết</a></div>
+                            <div class="text-dark-1"><a href="#">Cẩm nang du lịch</a></div>
                         </div>
                     </div>
                 </div>
@@ -1817,6 +1819,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Email -->
     <?php include 'commons/email.php'; ?>
     <!-- Footer -->
