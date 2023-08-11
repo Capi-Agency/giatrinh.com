@@ -30,7 +30,7 @@
     </section>
 
     <!-- Post List -->
-    <section data-anim-wrap="" class="layout-pt-md layout-pb-lg animated">
+    <section data-anim-wrap="" class="layout-pt-sm layout-pb-lg animated">
         <div class="container">
             <!-- Title -->
             <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
