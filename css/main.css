@@ -3695,9 +3695,8 @@ h6 {
     pointer-events: none;
   }
   .header .header-menu .menu .mega__content {
-    display: flex;
-    justify-content: start;
-    gap: 52px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
   }
   .header .header-menu .menu .mega__image {
     width: 270px;
