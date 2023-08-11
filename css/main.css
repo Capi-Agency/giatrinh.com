@@ -4035,7 +4035,7 @@ h6 {
 }
 
 .mainSearch.-col-3-big .button-grid {
-  grid-template-columns: 1fr 0.6fr 0.6fr auto;
+  grid-template-columns: 296px 296px auto;
 }
 
 @media (max-width: 991px) {
