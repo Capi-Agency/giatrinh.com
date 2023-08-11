@@ -47,31 +47,23 @@
                 <div class="tabs__controls row x-gap-10 justify-center js-tabs-controls">
 
                     <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button is-tab-el-active" data-tab-target=".-tab-item-1">Art and culture</button>
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button is-tab-el-active" data-tab-target=".-tab-item-1">Tất cả</button>
                     </div>
 
                     <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-2">Beaches</button>
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-2">Khuyến Mãi</button>
                     </div>
 
                     <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-3">Adventure travel</button>
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-3">Điểm đến</button>
                     </div>
 
                     <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-4">Explore</button>
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-4">Ẩm thực</button>
                     </div>
 
                     <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-5">Family holidays</button>
-                    </div>
-
-                    <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-6">Air travel</button>
-                    </div>
-
-                    <div class="col-auto">
-                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-7">Food and drink</button>
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-5">Cổ tích</button>
                     </div>
 
                 </div>
@@ -251,13 +243,13 @@
 
                                         <div class="col-auto">
 
-                                            <div class="size-40 flex-center rounded-full">1</div>
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">1</div>
 
                                         </div>
 
                                         <div class="col-auto">
 
-                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+                                            <div class="size-40 flex-center rounded-full">2</div>
 
                                         </div>
 
@@ -269,7 +261,7 @@
 
                                         <div class="col-auto">
 
-                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+                                            <div class="size-40 flex-center rounded-full">4</div>
 
                                         </div>
 
@@ -287,7 +279,7 @@
 
                                         <div class="col-auto">
 
-                                            <div class="size-40 flex-center rounded-full">20</div>
+                                            <div class="size-40 flex-center rounded-full">10</div>
 
                                         </div>
 
@@ -313,10 +305,6 @@
 
                                         </div>
 
-                                    </div>
-
-                                    <div class="text-center mt-30 md:mt-10">
-                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
                                     </div>
                                 </div>
 
