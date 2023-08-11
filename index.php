@@ -11,7 +11,7 @@
     <!-- Banner + Search -->
     <section data-anim-wrap="" class="masthead -type-1 z-5 animated">
         <div data-anim-child="fade" class="masthead__bg is-in-view">
-            <img src="img/masthead/1/bg.webp" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+            <img src="https://images.unsplash.com/photo-1570511298607-cb0653eb919f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2120&q=80" alt="image" class="js-lazy loaded" data-ll-status="loaded">
         </div>
 
         <div class="container">
