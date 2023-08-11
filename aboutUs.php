@@ -93,7 +93,7 @@
         </div>
 
         <div class="col-lg-6">
-          <img src="img/pages/about/2.png" alt="image" class="rounded-4">
+          <img src="img/pages/about/2.png" alt="image" class="rounded-2">
         </div>
       </div>
     </div>
