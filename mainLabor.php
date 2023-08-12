@@ -122,22 +122,22 @@
 
       <div class="row y-gap-30 pt-40">
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
 
-          <a href="" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-            <div class="blogCard__image">
-              <div class="ratio ratio-1:1 rounded-4">
-                <img class="img-ratio js-lazy loaded" src="https://hotrotuvanxkld.com/wp-content/uploads/2019/08/japan-header.jpg" alt="image" data-ll-status="loaded">
-              </div>
-            </div>
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
 
-            <div class="px-20 py-20">
-              <h4 class="text-dark-1 text-16 lh-18 fw-500">XUẤT KHẨU LAO ĐỘNG NHẬT BẢN </h4>
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+                                    </div>
+                                </a>
 
-            </div>
-          </a>
-
-        </div>
+                            </div>
 
         <div class="col-lg-3 col-sm-6">
 
@@ -363,73 +363,73 @@
 
       <div class="row y-gap-30 pt-40">
 
-        <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6">
 
-          <a href="" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-            <div class="blogCard__image">
-              <div class="ratio ratio-1:1 rounded-4">
-                <img class="img-ratio js-lazy loaded" src="https://hotrotuvanxkld.com/wp-content/uploads/2019/08/maxresdefault-2.jpg" alt="image" data-ll-status="loaded">
-              </div>
-            </div>
-
-            <div class="px-20 py-20">
-              <h4 class="text-dark-1 text-16 lh-18 fw-500">Câu Hỏi Thường Gặp Khi Đi Du Học</h4>
-              <div class="text-light-1 text-15 lh-14 mt-10">Tại Việt Nam nói riêng và rất nhiều các nước khác trên Thế giới[...]</div>
-            </div>
-          </a>
-
+<a href="" class="blogCard -type-1 d-block ">
+    <div class="blogCard__image">
+        <div class="ratio ratio-4:3 rounded-8">
+            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
+    </div>
 
-        <div class="col-lg-3 col-sm-6">
+    <div class="pt-20">
+        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+    </div>
+</a>
 
-          <a href="" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-            <div class="blogCard__image">
-              <div class="ratio ratio-1:1 rounded-4">
-                <img class="img-ratio js-lazy loaded" src="https://hotrotuvanxkld.com/wp-content/uploads/2019/08/du-hoc-duc-eduland.jpg" alt="image" data-ll-status="loaded">
-              </div>
-            </div>
+</div>
 
-            <div class="px-20 py-20">
-              <h4 class="text-dark-1 text-16 lh-18 fw-500">Liên Hệ Hỗ Trợ Tư Vấn Xuất Khẩu Lao Động</h4>
-              <div class="text-light-1 text-15 lh-14 mt-10">Khi có vấn đề cần được tư vấn hoặc giải đáp xin vui lòng[...]</div>
-            </div>
-          </a>
+<div class="col-lg-3 col-sm-6">
 
+<a href="" class="blogCard -type-1 d-block ">
+    <div class="blogCard__image">
+        <div class="ratio ratio-4:3 rounded-8">
+            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
+    </div>
 
-        <div class="col-lg-3 col-sm-6">
+    <div class="pt-20">
+        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+    </div>
+</a>
 
-          <a href="" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-            <div class="blogCard__image">
-              <div class="ratio ratio-1:1 rounded-4">
-                <img class="img-ratio js-lazy loaded" src="https://hotrotuvanxkld.com/wp-content/uploads/2019/08/maxresdefault-2.jpg" alt="image" data-ll-status="loaded">
-              </div>
-            </div>
+</div>
 
-            <div class="px-20 py-20">
-              <h4 class="text-dark-1 text-16 lh-18 fw-500">Hồ sơ Đăng ký Xuất Khẩu Lao Động</h4>
-              <div class="text-light-1 text-15 lh-14 mt-10">Hồ sơ Đăng ký Xuất Khẩu Lao Động Nước ngoài được làm theo mẫu của nhà[...]</div>
-            </div>
-          </a>
+<div class="col-lg-3 col-sm-6">
 
+<a href="" class="blogCard -type-1 d-block ">
+    <div class="blogCard__image">
+        <div class="ratio ratio-4:3 rounded-8">
+            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
+    </div>
 
-        <div class="col-lg-3 col-sm-6">
+    <div class="pt-20">
+        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+    </div>
+</a>
 
-          <a href="" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-            <div class="blogCard__image">
-              <div class="ratio ratio-1:1 rounded-4">
-                <img class="img-ratio js-lazy loaded" src="https://hotrotuvanxkld.com/wp-content/uploads/2019/09/nha-may-sck-day-chuyen-may-moc-hien-dai-5.jpg" alt="image" data-ll-status="loaded">
-              </div>
-            </div>
+</div>
 
-            <div class="px-20 py-20">
-              <h4 class="text-dark-1 text-16 lh-18 fw-500">Địa Điểm Tuyển Sinh Xuất Khẩu Lao Động</h4>
-              <div class="text-light-1 text-15 lh-14 mt-10"> Nhà trường có nhiều Văn phong Hỗ trợ tuyển dụng trên toàn quốc. Tuy nhiên[...] </div>
-            </div>
-          </a>
+<div class="col-lg-3 col-sm-6">
 
+<a href="" class="blogCard -type-1 d-block ">
+    <div class="blogCard__image">
+        <div class="ratio ratio-4:3 rounded-8">
+            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
+    </div>
+
+    <div class="pt-20">
+        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+    </div>
+</a>
+
+</div>
 
       </div>
     </div>
