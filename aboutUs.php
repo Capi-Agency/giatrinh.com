@@ -8,28 +8,11 @@
   <?php include 'commons/nav.php'; ?>
   <!-- Body -->
   <div class="header-margin"></div>
-  <!-- Breadcrumb -->
-  <!-- <section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
-    <div class="container">
-      <div class="row y-gap-10 items-center justify-between">
-        <div class="col-auto">
-          <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
-            <div class="col-auto">
-              <div class=""><a href="index.php">Trang chủ</a></div>
-            </div>
-            <div class="col-auto">
-              <div class="">&gt;</div>
-            </div>
-            <div class="col-auto">
-              <div class="text-dark-1"><a href="#">Giới thiệu</a></div>
-            </div>
-          </div>
-  </section> -->
 
-  <!-- Banner -->
+  <!-- Banner Header -->
   <section class="section-bg layout-pt-lg layout-pb-lg">
     <div class="section-bg__item col-12">
-      <img src="img/pages/about/1.png" alt="image">
+      <img src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="image">
     </div>
     <div class="container">
       <div class="row justify-center text-center">
@@ -37,10 +20,10 @@
           <h1 class="text-60 md:text-25 fw-700 text-white">GiaTrinh</h1>
           <div class="text-white">Người bạn du lịch đồng hành cùng bạn.</div>
         </div>
-        <div class="row justify-center text-center text-white-1">
-          <div><a href="index.php">Trang chủ</a></div>
-          <div>&gt;</div>
-          <div><a href="#">Giới thiệu</a></div>
+        <div class="d-flex mt-3 justify-center text-center text-white-1">
+          <div><a class="text-white p-2" href="index.php">Trang chủ</a></div>
+          <div class="text-white">&gt;</div>
+          <div><a class="text-white p-2" href="#">Giới thiệu</a></div>
         </div>
       </div>
     </div>
