@@ -7,7 +7,7 @@
     <?php include 'commons/nav.php';?>
 
     <!-- Body -->
-
+    <div class="header-margin"></div>
     <div class="ratio ratio-16:9">
       <div class="map-ratio">
         <div class="map js-map-single"></div>
@@ -88,17 +88,7 @@
 
           <div class="col-auto">
             <div class="text-14 text-light-1">Cần hỗ trợ trực tiếp ?</div>
-            <div class="text-18 fw-500 mt-10">vietprotravel@gmail.com/div>
-          </div>
-
-          <div class="col-auto">
-            <div class="text-14 text-light-1">Theo dõi chúng tôi </div>
-            <div class="d-flex x-gap-20 items-center mt-10">
-              <a href="#"><i class="icon-facebook text-14"></i></a>
-              <a href="#"><i class="icon-twitter text-14"></i></a>
-              <a href="#"><i class="icon-instagram text-14"></i></a>
-              <a href="#"><i class="icon-linkedin text-14"></i></a>
-            </div>
+            <div class="text-18 fw-500 mt-10">vietprotravel@gmail.com </div>
           </div>
         </div>
       </div>
