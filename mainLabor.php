@@ -130,11 +130,6 @@
                 <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
               </div>
             </div>
-
-            <div class="pt-20">
-              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-            </div>
           </a>
 
         </div>
@@ -435,7 +430,7 @@
     </div>
   </section>
 
- <!-- Email -->
+  <!-- Email -->
   <section class="layout-pt-md layout-pb-md bg-dark-2">
     <div class="container">
       <div class="row y-gap-30 justify-between items-center">
