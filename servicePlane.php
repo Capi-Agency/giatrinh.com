@@ -7,7 +7,21 @@
     <?php include 'commons/nav.php';?>
 
     <!-- Body -->
-    <div class="header-margin"></div>
+    <div class="header-margin">
+      <section class="section-bg layout-pt-lg layout-pb-lg">
+        <div class="section-bg__item col-12">
+          <img src="img/pages/about/1.png" alt="image">
+        </div>
+        <div class="container">
+          <div class="row justify-center text-center">
+            <div class="col-xl-6 col-lg-8 col-md-10">
+              <h1 class="text-60 md:text-25 fw-700 text-white">GiaTrinh</h1>
+              <div class="text-white">Người bạn du lịch đồng hành cùng bạn.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- breadcrumb -->
     <section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
         <div class="container">
@@ -28,12 +42,13 @@
             </div>
         </div>
     </section>
-    <section class="layout-pt-sm layout-pb-md bg-light-2">
+    
+    <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
       <div class="container">
         <div class="row y-gap-30">
-          <div class="row pt-50">
+          <div class="row pt-50 col-12">
             <div class="text-40 justify flex-center">
-                  <b>Bảng giá vé máy bay Vietjet, Bamboo và Vietnam Airlines</b>
+              <b>Bảng giá vé máy bay Vietjet, Bamboo và Vietnam Airlines</b>
             </div>
             <div>
               Bảng giá vé máy bay Vietjet, Bamboo và Vietnam Airlines các tháng trong năm với giá tốt nhất. Cần là có, tìm là thấy giá vé tốt nhất ở từng thời điểm. Hãy tranh thủ đặt sớm để có giá tốt.<br>
@@ -50,7 +65,7 @@
                   </ol>
                 </p>
             </div>
-                    <div class="col-12">
+                    <div class="col-12 row y-gap-30">
                       <img src="https://vietjet.net/includes/uploads/2017/07/bang-gia-ve-may-bay-vietjet-air.jpg" alt="image" class="col-12 rounded-8">
                         <div class="layout-mt-sm "></div>
 
