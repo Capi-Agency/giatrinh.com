@@ -26,7 +26,7 @@
       </div>
     </div>
   </section>
-  <section class="pt-90">
+  <section style="padding-bottom: 100px;">
     <div class="container">
       <div class="row y-gap-30">
         <div class="col-xl-8">
