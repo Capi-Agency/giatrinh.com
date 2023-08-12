@@ -8,8 +8,8 @@
   <?php include 'commons/nav.php'; ?>
 
   <!-- Body -->
-    <!-- Banner Header -->
-    <section class="section-bg layout-pt-lg layout-pb-lg mt-90">
+  <!-- Banner Header -->
+  <section class="section-bg layout-pt-lg layout-pb-lg mt-90">
     <div class="section-bg__item col-12">
       <img src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="image">
     </div>
@@ -124,20 +124,20 @@
 
         <div class="col-lg-4 col-sm-6">
 
-                                <a href="" class="blogCard -type-1 d-block ">
-                                    <div class="blogCard__image">
-                                        <div class="ratio ratio-4:3 rounded-8">
-                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
-                                        </div>
-                                    </div>
+          <a href="" class="blogCard -type-1 d-block ">
+            <div class="blogCard__image">
+              <div class="ratio ratio-4:3 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+              </div>
+            </div>
 
-                                    <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-                                    </div>
-                                </a>
+            <div class="pt-20">
+              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+            </div>
+          </a>
 
-                            </div>
+        </div>
 
         <div class="col-lg-3 col-sm-6">
 
@@ -363,80 +363,109 @@
 
       <div class="row y-gap-30 pt-40">
 
-      <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
 
-<a href="" class="blogCard -type-1 d-block ">
-    <div class="blogCard__image">
-        <div class="ratio ratio-4:3 rounded-8">
-            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+          <a href="" class="blogCard -type-1 d-block ">
+            <div class="blogCard__image">
+              <div class="ratio ratio-4:3 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+              </div>
+            </div>
+
+            <div class="pt-20">
+              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+            </div>
+          </a>
+
         </div>
-    </div>
 
-    <div class="pt-20">
-        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-    </div>
-</a>
+        <div class="col-lg-3 col-sm-6">
 
-</div>
+          <a href="" class="blogCard -type-1 d-block ">
+            <div class="blogCard__image">
+              <div class="ratio ratio-4:3 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+              </div>
+            </div>
 
-<div class="col-lg-3 col-sm-6">
+            <div class="pt-20">
+              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+            </div>
+          </a>
 
-<a href="" class="blogCard -type-1 d-block ">
-    <div class="blogCard__image">
-        <div class="ratio ratio-4:3 rounded-8">
-            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
-    </div>
 
-    <div class="pt-20">
-        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-    </div>
-</a>
+        <div class="col-lg-3 col-sm-6">
 
-</div>
+          <a href="" class="blogCard -type-1 d-block ">
+            <div class="blogCard__image">
+              <div class="ratio ratio-4:3 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+              </div>
+            </div>
 
-<div class="col-lg-3 col-sm-6">
+            <div class="pt-20">
+              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+            </div>
+          </a>
 
-<a href="" class="blogCard -type-1 d-block ">
-    <div class="blogCard__image">
-        <div class="ratio ratio-4:3 rounded-8">
-            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
-    </div>
 
-    <div class="pt-20">
-        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-    </div>
-</a>
+        <div class="col-lg-3 col-sm-6">
 
-</div>
+          <a href="" class="blogCard -type-1 d-block ">
+            <div class="blogCard__image">
+              <div class="ratio ratio-4:3 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+              </div>
+            </div>
 
-<div class="col-lg-3 col-sm-6">
+            <div class="pt-20">
+              <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+              <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+            </div>
+          </a>
 
-<a href="" class="blogCard -type-1 d-block ">
-    <div class="blogCard__image">
-        <div class="ratio ratio-4:3 rounded-8">
-            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
         </div>
-    </div>
-
-    <div class="pt-20">
-        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
-    </div>
-</a>
-
-</div>
 
       </div>
     </div>
   </section>
 
+ <!-- Email -->
+  <section class="layout-pt-md layout-pb-md bg-dark-2">
+    <div class="container">
+      <div class="row y-gap-30 justify-between items-center">
+        <div class="col-auto">
+          <div class="row y-gap-20  flex-wrap items-center">
+            <div class="col-auto">
+              <div class="icon-newsletter text-60 sm:text-40 text-white"></div>
+            </div>
 
+            <div class="col-auto">
+              <h4 class="text-26 text-white fw-600">Hành trình du lịch cho bạn bắt đầu từ đây</h4>
+              <div class="text-white">Đăng ký nhận tin tức mới về du lịch ngay</div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-auto">
+          <div class="single-field -w-410 d-flex x-gap-10 y-gap-20">
+            <div>
+              <input class="bg-white h-60" type="text" placeholder="Email của bạn">
+            </div>
+
+            <div>
+              <button class="button -md h-60 bg-blue-1 text-white">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <?php include 'commons/footer.php'; ?>
 </body>
