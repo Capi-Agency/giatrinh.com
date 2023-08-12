@@ -87,8 +87,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
                                     </div>
                                 </a>
 
@@ -104,9 +104,9 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Say đắm trước cảnh sắc thiên nhiên tươi đẹp của “xứ sở kim chi” trong tour Hàn Quốc 4N4Đ
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Say đắm trước cảnh sắc thiên nhiên tươi đẹp của “xứ sở kim chi” trong tour Hàn Quốc 4N4Đ
                                         </h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Trải nghiệm tour Hàn Quốc 4N4Đ với giá ưu đãi chỉ 11.990.000 đồng/khách, bạn sẽ có cơ hội check-in nhiều điểm đến nổi tiếng với cảnh đẹp làm say đắm lòng người hay khám phá nền ẩm thực hấp dẫn…
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Trải nghiệm tour Hàn Quốc 4N4Đ với giá ưu đãi chỉ 11.990.000 đồng/khách, bạn sẽ có cơ hội check-in nhiều điểm đến nổi tiếng với cảnh đẹp làm say đắm lòng người hay khám phá nền ẩm thực hấp dẫn…
                                         </div>
                                     </div>
                                 </a>
@@ -123,8 +123,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Tour Trung Quốc 6N5Đ: Ngắm nhìn thiên nhiên hùng vĩ và thưởng thức ẩm thực đặc sắc</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Chiêm ngưỡng khung cảnh thiên nhiên tuyệt sắc và không gian văn hóa sống động của Trung Hoa xinh đẹp cùng tour Trung Quốc 6N5Đ lần này, mang đến cho du khách chuyến hành trình mới mẻ và đầy ấn…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Trung Quốc 6N5Đ: Ngắm nhìn thiên nhiên hùng vĩ và thưởng thức ẩm thực đặc sắc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Chiêm ngưỡng khung cảnh thiên nhiên tuyệt sắc và không gian văn hóa sống động của Trung Hoa xinh đẹp cùng tour Trung Quốc 6N5Đ lần này, mang đến cho du khách chuyến hành trình mới mẻ và đầy ấn…</div>
                                     </div>
                                 </a>
 
@@ -140,8 +140,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Tour Hong Kong 5N4Đ: Hành trình độc đáo trên cung đường Hong Kong – Trung Hoa đầy mê hoặc</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Tour Hong Kong 5N4Đ mở ra hành trình khám phá Trung Hoa xinh đẹp trên cung đường riêng độc đáo, với những điểm đến đẹp mê hoặc, nét văn hóa – lịch sử đặc sắc và nền ẩm thực dễ…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Hong Kong 5N4Đ: Hành trình độc đáo trên cung đường Hong Kong – Trung Hoa đầy mê hoặc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Hong Kong 5N4Đ mở ra hành trình khám phá Trung Hoa xinh đẹp trên cung đường riêng độc đáo, với những điểm đến đẹp mê hoặc, nét văn hóa – lịch sử đặc sắc và nền ẩm thực dễ…</div>
                                     </div>
                                 </a>
 
@@ -157,8 +157,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Đẹp hút mắt với nét hiện đại và xanh mát của “đảo quốc sư tử” trong tour Singapore 3N2Đ</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Singapore nổi tiếng là một trong những quốc gia xanh – sạch – đẹp nhất thế giới. Cùng iVIVU khám phá vẻ đẹp của “đảo quốc sư tử” nhiều hơn trong tour Singapore 3N2Đ với nhiều trải nghiệm mới lạ…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Đẹp hút mắt với nét hiện đại và xanh mát của “đảo quốc sư tử” trong tour Singapore 3N2Đ</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Singapore nổi tiếng là một trong những quốc gia xanh – sạch – đẹp nhất thế giới. Cùng iVIVU khám phá vẻ đẹp của “đảo quốc sư tử” nhiều hơn trong tour Singapore 3N2Đ với nhiều trải nghiệm mới lạ…</div>
                                     </div>
                                 </a>
 
@@ -174,8 +174,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Tour Trung Quốc 5N4Đ: Thưởng ngoạn đất nước Trung Hoa tươi đẹp và đầy sống động</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Với tour Trung Quốc 5N4Đ, du khách có dịp du ngoạn qua những điểm đến có cảnh sắc thiên nhiên lãng mạn, những công trình kiến trúc đặc sắc giao thoa giữa nét cổ kính và hiện đại của vùng…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Trung Quốc 5N4Đ: Thưởng ngoạn đất nước Trung Hoa tươi đẹp và đầy sống động</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Với tour Trung Quốc 5N4Đ, du khách có dịp du ngoạn qua những điểm đến có cảnh sắc thiên nhiên lãng mạn, những công trình kiến trúc đặc sắc giao thoa giữa nét cổ kính và hiện đại của vùng…</div>
                                     </div>
                                 </a>
 
@@ -191,8 +191,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Khám phá Malaysia đa sắc màu theo cách riêng trong tour City Break 3N2Đ Kuala Lumpur</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Tận hưởng kỳ nghỉ ngắn ngày theo cách riêng cùng tour City Break 3N2Đ Kuala Lumpur mang đến bạn hành trình đa sắc màu với những điểm đến, ẩm thực và nét văn hóa đầy thú vị của thành phố,…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Khám phá Malaysia đa sắc màu theo cách riêng trong tour City Break 3N2Đ Kuala Lumpur</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tận hưởng kỳ nghỉ ngắn ngày theo cách riêng cùng tour City Break 3N2Đ Kuala Lumpur mang đến bạn hành trình đa sắc màu với những điểm đến, ẩm thực và nét văn hóa đầy thú vị của thành phố,…</div>
                                     </div>
                                 </a>
 
@@ -208,8 +208,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Chiêm ngưỡng thiên nhiên tươi đẹp bốn mùa trong tour Hàn Quốc 5N4Đ đầy lãng mạn</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Vẻ đẹp của “xứ sở kim chi” luôn làm du khách phải thổn thức với những khung cảnh thiên nhiên tươi đẹp bốn mùa và những điểm đến đầy hấp dẫn, cùng iVIVU trải nghiệm những khoảnh khắc tuyệt vời…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Chiêm ngưỡng thiên nhiên tươi đẹp bốn mùa trong tour Hàn Quốc 5N4Đ đầy lãng mạn</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Vẻ đẹp của “xứ sở kim chi” luôn làm du khách phải thổn thức với những khung cảnh thiên nhiên tươi đẹp bốn mùa và những điểm đến đầy hấp dẫn, cùng iVIVU trải nghiệm những khoảnh khắc tuyệt vời…</div>
                                     </div>
                                 </a>
 
@@ -225,8 +225,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Tour Tây Bắc 3N2Đ: Đến Mù Cang Chải chiêm ngưỡng ruộng bậc thang mùa lúa chín đẹp rực rỡ</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">Vùng đất Tây Bắc luôn làm du khách phải xiêu lòng bởi phong cảnh thiên nhiên tươi đẹp, con người thân thiện cùng văn hóa giàu bản sắc. Hãy đến tour Tây Bắc 3N2Đ để khám phá nhiều hơn vùng…</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Tây Bắc 3N2Đ: Đến Mù Cang Chải chiêm ngưỡng ruộng bậc thang mùa lúa chín đẹp rực rỡ</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Vùng đất Tây Bắc luôn làm du khách phải xiêu lòng bởi phong cảnh thiên nhiên tươi đẹp, con người thân thiện cùng văn hóa giàu bản sắc. Hãy đến tour Tây Bắc 3N2Đ để khám phá nhiều hơn vùng…</div>
                                     </div>
                                 </a>
 
@@ -334,8 +334,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -351,8 +351,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -368,8 +368,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -385,8 +385,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -402,8 +402,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -419,8 +419,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -436,8 +436,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -453,8 +453,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -470,8 +470,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -583,8 +583,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -600,8 +600,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -617,8 +617,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -634,8 +634,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -651,8 +651,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -668,8 +668,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -685,8 +685,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -702,8 +702,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -719,8 +719,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -832,8 +832,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -849,8 +849,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -866,8 +866,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -883,8 +883,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -900,8 +900,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -917,8 +917,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -934,8 +934,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -951,8 +951,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -968,8 +968,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1081,8 +1081,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1098,8 +1098,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1115,8 +1115,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1132,8 +1132,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1149,8 +1149,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1166,8 +1166,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1183,8 +1183,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1200,8 +1200,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1217,8 +1217,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1330,8 +1330,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1347,8 +1347,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1364,8 +1364,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1381,8 +1381,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1398,8 +1398,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1415,8 +1415,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1432,8 +1432,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1449,8 +1449,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1466,8 +1466,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1579,8 +1579,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1596,8 +1596,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1613,8 +1613,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1630,8 +1630,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1647,8 +1647,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1664,8 +1664,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1681,8 +1681,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">10 European ski destinations you should visit this winter</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1698,8 +1698,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Booking travel during Corona: good advice in an uncertain time</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
@@ -1715,8 +1715,8 @@
                                     </div>
 
                                     <div class="pt-20">
-                                        <h4 class="text-dark-1 text-18 fw-500">Where can I go? 5 amazing countries that are open right now</h4>
-                                        <div class="text-light-1 text-15 lh-14 mt-5">April 06, 2022</div>
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
                                     </div>
                                 </a>
 
