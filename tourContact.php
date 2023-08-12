@@ -88,7 +88,7 @@
 
           <div class="col-auto">
             <div class="text-14 text-light-1">Cần hỗ trợ trực tiếp ?</div>
-            <div class="text-18 fw-500 mt-10">vietprotravel@gmail.com/div>
+            <div class="text-18 fw-500 mt-10">vietprotravel@gmail.com </div>
           </div>
 
           <div class="col-auto">
