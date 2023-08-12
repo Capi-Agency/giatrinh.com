@@ -24,7 +24,7 @@
                 <div class="d-flex mt-3 justify-center text-center text-white-1">
                     <div><a class="text-white p-2" href="index.php">Trang chủ</a></div>
                     <div class="text-white">&gt;</div>
-                    <div><a class="text-white p-2" href="#">Giới thiệu</a></div>
+                    <div><a class="text-white p-2" href="#">XKLD Nhật Bản</a></div>
                 </div>
             </div>
         </div>
