@@ -8,16 +8,21 @@
   <?php include 'commons/nav.php'; ?>
 
   <!-- Body -->
-  <section class="section-bg layout-pt-lg layout-pb-lg">
+    <!-- Banner Header -->
+    <section class="section-bg layout-pt-lg layout-pb-lg mt-90">
     <div class="section-bg__item col-12">
-      <img src="img/pages/about/1.png" alt="image">
+      <img src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="image">
     </div>
-
     <div class="container">
       <div class="row justify-center text-center">
         <div class="col-xl-6 col-lg-8 col-md-10">
-          <h1 class="text-40 md:text-25 fw-600 text-white">Looking for joy?</h1>
-          <div class="text-white mt-15">Your trusted trip companion</div>
+          <h1 class="text-60 md:text-25 fw-700 text-white">GiaTrinh</h1>
+          <div class="text-white">Người bạn du lịch đồng hành cùng bạn.</div>
+        </div>
+        <div class="d-flex mt-3 justify-center text-center text-white-1">
+          <div><a class="text-white p-2" href="index.php">Trang chủ</a></div>
+          <div class="text-white">&gt;</div>
+          <div><a class="text-white p-2" href="#">Tuyển dụng XKLĐ</a></div>
         </div>
       </div>
     </div>
