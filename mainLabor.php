@@ -7,9 +7,18 @@
     <?php include 'commons/nav.php';?>
 
     <!-- Body -->
-    <section data-anim-wrap="" class="masthead -type-3 relative z-5 animated">
-      <div data-anim-child="fade delay-1" class="masthead__bg bg-dark-3 is-in-view">
-        <img src="https://hotrotuvanxkld.com/wp-content/uploads/2019/09/slide-XKLD-2.png" alt="image">
+    <section class="section-bg layout-pt-lg layout-pb-lg">
+      <div class="section-bg__item col-12">
+        <img src="img/pages/about/1.png" alt="image">
+      </div>
+
+      <div class="container">
+        <div class="row justify-center text-center">
+          <div class="col-xl-6 col-lg-8 col-md-10">
+            <h1 class="text-40 md:text-25 fw-600 text-white">Looking for joy?</h1>
+            <div class="text-white mt-15">Your trusted trip companion</div>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -178,127 +187,103 @@
         </div>
       </div>
     </section>
-    
-    <section data-anim-wrap="" class="masthead -type-7 animated">
-      <div class="masthead-slider js-masthead-slider-7 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-        <div class="swiper-wrapper" id="swiper-wrapper-a030e23219147f6a" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-5160px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 1720px;">
-            <div class="row justify-center text-center">
-              <div class="col-auto">
-                <div class="masthead__content">
-                  <div class="masthead__bg">
-                    <img src="img/masthead/7/bg.png" alt="image">
+    <section class="section-bg layout-pt-lg layout-pb-lg bg-light-2">
+      <div class="section-bg__item col-12">
+        <img src="img/backgrounds/11.png" alt="image">
+      </div>
+
+      <div class="container">
+        <div class="row justify-center pt-50 md:pt-30">
+          <div class="col-xl-7 col-lg-10">
+            <div class="overflow-hidden js-section-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-watch-progress swiper-backface-hidden" data-pagination="js-testimonials-pag" data-slider-cols="base-1">
+              <div class="swiper-wrapper" id="swiper-wrapper-35e196ea47749bec" aria-live="polite" style="height: 296px;">
+
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 740px;">
+                  <div class="text-center">
+                   
+
+                    <div class="text-22 md:text-18 fw-600 text-white">
+                     ĐI XUẤT KHẨU LAO ĐỘNG TẠI NHẬT BẢN</div>
+
+                    <div class="text-white mt-40 sm:mt-30">
+                      <h5 class="text-15 lh-15 fw-500">Người lao động được học hỏi và làm việc trong môi trường hiện đại, kỷ luật cao, được học ngoại ngữ để phục vụ cho công việc. Khi về nước, người lao động có thể vận dụng kinh nghiệm và tiếng để xin vào các công Nhật Bản tại Việt Nam vô cùng dễ dàng với mức lương cao… Cùng với đó là các chế độ đãi ngộ tốt, lương cao, nhiều việc làm thêm ở Nhật Bản giúp người lao động tích lũy được một số tiền lớn khi trở về nước.</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 740px;">
+                  <div class="text-center">
+                   
+
+                    <div class="text-22 md:text-18 fw-600 text-white">
+                     ĐI XUẤT KHẨU LAO ĐỘNG TẠI CHLB ĐỨC  </div>
+
+                    <div class="text-white mt-40 sm:mt-30">
+                      <h5 class="text-15 lh-15 fw-500">Đi Xuất Khẩu Lao Động Đức chưa bao giờ dễ dàng với chi phí hợp lý như thời điểm hiện tại. Đức từ trước đến nay luôn được coi là thiên đường cho Xuất Khẩu Lao Động đến từ Việt Nam vì nhiều lý do. Với điều kiện làm việc tốt và một mức lương theo quy định cao đến lý tưởng từ 2.300 – 2.700 Euro/tháng thì Đức luôn trở thành lựa chọn hàng đầu cho những người lao động chưa biết phải đi nước nào để lập nghiệp.</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 740px;">
+                  <div class="text-center">
+                   
+
+                    <div class="text-22 md:text-18 fw-600 text-white">
+                     ĐI XUẤT KHẨU LAO ĐỘNG TẠI HÀN QUỐC  </div>
+
+                    <div class="text-white mt-40 sm:mt-30">
+                      <h5 class="text-15 lh-15 fw-500">Người lao động được chọn vào làm việc tại các doanh nghiệp hàng đầu của Hàn Quốc. Được hưởng các chính sách lương thưởng, phúc lợi theo như hợp đồng đã ký với doanh nghiệp Hàn Quốc sử dụng lao động và quy định chung của Chương trình lao động xuất khẩu. Được hưởng mức lương cao theo quy định của chính phủ Hàn Quốc về mức thu nhập của từng vùng (Lương cơ bản lớn hơn 35 triệu/Tháng + Nhiều việc làm thêm).</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 740px;">
+                  <div class="text-center">
+                   
+
+                    <div class="text-22 md:text-18 fw-600 text-white">
+                     ĐI XUẤT KHẨU LAO ĐỘNG TẠI ĐÀI LOAN  </div>
+
+                    <div class="text-white mt-40 sm:mt-30">
+                      <h5 class="text-15 lh-15 fw-500">Được làm việc trong môi trường chuyên nghiệp, chuẩn theo quy định của chính phủ Đài Loan. Khi về nước có thể tích lũy được từ 300 – 400  triệu sau khi trừ hết các khoản chi phí. Được học tập, rèn luyện kỹ năng, ý thức tổ chức kỷ luật, tác phong làm việc trong môi trường chuyên nghiệp, hiện đại. Được các Doanh nghiệp Đài Loan tuyển dụng sau khi hết hợp đồng trở về nước (Nếu làm việc tại Việt Nam lương >15 triệu/tháng).</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="pt-40 lg:pt-40 sm:pt-30">
+
+                <div class="d-flex x-gap-15 items-center justify-center pt-30">
+                  <div class="col-auto">
+                    <button class="d-flex items-center text-24 arrow-left-hover text-white js-prev swiper-button-disabled" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-35e196ea47749bec" aria-disabled="true">
+                      <i class="icon icon-arrow-left"></i>
+                    </button>
                   </div>
 
-                
+                  <div class="col-auto">
+                    <div class="pagination -dots text-white-50 js-testimonials-pag swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><div class="pagination__item is-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></div><div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 2"></div><div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 3"></div><div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 4"></div><div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 5"></div></div>
+                  </div>
 
-
+                  <div class="col-auto">
+                    <button class="d-flex items-center text-24 arrow-right-hover text-white js-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-35e196ea47749bec" aria-disabled="false">
+                      <i class="icon icon-arrow-right"></i>
+                    </button>
+                  </div>
                 </div>
+
               </div>
-            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
           </div>
-
-          <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 1720px;">
-            <div class="row justify-center text-center">
-              <div class="col-auto">
-                <div class="masthead__content">
-                  <div class="masthead__bg">
-                    <img src="img/masthead/7/bg.png" alt="image">
-                  </div>
-
-                  <div data-anim-child="slide-up delay-1" class="text-white is-in-view">
-                    Discover amzaing places at exclusive deals
-                  </div>
-
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 1720px;">
-            <div class="row justify-center text-center">
-              <div class="col-auto">
-                <div class="masthead__content">
-                  <div class="masthead__bg">
-                    <img src="img/masthead/7/bg.png" alt="image">
-                  </div>
-
-                  <div data-anim-child="slide-up delay-1" class="text-white is-in-view">
-                    Discover amzaing places at exclusive deals
-                  </div>
-
-                  <h1 data-anim-child="slide-up delay-2" class="text-60 lg:text-40 md:text-30 text-white is-in-view">
-                    Unique Houses Are Waiting<br class="lg:d-none"> For You
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 1720px;">
-            <div class="row justify-center text-center">
-              <div class="col-auto">
-                <div class="masthead__content">
-                  <div class="masthead__bg">
-                    <img src="img/masthead/7/bg.png" alt="image">
-                  </div>
-
-                  <div data-anim-child="slide-up delay-1" class="text-white is-in-view">
-                    Discover amzaing places at exclusive deals
-                  </div>
-
-                  <h1 data-anim-child="slide-up delay-2" class="text-60 lg:text-40 md:text-30 text-white is-in-view">
-                    Unique Houses Are Waiting<br class="lg:d-none"> For You
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 1720px;">
-            <div class="row justify-center text-center">
-              <div class="col-auto">
-                <div class="masthead__content">
-                  <div class="masthead__bg">
-                    <img src="img/masthead/7/bg.png" alt="image">
-                  </div>
-
-                  <div data-anim-child="slide-up delay-1" class="text-white is-in-view">
-                    Discover amzaing places at exclusive deals
-                  </div>
-
-                  <h1 data-anim-child="slide-up delay-2" class="text-60 lg:text-40 md:text-30 text-white is-in-view">
-                    Unique Houses Are Waiting<br class="lg:d-none"> For You
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div></div>
-
-        <div class="masthead-slider__nav -prev js-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a030e23219147f6a">
-          <button class="button -outline-white text-white size-50 rounded-full">
-            <i class="icon-arrow-left"></i>
-          </button>
         </div>
-
-        <div class="masthead-slider__nav -next js-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a030e23219147f6a">
-          <button class="button -outline-white text-white size-50 rounded-full">
-            <i class="icon-arrow-right"></i>
-          </button>
-        </div>
-      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-    
+      </div>
     </section>
+
     <section class="layout-pt-md layout-pb-md">
       <div class="container">
         <div class="row justify-center text-center">
-          <div class="col-auto">
-            <div class="sectionTitle -md">
-              <h2 class="sectionTitle__title">TẠI SAO NÊN ĐĂNG KÝ NGAY TẠI ĐÂY?</h2>
-              <p class=" sectionTitle__text mt-5 sm:mt-0"></p>
-            </div>
-          </div>
+         
         </div>
 
         <div class="row y-gap-40 justify-between pt-50">
