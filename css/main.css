@@ -3695,9 +3695,8 @@ h6 {
     pointer-events: none;
   }
   .header .header-menu .menu .mega__content {
-    display: flex;
-    justify-content: start;
-    gap: 52px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
   }
   .header .header-menu .menu .mega__image {
     width: 270px;
@@ -3788,6 +3787,7 @@ h6 {
     height: 100%;
     padding: 20px;
     padding-top: 40px;
+    background-color: white;
   }
   .header .header-menu .menu ul {
     pointer-events: none;
@@ -4035,7 +4035,7 @@ h6 {
 }
 
 .mainSearch.-col-3-big .button-grid {
-  grid-template-columns: 1fr 0.6fr 0.6fr auto;
+  grid-template-columns: 296px 296px auto;
 }
 
 @media (max-width: 991px) {
