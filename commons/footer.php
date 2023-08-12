@@ -7,12 +7,14 @@
 
           <div class="mt-30">
             <div class="text-14 mt-30">Hotline</div>
-            <a href="#" class="text-18 fw-500 text-blue-1 mt-5">0936430555 0964952555</a>
+            <a href="tel:0936 430 555" class="text-18 fw-500 text-blue-1 mt-5">0936 430 555</a>
+            <br>
+            <a href="tel:0964 952 555" class="text-18 fw-500 text-blue-1 mt-5">0964 952 555</a>
           </div>
 
           <div class="mt-26">
             <div class="text-14 mt-26">Gmail</div>
-            <a href="#" class="text-18 fw-500 text-blue-1 mt-5">giatrinhtravel@gmail.com</a>
+            <a href="mailto:giatrinhtravel@gmail.com" class="text-18 fw-500 text-blue-1 mt-5">giatrinhtravel@gmail.com</a>
           </div>
         </div>
 
@@ -21,15 +23,15 @@
           <div class="d-flex y-gap-10 flex-column">
             <a href="aboutUs.php">Về chúng tôi</a>
             <a href="tourExp.php">Kinh nghiệm du lịch</a>
-            <a href="tourContact.php">liên hệ</a>
+            <a href="tourContact.php">Liên hệ</a>
             <a href="insurance.php">Bảo hiểm</a>
           </div>
         </div>
         <div class="col-xl-2 col-lg-4 col-sm-6">
           <h5 class="text-16 fw-500 mb-30">Dịch vụ khác</h5>
           <div class="d-flex y-gap-10 flex-column">
-            <a href="serviceCar.php">Dịch vụ thuê xe</a>
-            <a href="servicePlane.php">Dịch vụ mua vé máy bay</a>
+            <a href="serviceCar.php">Dịch vụ đặt hộ xe</a>
+            <a href="servicePlane.php">Dịch vụ đặt hộ máy bay</a>
             <a href="serviceVisa.php">Dịch vụ đăng ký Visa</a>
             <a href="mainLabor.php">Tuyển dụng XKLĐ</a>
           </div>
