@@ -171,7 +171,8 @@
             <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
              <script src="js/vendors.js"></script>
             <script src="js/main.js"></script>
-
+    <!-- Email -->
+    <?php include 'commons/email.php';?>
     <!-- Footer -->
     <?php include 'commons/footer.php';?>
 </body>
