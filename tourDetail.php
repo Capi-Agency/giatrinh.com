@@ -238,13 +238,13 @@
               </div>
               <div class="w-360 lg:w-full px-30 py-30 mt-20 rounded-4 border-light bg-white shadow-4">
                 <div class="d-flex items-center">
-                  <div class="text-14 lh-16 ml-10">Chương trình tour</div>
+                  <div class="text-14 lh-16 ml-10 fw-600">Chương trình tour</div>
                 </div>
                 <div class="d-flex items-center pt-20">
-                  <div class="text-14 lh-16 ml-10">Chính sách tour</div>
+                  <div class="text-14 lh-16 ml-10 fw-600">Chính sách tour</div>
                 </div>
                 <div class="d-flex items-center pt-20">
-                  <div class="text-14 lh-16 ml-10">Điều khoản & quy định</div>
+                  <div class="text-14 lh-16 ml-10 fw-600">Điều khoản & quy định</div>
                 </div>
               </div>
             </div>
