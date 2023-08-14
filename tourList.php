@@ -3352,7 +3352,7 @@
   </section>
 
   <!-- Results -->
-  <section class="layout-pt-sm layout-pb-lg">
+  <section class="layout-pt-sm layout-pb-md">
     <div class="container">
       <div class="row y-gap-30">
         <!-- Aside -->
@@ -4121,8 +4121,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- Email -->
   <?php include 'commons/email.php'; ?>
