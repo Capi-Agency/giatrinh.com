@@ -28,33 +28,13 @@
       </div>
     </div>
   </section>
+  <!-- Tour chi tiết -->
   <section class="pt-40">
     <div class="container">
       <div class="row y-gap-15 justify-between items-end">
         <div class="col-auto">
           <h1 class="text-30 fw-600">Tour Hà Nội - Cam Ranh - Ninh Thuận - Nha Trang - Hà Nội</h1>
-
           <div class="row x-gap-20 y-gap-20 items-center pt-10">
-            <div class="col-auto">
-              <div class="d-flex items-center">
-                <div class="d-flex x-gap-5 items-center">
-
-                  <i class="icon-star text-10 text-yellow-1"></i>
-
-                  <i class="icon-star text-10 text-yellow-1"></i>
-
-                  <i class="icon-star text-10 text-yellow-1"></i>
-
-                  <i class="icon-star text-10 text-yellow-1"></i>
-
-                  <i class="icon-star text-10 text-yellow-1"></i>
-
-                </div>
-
-                <div class="text-14 text-light-1 ml-10">38 đánh giá</div>
-              </div>
-            </div>
-
             <div class="col-auto">
               <div class="row x-gap-10 items-center">
                 <div class="col-auto">
@@ -65,18 +45,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <div class="row x-gap-10 y-gap-10">
-            <div class="col-auto">
-              <button class="button px-15 py-10 -blue-1 bg-light-2">
-                <i class="icon-share mr-10"></i>
-                Chia sẻ
-              </button>
-            </div>
-
           </div>
         </div>
       </div>
@@ -172,7 +140,7 @@
 
           <div class="row x-gap-40 y-gap-40">
             <div class="col-12">
-              <h3 class="text-22 fw-500">Chương trình tour</h3>
+              <h3 class="text-22 fw-600">Chương trình tour</h3>
 
               <p class="text-dark-1 text-15 mt-20">
               <div class="text-center fw-700">CHƯƠNG TRÌNH DU LỊCH HÈ 2020</div>
@@ -196,7 +164,7 @@
             <div class="mt-40 border-top-light">
               <div class="border-bottom-light row x-gap-40 y-gap-40 py-5">
                 <div class="col-12">
-                  <h3 class="text-22 fw-500">Chính sách tour</h3>
+                  <h3 class="text-22 fw-600">Chính sách tour</h3>
                   <div class="mt-10">
                     Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
                     khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
@@ -208,7 +176,7 @@
               </div>
               <div class="border-bottom-light row x-gap-40 y-gap-40 py-20">
                 <div class="col-12">
-                  <h3 class="text-22 fw-500">Điều khoản & quy định</h3>
+                  <h3 class="text-22 fw-600">Điều khoản & quy định</h3>
                   <div class="mt-10">
                     Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
                     khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
