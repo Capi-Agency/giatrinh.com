@@ -3332,7 +3332,8 @@
                         <i class="icon-arrow-right text-24"></i>
                       </button>
                       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
                   </div>
                 </div>
               </div>
