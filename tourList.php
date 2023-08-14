@@ -44,7 +44,7 @@
                   <h4 class="text-15 fw-500 ls-2 lh-16">Địa điểm</h4>
 
                   <div class="text-15 text-light-1 ls-2 lh-16">
-                    <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search js-dd-focus">
+                    <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search js-dd-focus" id="tour_list_input_key" oninput="searchTourByKey()">
                   </div>
                 </div>
 
@@ -3332,801 +3332,327 @@
                         <i class="icon-arrow-right text-24"></i>
                       </button>
                       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Search -->
-              <div class="button-item">
-                <button class="mainSearch__submit button -dark-1 h-60 px-35 col-12 rounded-4 bg-blue-1 text-white">
-                  <i class="icon-search text-20 mr-10"></i>
-                  Tìm kiếm
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Results -->
-  <section class="layout-pt-sm layout-pb-md">
-    <div class="container">
-      <div class="row y-gap-30">
-        <!-- Aside -->
-        <div class="col-xl-3 col-lg-4 lg:d-none">
-          <aside class="sidebar y-gap-40">
-            <!-- Kiểu tour -->
-            <div class="sidebar__item -no-border">
-              <h5 class="text-18 fw-500 mb-10">Kiểu tour</h5>
-              <div class="sidebar-checkbox">
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tour dài ngày</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">92</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tour ngắn ngày </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">45</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tour theo mùa</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">21</div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Giá cả -->
-            <div class="sidebar__item -no-border">
-              <h5 class="text-18 fw-500 mb-10">Giá cả</h5>
-              <div class="sidebar-checkbox">
-
-                <!-- Giá tăng dần -->
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Giá tăng dần</div>
-
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Giá giảm dần -->
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Giá giảm dần</div>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Ngôn ngữ -->
-            <div class="sidebar__item">
-              <h5 class="text-18 fw-500 mb-10">Ngôn ngữ</h5>
-              <div class="sidebar-checkbox">
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tiếng Anh</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">92</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tiếng Việt</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">45</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tiếng Hàn</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">45</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tiếng Nhật</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">21</div>
-                  </div>
-                </div>
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Tiếng Trung</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">21</div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </aside>
-        </div>
-
-        <div class="col-xl-9 col-lg-8">
-          <div class="row y-gap-10 items-center justify-between">
-            <!-- Results -->
-            <div class="col-auto">
-              <div class="text-18"><span class="fw-500">124</span> kết quả</div>
-            </div>
-
-            <div class="col-auto">
-              <div class="row x-gap-20 y-gap-20">
-                <div class="col-auto">
-                  <button class="button -blue-1 h-40 px-20 rounded-100 bg-blue-1-05 text-15 text-blue-1">
-                    <i class="icon-up-down text-14 mr-10"></i>
-                    Lọc
+                <!-- Search -->
+                <div class="button-item">
+                  <button class="mainSearch__submit button -dark-1 h-60 px-35 col-12 rounded-4 bg-blue-1 text-white" onclick="searchTourByKey()">
+                    <i class="icon-search text-20 mr-10"></i>
+                    Tìm kiếm
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="mt-30"></div>
-
-          <!-- Tour Card -->
-          <div class="row y-gap-30">
-            <div class="col-12">
-
-              <div class="border-top-light pt-30">
-                <div class="row x-gap-20 y-gap-20">
-                  <div class="col-md-auto">
-
-                    <!-- Image -->
-                    <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-                      <div class="cardImage__content">
-
-
-                        <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                          <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-250px, 0px, 0px);" id="swiper-wrapper-c59defdd25c36c65" aria-live="polite">
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 250px;" role="group" aria-label="2 / 3">
-                              <img class="col-12" src="img/lists/tour/1/3.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-                          </div>
-
-                          <div class="cardImage-slider__pagination js-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                            <div class="pagination__item is-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 2"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 3"></div>
-                          </div>
-
-                          <div class="cardImage-slider__nav -prev">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-left text-10"></i>
-                            </button>
-                          </div>
-
-                          <div class="cardImage-slider__nav -next">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-right text-10"></i>
-                            </button>
-                          </div>
-                          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-md">
-                    <div class="row x-gap-10 items-center">
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tour dài ngày</p>
-                      </div>
-                      <div class="col-auto">
-                        <div class="size-3 rounded-full bg-light-1 mb-5"></div>
-                      </div>
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tiếng Trung</p>
-                      </div>
-                    </div>
-
-                    <h3 class="text-18 lh-16 fw-500">VIÊN GIA GIỚI - HỒ BẢO PHONG - PHÙ DUNG TRẤN - PHƯỢNG HOÀNG CỔ TRẤN (TGTQ7)</h3>
-                    <p class="text-14 lh-14 mt-5">Trung Quốc</p>
-
-                    <div class="text-14 lh-15 fw-500 mt-20">Thoi gian <span class="fw-600">6 Ngày 5 Đêm</span></div>
-                    <div class="text-14 fw-500 lh-15 mt-5">Giờ khởi hành <span class="fw-600 text-green-2">20 Tháng 8 2023</span></div>
-                  </div>
-
-                  <div class="col-md-auto text-right d-flex align-items-end flex-column md:text-left">
-
-                    <!-- Content -->
-                    <div class="text-14 lh-14 text-light-1">24 đánh giá</div>
-
-                    <!-- Button -->
-                    <div class="mt-auto">
-                      <div class="text-14 text-light-1 md:mt-20">Từ</div>
-                      <div class="text-24 lh-12 fw-700 mt-5 text-blue-1">12,590,000 ₫</div>
-                      <a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-                        Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row y-gap-30">
-            <div class="col-12">
-
-              <div class="border-top-light pt-30">
-                <div class="row x-gap-20 y-gap-20">
-                  <div class="col-md-auto">
-
-                    <!-- Image -->
-                    <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-                      <div class="cardImage__content">
-
-
-                        <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                          <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-250px, 0px, 0px);" id="swiper-wrapper-c59defdd25c36c65" aria-live="polite">
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 250px;" role="group" aria-label="2 / 3">
-                              <img class="col-12" src="img/lists/tour/1/3.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-                          </div>
-
-                          <div class="cardImage-slider__pagination js-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                            <div class="pagination__item is-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 2"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 3"></div>
-                          </div>
-
-                          <div class="cardImage-slider__nav -prev">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-left text-10"></i>
-                            </button>
-                          </div>
-
-                          <div class="cardImage-slider__nav -next">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-right text-10"></i>
-                            </button>
-                          </div>
-                          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-md">
-                    <div class="row x-gap-10 items-center">
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tour dài ngày</p>
-                      </div>
-                      <div class="col-auto">
-                        <div class="size-3 rounded-full bg-light-1 mb-5"></div>
-                      </div>
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tiếng Trung</p>
-                      </div>
-                    </div>
-
-                    <h3 class="text-18 lh-16 fw-500">VIÊN GIA GIỚI - HỒ BẢO PHONG - PHÙ DUNG TRẤN - PHƯỢNG HOÀNG CỔ TRẤN (TGTQ7)</h3>
-                    <p class="text-14 lh-14 mt-5">Trung Quốc</p>
-
-                    <div class="text-14 lh-15 fw-500 mt-20">Thoi gian <span class="fw-600">6 Ngày 5 Đêm</span></div>
-                    <div class="text-14 fw-500 lh-15 mt-5">Giờ khởi hành <span class="fw-600 text-green-2">20 Tháng 8 2023</span></div>
-                  </div>
-
-                  <div class="col-md-auto text-right d-flex align-items-end flex-column md:text-left">
-
-                    <!-- Content -->
-                    <div class="text-14 lh-14 text-light-1">24 đánh giá</div>
-
-                    <!-- Button -->
-                    <div class="mt-auto">
-                      <div class="text-14 text-light-1 md:mt-20">Từ</div>
-                      <div class="text-24 lh-12 fw-700 mt-5 text-blue-1">12,590,000 ₫</div>
-                      <a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-                        Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row y-gap-30">
-            <div class="col-12">
-
-              <div class="border-top-light pt-30">
-                <div class="row x-gap-20 y-gap-20">
-                  <div class="col-md-auto">
-
-                    <!-- Image -->
-                    <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-                      <div class="cardImage__content">
-
-
-                        <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                          <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-250px, 0px, 0px);" id="swiper-wrapper-c59defdd25c36c65" aria-live="polite">
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 250px;" role="group" aria-label="2 / 3">
-                              <img class="col-12" src="img/lists/tour/1/3.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-                          </div>
-
-                          <div class="cardImage-slider__pagination js-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                            <div class="pagination__item is-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 2"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 3"></div>
-                          </div>
-
-                          <div class="cardImage-slider__nav -prev">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-left text-10"></i>
-                            </button>
-                          </div>
-
-                          <div class="cardImage-slider__nav -next">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-right text-10"></i>
-                            </button>
-                          </div>
-                          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                        </div>
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-md">
-                    <div class="row x-gap-10 items-center">
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tour dài ngày</p>
-                      </div>
-                      <div class="col-auto">
-                        <div class="size-3 rounded-full bg-light-1 mb-5"></div>
-                      </div>
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tiếng Trung</p>
-                      </div>
-                    </div>
-
-                    <h3 class="text-18 lh-16 fw-500">VIÊN GIA GIỚI - HỒ BẢO PHONG - PHÙ DUNG TRẤN - PHƯỢNG HOÀNG CỔ TRẤN (TGTQ7)</h3>
-                    <p class="text-14 lh-14 mt-5">Trung Quốc</p>
-
-                    <div class="text-14 lh-15 fw-500 mt-20">Thoi gian <span class="fw-600">6 Ngày 5 Đêm</span></div>
-                    <div class="text-14 fw-500 lh-15 mt-5">Giờ khởi hành <span class="fw-600 text-green-2">20 Tháng 8 2023</span></div>
-                  </div>
-
-                  <div class="col-md-auto text-right d-flex align-items-end flex-column md:text-left">
-
-                    <!-- Content -->
-                    <div class="text-14 lh-14 text-light-1">24 đánh giá</div>
-
-                    <!-- Button -->
-                    <div class="mt-auto">
-                      <div class="text-14 text-light-1 md:mt-20">Từ</div>
-                      <div class="text-24 lh-12 fw-700 mt-5 text-blue-1">12,590,000 ₫</div>
-                      <a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-                        Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row y-gap-30">
-            <div class="col-12">
-
-              <div class="border-top-light pt-30">
-                <div class="row x-gap-20 y-gap-20">
-                  <div class="col-md-auto">
-
-                    <!-- Image -->
-                    <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-                      <div class="cardImage__content">
-
-
-                        <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                          <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-250px, 0px, 0px);" id="swiper-wrapper-c59defdd25c36c65" aria-live="polite">
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 250px;" role="group" aria-label="2 / 3">
-                              <img class="col-12" src="img/lists/tour/1/3.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 250px;" role="group" aria-label="3 / 3">
-                              <img class="col-12" src="img/lists/tour/1/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 250px;" role="group" aria-label="1 / 3">
-                              <img class="col-12" src="img/lists/tour/1/2.png" alt="image">
-                            </div>
-                          </div>
-
-                          <div class="cardImage-slider__pagination js-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                            <div class="pagination__item is-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 2"></div>
-                            <div class="pagination__item" tabindex="0" role="button" aria-label="Go to slide 3"></div>
-                          </div>
-
-                          <div class="cardImage-slider__nav -prev">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-left text-10"></i>
-                            </button>
-                          </div>
-
-                          <div class="cardImage-slider__nav -next">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-c59defdd25c36c65">
-                              <i class="icon-chevron-right text-10"></i>
-                            </button>
-                          </div>
-                          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-md">
-                    <div class="row x-gap-10 items-center">
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tour dài ngày</p>
-                      </div>
-                      <div class="col-auto">
-                        <div class="size-3 rounded-full bg-light-1 mb-5"></div>
-                      </div>
-                      <div class="col-auto">
-                        <p class="text-14 lh-14 mb-5">Tiếng Trung</p>
-                      </div>
-                    </div>
-
-                    <h3 class="text-18 lh-16 fw-500">VIÊN GIA GIỚI - HỒ BẢO PHONG - PHÙ DUNG TRẤN - PHƯỢNG HOÀNG CỔ TRẤN (TGTQ7)</h3>
-                    <p class="text-14 lh-14 mt-5">Trung Quốc</p>
-
-                    <div class="text-14 lh-15 fw-500 mt-20">Thoi gian <span class="fw-600">6 Ngày 5 Đêm</span></div>
-                    <div class="text-14 fw-500 lh-15 mt-5">Giờ khởi hành <span class="fw-600 text-green-2">20 Tháng 8 2023</span></div>
-                  </div>
-
-                  <div class="col-md-auto text-right d-flex align-items-end flex-column md:text-left">
-
-                    <!-- Content -->
-                    <div class="text-14 lh-14 text-light-1">24 đánh giá</div>
-
-                    <!-- Button -->
-                    <div class="mt-auto">
-                      <div class="text-14 text-light-1 md:mt-20">Từ</div>
-                      <div class="text-24 lh-12 fw-700 mt-5 text-blue-1">12,590,000 ₫</div>
-                      <a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-                        Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination -->
-          <div class="border-top-light mt-30 pt-30">
-            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
-              <div class="col-auto md:order-1">
-                <button class="button -blue-1 size-40 rounded-full border-light">
-                  <i class="icon-chevron-left text-12"></i>
-                </button>
-              </div>
-
-              <div class="col-md-auto md:order-3">
-                <div class="row x-gap-20 y-gap-20 items-center md:d-none">
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">1</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">3</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full bg-light-2">4</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">5</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">...</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">20</div>
-
-                  </div>
-
-                </div>
-
-                <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">1</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
-
-                  </div>
-
-                  <div class="col-auto">
-
-                    <div class="size-40 flex-center rounded-full">3</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-auto md:order-2">
-                <button class="button -blue-1 size-40 rounded-full border-light">
-                  <i class="icon-chevron-right text-12"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Email -->
-  <?php include 'commons/email.php'; ?>
-  <!-- Footer -->
-  <?php include 'commons/footer.php'; ?>
-</body>
+    <!-- Results -->
+    <section class="layout-pt-sm layout-pb-md">
+      <div class="container">
+        <div class="row y-gap-30">
+          <!-- Aside -->
+          <div class="col-xl-3 col-lg-4 lg:d-none">
+            <aside class="sidebar y-gap-40">
+              <!-- Kiểu tour -->
+              <div class="sidebar__item -no-border">
+                <h5 class="text-18 fw-500 mb-10">Kiểu tour</h5>
+                <div class="sidebar-checkbox">
 
-</html>
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tour dài ngày</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">92</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tour ngắn ngày </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">45</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tour theo mùa</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">21</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Giá cả -->
+              <div class="sidebar__item -no-border">
+                <h5 class="text-18 fw-500 mb-10">Giá cả</h5>
+                <div class="sidebar-checkbox">
+
+                  <!-- Giá tăng dần -->
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Giá tăng dần</div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Giá giảm dần -->
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Giá giảm dần</div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Ngôn ngữ -->
+              <div class="sidebar__item">
+                <h5 class="text-18 fw-500 mb-10">Ngôn ngữ</h5>
+                <div class="sidebar-checkbox">
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tiếng Anh</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">92</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tiếng Việt</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">45</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tiếng Hàn</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">45</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tiếng Nhật</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">21</div>
+                    </div>
+                  </div>
+
+                  <div class="row y-gap-10 items-center justify-between">
+                    <div class="col-auto">
+
+                      <div class="d-flex items-center">
+                        <div class="form-checkbox ">
+                          <input type="checkbox" name="name">
+                          <div class="form-checkbox__mark">
+                            <div class="form-checkbox__icon icon-check"></div>
+                          </div>
+                        </div>
+
+                        <div class="text-15 ml-10">Tiếng Trung</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">21</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-xl-9 col-lg-8">
+            <div class="row y-gap-10 items-center justify-between">
+              <!-- Results -->
+              <div class="col-auto">
+                <div class="text-18"><span class="fw-500" id="total_tour_content">124</span> kết quả</div>
+              </div>
+
+              <div class="col-auto">
+                <div class="row x-gap-20 y-gap-20">
+                  <div class="col-auto">
+                    <button class="button -blue-1 h-40 px-20 rounded-100 bg-blue-1-05 text-15 text-blue-1">
+                      <i class="icon-up-down text-14 mr-10"></i>
+                      Lọc
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-30"></div>
+
+            <div class="col-xl-12" id="tour_list_content">
+              <!-- Tour Card -->
+            </div>
+
+
+            <!-- Pagination -->
+            <div class="border-top-light mt-30 pt-30">
+              <div class="row x-gap-10 y-gap-20 justify-center md:justify-center items-center">
+
+                <div class="col-md-auto md:order-3">
+                  <div class="row x-gap-20 y-gap-20 items-center" id="tour_list_page_content">
+
+
+                    <div class="col-auto">
+                      <button class="btn size-40 flex-center rounded-full" onclick="getTours(1)" >1</button>
+                    </div>
+
+                    <div class="col-auto">
+                      <button class="btn size-40 flex-center rounded-full bg-dark-1 text-white">2</button>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email -->
+    <?php include 'commons/email.php'; ?>
+    <!-- Footer -->
+    <?php include 'commons/footer.php'; ?>
+  </body>
+
+  </html>
