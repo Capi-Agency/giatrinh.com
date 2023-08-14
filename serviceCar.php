@@ -28,12 +28,13 @@
       </div>
     </div>
   </section>
+  <!-- Bảng 1 -->
   <section class="layout-pt-md layout-pb-md">
     <div class="container">
       <div class="row justify-center text-center">
         <div class="col-auto">
           <div class="sectionTitle -md">
-            <h2 class="sectionTitle__title">Thuê xe du lịch tiết kiệm, đặt lịch là có xe</h2>
+            <h2 class="sectionTitle__title text-blue-1">Thuê xe du lịch tiết kiệm, đặt lịch là có xe</h2>
           </div>
         </div>
       </div>
@@ -385,6 +386,7 @@
       </div>
     </div>
   </section>
+  <!-- Thông báo -->
   <section class="layout-pt-sm layout-pb-sm">
     <div class="container">
       <div class="row lg:pt-40">
@@ -398,11 +400,12 @@
       </div>
     </div>
   </section>
+  <!-- Bảng 3 -->
   <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
     <div class="container">
       <div class="row y-gap-30">
         <div class="row pt-50 col-12">
-          <div class="text-40 justify flex-center">
+          <div class="text-40 justify flex-center text-blue-1">
             <b>Thuê xe du lịch đi lễ chùa</b>
           </div>
           <table class="table col-12 ">
@@ -476,18 +479,10 @@
         </div>
       </div>
     </div>
-    <div class="row justify-center pt-40">
-      <div class="col-auto">
-
-        <a href="#" class="button px-40 h-50 -outline-blue-1 text-blue-1">
-          Gọi đặt xe<div></div>
-        </a>
-
-      </div>
-    </div>
     </div>
   </section>
-  <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
+  <!-- Bảng 4 -->
+  <section class="layout-pt-sm layout-pb-sm bg-light-2 col-12">
     <div class="container">
       <div class="row y-gap-30">
         <div class="row pt-50 col-12">
@@ -499,7 +494,7 @@
             <thead class="bg-blue-1-05 text-blue-1">
               <tr>
                 <th> </th>
-                <th>Giá của Đi Chung</th>
+                <th>Giá của GiaTrinh</th>
                 <th>Giá thị trường</th>
 
               </tr>
@@ -535,98 +530,91 @@
 
       </div>
     </div>
-    <div class="row justify-center pt-40">
-      <div class="col-auto">
-
-        <a href="#" class="button px-40 h-50 -outline-blue-1 text-blue-1">
-          Gọi đặt xe<div></div>
-        </a>
-
-      </div>
-    </div>
-  </section> 
-  <section class="layout-pt-md layout-pb-sm">
+  </section>
+  <!-- Bảng 5 -->
+  <section class="layout-pt-sm layout-pb-sm">
     <div data-anim-wrap="" class="container animated">
       <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
         <div class="col-auto">
-        <div class="col-12 mb-20 ">
-                  <h3 class="sectionTitle__title">Thuê xe đi nội thành & ngoại thành Hà Nội</h3>
+          <div class="col-12 mb-20 ">
+            <h3 class="sectionTitle__title">Thuê xe đi nội thành &amp; ngoại thành Hà Nội</h3>
 
-                  <div class="row x-gap-40 y-gap-40 pt-20  text-left">
-                    <div class="col-md-12">
-                      <div class="text-dark-1 text-15">
-                        <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đi các điểm nghỉ dưỡng, tham quan: Đại Lải, Sơn Tây,...
-                      </div>
-                      <div class="text-dark-1 text-15">
-                        <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đi các Khu công nghiệp Láng Hòa Lạc, Thăng Long, Sài Đồng,...
-                      </div>
-                      <div class="text-dark-1 text-15">
-                        <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đưa đón hội nghị, xe chở học sinh đi tham quan
-                      </div>
-                    </div>
-                  </div>
+            <div class="row x-gap-40 y-gap-40 pt-20  text-left">
+              <div class="col-md-12">
+                <div class="text-dark-1 text-15">
+                  <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đi các điểm nghỉ dưỡng, tham quan: Đại Lải, Sơn Tây,...
                 </div>
+                <div class="text-dark-1 text-15">
+                  <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đi các Khu công nghiệp Láng Hòa Lạc, Thăng Long, Sài Đồng,...
+                </div>
+                <div class="text-dark-1 text-15">
+                  <i class="icon-check text-green-2 text-10 mr-10"></i> Xe đưa đón hội nghị, xe chở học sinh đi tham quan
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="layout-pt-sm layout-pb-md">
+  <!-- Đảm bảo -->
+  <section class="layout-pt-sm layout-pb-sm">
     <div data-anim-wrap="" class="container animated">
-    <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
-    <div class="sectionTitle -md">
-            <h2 class="sectionTitle__title justify-center">Lợi ích thuê xe tại Gia Trinh</h2>
+      <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+        <div class="sectionTitle -md">
+          <h2 class="sectionTitle__title justify-center">Lợi ích thuê xe tại Gia Trinh</h2>
+        </div>
+        <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
+
+          <div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
+
+            <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+              <div class="d-flex justify-center">
+                <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+              </div>
+
+              <div class="text-center mt-30">
+                <h4 class="text-18 fw-500">Giá tốt nhất</h4>
+                <p class="text-15 mt-10">Chọc lọc giá từ nhiều nhà xe, báo giá chính xác đến từng km. Có xuất hóa đơn đỏ</p>
+              </div>
+            </div>
+
           </div>
-    <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
 
-<div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
+          <div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
 
-  <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-    <div class="d-flex justify-center">
-      <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-    </div>
+            <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+              <div class="d-flex justify-center">
+                <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+              </div>
 
-    <div class="text-center mt-30">
-      <h4 class="text-18 fw-500">Giá tốt nhất</h4>
-      <p class="text-15 mt-10">Chọc lọc giá từ nhiều nhà xe, báo giá chính xác đến từng km. Có xuất hóa đơn đỏ</p>
-    </div>
-  </div>
+              <div class="text-center mt-30">
+                <h4 class="text-18 fw-500">Thoải mái như xe nhà</h4>
+                <p class="text-15 mt-10">Hoàn toàn chủ động lịch trình: xe đi trong ngày, 2 ngày 1 đêm, đưa đón tham quan,... Xe đời mới</p>
+              </div>
+            </div>
 
-</div>
+          </div>
 
-<div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
+          <div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
 
-  <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-    <div class="d-flex justify-center">
-      <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-    </div>
+            <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+              <div class="d-flex justify-center">
+                <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+              </div>
 
-    <div class="text-center mt-30">
-      <h4 class="text-18 fw-500">Thoải mái như xe nhà</h4>
-      <p class="text-15 mt-10">Hoàn toàn chủ động lịch trình: xe đi trong ngày, 2 ngày 1 đêm, đưa đón tham quan,... Xe đời mới</p>
-    </div>
-  </div>
+              <div class="text-center mt-30">
+                <h4 class="text-18 fw-500">Bác tài chuyên nghiệp</h4>
+                <p class="text-15 mt-10">Lái xe chuyên tuyến, rành đường. Đưa đón cẩn thận, đúng giờ, chu đáo suốt hành trình</p>
+              </div>
+            </div>
 
-</div>
+          </div>
 
-<div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
-
-  <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-    <div class="d-flex justify-center">
-      <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-    </div>
-
-    <div class="text-center mt-30">
-      <h4 class="text-18 fw-500">Bác tài chuyên nghiệp</h4>
-      <p class="text-15 mt-10">Lái xe chuyên tuyến, rành đường. Đưa đón cẩn thận, đúng giờ, chu đáo suốt hành trình</p>
-    </div>
-  </div>
-
-</div>
-
-</div>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!-- Email -->
   <?php include 'commons/email.php'; ?>
