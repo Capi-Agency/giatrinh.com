@@ -9,13 +9,11 @@
 
   <!-- Body -->
   <div class="header-margin">
-    <!-- Banner Header -->
 
+    <!-- Banner Header -->
     <section class="section-bg layout-pt-lg layout-pb-lg">
       <div class="section-bg__item col-12">
-        <img
-          src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
-          alt="image">
+        <img src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="image">
       </div>
       <div class="container">
         <div class="row justify-center text-center">
@@ -64,8 +62,7 @@
             </div>
           </div>
           <div class="col-12 row y-gap-30 justify-content-center ">
-            <img class="col-10 rounded-4"
-              src="https://vietjet.net/includes/uploads/2017/07/bang-gia-ve-may-bay-vietjet-air.jpg" alt="image">
+            <img class="col-10 rounded-4" src="https://vietjet.net/includes/uploads/2017/07/bang-gia-ve-may-bay-vietjet-air.jpg" alt="image">
             <table class="table col-12 mt-20 ">
 
               <thead class="bg-blue-1-05 text-blue-1">
@@ -134,64 +131,64 @@
   </div>
   </section>
 
-  <section class="layout-pt-md layout-pb-sm">
+  <!-- Lợi ích -->
+  <section class="layout-pt-sm layout-pb-sm">
     <div data-anim-wrap="" class="container animated">
       <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
         <div class="col-auto">
           <div class="sectionTitle -md">
             <h2 class="sectionTitle__title">Lợi ích khi mua vé máy bay tại Giatrinh</h2>
           </div>
-        </div>
-      </div>
+          <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
 
-      <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
+            <div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
 
-        <div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
+              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                <div class="d-flex justify-center">
+                  <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                </div>
 
-          <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-            <div class="d-flex justify-center">
-              <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                <div class="text-center mt-30">
+                  <h4 class="text-18 fw-500">Giá tốt nhất</h4>
+                  <p class="text-15 mt-10">Chọc lọc giá từ nhiều đối tác, báo giá chính xác đến từng địa điểm, có xuất hóa
+                    đơn đỏ</p>
+                </div>
+              </div>
+
             </div>
 
-            <div class="text-center mt-30">
-              <h4 class="text-18 fw-500">Giá tốt nhất</h4>
-              <p class="text-15 mt-10">Chọc lọc giá từ nhiều đối tác, báo giá chính xác đến từng địa điểm, có xuất hóa
-                đơn đỏ</p>
+            <div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
+
+              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                <div class="d-flex justify-center">
+                  <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                </div>
+
+                <div class="text-center mt-30">
+                  <h4 class="text-18 fw-500">Đơn giản & nhanh chóng</h4>
+                  <p class="text-15 mt-10">Mua vé dễ dàng, thủ tục nhanh chóng</p>
+                </div>
+              </div>
+
             </div>
+
+            <div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
+
+              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                <div class="d-flex justify-center">
+                  <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                </div>
+
+                <div class="text-center mt-30">
+                  <h4 class="text-18 fw-500">Dịch vụ chăm sóc khách hàng 24/7</h4>
+                  <p class="text-15 mt-10">Tổng đài chăm sóc khách hàng luôn sẵn sàng phục vụ</p>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-
         </div>
-
-        <div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
-
-          <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-            <div class="d-flex justify-center">
-              <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-            </div>
-
-            <div class="text-center mt-30">
-              <h4 class="text-18 fw-500">Đơn giản & nhanh chóng</h4>
-              <p class="text-15 mt-10">Mua vé dễ dàng, thủ tục nhanh chóng</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
-
-          <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-            <div class="d-flex justify-center">
-              <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-            </div>
-
-            <div class="text-center mt-30">
-              <h4 class="text-18 fw-500">Dịch vụ chăm sóc khách hàng 24/7</h4>
-              <p class="text-15 mt-10">Tổng đài chăm sóc khách hàng luôn sẵn sàng phục vụ</p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </div>
   </section>
