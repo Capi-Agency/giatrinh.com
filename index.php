@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-auto">
-                    
+
                     <!-- Title -->
                     <div class="text-center">
                         <h1 data-anim-child="slide-up delay-4" class="text-52 lg:text-40 md:text-30 text-white is-in-view">Khám phá hành trình cùng chúng tôi</h1>
@@ -3788,11 +3788,10 @@
                 </div>
 
                 <div class="col-auto">
-
-                    <a href="tourList.php" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
-                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    <a href="#" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                        Xem tất cả
+                        <i class="icon-arrow-top-right ml-10"></i>
                     </a>
-
                 </div>
             </div>
 
@@ -4430,11 +4429,10 @@
                 </div>
 
                 <div class="col-auto">
-
-                    <a href="tourList.php" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
-                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    <a href="#" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                        Xem tất cả
+                        <i class="icon-arrow-top-right ml-10"></i>
                     </a>
-
                 </div>
             </div>
 
@@ -5167,7 +5165,7 @@
         </div>
     </section>
 
-    <!-- Kinh nghiệm du lịch -->
+    <!-- Cảm hứng du lịch -->
     <section class="layout-pt-sm layout-pb-md">
         <div data-anim-wrap="" class="container animated">
             <!-- Title -->
