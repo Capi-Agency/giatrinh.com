@@ -404,7 +404,7 @@
   </section>
 
   <!-- Bảng 3 -->
-  <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
+  <section class="layout-pt-sm layout-pb-md bg-light-2">
     <div class="container">
       <div class="row y-gap-30">
         <div class="row pt-50 col-12">
@@ -482,20 +482,11 @@
         </div>
       </div>
     </div>
-    <div class="row justify-center pt-40">
-      <div class="col-auto">
-
-        <a href="#" class="button px-40 h-50 -outline-blue-1 text-blue-1">
-          Gọi đặt xe<div></div>
-        </a>
-
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- Bảng 4 -->
-  <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
+  <section class="layout-pt-sm layout-pb-md bg-light-2">
     <div class="container">
       <div class="row y-gap-30">
         <div class="row pt-50 col-12">
@@ -540,15 +531,6 @@
             </tbody>
           </table>
         </div>
-
-      </div>
-    </div>
-    <div class="row justify-center pt-40">
-      <div class="col-auto">
-
-        <a href="#" class="button px-40 h-50 -outline-blue-1 text-blue-1">
-          Gọi đặt xe<div></div>
-        </a>
 
       </div>
     </div>
