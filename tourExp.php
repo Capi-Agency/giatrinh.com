@@ -9,174 +9,1808 @@
 
     <!-- Body -->
     <div class="header-margin"></div>
-    <section class="py-10 d-flex items-center bg-light-2">
+
+    <!-- Breadcrumb -->
+    <section data-anim="fade" class="d-flex items-center py-15 border-top-light is-in-view">
         <div class="container">
             <div class="row y-gap-10 items-center justify-between">
                 <div class="col-auto">
                     <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
                         <div class="col-auto">
-                            <div class="">Trang chủ</div>
+                            <div class=""><a href="index.php">Trang chủ</a></div>
                         </div>
                         <div class="col-auto">
-                            <div class="">></div>
+                            <div class="">&gt;</div>
                         </div>
                         <div class="col-auto">
-                            <div class="">Kinh nghiệm du lịch</div>
+                            <div class="text-dark-1"><a href="#">Cẩm nang du lịch</a></div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
 
-    <section class="py-40 js-pin-container">
+    <!-- Post List -->
+    <section data-anim-wrap="" class="layout-pt-sm layout-pb-lg animated">
         <div class="container">
-            <div class="row y-gap-30 justify-between">
-                <div class="col-xl-9">
-                    <div class="row y-gap-30">
-                        <div class="col-xl-8">
-                            <div class="row y-gap-40 justify-center">
-                                <img class="col-12 rounded-8" src="./img/blog/1.png" alt="">
-                            </div>
-                            <div class="pt-30">
-                                <a href="./tourPost.php" class="text-18 fw-700">5 làng nghề truyền thống nổi tiếng ở miền Bắc</a>
-                                <p>
-                                    Làng gốm Bát Tràng Bát Tràng là điểm đến không hề xa lạ đối với các bạn trẻ ưa thích nét văn hóa truyền thống của làng nghề gốm sứ V...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="row justify-center">
-                                <img class="col-12 rounded-8" src="./img/blog/1.png" alt="">
-                            </div>
-                            <div class="sidebar__item pt-10 text-12">
-                                <a class="text-14 fw-700 ">Chinh phục đỉnh núi Tà Chì Nhù, Yên Bái - 'thiên đường nơi hạ giới'</a>
-                                <div class="y-gap-5 border-bottom-light py-10 mt-10">
-                                    <a href="./tourPost.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                        Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'
-                                    </a>
-                                </div>
-                                <div class="y-gap-5 border-bottom-light py-10 mt-10">
-                                    <a href="./tourPost.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                        Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'
-                                    </a>
-                                </div>
-                                <div class="y-gap-5 border-bottom-light py-10 mt-10">
-                                    <a href="./tourPost.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                        Du lịch Bắc Giang, tuyệt đối không được bỏ qua 5 điểm đến 'cực hot'
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row y-gap-30 mt-30 pt-30 ">
-
-                        <div class="col-lg-4 col-sm-6">
-
-                            <a href="" class="blogCard -type-1 d-block ">
-                                <div class="blogCard__image">
-                                    <div class="ratio ratio-4:3 rounded-8">
-                                        <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
-                                    </div>
-                                </div>
-
-                                <div class="pt-20">
-                                    <a class="text-dark-1 text-18 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</a>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6">
-
-                            <a href="" class="blogCard -type-1 d-block ">
-                                <div class="blogCard__image">
-                                    <div class="ratio ratio-4:3 rounded-8">
-                                        <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
-                                    </div>
-                                </div>
-
-                                <div class="pt-20">
-                                    <a class="text-dark-1 text-18 fw-500">làng nghề truyền thống nổi tiếng ở miền Bắc</a>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6">
-
-                            <a href="" class="blogCard -type-1 d-block ">
-                                <div class="blogCard__image">
-                                    <div class="ratio ratio-4:3 rounded-8">
-                                        <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
-                                    </div>
-                                </div>
-                                <div class="pt-20">
-                                    <a class="text-dark-1 text-18 fw-500">làng nghề truyền thống nổi tiếng ở miền Bắc</a>
-                                </div>
-                            </a>
-                        </div>
+            <!-- Title -->
+            <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+                <div class="col-auto">
+                    <div class="sectionTitle -md">
+                        <h2 class="sectionTitle__title">Cẩm nang du lịch</h2>
+                        <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
                     </div>
                 </div>
-                <div class="col-xl-3">
-                    <div data="slide-up delay-3" class="sidebar -blog">
-                        <div class="">
-                            <h5 class="text-18 fw-700 mb-10">Danh mục</h5>
+            </div>
 
-                            <div class="y-gap-5">
+            <!-- Post -->
+            <div data-anim-child="slide-up delay-2" class="tabs -pills-3 pt-30 js-tabs is-in-view">
+                <!-- Tags -->
+                <div class="tabs__controls row x-gap-10 justify-center js-tabs-controls">
 
-                                <a href="./tourList.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                    <span class="text-15 text-dark-1">Tour trong nước</span>
+                    <div class="col-auto">
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button is-tab-el-active" data-tab-target=".-tab-item-1">Tất cả</button>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-2">Khuyến Mãi</button>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-3">Điểm đến</button>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-4">Ẩm thực</button>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button " data-tab-target=".-tab-item-5">Cổ tích</button>
+                    </div>
+
+                </div>
+
+                <!-- Post List -->
+                <div class="tabs__content pt-30 js-tabs-content">
+
+                    <div class="tabs__pane -tab-item-1 is-tab-el-active">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/tour-Nhật-Bản-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Nhật Bản 5N4Đ: Hành trình Tokyo – Yamanashi, ngắm trọn vẻ đẹp phong cảnh tuyệt sắc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Nhật Bản 5N4Đ mang đến bạn hành trình khám phá cảnh sắc trọn vẹn của xứ sở Phù Tang từ Tokyo đến Yamanashi, trải nghiệm tắm onsen tại chân núi Phú Sĩ và check-in thiên đường mua sắm xa…</div>
+                                    </div>
                                 </a>
 
-                                <a href="./tourList.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                    <span class="text-15 text-dark-1">Tour quốc tế</span>
-                                </a>
-
-                                <a href="./mainLabor.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                    <span class="text-15 text-dark-1">Xuất khẩu lao động</span>
-                                </a>
-
-                                <a href="./insurance.php" class="d-flex items-center justify-between text-dark-1" href="#">
-                                    <span class="text-15 text-dark-1">Bảo hiểm</span>
-                                </a>
                             </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/vườn-Morning-Calm-ivivu-2-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Say đắm trước cảnh sắc thiên nhiên tươi đẹp của “xứ sở kim chi” trong tour Hàn Quốc 4N4Đ
+                                        </h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Trải nghiệm tour Hàn Quốc 4N4Đ với giá ưu đãi chỉ 11.990.000 đồng/khách, bạn sẽ có cơ hội check-in nhiều điểm đến nổi tiếng với cảnh đẹp làm say đắm lòng người hay khám phá nền ẩm thực hấp dẫn…
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/Tam-Tháp-Đại-Lý-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Trung Quốc 6N5Đ: Ngắm nhìn thiên nhiên hùng vĩ và thưởng thức ẩm thực đặc sắc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Chiêm ngưỡng khung cảnh thiên nhiên tuyệt sắc và không gian văn hóa sống động của Trung Hoa xinh đẹp cùng tour Trung Quốc 6N5Đ lần này, mang đến cho du khách chuyến hành trình mới mẻ và đầy ấn…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/hong-kong-convention-and-exhibition-centre-ivivu-2-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Hong Kong 5N4Đ: Hành trình độc đáo trên cung đường Hong Kong – Trung Hoa đầy mê hoặc</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tour Hong Kong 5N4Đ mở ra hành trình khám phá Trung Hoa xinh đẹp trên cung đường riêng độc đáo, với những điểm đến đẹp mê hoặc, nét văn hóa – lịch sử đặc sắc và nền ẩm thực dễ…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/Gardens-by-the-Bay-ivivu1-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Đẹp hút mắt với nét hiện đại và xanh mát của “đảo quốc sư tử” trong tour Singapore 3N2Đ</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Singapore nổi tiếng là một trong những quốc gia xanh – sạch – đẹp nhất thế giới. Cùng iVIVU khám phá vẻ đẹp của “đảo quốc sư tử” nhiều hơn trong tour Singapore 3N2Đ với nhiều trải nghiệm mới lạ…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/phố-cổ-Hồng-Nhai-Động-ivivu-2-370x215.jpeg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Trung Quốc 5N4Đ: Thưởng ngoạn đất nước Trung Hoa tươi đẹp và đầy sống động</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Với tour Trung Quốc 5N4Đ, du khách có dịp du ngoạn qua những điểm đến có cảnh sắc thiên nhiên lãng mạn, những công trình kiến trúc đặc sắc giao thoa giữa nét cổ kính và hiện đại của vùng…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/08/Merdeka-Square-ivivu1-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Khám phá Malaysia đa sắc màu theo cách riêng trong tour City Break 3N2Đ Kuala Lumpur</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Tận hưởng kỳ nghỉ ngắn ngày theo cách riêng cùng tour City Break 3N2Đ Kuala Lumpur mang đến bạn hành trình đa sắc màu với những điểm đến, ẩm thực và nét văn hóa đầy thú vị của thành phố,…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/đảo-Nami-ivivu-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Chiêm ngưỡng thiên nhiên tươi đẹp bốn mùa trong tour Hàn Quốc 5N4Đ đầy lãng mạn</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Vẻ đẹp của “xứ sở kim chi” luôn làm du khách phải thổn thức với những khung cảnh thiên nhiên tươi đẹp bốn mùa và những điểm đến đầy hấp dẫn, cùng iVIVU trải nghiệm những khoảnh khắc tuyệt vời…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="https://cdn3.ivivu.com/2023/07/tour-tay-bac-3n2d-ivivu-16-370x215.jpg" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Tour Tây Bắc 3N2Đ: Đến Mù Cang Chải chiêm ngưỡng ruộng bậc thang mùa lúa chín đẹp rực rỡ</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">Vùng đất Tây Bắc luôn làm du khách phải xiêu lòng bởi phong cảnh thiên nhiên tươi đẹp, con người thân thiện cùng văn hóa giàu bản sắc. Hãy đến tour Tây Bắc 3N2Đ để khám phá nhiều hơn vùng…</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
                         </div>
 
-                        <div class="sidebar__item">
-                            <h5 class="text-18 fw-700 mb-10">Bài viết được yêu thích</h5>
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
 
-                            <div class="row y-gap-20 pt-10">
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
 
-                                <div class="col-12">
-                                    <div class="d-flex items-center">
-                                        <img class="size-65 rounded-8" src="img/blog/sidebar/1.png" alt="image">
-                                        <div class="ml-15">
-                                            <a class="text-15 lh-15 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</a>
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">1</div>
+
                                         </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">10</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex items-center">
-                                        <img class="size-65 rounded-8" src="img/blog/sidebar/2.png" alt="image">
-                                        <div class="ml-15">
-                                            <a class="text-15 lh-15 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</a>
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-2 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
                                         </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex items-center">
-                                        <img class="size-65 rounded-8" src="img/blog/sidebar/3.png" alt="image">
-                                        <div class="ml-15">
-                                            <a class="text-15 lh-15 fw-500">5 làng nghề truyền thống nổi tiếng ở miền Bắc</a>
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-3 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
                                         </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
                                     </div>
                                 </div>
 
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-4 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-5 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-6 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-7 ">
+                        <div class="row y-gap-30">
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/1.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/2.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/3.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/4.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/5.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/6.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/7.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">10 European ski destinations you should visit this winter</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/8.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Booking travel during Corona: good advice in an uncertain time</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+
+                                <a href="" class="blogCard -type-1 d-block ">
+                                    <div class="blogCard__image">
+                                        <div class="ratio ratio-4:3 rounded-8">
+                                            <img class="img-ratio js-lazy loaded" src="img/blog/grids/9.png" alt="image" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-20">
+                                        <h4 class="text-dark-1 text-18 fw-500 line-clamp">Where can I go? 5 amazing countries that are open right now</h4>
+                                        <div class="text-light-1 text-15 lh-14 mt-5 line-clamp">April 06, 2022</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border-top-light mt-30 pt-30">
+                            <div class="row x-gap-10 y-gap-20 justify-between md:justify-center">
+                                <div class="col-auto md:order-1">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-left text-12"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-auto md:order-3">
+                                    <div class="row x-gap-20 y-gap-20 items-center md:d-none">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-light-2">4</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">5</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">...</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">20</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row x-gap-10 y-gap-20 justify-center items-center d-none md:d-flex">
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">1</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full bg-dark-1 text-white">2</div>
+
+                                        </div>
+
+                                        <div class="col-auto">
+
+                                            <div class="size-40 flex-center rounded-full">3</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center mt-30 md:mt-10">
+                                        <div class="text-14 text-light-1">1 – 20 of 300+ properties found</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto md:order-2">
+                                    <button class="button -blue-1 size-40 rounded-full border-light">
+                                        <i class="icon-chevron-right text-12"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
