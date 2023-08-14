@@ -29,7 +29,7 @@
     </div>
   </section>
   <!-- Tour chi tiết -->
-  <section class="pt-40">
+  <section class="pt-20">
     <div class="container">
       <div class="row y-gap-15 justify-between items-end">
         <div class="col-auto">
@@ -51,7 +51,7 @@
     </div>
   </section>
 
-  <section class="pt-60 js-pin-container">
+  <section class="pt-40 js-pin-container">
     <div class="container">
       <div class="row y-gap-30">
         <div class="col-lg-8">
@@ -199,21 +199,21 @@
                   <div class="w-360 lg:w-full d-flex flex-column items-center">
                     <div class="px-30 py-30 rounded-4 border-light bg-white shadow-4">
                       <div class="text-14 text-light-1">
-                        Giá từ <span class="text-20 fw-500 text-dark-1 ml-5">5.690.000đ</span>
+                        Giá từ <span class="text-24 fw-700 text-blue-1 ml-5">5.690.000đ</span>
                       </div>
 
                       <div class="row y-gap-20 pt-30">
                         <div class="col-12">
                           <div class="searchMenu-date px-20 py-10 border-light rounded-4 ">
-                            <h4 class="text-15 fw-500 ls-2 lh-16"> Thời Gian</h4>
-                            <h3 class="text-15 text-light-1 ls-2 lh-16 text-blue-1">4 Ngày 3 Đêm</h3>
+                            <h4 class="text-15 fw-500 ls-2 lh-16 text-light-1"> Thời Gian</h4>
+                            <h3 class="text-15 ls-2 lh-16 text-blue-1">4 Ngày 3 Đêm</h3>
                           </div>
                         </div>
 
                         <div class="col-12">
                           <div class="searchMenu-date px-20 py-10 border-light rounded-4 ">
-                            <h4 class="text-15 fw-500 ls-2 lh-16"> Lịch khởi hành</h4>
-                            <h3 class="text-15 text-light-1 ls-2 lh-16 text-blue-1">Tháng 5, 6, 7, 8</h3>
+                            <h4 class="text-15 fw-500 ls-2 lh-16 text-light-1"> Lịch khởi hành</h4>
+                            <h3 class="text-15 ls-2 lh-16 text-blue-1">Tháng 5, 6, 7, 8</h3>
                           </div>
                         </div>
 
