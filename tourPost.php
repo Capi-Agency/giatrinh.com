@@ -96,18 +96,6 @@
                                     </div>
                                 </div>
                                 <div class="row y-gap-20 justify-between pt-30">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="fw-500 mr-10">Chia sẻ</div>
-
-                                            <div class="d-flex items-center">
-                                                <a href="#" class="flex-center size-40 rounded-full"><i class="icon-facebook text-14"></i></a>
-                                                <a href="#" class="flex-center size-40 rounded-full"><i class="icon-twitter text-14"></i></a>
-                                                <a href="#" class="flex-center size-40 rounded-full"><i class="icon-instagram text-14"></i></a>
-                                                <a href="#" class="flex-center size-40 rounded-full"><i class="icon-linkedin text-14"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="col-auto">
                                         <div class="row x-gap-10 y-gap-10">
@@ -160,57 +148,10 @@
                                             </button>
                                         </div>
                                     </div>
-
-                                    <div class="col-auto">
-                                        <a href="#" class="button -md -outline-blue-1 text-blue-1">
-                                            Hiện tất cả đánh giá <div class="icon-arrow-top-right ml-15"></div>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
 
                             <div class="border-top-light pt-40 mt-40"></div>
-
-                            <div class="row">
-                                <div class="col-auto">
-                                    <h3 class="text-22 fw-500">Để lại bình luận của bạn</h3>
-                                    <p class="text-15 text-dark-1 mt-5">Hãy cho chúng tôi biết bạn nghĩ gì.</p>
-                                </div>
-                            </div>
-
-                            <div class="row y-gap-30 pt-40">
-                                <div class="col-xl-6">
-
-                                    <div class="form-input ">
-                                        <input type="text" required="">
-                                        <label class="lh-1 text-16 text-light-1">Tên</label>
-                                    </div>
-
-                                </div>
-                                <div class="col-xl-6">
-
-                                    <div class="form-input ">
-                                        <input type="text" required="">
-                                        <label class="lh-1 text-16 text-light-1">Email</label>
-                                    </div>
-
-                                </div>
-                                <div class="col-12">
-
-                                    <div class="form-input ">
-                                        <textarea required="" rows="6"></textarea>
-                                        <label class="lh-1 text-16 text-light-1">Bình luận của bạn</label>
-                                    </div>
-
-                                </div>
-                                <div class="col-auto">
-
-                                    <a href="#" class="button -md -dark-1 bg-blue-1 text-white">
-                                        Gửi bình luận<div class="icon-arrow-top-right ml-15"></div>
-                                    </a>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
