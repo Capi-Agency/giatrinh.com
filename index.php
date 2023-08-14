@@ -11,26 +11,28 @@
     <!-- Banner + Search -->
     <section data-anim-wrap="" class="masthead -type-1 z-5 animated">
         <div data-anim-child="fade" class="masthead__bg is-in-view">
-            <img src="img/masthead/1/bg.webp" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+            <img src="https://images.unsplash.com/photo-1580775949272-1bdb8a95ac01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="image" class="js-lazy loaded" data-ll-status="loaded">
         </div>
 
         <div class="container">
             <div class="row justify-center">
                 <div class="col-auto">
+
+                    <!-- Title -->
                     <div class="text-center">
-                        <h1 data-anim-child="slide-up delay-4" class="text-60 lg:text-40 md:text-30 text-white is-in-view">Tìm kiếm nơi du lịch kế tiếp</h1>
-                        <p data-anim-child="slide-up delay-5" class="text-white mt-6 md:mt-10 is-in-view">Khám phá những địa điểm tuyệt vời với ưu đãi độc quyền</p>
+                        <h1 data-anim-child="slide-up delay-4" class="text-52 lg:text-40 md:text-30 text-white is-in-view">Khám phá hành trình cùng chúng tôi</h1>
+                        <p data-anim-child="slide-up delay-5" class="text-white mt-3 md:mt-10 is-in-view">Khám phá những địa điểm tuyệt vời với ưu đãi độc quyền</p>
                     </div>
 
+                    <!-- Search -->
                     <div data-anim-child="slide-up delay-6" class="tabs -underline mt-60 js-tabs is-in-view">
-
                         <div class="tabs__content mt-30 md:mt-20 js-tabs-content">
 
                             <div class="tabs__pane -tab-item-1 is-tab-el-active">
 
                                 <div class="mainSearch bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-100">
                                     <div class="button-grid items-center">
-
+                                        <!-- Places -->
                                         <div class="searchMenu-loc px-30 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
 
                                             <div data-x-dd-click="searchMenu-loc">
@@ -73,7 +75,7 @@
                                             </div>
                                         </div>
 
-
+                                        <!-- Date -->
                                         <div class="searchMenu-date px-30 lg:py-20 lg:px-0 js-form-dd js-calendar">
 
                                             <div data-x-dd-click="searchMenu-date">
@@ -3330,6 +3332,8 @@
                                             </div>
                                         </div>
 
+
+                                        <!-- Search -->
                                         <div class="button-item">
                                             <button class="mainSearch__submit button -dark-1 h-60 w-200 px-35 col-8 rounded-100 bg-blue-1 text-white">
                                                 <i class="icon-search text-20 mr-10"></i>
@@ -3415,6 +3419,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
 
                     <a href="tour-single.html" class="tourCard -type-1 rounded-4 ">
+                        <!-- Image -->
                         <div class="tourCard__image">
 
                             <div class="cardImage ratio ratio-1:1">
@@ -3455,14 +3460,12 @@
 
                                 </div>
 
-                                <div class="cardImage__wishlist">
-                                </div>
 
 
                             </div>
 
                         </div>
-
+                        <!-- Content -->
                         <div class="tourCard__content mt-10">
 
                             <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500">
@@ -3478,12 +3481,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3555,12 +3558,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3632,12 +3635,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3709,12 +3712,12 @@
                             <div class="row justify-between items-center pt-15">
                                 <div class="col-auto">
                                     <div class="text-14 text-light-1">
-                                        <span class="text-16 fw-500 text-dark-1">6.390.000đ</span>
+                                        <span class="fw-700 mt-20 text-20 text-blue-1">6.390.000đ</span>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
-                                        <span class="text-14 fw-600 text-white">Đặt tour</span>
+                                        <span class="text-14 fw-600 text-white"> Đặt tour </span>
                                     </div>
                                 </div>
                             </div>
@@ -3722,7 +3725,6 @@
                     </a>
 
                 </div>
-                <!-- end card tour -->
             </div>
         </div>
     </section>
@@ -3742,7 +3744,7 @@
                             <h4 class="text-40 lg:text-26 text-white">Những điều nên làm ở<br> Quảng Ninh</h4>
 
                             <div class="d-inline-block mt-30">
-                                <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
+                                <a href="tourExp.php" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
                             </div>
                         </div>
                     </div>
@@ -3786,15 +3788,13 @@
                 </div>
 
                 <div class="col-auto">
-
-                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
-                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    <a href="#" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                        Xem tất cả
+                        <i class="icon-arrow-top-right ml-10"></i>
                     </a>
-
                 </div>
             </div>
 
-            <!-- Row 1 -->
             <div class="row y-gap-30 pt-40 sm:pt-20">
                 <!-- card tour -->
                 <div class="col-xl-3 col-lg-3 col-sm-6">
@@ -4429,11 +4429,10 @@
                 </div>
 
                 <div class="col-auto">
-
-                    <a href="#" class="button -md -blue-1 bg-blue-1-05 text-dark-1">
-                        Xem tất cả <div class="icon-arrow-top-right ml-15"></div>
+                    <a href="#" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                        Xem tất cả
+                        <i class="icon-arrow-top-right ml-10"></i>
                     </a>
-
                 </div>
             </div>
 
@@ -5166,7 +5165,7 @@
         </div>
     </section>
 
-    <!-- Kinh nghiệm du lịch -->
+    <!-- Cảm hứng du lịch -->
     <section class="layout-pt-sm layout-pb-md">
         <div data-anim-wrap="" class="container animated">
             <!-- Title -->

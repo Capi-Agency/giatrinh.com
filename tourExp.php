@@ -1819,7 +1819,6 @@
             </div>
         </div>
     </section>
-    
     <!-- Email -->
     <?php include 'commons/email.php'; ?>
     <!-- Footer -->

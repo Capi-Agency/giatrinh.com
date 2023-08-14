@@ -28,7 +28,7 @@
 
                                     <!-- Tour Du Lịch -->
                                     <li class="menu-item-has-children -has-mega-menu">
-                                        <a href="tourList.php" data-barba="">
+                                        <a href="/tourList.php">
                                             <span class="mr-10">Tour Du Lịch</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
@@ -51,7 +51,7 @@
                                                     <div class="tabs__pane -tab-item-1 is-tab-el-active">
                                                         <div class="mega__content">
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Miền Bắc</div>
+                                                                <div class="text-15 fw-500"><div><a href="tourList.php">Miền bắc</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tourList.php">Sapa</a></div>
@@ -68,7 +68,7 @@
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Miền Trung</div>
+                                                            <div class="text-15 fw-500"><div><a href="tourList.php">Miền Trung</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tourList.php">Cửa Lò</a></div>
@@ -85,7 +85,7 @@
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Miền Nam</div>
+                                                            <div class="text-15 fw-500"><div><a href="tourList.php">Miền Nam</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tourList.php">Phú Quốc</a></div>
