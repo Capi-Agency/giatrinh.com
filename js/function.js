@@ -70,13 +70,12 @@ class PostCategory {
   }
 }
 
-function idToImg(id) {
-  return "https://admin.giatrinh.com/assets/" + id;
-}
-
 //  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
+function idToImg(id) {
+  return "https://admin.giatrinh.com/assets/" + id;
+}
 
 function tourOtoTourList(tours) {
   var html = ``;
@@ -278,9 +277,7 @@ function getTours(page, searchKey) {
   var searchString = "";
   if (searchKey != "") {
     searchString =
-      `, {
-                              title: {
-                                  _icontains: "` +
+      `, { title: {_icontains: "` +
       searchKey +
       `"
                               }
