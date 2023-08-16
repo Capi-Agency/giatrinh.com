@@ -274,6 +274,17 @@ function postPagination(toTotalPage, category) {
   return html;
 }
 //  =================================================================================================================================
+let defaultHeaderImg =
+  "https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1472&amp;q=80";
+function getHeader(headerImg, headerHref, headerAchor) {
+  const headerImgEl = document.querySelector("#header_img");
+  const headerAnchorEl = document.querySelector("#breadcrumb_anchor");
+
+  headerImgEl.src =
+    headerImg == null || undefined ? defaultHeaderImg : headerImg;
+  headerAnchorEl.href = headerHref;
+  headerAnchorEl.innerHTML = headerAchor;
+}
 // Controller Tour =======================================================================================================================
 //  =================================================================================================================================
 
@@ -481,6 +492,9 @@ function getServicePlane() {
       vemaybay {
           title
           content
+          header_img{
+            id
+        }
       }
   }`,
   });
@@ -494,8 +508,14 @@ function getServicePlane() {
   };
   $.ajax(settings).done(function (response) {
     const {
-      vemaybay: { content, title },
+      vemaybay: { content, title, header_img },
     } = response.data;
+    const headerImg = header_img ? idToImg(header_img?.id) : defaultHeaderImg;
+    getHeader(
+      headerImg,
+      "http://localhost/giatrinh.com/servicePlane.php",
+      title
+    );
     document.getElementById("service_plane_title").innerHTML = title;
     document.getElementById("service_plane_content").innerHTML = content;
   });
@@ -507,6 +527,9 @@ function getServiceCar() {
       vexe {
           title
           content
+          header_img{
+            id
+        }
       }
   }`,
   });
@@ -520,12 +543,16 @@ function getServiceCar() {
   };
   $.ajax(settings).done(function (response) {
     const {
-      vexe: { content, title },
+      vexe: { content, title, header_img },
     } = response.data;
+    const headerImg = header_img ? idToImg(header_img?.id) : defaultHeaderImg;
+    getHeader(headerImg, "http://localhost/giatrinh.com/serviceCar.php", title);
     document.getElementById("service_car_title").innerHTML = title;
     document.getElementById("service_car_content").innerHTML = content;
   });
 }
+// =====================GET HEADER================================
+
 // Router ===========================================================================================================================
 
 function router() {
