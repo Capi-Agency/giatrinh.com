@@ -38,17 +38,11 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
-
-  <!-- Bảng 3 -->
-  <section class="layout-pt-sm layout-pb-md bg-light-2 col-12">
+  <section class="bg-light-2 col-12">
     <div class="container">
-      <div class="row y-gap-30">
-        <div class="row pt-50 col-12" id="service_car_content">
-        </div>
+      <div class="row col-12" id="service_car_content">
       </div>
     </div>
     </div>
