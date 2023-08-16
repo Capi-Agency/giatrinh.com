@@ -55,6 +55,7 @@ class Post {
     this.category = json.category.title;
     this.content = json.content;
     this.title = json.title;
+    this.short_description = json.short_description;
     this.date_created = new Date(json.date_created);
     this.cover = idToImg(
       json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
@@ -222,6 +223,7 @@ function postObjectToHtml(post) {
             </div>
             <div class="pt-20">
                 <h4 class="text-dark-1 text-18 fw-500 line-clamp">${post.title}</h4>
+                <p class="text-light-1 text-14 fw-500 line-clamp">${post.short_description}</p>
             </div>
         </a>
   </div>
@@ -408,6 +410,7 @@ function getPosts(page = 1, category = currentPostCategory) {
           category{
             title
           }
+          short_description
           cover{
               id
           }
