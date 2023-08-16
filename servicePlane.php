@@ -30,173 +30,89 @@
       </div>
     </section>
     <!-- Main -->
-    <section class=" layout-pb-md bg-light-2 col-12">
+    <section class=" layout-pb-md bg-light-2 col-12 row justify-content-center">
       <div class="container col-6 justify-content-center">
         <div class="row y-gap-30 ">
           <div class="row pt-50 col-12 ">
-            <div class="text-30 justify flex-center lh-1 pb-3 text-blue-1 mb-10 ">
-              <b>Bảng giá vé máy bay Vietjet, Bamboo và Vietnam Airlines</b>
-            </div>
-            <div>
-              Bảng giá vé máy bay Vietjet, Bamboo và Vietnam Airlines các tháng trong năm với giá tốt nhất. Cần là có,
-              tìm là thấy giá vé tốt nhất ở từng thời điểm. Hãy tranh thủ đặt sớm để có giá tốt.<br>
-              <div class="col-12 mt-10">
-                Cách đặt vé máy bay trong nước
-                Bạn truy cập thường xuyên hệ thống đặt vé máy bay trực tuyến, Giatrinh.com Hãy theo dõi fanpage chúng
-                tôi
-                : Gia Trinh. Thông tin liên tục được làm mới từ đội ngũ booker trên trang này. Hotline hỗ trợ trực tuyến
-                24/7 : zalo, messenger, telegram .. . 098 258 8080. Cần là có, tìm là thấy giá vé tốt nhất.
-              </div>
+            <div class="text-30 justify flex-center text-center lh-1 pb-3 text-blue-1 mb-10 ">
+              <b id="service_plane_title"></b>
             </div>
 
-            <div class="col-12 mt-10">
-              Mẹo săn vé máy bay giá rẻ:
-              <ul class="list-disc text-15">
-                <li>Bạn phải lên kế hoạch cụ thể cho chuyến đi.</li>
-                <li>Giá vé máy bay rẻ nhất là 1-2 tháng trước khi bay.</li>
-                <li>Tập thể đồng thuận trước khi tiến hành đặt vé đoàn.</li>
-                <li>Chúng ta không thực hiện nhiệm vụ bất khả thi : vé cận.</li>
-                <li>Booker chuyên nghiệp luôn là giải pháp tối ưu trong mọi trường hợp.</li>
-                <li>Bạn nên gởi mail ghi rõ yêu cầu và ủy thác cho họ xử lý booking.</li>
-              </ul>
-            </div>
           </div>
-          <div class="col-12 row y-gap-30 justify-content-center ">
-            <img class="col-10 rounded-4" src="https://vietjet.net/includes/uploads/2017/07/bang-gia-ve-may-bay-vietjet-air.jpg" alt="image">
-            <table class="table col-12 mt-20 ">
 
-              <thead class="bg-blue-1-05 text-blue-1">
-                <tr>
-                  <th>Chặng bay</th>
-                  <th class=" text-center ">Giá vé</th>
-                </tr>
-              </thead>
-              <tbody>
+        </div>
+      </div>
+      <div class="col-8 row y-gap-30 justify-content-center" id="service_plane_content">
 
-                <tr>
+      </div>
+    </section>
 
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
+    <!-- Lợi ích -->
+    <section class="layout-pt-sm layout-pb-sm">
+      <div data-anim-wrap="" class="container animated">
+        <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+          <div class="col-auto">
+            <div class="sectionTitle -md">
+              <h2 class="sectionTitle__title">Lợi ích khi mua vé máy bay tại Giatrinh</h2>
+            </div>
+            <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
 
-                </tr>
+              <div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
 
-                <tr>
-                  <td>Hà Nội - Đà Nẵng</td>
-                  <td class="text-center">890.000đ</td>
+                <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                  <div class="d-flex justify-center">
+                    <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                  </div>
 
-                </tr>
+                  <div class="text-center mt-30">
+                    <h4 class="text-18 fw-500">Giá tốt nhất</h4>
+                    <p class="text-15 mt-10">Chọc lọc giá từ nhiều đối tác, báo giá chính xác đến từng địa điểm, có xuất hóa
+                      đơn đỏ</p>
+                  </div>
+                </div>
 
+              </div>
 
-                <tr>
-                  <td>Hà Nội - Phú Quốc</td>
-                  <td class="text-center">890.000đ</td>
+              <div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
 
-                </tr>
-                <tr>
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
-                </tr>
-                <tr>
-                  <td>Hà Nội - Đà Lạt</td>
-                  <td class="text-center">890.000đ</td>
+                <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                  <div class="d-flex justify-center">
+                    <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                  </div>
 
-                </tr>
-                <tr>
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
+                  <div class="text-center mt-30">
+                    <h4 class="text-18 fw-500">Đơn giản & nhanh chóng</h4>
+                    <p class="text-15 mt-10">Mua vé dễ dàng, thủ tục nhanh chóng</p>
+                  </div>
+                </div>
 
-                </tr>
-                <tr>
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
+              </div>
 
-                </tr>
-                <tr>
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
+              <div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
 
-                </tr>
-                <tr>
-                  <td>Hà Nội - tp Hồ Chí Minh</td>
-                  <td class="text-center">890.000đ</td>
+                <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
+                  <div class="d-flex justify-center">
+                    <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
+                  </div>
 
-                </tr>
+                  <div class="text-center mt-30">
+                    <h4 class="text-18 fw-500">Dịch vụ chăm sóc khách hàng 24/7</h4>
+                    <p class="text-15 mt-10">Tổng đài chăm sóc khách hàng luôn sẵn sàng phục vụ</p>
+                  </div>
+                </div>
 
+              </div>
 
-              </tbody>
-            </table>
+            </div>
           </div>
         </div>
       </div>
-  </div>
-  </section>
+    </section>
 
-  <!-- Lợi ích -->
-  <section class="layout-pt-sm layout-pb-sm">
-    <div data-anim-wrap="" class="container animated">
-      <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
-        <div class="col-auto">
-          <div class="sectionTitle -md">
-            <h2 class="sectionTitle__title">Lợi ích khi mua vé máy bay tại Giatrinh</h2>
-          </div>
-          <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
-
-            <div data-anim-child="slide-up delay-2" class="col-lg-4 col-sm-6 is-in-view">
-
-              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/2/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-500">Giá tốt nhất</h4>
-                  <p class="text-15 mt-10">Chọc lọc giá từ nhiều đối tác, báo giá chính xác đến từng địa điểm, có xuất hóa
-                    đơn đỏ</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div data-anim-child="slide-up delay-3" class="col-lg-4 col-sm-6 is-in-view">
-
-              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/2/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-500">Đơn giản & nhanh chóng</h4>
-                  <p class="text-15 mt-10">Mua vé dễ dàng, thủ tục nhanh chóng</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div data-anim-child="slide-up delay-4" class="col-lg-4 col-sm-6 is-in-view">
-
-              <div class="featureIcon -type-1 -hover-shadow px-50 py-50 lg:px-24 lg:py-15">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/2/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-500">Dịch vụ chăm sóc khách hàng 24/7</h4>
-                  <p class="text-15 mt-10">Tổng đài chăm sóc khách hàng luôn sẵn sàng phục vụ</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Email -->
-  <?php include 'commons/email.php'; ?>
-  <!-- Footer -->
-  <?php include 'commons/footer.php'; ?>
+    <!-- Email -->
+    <?php include 'commons/email.php'; ?>
+    <!-- Footer -->
+    <?php include 'commons/footer.php'; ?>
 </body>
 
 </html>
