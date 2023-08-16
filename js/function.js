@@ -497,6 +497,32 @@ function getServicePlane() {
     document.getElementById("service_plane_content").innerHTML = content;
   });
 }
+// =====================CAR SERVICE CONTROLLER================================
+function getServiceCar() {
+  let data = JSON.stringify({
+    query: `query {
+      vexe {
+          title
+          content
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    const {
+      vexe: { content, title },
+    } = response.data;
+    document.getElementById("service_car_title").innerHTML = title;
+    document.getElementById("service_car_content").innerHTML = content;
+  });
+}
 // Router ===========================================================================================================================
 
 function router() {
@@ -517,6 +543,9 @@ function router() {
   }
   if (currentURL.includes("servicePlane")) {
     getServicePlane();
+  }
+  if (currentURL.includes("serviceCar")) {
+    getServiceCar();
   }
 }
 
