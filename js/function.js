@@ -70,6 +70,13 @@ class PostCategory {
   }
 }
 
+class ServicePlane {
+  constructor(json) {
+    this.title = json.title;
+    this.content = json.content;
+  }
+}
+
 //  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
@@ -220,7 +227,7 @@ function postObjectToHtml(post) {
   </div>
   `);
 }
-// --tạo tags để lọc
+// --tạo categories để lọc
 function postCategoriesToHtml(categories) {
   let html = `<div class="col-auto">
                 <button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button
@@ -464,7 +471,32 @@ function getCategories() {
     document.getElementById("category_list_content").innerHTML = html;
   });
 }
-
+// =====================PLANE SERVICE CONTROLLER================================
+function getServicePlane() {
+  let data = JSON.stringify({
+    query: `query {
+      vemaybay {
+          title
+          content
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    const {
+      vemaybay: { content, title },
+    } = response.data;
+    document.getElementById("service_plane_title").innerHTML = title;
+    document.getElementById("service_plane_content").innerHTML = content;
+  });
+}
 // Router ===========================================================================================================================
 
 function router() {
@@ -482,6 +514,9 @@ function router() {
   }
   if (currentURL.includes("tourExp")) {
     getPosts();
+  }
+  if (currentURL.includes("servicePlane")) {
+    getServicePlane();
   }
 }
 
