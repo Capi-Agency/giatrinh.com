@@ -21,7 +21,7 @@
               </div>
 
               <div>
-                  <button class="button -md h-60 bg-blue-1 text-white">Đăng ký</button>
+                  <button class="button -md h-60 bg-blue-1 text-white">Đăng ký nhận tin</button>
               </div>
             </div>
           </div>
