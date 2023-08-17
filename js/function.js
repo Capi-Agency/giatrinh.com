@@ -13,6 +13,7 @@ let limitPostPerPage = 6;
 
 let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
 let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
+let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
 
 //  =================================================================================================================================
 // Model ============================================================================================================================
@@ -42,8 +43,9 @@ class Tour {
 
     this.covers = [];
     let coverString = json.covers;
-    if (coverString.length != 0) {
-      for (var i = 0; i < coverString.length; i++) {
+
+    if (coverString?.length != 0) {
+      for (var i = 0; i < coverString?.length; i++) {
         let cover = coverString[i];
         let url = idToImg(cover.directus_files_id.id);
         this.covers.push(url);
@@ -57,13 +59,13 @@ class Tour {
 
 class Post {
   constructor(json) {
-    this.id = json.id;
-    this.author = json.author;
-    this.category = json.category.title;
-    this.content = json.content;
-    this.title = json.title;
-    this.short_description = json.short_description;
-    this.date_created = new Date(json.date_created);
+    this.id = json?.id;
+    this.author = json?.author;
+    this.category = json?.category?.title;
+    this.content = json?.content;
+    this.title = json?.title;
+    this.short_description = json?.short_description;
+    this.date_created = new Date(json?.date_created);
     this.cover = idToImg(
       json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
     );
@@ -282,7 +284,7 @@ function postPagination(toTotalPage, category) {
 }
 // RELATED TOURS PRESENTORS
 function createRelatedTourCard(tours, title) {
-  let html = `<div class="row justify-center">
+  let html = `<div class="row justify-center mb-20">
   <div class="col-auto">
     <div class="sectionTitle -md">
       <h2 class="sectionTitle__title">${title}</h2>
@@ -340,7 +342,95 @@ function createRelatedTourCard(tours, title) {
 
   return html;
 }
+function createIndexTourCard(tours, title) {
+  let html = `<div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+              <div class="col-auto">
+                  <div class="sectionTitle -md">
+                      <h2 class="sectionTitle__title">${title}</h2>
+                  </div>
+              </div>
+              <div class="col-auto">
+                  <a href="${tourListUrl}" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                      Xem tất cả
+                      <i class="icon-arrow-top-right ml-10"></i>
+                  </a>
+              </div>
+          </div>
+`;
 
+  tours
+    .map(function (tour) {
+      html += `<div class="col-xl-3 col-lg-3 col-sm-6">
+
+    <a href="${
+      tourDetailUrl + `?id=` + tour.id
+    }" class="tourCard -type-1 rounded-4 ">
+      <!-- Image -->
+      <div class="tourCard__image">
+        <div class="cardImage ratio ratio-1:1">
+          <div class="cardImage__content">
+                <img class="img-h-full" src="${tour.covers[0]}">
+          </div>
+        </div>
+
+      </div>
+      <!-- Content -->
+      <div class="tourCard__content mt-10">
+
+        <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500 line-clamp">
+          <span>${tour.title}</span>
+        </h4>
+        <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+          ${tour.duration} ngày</p>
+
+        <div class="row justify-between items-center pt-15">
+          <div class="col-auto">
+            <div class="text-14 text-light-1">
+              <span class="fw-700 mt-20 text-20 text-blue-1">${
+                tour.price
+              }đ</span>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+              <span class="text-14 fw-600 text-white"> Xem tour </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>`;
+    })
+    .join("");
+
+  return html;
+}
+function createIndexPostCard(posts) {
+  let html = "";
+  posts
+    .map(
+      (p) =>
+        (html += `<div data-anim="slide-up delay-5" class="col-lg-3 col-sm-6 is-in-view">
+
+    <a href="#" class="blogCard -type-1 d-block ">
+        <div class="blogCard__image">
+            <div class="ratio ratio-4:3 rounded-4 rounded-8">
+                <img class="img-ratio js-lazy loaded" src="${p.cover}" alt="image" data-ll-status="loaded">
+            </div>
+        </div>
+
+        <div class="mt-20 line-clamp">
+            <h4 class="text-dark-1 text-18 fw-500">${p.title}</h4>
+            <div class="text-light-1 text-15 lh-14 mt-5">${p.date_created}</div>
+        </div>
+    </a>
+
+</div>`)
+    )
+    .join("");
+  return html;
+}
 //  =================================================================================================================================
 let defaultHeaderImg =
   "https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1472&amp;q=80";
@@ -453,7 +543,7 @@ function getTours(page, searchKey) {
     document.getElementById("tour_list_content").innerHTML = html;
   });
 }
-// =========================POST CONTROLLER===================================
+// =========================POSTS' LIST CONTROLLER========================
 function getPosts(page = 1, category = currentPostCategory) {
   getCategories();
   currentPostPage = page;
@@ -621,7 +711,7 @@ function getServiceCar() {
 }
 // =====================TOUR DETAIL CONTROLLER================================
 function getTourDetail() {
-  // lấy id từ url
+  // lấy slug từ url
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
   // nếu không có id redirect về tourList
@@ -798,18 +888,183 @@ function getAllTourCard(limit = 4) {
   };
   $.ajax(settings).done(function (response) {
     const { tours } = response.data;
-    console.log(tours);
     const result = tours.map((t) => new Tour(t));
 
     const html = createRelatedTourCard(result, "Tour giờ chót giá tốt");
     document.getElementById("all_tours").innerHTML = html;
   });
 }
+//===========================HOME CONTROLLER=================================
+function getHome() {
+  getAllTourCard(4);
+  getDomesticTours();
+  getInterTours();
+  getHomePosts();
+}
+// lấy tour trong nước
+function getDomesticTours() {
+  let data = JSON.stringify({
+    query: `query {
+      locations( filter:{
+          type:{
+              _eq: "Trong Nước"
+          }
+      }){
+          id
+          title
+          date_created
+          type
+          tours{
+              id
+              title
+              price
+              duration
+              covers{
+                  directus_files_id{
+                      id
+                  }
+              }
+          }
+      }
+      tours_aggregated (
+          filter: {
+          status: {
+              _eq: "published"
+              }
+          }
+          ) {
+          count {
+              id
+          }
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    let tours = [];
+    if (response.data.locations.length == 1) {
+      tours.push(response.data.locations[0].tours);
+    } else {
+      response.data.locations.map((l) => {
+        l.tours.map((t) => tours.push(t));
+      });
+    }
 
+    const result = tours.map((t) => new Tour(t)).slice(0, 4);
+    const html = createIndexTourCard(result, "Tour trong nước");
+
+    document.getElementById("domestic_tours").innerHTML = html;
+  });
+}
+
+// lấy tour ngoài nước
+function getInterTours() {
+  let data = JSON.stringify({
+    query: `query {
+      locations( filter:{
+          type:{
+              _neq: "Trong Nước"
+          }
+      }){
+          id
+          title
+          date_created
+          type
+          tours{
+              id
+              title
+              price
+              duration
+              covers{
+                  directus_files_id{
+                      id
+                  }
+              }
+          }
+      }
+      tours_aggregated (
+          filter: {
+          status: {
+              _eq: "published"
+              }
+          }
+          ) {
+          count {
+              id
+          }
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    let tours = [];
+    if (response.data.locations.length == 1) {
+      tours.push(response.data.locations[0].tours);
+    } else {
+      response.data.locations.map((l) => {
+        l.tours.map((t) => tours.push(t));
+      });
+    }
+
+    const result = tours[0].map((t) => new Tour(t));
+
+    const html = createIndexTourCard(result, "Tour quốc tế");
+
+    document.getElementById("inter_tours").innerHTML = html;
+  });
+}
+
+//lấy bài viết
+function getHomePosts() {
+  let data = JSON.stringify({
+    query: `query {
+      posts ( limit: 4){
+          id
+          date_created
+          title
+          cover{
+              id
+          }
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    document.getElementById("post_cards").innerHTML = createIndexPostCard(
+      response.data.posts.map((p) => new Post(p))
+    );
+  });
+}
 // Router ===========================================================================================================================
 
 function router() {
   let currentURL = window.location.href;
+  if (currentURL.includes("index")) {
+    getHome();
+    return;
+  }
+
   if (currentURL.includes("tourList")) {
     getTours(1, "");
     return;
