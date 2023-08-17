@@ -11,15 +11,22 @@ let totalPostCount = 0;
 let totalPostPages = 0;
 let limitPostPerPage = 6;
 
+let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
+let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
+
 //  =================================================================================================================================
 // Model ============================================================================================================================
 //  =================================================================================================================================
 
 class Tour {
   constructor(json) {
+    this.id = json.id;
     this.title = json.title;
-
-    let dateString = json.date_created;
+    this.duration = json.duration;
+    this.description = json.description;
+    this.groupSize = json.group_size;
+    this.type = json.type;
+    this.transportation = json.transportation;
 
     let date = new Date(json.date_created);
 
@@ -31,7 +38,7 @@ class Tour {
 
     this.type = json.type;
 
-    this.review = json.review_func.count;
+    this.review = json?.review_func?.count || 0;
 
     this.covers = [];
     let coverString = json.covers;
@@ -273,6 +280,67 @@ function postPagination(toTotalPage, category) {
   }
   return html;
 }
+// RELATED TOURS PRESENTORS
+function createRelatedTourCard(tours, title) {
+  let html = `<div class="row justify-center">
+  <div class="col-auto">
+    <div class="sectionTitle -md">
+      <h2 class="sectionTitle__title">${title}</h2>
+    </div>
+  </div>
+</div>
+
+`;
+
+  tours
+    .map(function (tour) {
+      html += `<div class="col-xl-3 col-lg-3 col-sm-6">
+
+    <a href="${
+      tourDetailUrl + `?id=` + tour.id
+    }" class="tourCard -type-1 rounded-4 ">
+      <!-- Image -->
+      <div class="tourCard__image">
+        <div class="cardImage ratio ratio-1:1">
+          <div class="cardImage__content">
+                <img class="img-h-full" src="${tour.covers[0]}">
+          </div>
+        </div>
+
+      </div>
+      <!-- Content -->
+      <div class="tourCard__content mt-10">
+
+        <h4 class="tourCard__title text-dark-1 text-18 lh-16 fw-500 line-clamp">
+          <span>${tour.title}</span>
+        </h4>
+        <p class="text-light-1 lh-14 text-14 mt-5">Thời gian:
+          ${tour.duration} ngày</p>
+
+        <div class="row justify-between items-center pt-15">
+          <div class="col-auto">
+            <div class="text-14 text-light-1">
+              <span class="fw-700 mt-20 text-20 text-blue-1">${
+                tour.price
+              }đ</span>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="px-10 py-10 rounded-4 flex-center bg-blue-1">
+              <span class="text-14 fw-600 text-white"> Xem tour </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>`;
+    })
+    .join("");
+
+  return html;
+}
+
 //  =================================================================================================================================
 let defaultHeaderImg =
   "https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1472&amp;q=80";
@@ -551,7 +619,192 @@ function getServiceCar() {
     document.getElementById("service_car_content").innerHTML = content;
   });
 }
-// =====================GET HEADER================================
+// =====================TOUR DETAIL CONTROLLER================================
+function getTourDetail() {
+  // lấy id từ url
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get("id");
+  // nếu không có id redirect về tourList
+
+  if (!id) {
+    window.location.href = tourListUrl;
+    return;
+  }
+  let data = JSON.stringify({
+    query: `
+    query {
+      tours (filter: {
+          _and: [
+              {
+                  status: {
+                      _eq: "published"
+                      }
+              },
+              {
+                  id: {
+                      _eq: ${id}
+                  }
+              }
+          ]
+      }){
+          id
+          title
+          date_created
+          duration
+          description
+          price
+          group_size
+          transportation
+          type
+          covers {
+              directus_files_id {
+                  id
+              }
+          }
+      }
+  }
+    `,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    const { tours } = response.data;
+    if (tours.length === 0) {
+      window.location.href = tourListUrl;
+      return;
+    }
+    const tourDetail = new Tour(tours[0]);
+
+    const tourTitle = document.getElementById("tour_title");
+    const tourPrice = document.getElementById("tour_price");
+    const tourDuration = document.querySelectorAll(".tour_duration");
+    const tourDescription = document.getElementById("tour_description");
+    const tourGroupSize = document.getElementById("tour_group_size");
+    const tourTransportation = document.getElementById("tour_trans");
+    const tourCover = document.getElementById("tour_cover");
+    const tourType = document.getElementById("tour_type");
+
+    tourCover.src = tourDetail.covers[0];
+    tourTitle.innerHTML = tourDetail.title;
+    tourPrice.innerHTML = tourDetail.price;
+    tourType.innerHTML = tourDetail.type;
+    tourDescription.innerHTML = tourDetail.description;
+    tourDuration.forEach(
+      (t) => (t.innerHTML = tourDetail.duration + "<span> ngày</span>")
+    );
+    tourGroupSize.innerHTML = tourDetail.groupSize;
+    tourTransportation.innerHTML = tourDetail.transportation;
+
+    getRelatedTourByType(tourDetail.type, tourDetail.id, 4);
+    getAllTourCard();
+  });
+}
+function getRelatedTourByType(type, id, limit = 4) {
+  let data = JSON.stringify({
+    query: `query {
+      tours (page: 1, limit: ${limit},
+      filter: {
+          _and: [
+              {
+                  status: {
+                      _eq: "published"
+                      }
+              },
+              {
+                  type: {
+                      _eq: "${type}"
+                  }
+              },
+              {
+                  id:{
+                      _neq: ${id}
+                  }
+              }
+          ]
+      }
+      ){
+          id
+          title
+          date_created
+          duration
+          price
+          covers {
+              directus_files_id {
+                  id
+              }
+          }
+      }
+  }`,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    const { tours } = response.data;
+
+    const result = tours.map((t) => new Tour(t));
+    const html = createRelatedTourCard(result, "Các tour tương tự");
+
+    document.getElementById("related_tours").innerHTML = html;
+  });
+}
+function getAllTourCard(limit = 4) {
+  let data = JSON.stringify({
+    query: `
+    query {
+      tours (page: 1, limit: ${limit},
+      filter: {
+          _and: [
+              {
+                  status: {
+                      _eq: "published"
+                      }
+              },
+          ],
+      }
+      ){
+          id
+          title
+          date_created
+          duration
+          price
+          covers {
+              directus_files_id {
+                  id
+              }
+          }
+      }
+  }
+    `,
+  });
+  let settings = {
+    url: api,
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    data,
+  };
+  $.ajax(settings).done(function (response) {
+    const { tours } = response.data;
+    console.log(tours);
+    const result = tours.map((t) => new Tour(t));
+
+    const html = createRelatedTourCard(result, "Tour giờ chót giá tốt");
+    document.getElementById("all_tours").innerHTML = html;
+  });
+}
 
 // Router ===========================================================================================================================
 
@@ -559,23 +812,28 @@ function router() {
   let currentURL = window.location.href;
   if (currentURL.includes("tourList")) {
     getTours(1, "");
+    return;
   }
 
   if (currentURL.includes("tourPost")) {
-    alert("ok");
+    // alert("ok");
+    return;
   }
-
   if (currentURL.includes("tourDetail")) {
-    // getTours();
+    getTourDetail();
+    return;
   }
   if (currentURL.includes("tourExp")) {
     getPosts();
+    return;
   }
   if (currentURL.includes("servicePlane")) {
     getServicePlane();
+    return;
   }
   if (currentURL.includes("serviceCar")) {
     getServiceCar();
+    return;
   }
 }
 
