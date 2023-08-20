@@ -36,7 +36,7 @@
                                         <div class="searchMenu-loc px-30 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
 
                                             <div data-x-dd-click="searchMenu-loc">
-                                                <h4 class="text-15 fw-500 ls-2 lh-16">Địa điểm</h4>
+                                                <h4 class="text-15 fw-700 ls-2 lh-16">Địa điểm</h4>
 
                                                 <div class="text-15 text-light-1 ls-2 lh-16">
                                                     <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search js-dd-focus">
@@ -51,7 +51,7 @@
                                                                 <div class="d-flex">
                                                                     <div class="icon-location-2 text-light-1 text-20 pt-4"></div>
                                                                     <div class="ml-10">
-                                                                        <div class="text-15 lh-12 fw-500 js-search-option-target">Hà Giang</div>
+                                                                        <div class="text-15 lh-12 fw-700 js-search-option-target">Hà Giang</div>
                                                                         <div class="text-14 lh-12 text-light-1 mt-5">Việt Nam</div>
                                                                     </div>
                                                                 </div>
@@ -63,7 +63,7 @@
                                                                 <div class="d-flex">
                                                                     <div class="icon-location-2 text-light-1 text-20 pt-4"></div>
                                                                     <div class="ml-10">
-                                                                        <div class="text-15 lh-12 fw-500 js-search-option-target">Cà Mau</div>
+                                                                        <div class="text-15 lh-12 fw-700 js-search-option-target">Cà Mau</div>
                                                                         <div class="text-14 lh-12 text-light-1 mt-5">Việt Nam</div>
                                                                     </div>
                                                                 </div>
@@ -79,7 +79,7 @@
                                         <div class="searchMenu-date px-30 lg:py-20 lg:px-0 js-form-dd js-calendar">
 
                                             <div data-x-dd-click="searchMenu-date">
-                                                <h4 class="text-15 fw-500 ls-2 lh-16">Ngày đến - Ngày về</h4>
+                                                <h4 class="text-15 fw-700 ls-2 lh-16">Ngày đến - Ngày về</h4>
 
                                                 <div class="text-15 text-light-1 ls-2 lh-16">
                                                     <span class="js-first-date">Thứ 4 11/8</span>
@@ -96,7 +96,7 @@
 
 
                                                             <div class="swiper-slide swiper-slide-active" style="width: 420px;" role="group" aria-label="1 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">January 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">January 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -375,7 +375,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide swiper-slide-next" style="width: 420px;" role="group" aria-label="2 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">February 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">February 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -605,7 +605,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="3 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">March 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">March 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -856,7 +856,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="4 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">April 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">April 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -1121,7 +1121,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="5 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">May 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">May 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -1358,7 +1358,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="6 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">June 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">June 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -1609,7 +1609,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="7 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">July 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">July 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -1881,7 +1881,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="8 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">August 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">August 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -2125,7 +2125,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="9 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">September 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">September 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -2383,7 +2383,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="10 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">October 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">October 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -2711,7 +2711,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="11 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">November 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">November 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -3004,7 +3004,7 @@
                                                             </div>
 
                                                             <div class="swiper-slide" style="width: 420px;" role="group" aria-label="12 / 12">
-                                                                <div class="text-28 fw-500 text-center mb-10">December 2022</div>
+                                                                <div class="text-28 fw-700 text-center mb-10">December 2022</div>
 
                                                                 <div class="table-calendar js-calendar-single">
                                                                     <div class="table-calendar__header">
@@ -3364,7 +3364,7 @@
                         </div>
 
                         <div class="text-center mt-30">
-                            <h4 class="text-18 fw-500">Đảm bảo giá tốt nhất</h4>
+                            <h4 class="text-18 fw-700">Đảm bảo giá tốt nhất</h4>
                             <p class="text-15 mt-10">Chúng tôi đảm bảo khách hàng sẽ đặt được dịch vụ với giá tốt nhất, những chương trình khuyến mãi hấp dẫn nhất</p>
                         </div>
                     </div>
@@ -3379,7 +3379,7 @@
                         </div>
 
                         <div class="text-center mt-30">
-                            <h4 class="text-18 fw-500">Dịch vụ tin cậy &amp; Giá trị đích thực</h4>
+                            <h4 class="text-18 fw-700">Dịch vụ tin cậy &amp; Giá trị đích thực</h4>
                             <p class="text-15 mt-10">Đặt lợi ích khách hàng lên trên hết, chúng tôi hỗ trợ khách hàng nhanh và chính xác nhất với dịch vụ tin cậy, giá trị đích thực.</p>
                         </div>
                     </div>
@@ -3394,7 +3394,7 @@
                         </div>
 
                         <div class="text-center mt-30">
-                            <h4 class="text-18 fw-500">Đảm bảo chất lượng</h4>
+                            <h4 class="text-18 fw-700">Đảm bảo chất lượng</h4>
                             <p class="text-15 mt-10">Chúng tôi liên kết chặt chẽ với các đối tác, khảo sát định kỳ để đảm bảo chất lượng tốt nhất của dịch vụ</p>
                         </div>
                     </div>
@@ -3410,208 +3410,386 @@
         </div>
     </section>
 
-    <!-- Banner -->
+
     <section class="layout-pt-md layout-pb-md">
-        <div class="container">
-            <div class="row y-gap-20">
-                <div data-anim="slide-up" class="col-md-6 is-in-view">
+      <div class="container" id="index_tour_close_content">
 
-                    <div class="ctaCard -type-1 rounded-4 ">
-                        <div class="ctaCard__image ratio ratio-16:9">
-                            <img class="img-ratio js-lazy loaded" src="img/backgrounds/1.png" alt="image" data-ll-status="loaded">
-                        </div>
+      </div>
+    </section>
 
-                        <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
-                            <h4 class="text-40 lg:text-26 text-white">Những điều nên làm ở Quảng Ninh</h4>
 
-                            <div class="d-inline-block mt-30">
-                                <a href="tourExp.php" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
-                            </div>
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Banner -->
+<section class="layout-pt-md layout-pb-md">
+    <div class="container">
+        <div class="row y-gap-20">
+            <div data-anim="slide-up" class="col-md-6 is-in-view">
+
+                <div class="ctaCard -type-1 rounded-4 ">
+                    <div class="ctaCard__image ratio ratio-16:9">
+                        <img class="img-ratio js-lazy loaded" src="img/backgrounds/1.png" alt="image" data-ll-status="loaded">
                     </div>
 
-                </div>
+                    <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
+                        <h4 class="text-40 lg:text-26 text-white">Những điều nên làm ở Quảng Ninh</h4>
 
-                <div data-anim="slide-up delay-1" class="col-md-6 is-in-view">
-
-                    <div class="ctaCard -type-1 rounded-4 ">
-                        <div class="ctaCard__image ratio ratio-16:9">
-                            <img class="img-ratio js-lazy loaded" src="img/backgrounds/2.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
-
-                            <div class="text-15 fw-500 text-white mb-10">Tận hưởng hè sale lớn</div>
-
-
-                            <h4 class="text-40 lg:text-26 text-white">Lên đến 70%</h4>
-
-                            <div class="d-inline-block mt-30">
-                                <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Tìm hiểu thêm</a>
-                            </div>
+                        <div class="d-inline-block mt-30">
+                            <a href="tourExp.php" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Khám phá ngay</a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- Tour trong Nước -->
-    <section class="layout-pt-md layout-pb-md">
-        <div class="container">
-            <div class="row y-gap-30 pt-40 sm:pt-20" id="domestic_tours"></div>
-            <!-- Title -->
+            <div data-anim="slide-up delay-1" class="col-md-6 is-in-view">
 
-        </div>
-    </section>
-
-    <!-- Tour quốc tế -->
-    <section class="layout-pt-md layout-pb-md">
-        <div class="container">
-            <div class="row y-gap-30 pt-40 sm:pt-20" id="inter_tours"></div>
-            <!-- Title -->
-
-        </div>
-    </section>
-
-    <!-- Popular Places -->
-    <section class="layout-pt-md layout-pb-md">
-        <div data-anim-wrap="" class="container animated">
-            <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
-                <div class="col-auto">
-                    <div class="sectionTitle -md">
-                        <h2 class="sectionTitle__title">Điểm đến ưa thích</h2>
-                        <p class=" sectionTitle__text mt-5 sm:mt-0">Các điểm đến du lịch trong nước và nước ngoài</p>
+                <div class="ctaCard -type-1 rounded-4 ">
+                    <div class="ctaCard__image ratio ratio-16:9">
+                        <img class="img-ratio js-lazy loaded" src="img/backgrounds/2.png" alt="image" data-ll-status="loaded">
                     </div>
-                </div>
-            </div>
-            <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
 
-                <div data-anim-child="slide-up delay-3" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
+                    <div class="ctaCard__content py-70 px-70 lg:py-30 lg:px-30">
 
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
-                        <div class="citiesCard__image ratio ratio-1:1">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/1.png" alt="image" data-ll-status="loaded">
+                        <div class="text-15 fw-700 text-white mb-10">Tận hưởng hè sale lớn</div>
+
+
+                        <h4 class="text-40 lg:text-26 text-white">Lên đến 70%</h4>
+
+                        <div class="d-inline-block mt-30">
+                            <a href="#" class="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Tìm hiểu thêm</a>
                         </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Sa Pa</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim-child="slide-up delay-4" class="col-xl-6 col-md-4 col-sm-6 is-in-view">
-
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 h-full">
-                        <div class="citiesCard__image ">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/2.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Vinh Hạ Long</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim-child="slide-up delay-5" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
-
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
-                        <div class="citiesCard__image ratio ratio-1:1">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/3.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Đà Nẵng</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim-child="slide-up delay-6" class="col-xl-6 col-md-4 col-sm-6 is-in-view">
-
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 h-full">
-                        <div class="citiesCard__image ">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/4.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Nha Trang</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim-child="slide-up delay-7" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
-
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
-                        <div class="citiesCard__image ratio ratio-1:1">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/5.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Châu Âu</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div data-anim-child="slide-up delay-8" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
-
-                    <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
-                        <div class="citiesCard__image ratio ratio-1:1">
-                            <img class="img-ratio js-lazy loaded" src="img/destinations/2/6.png" alt="image" data-ll-status="loaded">
-                        </div>
-
-                        <div class="citiesCard__content px-30 py-30">
-                            <h4 class="text-26 fw-600 text-white">Châu Á</h4>
-                            <div class="text-15 text-white">1,714 Điểm đến</div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Cảm hứng du lịch -->
-    <section class="layout-pt-sm layout-pb-md">
-        <div data-anim-wrap="" class="container animated">
-            <!-- Title -->
-            <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
-                <div class="col-auto">
-                    <div class="sectionTitle -md">
-                        <h2 class="sectionTitle__title">Cảm hứng du lịch</h2>
-                        <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
                     </div>
                 </div>
 
-                <div class="col-auto">
-                    <a href="" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
-                        Xem tất cả
-                        <i class="icon-arrow-top-right ml-10"></i>
-                    </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tour trong Nước -->
+<section class="layout-pt-md layout-pb-md">
+    <div class="container">
+        <div class="row y-gap-30 pt-40 sm:pt-20" id="domestic_tours"></div>
+        <!-- Title -->
+
+    </div>
+</section>
+
+<!-- Tour quốc tế -->
+<section class="layout-pt-md layout-pb-md">
+    <div class="container">
+        <div class="row y-gap-30 pt-40 sm:pt-20" id="inter_tours"></div>
+        <!-- Title -->
+
+    </div>
+</section>
+
+<!-- Popular Places -->
+<section class="layout-pt-md layout-pb-md">
+    <div data-anim-wrap="" class="container animated">
+        <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+            <div class="col-auto">
+                <div class="sectionTitle -md">
+                    <h2 class="sectionTitle__title">Điểm đến ưa thích</h2>
+                    <p class=" sectionTitle__text mt-5 sm:mt-0">Các điểm đến du lịch trong nước và nước ngoài</p>
+                </div>
+            </div>
+        </div>
+        <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
+
+            <div data-anim-child="slide-up delay-3" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
+                    <div class="citiesCard__image ratio ratio-1:1">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/1.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Sa Pa</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div data-anim-child="slide-up delay-4" class="col-xl-6 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 h-full">
+                    <div class="citiesCard__image ">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/2.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Vinh Hạ Long</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div data-anim-child="slide-up delay-5" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
+                    <div class="citiesCard__image ratio ratio-1:1">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/3.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Đà Nẵng</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div data-anim-child="slide-up delay-6" class="col-xl-6 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 h-full">
+                    <div class="citiesCard__image ">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/4.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Nha Trang</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div data-anim-child="slide-up delay-7" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
+                    <div class="citiesCard__image ratio ratio-1:1">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/5.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Châu Âu</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div data-anim-child="slide-up delay-8" class="col-xl-3 col-md-4 col-sm-6 is-in-view">
+
+                <a href="#" class="citiesCard -type-3 d-block rounded-4 ">
+                    <div class="citiesCard__image ratio ratio-1:1">
+                        <img class="img-ratio js-lazy loaded" src="img/destinations/2/6.png" alt="image" data-ll-status="loaded">
+                    </div>
+
+                    <div class="citiesCard__content px-30 py-30">
+                        <h4 class="text-26 fw-600 text-white">Châu Á</h4>
+                        <div class="text-15 text-white">1,714 Điểm đến</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Cảm hứng du lịch -->
+<section class="layout-pt-sm layout-pb-md">
+    <div data-anim-wrap="" class="container animated">
+        <!-- Title -->
+        <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
+            <div class="col-auto">
+                <div class="sectionTitle -md">
+                    <h2 class="sectionTitle__title">Cảm hứng du lịch</h2>
+                    <p class=" sectionTitle__text mt-5 sm:mt-0">Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các điểm đến Việt nam, Đông Nam Á và Thế Giới</p>
                 </div>
             </div>
 
-            <!-- Blog -->
-            <div class="row y-gap-30 pt-40" id="post_cards">
+            <div class="col-auto">
+                <a href="" class="button -blue-1 -md bg-blue-1-05 text-blue-1">
+                    Xem tất cả
+                    <i class="icon-arrow-top-right ml-10"></i>
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- Email -->
-    <?php include 'commons/email.php'; ?>
+        <!-- Blog -->
+        <div class="row y-gap-30 pt-40" id="post_cards">
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <?php include 'commons/footer.php'; ?>
+<!-- Email -->
+<?php include 'commons/email.php'; ?>
+
+<!-- Footer -->
+<?php include 'commons/footer.php'; ?>
 </body>
 
 </html>

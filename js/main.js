@@ -1,5 +1,3 @@
-(function() {
-"use strict";
 
 /*------------------------------------------------------------------
 
@@ -15,9 +13,13 @@ App.SMcontroller = new ScrollMagic.Controller();
 
 window.onload = function () {
   document.fonts.ready.then(function () {
-    initialReveal()
-    initComponents()
+    refreshAllJS();
   });
+}
+
+function refreshAllJS() {
+  initialReveal();
+  initComponents();
 }
 
 function initialReveal() {
@@ -1870,5 +1872,3 @@ const Header = (function() {
   }
 })();
 
-
-})();
