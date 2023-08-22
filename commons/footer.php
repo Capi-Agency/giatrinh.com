@@ -60,6 +60,8 @@
       </div>
     </div>
   </div>
+
+  <script src="js/helper.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
   <script src="js/store.js"></script>

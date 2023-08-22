@@ -16,88 +16,6 @@ let totalPostPages = 0;
 // let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
 
 //  =================================================================================================================================
-// Model ============================================================================================================================
-//  =================================================================================================================================
-
-class Location {
-	constructor(json) {
-		this.id = json.id;
-		this.name = json.name;
-		this.count = json.tours_func?.count;
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
-		this.type = json.type == 'inland' ? 'Trong nước' : ' Quốc tế';
-	}
-}
-
-class Tour {
-	constructor(json) {
-		this.id = json.id;
-		this.name = json.name;
-		this.duration = json.duration;
-		this.description = json.description;
-		this.groupSize = json.group_size;
-		this.type = json.type;
-		this.transportation = json.transportation;
-
-		this.location = new Location(json.location);
-
-		this.slug = json.slug;
-
-		this.best_seller = json.best_seller;
-		this.food_included = json.food_included;
-		this.average_rate = (json.average_rate ? json.average_rate : 0).toFixed(1);
-		this.total_review = json.reviews_func.count;
-
-		let date = new Date(json.date_created);
-
-    // dateFormat
-
-		this.date_created = date;
-
-		this.price = new Intl.NumberFormat().format(json.price);
-		this.type = json.type;
-		this.review = json?.review_func?.count || 0;
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
-	}
-}
-
-class Banner {
-	constructor(json) {
-		this.id = json.id;
-		this.url = json.url;
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
-	}
-}
-
-class Post {
-	constructor(json) {
-		this.id = json?.id;
-		this.author = json?.author;
-		this.category = json?.category?.title;
-		this.content = json?.content;
-		this.title = json?.title;
-		this.short_description = json?.short_description;
-		this.date_created = new Date(json?.date_created);
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
-	}
-}
-
-class PostCategory {
-	constructor(json) {
-		this.id = json.id;
-		this.title = json.title;
-		this.post_count = json.post.count;
-	}
-}
-
-class ServicePlane {
-	constructor(json) {
-		this.title = json.title;
-		this.content = json.content;
-	}
-}
-
-//  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
 function idToImg(id) {
@@ -823,6 +741,7 @@ function getHomeContent() {
 	getDomesticTours();
 	getInterTours();
 	getLocations();
+	getHomePosts();
 }
 
 function getBanners() {
@@ -853,7 +772,7 @@ function getDomesticTours() {
 	let router = Router.getDomesticTours;
 
 	let data = {
-		limit: 6
+		limit: 4
 	};
 
 	callAPI(router, data, function(tours){
@@ -867,7 +786,7 @@ function getInterTours() {
 	let router = Router.getInternationalTours;
 
 	let data = {
-		limit: 6
+		limit: 4
 	};
 
 	callAPI(router, data, function(tours){
@@ -891,34 +810,20 @@ function getLocations() {
 	})
 }
 
-//lấy bài viết
 function getHomePosts() {
-	let data = JSON.stringify({
-		query: `query {
-			posts ( limit: 4){
-				id
-				date_created
-				title
-				cover{
-					id
-				}
-			}
-		}`,
-	});
-	let settings = {
-		url: api,
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		data,
+	let router = Router.getPosts;
+
+	let data = {
+		limit: 4
 	};
-	$.ajax(settings).done(function (response) {
-		document.getElementById("post_cards").innerHTML = createIndexPostCard(
-			response.data.posts.map((p) => new Post(p))
-			);
-	});
+
+	callAPI(router, data, function(datas){
+		let html = presentor(router, datas);
+		document.getElementById("index_posts_content").innerHTML = html;
+		refreshAllJS();
+	})
 }
+
 // Router ===========================================================================================================================
 
 function refresh() {

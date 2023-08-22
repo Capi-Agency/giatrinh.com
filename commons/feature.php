@@ -1,5 +1,5 @@
 <!-- Guarantee -->
-<section class="layout-pt-md">
+<section class="layout-pt-md layout-pb-md">
     <div data-anim-wrap="" class="container animated">
         <div class="row y-gap-20 justify-between">
 
