@@ -62,7 +62,8 @@
   </div>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/api.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/services.js"></script>
   <script src="js/presentor.js"></script>
   <script src="js/function.js"></script>
 </footer>

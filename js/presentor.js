@@ -1,6 +1,11 @@
-function presentor(router, html) {
+
+
+
+function presentor(router, data) {
 	switch(router) {
-	case 'getTourClose':
+	case Router.getCloseTour:
+			let html = tourOtoTourList(data, TourItemType.card);
+
     	return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
 			<div class="sectionTitle -md">
@@ -37,9 +42,13 @@ function presentor(router, html) {
 	}
 }
 
-
-
 //===================================================
+const TourItemType = {
+	card: 0,
+	row: 1,
+}
+
+
 function tourOtoTourList(tours, type) {
 	var html = ``;
 
@@ -62,8 +71,8 @@ function tourOtoTourlistItem(tour, type) {
 		foodTag = "Ăn ngoài";
 	}
 
-	if (type == "card") {
-
+	switch (type) {
+	case TourItemType.card:
 		var cardTag = '';
 
 		if (tour.best_seller) {
@@ -106,85 +115,10 @@ function tourOtoTourlistItem(tour, type) {
               </a>
             </div>
 		`;
-	} else if (type == "cell") {
-
+		break;
+	default:
+		break;
 	}
 
-
-	// var imgString = "";
-	// imgString =
-	// imgString +
-	// `<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 250px;" role="group" aria-label="2 / 3">
-	// <img class="col-12" src="` +
-	// tour.covers[0] +
-	// `" alt="image">
-	// </div>`;
-
-	// let html =
-	// `<div class="row y-gap-30">
-	// <div class="col-12">
-	// <div class="border-top-light pt-30">
-	// <div class="row x-gap-20 y-gap-20">
-	// <div class="col-md-auto">
-	// <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-	// <div class="cardImage__content">
-	// ` +
-	// imgString +
-	// `
-	// </div>
-
-	// </div>
-
-	// </div>
-
-	// <div class="col-md">
-	// <div class="row x-gap-10 items-center">
-	// <div class="col-auto">
-	// <p class="text-14 lh-14 mb-5">` +
-	// tour.type +
-	// `</p>
-	// </div>
-	// <div class="col-auto">
-	// <div class="size-3 rounded-full bg-light-1 mb-5"></div>
-	// </div>
-	// <div class="col-auto">
-	// <p class="text-14 lh-14 mb-5">Tiếng Trung</p>
-	// </div>
-	// </div>
-
-	// <h3 class="text-18 lh-16 fw-500">` +
-	// tour.title +
-	// `</h3>
-	// <p class="text-14 lh-14 mt-5">Trung Quốc</p>
-
-	// <div class="text-14 lh-15 fw-500 mt-20">Thoi gian <span class="fw-600">` +
-	// tour.date_created +
-	// `</span></div>
-	// <div class="text-14 fw-500 lh-15 mt-5">Giờ khởi hành <span class="fw-600 text-green-2">20 Tháng 8 2023</span></div>
-	// </div>
-
-	// <div class="col-md-auto text-right d-flex align-items-end flex-column md:text-left">
-
-	// <!-- Content -->
-	// <div class="text-14 lh-14 text-light-1">` +
-	// tour.review +
-	// ` đánh giá</div>
-
-	// <!-- Button -->
-	// <div class="mt-auto">
-	// <div class="text-14 text-light-1 md:mt-20">Từ</div>
-	// <div class="text-24 lh-12 fw-700 mt-5 text-blue-1">` +
-	// tour.price +
-	// `₫</div>
-	// <a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-	// Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
-	// </a>
-	// </div>
-
-	// </div>
-	// </div>
-	// </div>
-	// </div>
-	// </div>`;
 	return html;
 }

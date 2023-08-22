@@ -3412,7 +3412,7 @@
 
 
     <section class="layout-pt-md layout-pb-md">
-      <div class="container" id="index_tour_close_content">
+      <div data-anim="slide-up delay-1" class="container" id="index_tour_close_content">
 
       </div>
     </section>

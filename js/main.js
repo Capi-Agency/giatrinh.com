@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------------------
 
   01. Custom easings
@@ -18,19 +17,10 @@ window.onload = function () {
 }
 
 function refreshAllJS() {
-  initialReveal();
   initComponents();
+  RevealAnim.init()
 }
 
-function initialReveal() {
-  const preloader = document.querySelector('.js-preloader')
-  if (!preloader) return
-
-  setTimeout(() => {
-    preloader.classList.add('-is-hidden')
-    RevealAnim.init()
-  }, 300)
-}
 
 // Reloads all scripts when navigating through pages
 function initComponents() {
@@ -68,9 +58,11 @@ function initComponents() {
   priceRangeSliderInit()
   countChange()
   liveSearch()
+
   // initMap()
   // initMapPlaces()
   // initMapSingle()
+
   languageSwitch()
   priceSwitch()
 

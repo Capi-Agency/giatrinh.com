@@ -3,6 +3,7 @@
 //  =================================================================================================================================
 
 let api = "https://admin.giatrinh.com/graphql";
+
 let limit = 5;
 
 let currentPostCategory = "";
@@ -18,10 +19,6 @@ let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
 //  =================================================================================================================================
 // Model ============================================================================================================================
 //  =================================================================================================================================
-
-const tourContentJson = `
-
-`;
 
 class Tour {
 	constructor(json) {
@@ -803,27 +800,20 @@ function getAllTourCard(limit = 4) {
 }
 //===========================HOME CONTROLLER=================================
 
+
 function getTourClose() {
-	let data = JSON.stringify({
-		query: queryBody('getTourClose'),
-	});
-	let settings = {
-		url: api,
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		data,
+	let router = Router.getCloseTour;
+
+	let data = {
+		limit: 5
+		
 	};
 
-	$.ajax(settings).done(function (response) {
-
-		let tours = response.data.tours.map((t) => new Tour(t));
-		let html = tourOtoTourList(tours, 'card');
-		document.getElementById("index_tour_close_content").innerHTML = presentor('getTourClose', html);
-
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
+		document.getElementById("index_tour_close_content").innerHTML = html;
 		refreshAllJS();
-	});
+	})
 }
 
 
@@ -988,7 +978,7 @@ function getHomePosts() {
 }
 // Router ===========================================================================================================================
 
-function router() {
+function refresh() {
 	let currentURL = window.location.href;
 
 	if (currentURL.includes("tourList")) {
@@ -1020,4 +1010,4 @@ function router() {
 	getHomeContent();
 }
 
-router();
+refresh();
