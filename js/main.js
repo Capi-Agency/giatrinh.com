@@ -30,8 +30,8 @@ function initComponents() {
   sectionSlider()
   Select.init(".js-select")
   parallaxInit()
-  Events.init()
-  Events.ddInit()
+  // Events.init()
+  // Events.ddInit()
   Header.init()
   Header.headerSticky()
 

@@ -4,40 +4,49 @@
 
 let api = "https://admin.giatrinh.com/graphql";
 
-let limit = 5;
+let limit = 10;
 
 let currentPostCategory = "";
-let currentPostPage = 1;
+let currentPage = 1;
 let totalPostCount = 0;
 let totalPostPages = 0;
-let limitPostPerPage = 6;
 
-let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
-let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
-let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
+// let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
+// let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
+// let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
 
 //  =================================================================================================================================
 // Model ============================================================================================================================
 //  =================================================================================================================================
 
+class Location {
+	constructor(json) {
+		this.id = json.id;
+		this.name = json.name;
+		this.count = json.tours_func?.count;
+		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
+		this.type = json.type == 'inland' ? 'Trong nước' : ' Quốc tế';
+	}
+}
+
 class Tour {
 	constructor(json) {
 		this.id = json.id;
-		this.title = json.title;
+		this.name = json.name;
 		this.duration = json.duration;
 		this.description = json.description;
 		this.groupSize = json.group_size;
 		this.type = json.type;
 		this.transportation = json.transportation;
 
-		this.location_title = json.location.title;
-		this.location_type = json.location.type;
+		this.location = new Location(json.location);
+
 		this.slug = json.slug;
 
 		this.best_seller = json.best_seller;
 		this.food_included = json.food_included;
-		this.total_rate = json.total_rate ? json.total_rate : 0;
-		this.total_review = json.review_func.count;
+		this.average_rate = (json.average_rate ? json.average_rate : 0).toFixed(1);
+		this.total_review = json.reviews_func.count;
 
 		let date = new Date(json.date_created);
 
@@ -48,6 +57,14 @@ class Tour {
 		this.price = new Intl.NumberFormat().format(json.price);
 		this.type = json.type;
 		this.review = json?.review_func?.count || 0;
+		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
+	}
+}
+
+class Banner {
+	constructor(json) {
+		this.id = json.id;
+		this.url = json.url;
 		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
 	}
 }
@@ -800,13 +817,29 @@ function getAllTourCard(limit = 4) {
 }
 //===========================HOME CONTROLLER=================================
 
+function getHomeContent() {
+	getTourClose();
+	getBanners();
+	getDomesticTours();
+	getInterTours();
+	getLocations();
+}
+
+function getBanners() {
+	let router = Router.getBanners;
+
+	callAPI(router, null, function(banners){
+		let html = presentor(router, banners);
+		document.getElementById("index_banners_content").innerHTML = html;
+		refreshAllJS();
+	})
+}
 
 function getTourClose() {
 	let router = Router.getCloseTour;
 
 	let data = {
-		limit: 5
-		
+		limit: 8
 	};
 
 	callAPI(router, data, function(tours){
@@ -816,136 +849,46 @@ function getTourClose() {
 	})
 }
 
-
-function getHomeContent() {
-	getTourClose();
-	// getDomesticTours();
-	// getInterTours();
-	// getHomePosts();
-}
-
-// lấy tour trong nước
 function getDomesticTours() {
-	let data = JSON.stringify({
-		query: `query {
-			locations( filter:{
-				type:{
-					_eq: "Trong Nước"
-				}
-			}){
-				id
-				title
-				date_created
-				type
-				tours{
-					id
-					title
-					price
-					duration
-					cover {
-						id
-					}
-				}
-			}
-			tours_aggregated (
-			filter: {
-				status: {
-					_eq: "published"
-				}
-			}
-			) {
-				count {
-					id
-				}
-			}
-		}`,
-	});
-	let settings = {
-		url: api,
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		data,
+	let router = Router.getDomesticTours;
+
+	let data = {
+		limit: 6
 	};
-	$.ajax(settings).done(function (response) {
-		let tours = [];
-		if (response.data.locations.length == 1) {
-			tours.push(response.data.locations[0].tours);
-		} else {
-			response.data.locations.map((l) => {
-				l.tours.map((t) => tours.push(t));
-			});
-		}
 
-		const result = tours.map((t) => new Tour(t)).slice(0, 4);
-		
-		const html = createIndexTourCard(result, "Tour trong nước");
-
-		document.getElementById("domestic_tours").innerHTML = html;
-	});
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
+		document.getElementById("index_tour_inland_content").innerHTML = html;
+		refreshAllJS();
+	})
 }
 
-// lấy tour ngoài nước
 function getInterTours() {
-	let data = JSON.stringify({
-		query: `query {
-			locations( filter:{
-				type:{
-					_neq: "Trong Nước"
-				}
-			}){
-				id
-				title
-				date_created
-				type
-				tours{
-					id
-					title
-					price
-					duration
-					cover {
-						id
-					}
-				}
-			}
-			tours_aggregated (
-			filter: {
-				status: {
-					_eq: "published"
-				}
-			}
-			) {
-				count {
-					id
-				}
-			}
-		}`,
-	});
-	let settings = {
-		url: api,
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		data,
+	let router = Router.getInternationalTours;
+
+	let data = {
+		limit: 6
 	};
-	$.ajax(settings).done(function (response) {
-		let tours = [];
-		if (response.data.locations.length == 1) {
-			tours.push(response.data.locations[0].tours);
-		} else {
-			response.data.locations.map((l) => {
-				l.tours.map((t) => tours.push(t));
-			});
-		}
 
-		const result = tours[0].map((t) => new Tour(t));
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
+		document.getElementById("index_tour_inter_content").innerHTML = html;
+		refreshAllJS();
+	})
+}
 
-		const html = createIndexTourCard(result, "Tour quốc tế");
+function getLocations() {
+	let router = Router.getLocations;
 
-		document.getElementById("inter_tours").innerHTML = html;
-	});
+	let data = {
+		limit: 6
+	};
+
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
+		document.getElementById("index_locations_content").innerHTML = html;
+		refreshAllJS();
+	})
 }
 
 //lấy bài viết
