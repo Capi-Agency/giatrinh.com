@@ -90,6 +90,46 @@ class ServicePlane {
 //  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
+
+// Home's presentor
+function dateRangePicker() {
+  $("#date_picker").flatpickr({
+    mode: "range",
+    dateFormat: "d-m-Y",
+  });
+}
+function createSearchForm() {
+  dateRangePicker();
+  const formSearch = document.querySelector("#form_search");
+
+  formSearch.addEventListener("submit", (e) => {
+    const location = document.querySelector("#location").value;
+    const dateRange = document.querySelector("#date_picker").value;
+    let diffDays = 0;
+    e.preventDefault();
+
+    if (dateRange.includes("to")) {
+      // Phân tích chuỗi để lấy ngày bắt đầu và ngày kết thúc
+      const [startDateStr, endDateStr] = dateRange.split(" to ");
+      const [startDay, startMonth, startYear] = startDateStr
+        .split("-")
+        .map(Number);
+      const [endDay, endMonth, endYear] = endDateStr.split("-").map(Number);
+
+      // Chuyển đổi chuỗi ngày thành đối tượng ngày
+      const startDate = new Date(startYear, startMonth - 1, startDay);
+      const endDate = new Date(endYear, endMonth - 1, endDay);
+
+      // Tính khoảng thời gian giữa hai đối tượng ngày
+      const timeDiff = Math.abs(endDate - startDate);
+      diffDays = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)) + 1;
+
+      console.log("Số ngày: ", diffDays);
+    }
+  });
+}
+function toursResultToHTML(tours) {}
+// end Home's presenter
 function idToImg(id) {
   return "https://admin.giatrinh.com/assets/" + id;
 }
@@ -900,6 +940,7 @@ function getHome() {
   getDomesticTours();
   getInterTours();
   getHomePosts();
+  createSearchForm();
 }
 // lấy tour trong nước
 function getDomesticTours() {
