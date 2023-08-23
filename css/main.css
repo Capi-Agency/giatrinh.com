@@ -13519,7 +13519,7 @@ table.table-5 td {
   .flatpickr-monthDropdown-month {
   background-color: var(--color-blue-1);
   outline: none;
-  padding: 16px 0;
+  padding: 0;
 }
 .flatpickr-weekdays {
   background: var(--color-blue-1);
