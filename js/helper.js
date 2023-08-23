@@ -115,6 +115,7 @@ function getSearchValueAndNavigate(locations) {
     }
     if (datePickerInput.value || datePickerInput.value != "") {
       const [startDate, endDate] = datePickerInput.value.split(" đến ");
+
       let durationParam = `duration=${calcDuration(startDate, endDate)}`;
       urlParams.push(durationParam);
     }
