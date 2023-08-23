@@ -42,7 +42,7 @@ function liveSearch(locations) {
     });
 
     search.addEventListener("input", (event) => {
-      searchTerm = event.target.value.toLowerCase();
+      searchTerm = event.target.value.toLowerCase().trim();
       showList(searchTerm, results);
 
       results.querySelectorAll(".js-search-option").forEach((option) => {
@@ -69,9 +69,7 @@ function liveSearch(locations) {
         div.innerHTML = `
 			<button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
 			  <div class="d-flex">
-				<div class="">
-				<img src="${e.cover}" alt="image" class="js-lazy loaded" data-ll-status="loaded" style="width: 50px; height: 50px; object-fit:cover;">
-				</div>
+				<div class="icon-location-2 text-light-1 text-20 pt-4"></div>
 				<div class="ml-10">
 				  <div class="text-15 lh-12 fw-500 js-search-option-target">${e.name}</div>
 				  <div class="text-14 lh-12 text-light-1 mt-5">${e.count} điểm đến</div>
@@ -112,12 +110,12 @@ function getSearchValueAndNavigate(locations) {
 
   btnSubmit.addEventListener("click", () => {
     if (searchInput.value || searchInput.value != "") {
-      locationParam = `location=${searchInput.value.trim()}`;
+      let locationParam = `location=${searchInput.value.trim()}`;
       urlParams.push(locationParam);
     }
     if (datePickerInput.value || datePickerInput.value != "") {
       const [startDate, endDate] = datePickerInput.value.split(" to ");
-      durationParam = `duration=${calcDuration(startDate, endDate)}`;
+      let durationParam = `duration=${calcDuration(startDate, endDate)}`;
       urlParams.push(durationParam);
     }
 
