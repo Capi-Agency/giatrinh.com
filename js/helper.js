@@ -114,7 +114,8 @@ function getSearchValueAndNavigate(locations) {
       urlParams.push(locationParam);
     }
     if (datePickerInput.value || datePickerInput.value != "") {
-      const [startDate, endDate] = datePickerInput.value.split(" to ");
+      const [startDate, endDate] = datePickerInput.value.split(" đến ");
+
       let durationParam = `duration=${calcDuration(startDate, endDate)}`;
       urlParams.push(durationParam);
     }
