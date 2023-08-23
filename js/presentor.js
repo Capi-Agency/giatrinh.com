@@ -1,14 +1,12 @@
-let domain = 'https://giatrinh.com'
-
 function presentor(router, data) {
-	var html = '';
-	let url = '';
+  var html = "";
+  let url = "";
 
-	switch(router) {
-	case Router.getCloseTour:
-		html = tourOtoTourList(data, TourItemType.card);
+  switch (router) {
+    case Router.getCloseTour:
+      html = tourOtoTourList(data, TourItemType.card);
 
-		return `<div class="row y-gap-10 justify-between items-end">
+      return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
 			<div class="sectionTitle -md">
 			<h2 class="sectionTitle__title">Tour giờ chót giá tốt</h2>
@@ -38,11 +36,11 @@ function presentor(router, data) {
 			</div>
 			</div>
 			</div>`;
-		break;
-	case Router.getDomesticTours:
-		html = tourOtoTourList(data, TourItemType.card);
+      break;
+    case Router.getDomesticTours:
+      html = tourOtoTourList(data, TourItemType.card);
 
-		return `<div class="row y-gap-10 justify-between items-end">
+      return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
 				<div class="sectionTitle -md">
 				<h2 class="sectionTitle__title">Tour trong nước</h2>
@@ -55,11 +53,11 @@ function presentor(router, data) {
 				${html}
 				</div>
 			</div>`;
-		break;
-	case Router.getInternationalTours:
-		html = tourOtoTourList(data, TourItemType.card);
+      break;
+    case Router.getInternationalTours:
+      html = tourOtoTourList(data, TourItemType.card);
 
-		return `<div class="row y-gap-10 justify-between items-end">
+      return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
 				<div class="sectionTitle -md">
 				<h2 class="sectionTitle__title">Tour quốc tế</h2>
@@ -72,16 +70,16 @@ function presentor(router, data) {
 				${html}
 				</div>
 			</div>`;
-		break;
+      break;
 
-	case Router.getBanners:
-		return bannerOtoBannerList(data);
-		break;
+    case Router.getBanners:
+      return bannerOtoBannerList(data);
+      break;
 
-	case Router.getLocations:
-		html = locationOtoList(data, LocationItemType.card);
+    case Router.getLocations:
+      html = locationOtoList(data, LocationItemType.card);
 
-		return `<div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+      return `<div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
                 <div class="col-auto">
                     <div class="sectionTitle -md">
                         <h2 class="sectionTitle__title">Điểm đến ưa thích</h2>
@@ -92,13 +90,12 @@ function presentor(router, data) {
             <div class="row y-gap-40 justify-between pt-40 sm:pt-20">
             ${html}
             </div>`;
-		break;
-	case Router.getPosts:
+      break;
+    case Router.getPosts:
+      html = postOtoList(data, PostItemType.card);
+      url = domain + "/posts";
 
-		html = postOtoList(data, PostItemType.card);
-		url = domain + '/posts';
-
-		return `
+      return `
             <div data-anim-child="slide-up delay-1" class="row y-gap-20 justify-between items-end is-in-view">
                 <div class="col-auto">
                     <div class="sectionTitle -md">
@@ -119,13 +116,13 @@ function presentor(router, data) {
             ${html}
             </div>
 		`;
-		break;
-	case Router.getTours:
-		return tourOtoTourList(data, TourItemType.row);
-		break;
-	default:
-		return '';
-	}
+      break;
+    case Router.getTours:
+      return tourOtoTourList(data, TourItemType.row);
+      break;
+    default:
+      return "";
+  }
 }
 
 //======================================================================================================
@@ -133,15 +130,15 @@ function presentor(router, data) {
 //======================================================================================================
 
 function bannerOtoBannerList(banners) {
-	var html = '';
-	banners.forEach(function(banner){
-		html = html + bannerOtoBannerListItem(banner);
-	});
-	return html;
+  var html = "";
+  banners.forEach(function (banner) {
+    html = html + bannerOtoBannerListItem(banner);
+  });
+  return html;
 }
 
 function bannerOtoBannerListItem(banner) {
-	var html = `
+  var html = `
 		<div data-anim="slide-up" class="col-md-6 is-in-view">
 	        <a href="${banner.url}">
 	            <div class="ctaCard -type-1 rounded-4 ">
@@ -152,7 +149,7 @@ function bannerOtoBannerListItem(banner) {
 	        </a>
 	    </div>
 	`;
-	return html;
+  return html;
 }
 
 //======================================================================================================
@@ -160,25 +157,25 @@ function bannerOtoBannerListItem(banner) {
 //======================================================================================================
 
 const PostItemType = {
-	card: 0,
-	row: 1,
-}
+  card: 0,
+  row: 1,
+};
 
 function postOtoList(posts, type) {
-	var html = '';
-	posts.forEach(function(post){
-		html = html + postOtoListItem(post, type);
-	});
-	return html;
+  var html = "";
+  posts.forEach(function (post) {
+    html = html + postOtoListItem(post, type);
+  });
+  return html;
 }
 
 function postOtoListItem(post, type) {
-	var html = '';
-	switch (type) {
-	case LocationItemType.card:
-		let url = domain + '/posts/' + post.slug;
+  var html = "";
+  switch (type) {
+    case LocationItemType.card:
+      let url = domain + "/posts/" + post.slug;
 
-		html = `
+      html = `
 			<div data-anim-child="slide-left delay-1" class="col-lg-3 col-sm-6 is-in-view">
 			<a href="${url}" class="blogCard -type-1 d-block ">
 			<div class="blogCard__image">
@@ -193,41 +190,52 @@ function postOtoListItem(post, type) {
 			</a>
 			</div>
 		`;
-		break;
-	default:
-		break;
-	}
-	return html;
+      break;
+    default:
+      break;
+  }
+  return html;
 }
 
 //======================================================================================================
 //Location =============================================================================================
 //======================================================================================================
 const LocationItemType = {
-	card: 0,
-	row: 1,
-}
+  card: 0,
+  row: 1,
+};
 
 function locationOtoList(locations, type) {
-	var html = '';
-	for (var i = 0; i < locations.length; i++) {
-		let location = locations[i];
-		html = html + locationOtoListItem(location, type, i);
-	}
-	return html;
+  var html = "";
+  for (var i = 0; i < locations.length; i++) {
+    let location = locations[i];
+    html = html + locationOtoListItem(location, type, i);
+  }
+  return html;
 }
 
 function locationOtoListItem(location, type, index) {
-	let url = domain + '/tours?location=' + location.slug;
+  let url = domain + "/tours?location=" + location.slug;
 
-	var html = '';
-	switch (type) {
-	case LocationItemType.card:
-		html = `
-			<div data-anim-child="slide-up delay-3" class="`+ ((index == 1 || index == 3) ? `col-xl-6 col-md-4 col-sm-6 is-in-view` : `col-xl-3 col-md-4 col-sm-6 is-in-view`) +`">
-	            <a href="${url}" class="citiesCard -type-3 d-block rounded-4 `+ ((index == 1 || index == 3) ? `h-full` : ``) +`">
-	                <div class="citiesCard__image `+ ((index == 1 || index == 3) ? `` : `ratio ratio-1:1`) +`">
-	                    <img class="img-ratio js-lazy loaded" src="`+location.cover+`" alt="image" data-ll-status="loaded">
+  var html = "";
+  switch (type) {
+    case LocationItemType.card:
+      html =
+        `
+			<div data-anim-child="slide-up delay-3" class="` +
+        (index == 1 || index == 3
+          ? `col-xl-6 col-md-4 col-sm-6 is-in-view`
+          : `col-xl-3 col-md-4 col-sm-6 is-in-view`) +
+        `">
+	            <a href="${url}" class="citiesCard -type-3 d-block rounded-4 ` +
+        (index == 1 || index == 3 ? `h-full` : ``) +
+        `">
+	                <div class="citiesCard__image ` +
+        (index == 1 || index == 3 ? `` : `ratio ratio-1:1`) +
+        `">
+	                    <img class="img-ratio js-lazy loaded" src="` +
+        location.cover +
+        `" alt="image" data-ll-status="loaded">
 	                </div>
 	                <div class="citiesCard__content px-30 py-30">
 	                    <h4 class="text-26 fw-600 text-white">${location.name}</h4>
@@ -236,11 +244,11 @@ function locationOtoListItem(location, type, index) {
 	            </a>
 	        </div>
 		`;
-		break;
-	default:
-		break;
-	}
-	return html;
+      break;
+    default:
+      break;
+  }
+  return html;
 }
 
 //======================================================================================================
@@ -248,49 +256,48 @@ function locationOtoListItem(location, type, index) {
 //======================================================================================================
 
 const TourItemType = {
-	card: 0,
-	row: 1,
-}
-
+  card: 0,
+  row: 1,
+};
 
 function tourOtoTourList(tours, type) {
-	var html = ``;
+  var html = ``;
 
-	for (var i = 0; i < tours.length; i++) {
-		let tour = tours[i];
-		html = html + tourOtoTourlistItem(tour, type);
-	}
-	return html;
+  for (var i = 0; i < tours.length; i++) {
+    let tour = tours[i];
+    html = html + tourOtoTourlistItem(tour, type);
+  }
+  return html;
 }
 
 function tourOtoTourlistItem(tour, type) {
-	let url = domain + '/tours/' + tour.slug;
+  let url = domain + "/tours/" + tour.slug;
 
-	var html = '';
+  var html = "";
 
-	var foodTag = '';
+  var foodTag = "";
 
-	if (tour.food_included) {
-		foodTag = "Bao gồm đồ ăn";
-	} else {
-		foodTag = "Ăn ngoài";
-	}
+  if (tour.food_included) {
+    foodTag = "Bao gồm đồ ăn";
+  } else {
+    foodTag = "Ăn ngoài";
+  }
 
-	switch (type) {
-	case TourItemType.card:
-		var cardTag = '';
+  switch (type) {
+    case TourItemType.card:
+      var cardTag = "";
 
-		if (tour.best_seller) {
-			cardTag = `
+      if (tour.best_seller) {
+        cardTag = `
 			<div class="cardImage__leftBadge">
 			<div class="py-5 px-15 rounded-right-4 text-12 lh-16 fw-700 uppercase bg-blue-1 text-white">
 			Bán chạy
 			</div>
 			</div>
 			`;
-		}
+      }
 
-		html = `
+      html = `
 		<div class="swiper-slide">
 		<a href="${url}" class="hotelsCard -type-1 ">
 		<div class="hotelsCard__image">
@@ -320,9 +327,9 @@ function tourOtoTourlistItem(tour, type) {
 		</a>
 		</div>
 		`;
-		break;
-	case TourItemType.row:
-		html = `
+      break;
+    case TourItemType.row:
+      html = `
 		<div class="col-12">
 		<div class="border-top-light pt-30">
 		<div class="row x-gap-20 y-gap-20">
@@ -372,9 +379,9 @@ function tourOtoTourlistItem(tour, type) {
 		</div>
 		</div>
 		`;
-	default:
-		break;
-	}
+    default:
+      break;
+  }
 
-	return html;
+  return html;
 }
