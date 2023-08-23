@@ -120,6 +120,12 @@ function presentor(router, data) {
     case Router.getTours:
       return tourOtoTourList(data, TourItemType.row);
       break;
+    case Router.getCompanyInfo:
+      html = locationOtoList(data, LocationItemType.aboutUsCard);
+
+      return `
+			  ${html}
+			  `;
     default:
       return "";
   }
@@ -203,6 +209,7 @@ function postOtoListItem(post, type) {
 const LocationItemType = {
   card: 0,
   row: 1,
+  aboutUsCard: 2,
 };
 
 function locationOtoList(locations, type) {
@@ -245,6 +252,28 @@ function locationOtoListItem(location, type, index) {
 	        </div>
 		`;
       break;
+    case LocationItemType.aboutUsCard:
+      html = `
+		  <div class="swiper-slide">
+		  <a href="${url}">
+		  
+		  <div class="">
+			<img src="${location.cover}" alt="image" class="rounded-4 col-12"
+			style="height: 200px; object-fit:cover;">
+
+			<div class="mt-10">
+			  <div class="text-18 lh-15 fw-700" style="color:#13357b;">${
+          location.name
+        }</div>
+			  ${
+          location.count == 0
+            ? ""
+            : `<div class='text-14 lh-15'>${location.count} tour</div>`
+        }
+			</div>
+		  </div>
+		  </a>
+		</div>`;
     default:
       break;
   }
@@ -385,3 +414,5 @@ function tourOtoTourlistItem(tour, type) {
 
   return html;
 }
+
+//About ===============================================================================================

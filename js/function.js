@@ -818,12 +818,34 @@ function getHomePosts() {
     refreshAllJS();
   });
 }
+//  ABOUT US CONTROLLER ===========================================================================================================================
+function getAboutUsPage() {
+  let router = Router.getCompanyInfo;
 
+  callAPI(router, null, function ({ companyInfo, locations }) {
+    document.getElementById("company_name").innerHTML = companyInfo.name;
+    document.getElementById("company_slogan").innerHTML = companyInfo.slogan;
+    document.getElementById("company_short_description").innerHTML =
+      companyInfo.short_description;
+    document.getElementById("company_description").innerHTML =
+      companyInfo.description;
+
+    document.getElementById("locations_slider").innerHTML = presentor(
+      router,
+      locations
+    );
+
+    refreshAllJS();
+  });
+}
 // Router ===========================================================================================================================
 
 function refresh() {
   let currentURL = window.location.href;
-
+  if (currentURL.includes("about")) {
+    getAboutUsPage();
+    return;
+  }
   if (currentURL.includes("tourList")) {
     getTours(1, "");
     return;
