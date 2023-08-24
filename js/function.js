@@ -875,11 +875,6 @@ function refresh() {
     getTours(1, "");
     return;
   }
-
-  // if (currentURL.includes("tourPost")) {
-  //   // alert("ok");
-  //   return;
-  // }
   if (currentURL.includes("postDetail")) {
     getPostDetail();
     return;
