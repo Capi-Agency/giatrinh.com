@@ -146,6 +146,8 @@ const Router = {
 	getTours: 6,
 	getCompanyInfo: 7,
 	getServices: 8,
+	getServiceDetail: 9,
+	getPostDetail: 10,
 };
 
 function callAPI(router, data, handle, metaHandle) {
