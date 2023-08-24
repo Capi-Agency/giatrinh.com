@@ -53,14 +53,14 @@
         <div class="col-auto">
           <div class="row x-gap-30 y-gap-10">
             <div class="d-flex items-center">
-                © 2023 Gia Trình.
+              © 2023 Gia Trình.
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  <script src="js/datePicker.js"></script>
   <script src="js/helper.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>

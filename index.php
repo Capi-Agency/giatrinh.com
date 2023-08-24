@@ -31,7 +31,7 @@
                             <div class="tabs__pane -tab-item-1 is-tab-el-active">
 
                                 <div class="mainSearch bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-100">
-                                    <div class="button-grid items-center">
+                                    <div id="js-search-form" class="button-grid items-center">
                                         <!-- Places -->
                                         <div class="searchMenu-loc px-30 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
 
@@ -39,36 +39,13 @@
                                                 <h4 class="text-15 fw-700 ls-2 lh-16">Địa điểm</h4>
 
                                                 <div class="text-15 text-light-1 ls-2 lh-16">
-                                                    <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search js-dd-focus">
+                                                    <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search js-dd-focus" name="location" id="js-search">
                                                 </div>
                                             </div>
 
-                                            <div class="searchMenu-loc__field shadow-2 js-popup-window" data-x-dd="searchMenu-loc" data-x-dd-toggle="-is-active">
+                                            <div class="searchMenu-loc__field shadow-2 js-popup-window" data-x-dd="searchMenu-loc" id="js-popup-window">
                                                 <div class="bg-white px-30 py-30 sm:px-0 sm:py-15 rounded-4">
                                                     <div class="y-gap-5 js-results">
-                                                        <div>
-                                                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                                                                <div class="d-flex">
-                                                                    <div class="icon-location-2 text-light-1 text-20 pt-4"></div>
-                                                                    <div class="ml-10">
-                                                                        <div class="text-15 lh-12 fw-700 js-search-option-target">Hà Giang</div>
-                                                                        <div class="text-14 lh-12 text-light-1 mt-5">Việt Nam</div>
-                                                                    </div>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-
-                                                        <div>
-                                                            <button class="-link d-block col-12 text-left rounded-4 px-20 py-15 js-search-option">
-                                                                <div class="d-flex">
-                                                                    <div class="icon-location-2 text-light-1 text-20 pt-4"></div>
-                                                                    <div class="ml-10">
-                                                                        <div class="text-15 lh-12 fw-700 js-search-option-target">Cà Mau</div>
-                                                                        <div class="text-14 lh-12 text-light-1 mt-5">Việt Nam</div>
-                                                                    </div>
-                                                                </div>
-                                                            </button>
-                                                        </div>
 
                                                     </div>
                                                 </div>
@@ -80,21 +57,16 @@
 
                                             <div data-x-dd-click="searchMenu-date">
                                                 <h4 class="text-15 fw-700 ls-2 lh-16">Ngày đến - Ngày về</h4>
-
                                                 <div class="text-15 text-light-1 ls-2 lh-16">
-                                                    <span class="js-first-date">Thứ 4 11/8</span>
-                                                    -
-                                                    <span class="js-last-date">Thứ 4 18/8</span>
+                                                    <input type="text" name="duration" id="js-date-picker" placeholder="Vui lòng chọn ngày...">
                                                 </div>
                                             </div>
-
-
                                         </div>
 
 
                                         <!-- Search -->
                                         <div class="button-item">
-                                            <button class="mainSearch__submit button -dark-1 h-60 w-200 px-35 col-8 rounded-100 bg-blue-1 text-white">
+                                            <button class="mainSearch__submit button -dark-1 h-60 w-200 px-35 col-8 rounded-100 bg-blue-1 text-white" id="js-btn-submit">
                                                 <i class="icon-search text-20 mr-10"></i>
                                                 Tìm kiếm
                                             </button>
@@ -111,9 +83,9 @@
     </section>
 
     <section class="layout-pt-md layout-pb-md">
-      <div data-anim="slide-up delay-1" class="container" id="index_tour_close_content">
+        <div data-anim="slide-up delay-1" class="container" id="index_tour_close_content">
 
-      </div>
+        </div>
     </section>
 
     <!-- Popular Places -->
@@ -134,18 +106,18 @@
         </div>
     </section>
 
-    
-    <section class="layout-pt-md layout-pb-md">
-      <div data-anim="slide-up delay-1" class="container" id="index_tour_inland_content">
 
-      </div>
+    <section class="layout-pt-md layout-pb-md">
+        <div data-anim="slide-up delay-1" class="container" id="index_tour_inland_content">
+
+        </div>
     </section>
 
 
     <section class="layout-pt-md layout-pb-md">
-      <div data-anim="slide-up delay-1" class="container" id="index_tour_inter_content">
+        <div data-anim="slide-up delay-1" class="container" id="index_tour_inter_content">
 
-      </div>
+        </div>
     </section>
 
 
