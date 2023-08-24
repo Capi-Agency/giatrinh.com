@@ -751,6 +751,32 @@ function getAboutUsPage() {
     refreshAllJS();
   });
 }
+//POST DETAIL CONTROLLER===========================================================================================================================
+function getPostDetail() {
+  const router = Router.getPostDetail;
+  const params = new URLSearchParams(window.location.search);
+  const slugParam = params.get("slug");
+
+  if (!slugParam || slugParam == "") {
+    alert("Lỗi, không có slug hoặc slug rỗng!");
+    return;
+  }
+
+  callAPI(router, { slug: slugParam }, function (post) {
+    document.getElementById("post_category").innerHTML = post.category.name;
+    document.getElementById("post_title").innerHTML = post.title;
+    document.getElementById("post_date").innerHTML = post.date_created;
+    document.getElementById("post_cover").src = post?.cover || defaultHeaderImg;
+    document.getElementById("post_content").innerHTML = post.content;
+    refreshAllJS();
+  });
+  callAPI(Router.getPosts, { limit: 4 }, function (datas) {
+    let html = presentor(Router.getPosts, datas);
+    document.getElementById("index_posts_content").innerHTML = html;
+    refreshAllJS();
+  });
+}
+
 // Router ===========================================================================================================================
 
 function refresh() {
