@@ -5,7 +5,6 @@ function presentor(router, data) {
 	switch(router) {
 	case Router.getTours:
 		html = tourOtoTourList(data, TourItemType.row);
-
 		return html;
 		break;
 
@@ -383,6 +382,7 @@ function tourOtoTourlistItem(tour, type) {
 		</div>
 		</div>
 		</div>
+		<a  class="col-md" href="${url}">
 		<div class="col-md">
 		<div class="row x-gap-10 items-center">
 		<div class="col-auto">
@@ -392,9 +392,10 @@ function tourOtoTourlistItem(tour, type) {
 		<h3 class="text-18 lh-16 fw-700">${tour.name}</h3>
 		<p class="text-14 lh-14 mt-5">${tour.short_description}</p>
 
-		<div class="text-14 lh-15 fw-500 mt-20">${tour.transportation}</div>
+		<div class="text-14 lh-15 fw-500 mt-20">Phương tiện di chuyển: ${tour.transportation}</div>
 		<div class="text-14 text-green-2 fw-500 lh-15 mt-5">${foodTag}</div>
 		</div>
+		</a>
 
 		<div class="col-md-auto text-right md:text-left">
 		<div class="d-flex x-gap-5 items-center justify-end md:justify-start">

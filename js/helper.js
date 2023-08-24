@@ -57,7 +57,9 @@ function liveSearch(locations) {
 		});
 
 		search.addEventListener("input", (event) => {
-			searchTerm = event.target.value.toLowerCase().trim();
+
+			searchTerm = changeString(event.target.value.trim());
+
 			showList(searchTerm, results);
 
 			results.querySelectorAll(".js-search-option").forEach((option) => {
@@ -77,7 +79,7 @@ function liveSearch(locations) {
 		resultsEl.innerHTML = "";
 
 		locations
-		.filter((location) => location.name.toLowerCase().includes(searchTerm))
+		.filter((location) => changeString(location.name).includes(searchTerm))
 		.forEach((e) => {
 			const div = document.createElement("div");
 
@@ -98,6 +100,18 @@ function liveSearch(locations) {
 	};
 }
 
+function changeString(str){
+	str = str.toLowerCase();
+    str = str.replace(/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/g, 'a');
+    str = str.replace(/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/g, 'e');
+    str = str.replace(/(ì|í|ị|ỉ|ĩ)/g, 'i');
+    str = str.replace(/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/g, 'o');
+    str = str.replace(/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/g, 'u');
+    str = str.replace(/(ỳ|ý|ỵ|ỷ|ỹ)/g, 'y');
+    str = str.replace(/(đ)/g, 'd');
+    return str;
+}
+
 function dateRangePicker() {
   // Tạo date picker từ thư việc flatpickr
 	$("#js-date-picker").flatpickr({
@@ -115,7 +129,7 @@ function calcDuration(startDate, endDate) {
 
 	const timeDifference = endDateObject.getTime() - startDateObject.getTime();
 	const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)) + 1;
-	return daysDifference;
+	return daysDifference > 6 ? 'long' : daysDifference;
 }
 
 function getSearchValueAndNavigate(locations) {
@@ -146,4 +160,117 @@ function getSearchValueAndNavigate(locations) {
 			urlParams = [];
 		}
 	});
+}
+
+function setFilterValue(locations) {
+	let inHtml = '';
+	let outHtml = '';
+
+	locations.forEach(function(location){
+		if (location.type == "Trong nước") {
+			inHtml += `
+					<div class="row y-gap-10 items-center justify-between">
+	                    <div class="col-auto">
+	                        <div class="d-flex items-center">
+	                            <div class="form-checkbox" style="align-items: center;">
+	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
+	                                <div class="form-checkbox__mark">
+	                                    <div class="form-checkbox__icon icon-check"></div>
+	                                </div>
+	                                <div class="text-15 ml-10">${location.name}</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+			`;
+		} else {
+			outHtml += `
+					<div class="row y-gap-10 items-center justify-between">
+	                    <div class="col-auto">
+	                        <div class="d-flex items-center">
+	                            <div class="form-checkbox" style="align-items: center;">
+	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
+	                                <div class="form-checkbox__mark">
+	                                    <div class="form-checkbox__icon icon-check"></div>
+	                                </div>
+	                                <div class="text-15 ml-10">${location.name}</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+			`;
+		}
+	});
+
+	document.getElementById('tours_location_in').innerHTML = inHtml;
+	document.getElementById('tours_location_out').innerHTML = outHtml;
+}
+
+function setNavigationTours(locations) {
+	let inHtml = '';
+	let outHtml = '';
+	console.log(locations);
+
+	locations.forEach(function(location){
+		if (location.type == "Trong nước") {
+			inHtml += `
+					<div class="row y-gap-10 items-center justify-between">
+	                    <div class="col-auto">
+	                        <div class="d-flex items-center">
+	                            <div class="form-checkbox" style="align-items: center;">
+	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
+	                                <div class="form-checkbox__mark">
+	                                    <div class="form-checkbox__icon icon-check"></div>
+	                                </div>
+	                                <div class="text-15 ml-10">${location.name}</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+			`;
+		} else {
+			outHtml += `
+					<div class="row y-gap-10 items-center justify-between">
+	                    <div class="col-auto">
+	                        <div class="d-flex items-center">
+	                            <div class="form-checkbox" style="align-items: center;">
+	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
+	                                <div class="form-checkbox__mark">
+	                                    <div class="form-checkbox__icon icon-check"></div>
+	                                </div>
+	                                <div class="text-15 ml-10">${location.name}</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+			`;
+		}
+	});
+
+	document.getElementById('tours_location_in').innerHTML = inHtml;
+	document.getElementById('tours_location_out').innerHTML = outHtml;
+}
+
+function getFilterData() {
+	    var itemForm = document.getElementById('tours_itemForm'); // getting the parent container of all the checkbox inputs
+        var checkBoxes = itemForm.querySelectorAll('input[type="checkbox"]'); // get all the check box
+
+        let result = [];
+
+        result = [];
+        checkBoxes.forEach(item => {
+            if (item.checked) {
+                result.push(item.id);
+            }
+        })
+        filterToursByValue(result);
+}
+
+function clearCheckbox() {
+	    var itemForm = document.getElementById('tours_itemForm');
+        var checkBoxes = itemForm.querySelectorAll('input[type="checkbox"]')
+
+        checkBoxes.forEach(item => {
+            item.checked = '';
+        })
 }

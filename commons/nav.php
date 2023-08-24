@@ -16,19 +16,19 @@
 
                                     <!-- Trang Chủ -->
                                     <li>
-                                        <a href="index.php">
+                                        <a href="https://giatrinh.com">
                                             Trang Chủ
                                         </a>
                                     </li>   
 
                                     <!-- Giới thiệu -->
                                     <li>
-                                        <a href="aboutUs.php">Giới Thiệu</a>
+                                        <a href="/about-us">Giới Thiệu</a>
                                     </li>
 
                                     <!-- Tour Du Lịch -->
                                     <li class="menu-item-has-children -has-mega-menu">
-                                        <a href="/tourList.php">
+                                        <a href="/tours">
                                             <span class="mr-10">Tour Du Lịch</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
@@ -51,52 +51,52 @@
                                                     <div class="tabs__pane -tab-item-1 is-tab-el-active">
                                                         <div class="mega__content">
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500"><div><a href="tourList.php">Miền bắc</a></div></div>
+                                                                <div class="text-15 fw-700"><div><a>Miền bắc</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Sapa</a></div>
+                                                                    <div><a href="tours?location=Sa%20Pa">Sapa</a></div>
 
-                                                                    <div><a href="tourList.php">Hà Giang</a></div>
+                                                                    <div><a href="tours?location=Hà Giang">Hà Giang</a></div>
 
-                                                                    <div><a href="tourList.php">Cao Bằng - Bắc Kạn</a></div>
+                                                                    <div><a href="tours?location=Cao Bằng - Bắc Kạn">Cao Bằng - Bắc Kạn</a></div>
 
-                                                                    <div><a href="tourList.php">Mộc Châu - Mai Châu</a></div>
+                                                                    <div><a href="tours?location=Mộc Châu - Mai Châu">Mộc Châu - Mai Châu</a></div>
 
-                                                                    <div><a href="tourList.php">Yên Bái</a></div>
+                                                                    <div><a href="tours?location=Yên Bái">Yên Bái</a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                            <div class="text-15 fw-500"><div><a href="tourList.php">Miền Trung</a></div></div>
+                                                            <div class="text-15 fw-700"><div><a>Miền Trung</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Cửa Lò</a></div>
+                                                                    <div><a href="tours?location=Cửa Lò">Cửa Lò</a></div>
 
-                                                                    <div><a href="tourList.php">Sầm Sơn</a></div>
+                                                                    <div><a href="tours?location=Sầm Sơn">Sầm Sơn</a></div>
 
-                                                                    <div><a href="tourList.php">Nghệ An</a></div>
+                                                                    <div><a href="tours?location=Nghệ An">Nghệ An</a></div>
 
-                                                                    <div><a href="tourList.php">Thiên Cẩm</a></div>
+                                                                    <div><a href="tours?location=Thiên Cẩm">Thiên Cẩm</a></div>
 
-                                                                    <div><a href="tourList.php">Huế</a></div>
+                                                                    <div><a href="tours?location=Huế">Huế</a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                            <div class="text-15 fw-500"><div><a href="tourList.php">Miền Nam</a></div></div>
+                                                            <div class="text-15 fw-700"><div><a>Miền Nam</a></div></div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Phú Quốc</a></div>
+                                                                    <div><a href="tours?location=Phú Quốc">Phú Quốc</a></div>
 
-                                                                    <div><a href="tourList.php">Côn Đảo</a></div>
+                                                                    <div><a href="tours?location=Côn Đảo">Côn Đảo</a></div>
 
-                                                                    <div><a href="tourList.php">Bến Tre</a></div>
+                                                                    <div><a href="tours?location=Bến Tre">Bến Tre</a></div>
 
-                                                                    <div><a href="tourList.php">Cần Thơ</a></div>
+                                                                    <div><a href="tours?location=Cần Thơ">Cần Thơ</a></div>
 
-                                                                    <div><a  href="tourList.php">Cà Mau</a></div>
+                                                                    <div><a  href="tours?location=Cà Mau">Cà Mau</a></div>
 
                                                                 </div>
                                                             </div>
@@ -106,86 +106,86 @@
                                                     <div class="tabs__pane -tab-item-2">
                                                         <div class="mega__content">
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500 text-secondary">Đông Nam Á</div>
+                                                                <div class="text-15 fw-700 text-secondary">Đông Nam Á</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Sapa</a></div>
+                                                                    <div><a href="tours?location=">Sapa</a></div>
 
-                                                                    <div><a href="tourList.php">Hà Giang</a></div>
+                                                                    <div><a href="tours?location=">Hà Giang</a></div>
 
-                                                                    <div><a href="tourList.php">Cao Bằng - Bắc Kạn</a></div>
+                                                                    <div><a href="tours?location=">Cao Bằng - Bắc Kạn</a></div>
 
-                                                                    <div><a href="tourList.php">Mộc Châu - Mai Châu</a></div>
+                                                                    <div><a href="tours?location=">Mộc Châu - Mai Châu</a></div>
 
-                                                                    <div><a href="tourList.php">Yên Bái</a></div>
+                                                                    <div><a href="tours?location=">Yên Bái</a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Đông Bắc Á</div>
+                                                                <div class="text-15 fw-700">Đông Bắc Á</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Cửa Lò</a></div>
+                                                                    <div><a href="tours?location=">Cửa Lò</a></div>
 
-                                                                    <div><a href="tourList.php">Sầm Sơn</a></div>
+                                                                    <div><a href="tours?location=">Sầm Sơn</a></div>
 
-                                                                    <div><a href="tourList.php">Nghệ An</a></div>
+                                                                    <div><a href="tours?location=">Nghệ An</a></div>
 
-                                                                    <div><a href="tourList.php">Thiên Cẩm</a></div>
+                                                                    <div><a href="tours?location=">Thiên Cẩm</a></div>
 
-                                                                    <div><a href="tourList.php">Huế</a></div>
+                                                                    <div><a href="tours?location=">Huế</a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Châu Mĩ</div>
+                                                                <div class="text-15 fw-700">Châu Mĩ</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Mĩ</a></div>
+                                                                    <div><a href="tours?location=">Mĩ</a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Châu Âu</div>
+                                                                <div class="text-15 fw-700">Châu Âu</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Italia</a></div>
+                                                                    <div><a href="tours?location=">Italia</a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
                                                                 </div>
                                                             </div>
 
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-500">Châu Phi</div>
+                                                                <div class="text-15 fw-700">Châu Phi</div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
-                                                                    <div><a href="tourList.php">Kenya</a></div>
+                                                                    <div><a href="tours?location=">Kenya</a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
-                                                                    <div><a href="tourList.php"></a></div>
+                                                                    <div><a href="tours?location="></a></div>
 
                                                                 </div>
                                                             </div>
@@ -196,59 +196,6 @@
                                             </div>
                                         </div>
 
-                                        <ul class="subnav mega-mobile">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i> Tour</a>
-                                            </li>
-
-                                            <li class="menu-item-has-children">
-                                                <a data-barba="">
-                                                    <span class="mr-10">Trong Nước</span>
-                                                    <i class="icon icon-chevron-sm-down"></i>
-                                                </a>
-
-                                                <ul class="subnav">
-                                                    <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#"><i class="icon icon-chevron-sm-down"></i>Trong Nước</a>
-                                                    </li>
-
-
-                                                    <li><a href="tourList.php">Hotel List v1</a></li>
-
-                                                    <li><a href="tourList.php">Hotel List v2</a></li>
-
-                                                    <li><a href="tourList.php">Hotel Single v1</a></li>
-
-                                                    <li><a href="tourList.php">Hotel Single v2</a></li>
-
-                                                    <li><a href="tourList.php">Booking Page</a></li>
-
-                                                </ul>
-                                            </li>
-
-                                            <li class="menu-item-has-children">
-                                                <a data-barba="">
-                                                    <span class="mr-10">Nước Ngoài</span>
-                                                    <i class="icon icon-chevron-sm-down"></i>
-                                                </a>
-
-                                                <ul class="subnav">
-                                                    <li class="subnav__backBtn js-nav-list-back">
-                                                        <a href="#"><i class="icon icon-chevron-sm-down"></i>Nước Ngoài</a>
-                                                    </li>
-
-                                                    <li><a href="tourList.php">Tour List v1</a></li>
-
-                                                    <li><a href="tourList.php">Tour List v2</a></li>
-
-                                                    <li><a href="tourList.php">Tour Map</a></li>
-
-                                                    <li><a href="tourList.php">Tour Single</a></li>
-
-                                                </ul>
-                                            </li>
-
-                                        </ul>
                                     </li>
 
                                     <!-- Kinh Nghiệm Du Lịch -->
@@ -302,7 +249,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="tourContact.php">Liên Hệ</a>
+                                        <a href="/contact-us">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -318,7 +265,7 @@
             <div class="col-auto">
                 <div class="d-flex items-center">
                     <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                        <a href="tourContact.php" class="button  px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
+                        <a href="/contact-us" class="button  px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
                     </div>
                     <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
                         <div><button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>

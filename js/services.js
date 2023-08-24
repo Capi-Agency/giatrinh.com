@@ -13,11 +13,13 @@ class Location {
 		this.id = json.id;
 		this.name = json.name;
 		this.slug = json.slug;
+		this.regions = json.regions;
+		
 		this.count = json.tours_func?.count;
 		this.cover = idToImg(
 			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
 			);
-		this.type = json.type == "inland" ? "Trong nước" : " Quốc tế";
+		this.type = (json.type == "inland" ? "Trong nước" : "Quốc tế");
 	}
 }
 
@@ -137,6 +139,7 @@ const Router = {
 	getPosts: 5,
 	getTours: 6,
 	getCompanyInfo: 7,
+	getServices: 8,
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -183,6 +186,10 @@ function responseHandle(router, data) {
 		break;
 	case Router.getPosts:
 		return data.posts.map((t) => new Post(t));
+		break;
+	case Router.getCompanyInfo:
+		let object = new CompanyInfo(data.company_information);
+		return object;
 		break;
 	default:
 		return null;
@@ -253,24 +260,77 @@ function queryBody(router, data) {
 	`;
 
 	let locations = `
-	id
-	name
-	tours_func {
-		count
-	}
-	slug
-	cover {
 		id
-	}
+		name
+		tours_func {
+			count
+		}
+		slug
+		type
+		regions
+		cover {
+			id
+		}
+	`;
+
+	let company_information = `
+		name
+		slogan
+		description
+		short_description
+		email1
+		email2
+		address
+		phone1
+		phone2
 	`;
 
 	switch(router) {
 	case Router.getTours:
+
+		if (data.searchDurations.length != 0 ) {
+			var filterString = '_or: [';
+			data.searchDurations.forEach(function(duration){
+				if (duration != 'long' || duration != 'long') {
+					filterString += `
+						{
+			                duration: {
+			                    _eq: "${duration}"
+			                }
+			            }
+					`; 
+				}
+			});
+			filterString += ']';
+			status += `,{
+				${filterString}
+			}`;
+		}
+
+		if (data.searchLocations.length != 0 ) {
+			var filterString = '_or: [';
+			data.searchLocations.forEach(function(location){
+				filterString += `
+					{
+		                location: {
+                            name: {
+                                _eq: "${location}"
+                            }
+                        }
+		            }
+				`; 
+			});
+			filterString += ']';
+			status += `,{
+				${filterString}
+			}`;
+		}
+
 		return `query {
 			tours (page: ${page} , limit: ${limit},
 			filter: {
 				_and: [
-				${status},
+					${status},
 				]
 			},
 			sort: "-date_created"
@@ -280,7 +340,7 @@ function queryBody(router, data) {
 			tours_aggregated (
 			filter: {
 				_and: [
-				${status},
+					${status},
 				]
 			}){
 				count {
@@ -294,7 +354,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-				${status},
+					${status},
 				]
 			},
 			sort: "-date_created"
@@ -308,7 +368,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-				${status},
+					${status},
 				{
 					location: {
 						type: {
@@ -329,7 +389,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-				${status},
+					${status},
 				{
 					location: {
 						type: {
@@ -350,7 +410,7 @@ function queryBody(router, data) {
 			banners (limit: 2,
 			filter: {
 				_and: [
-				${status},
+					${status},
 				]
 			},
 			sort: "-date_created"
@@ -368,7 +428,7 @@ function queryBody(router, data) {
 			locations (page: 1, limit: ${limit},
 			filter: {
 				_and: [
-				${status},
+					${status},
 				]
 			}
 			){
@@ -392,34 +452,8 @@ function queryBody(router, data) {
 	case Router.getCompanyInfo:
 		return `
 		query{
-			company_information{
-				name
-				slogan
-				description
-				short_description
-				email1
-				email2
-				address
-				phone1
-				phone2
-			}
-			locations( limit:10,filter: {
-				_and: [
-				{
-					status: {
-						_eq: "published"
-					}
-				}
-				]
-			}){
-				cover{
-					id
-				}
-				name
-				tours_func{
-					count
-				}
-				slug
+			company_information {
+				${company_information}
 			}
 		}
 		`;

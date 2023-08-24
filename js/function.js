@@ -11,8 +11,8 @@ let currentPage = 1;
 let totalPostCount = 0;
 let totalPostPages = 0;
 let searchKey = "";
-let searchLocation = "";
-let searchDuration = "";
+let searchDurations = [];
+let searchLocations = [];
 
 // let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
 // let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
@@ -265,13 +265,42 @@ function searchTourByKey() {
   getTours(1, value);
 }
 
+function filterToursByValue(values) {
+	searchLocations = [];
+	searchDurations = [];
+
+	let content = '';
+
+	values.forEach(function(value){
+		if (value.includes('filter_location')) {
+			searchLocations.push(value.replace("filter_location_", ""))
+			content += value.replace("filter_location_", "") + " ";
+		} else {
+			searchDurations.push(value.replace("filter_date_", ""))
+		}
+	})
+
+	document.getElementById('tour_list_filter_content').innerHTML = content;
+
+	if ((searchLocations.length + searchDurations.length) != 0) {
+		document.getElementById('tour_list_meta_content_button').style.display = '';
+	} else {
+		document.getElementById('tour_list_meta_content_button').style.display = 'none';
+	}
+
+	getTours();
+}
+
 function getTours() {
 	let router = Router.getTours;
 
 	let data = {
 		limit: limit,
 		searchKey: searchKey,
-		page: currentPage
+		page: currentPage,
+		searchDurations: searchDurations,
+		searchLocations: searchLocations,
+
 	};
 
 	callAPI(router, data, function(tours){
@@ -289,6 +318,11 @@ function getTours() {
 function getTourPage(page) {
 	currentPage = page;
 	getTours();
+}
+
+function clearFilter() {
+	filterToursByValue([]);
+	clearCheckbox();
 }
 // =========================POSTS' LIST CONTROLLER========================
 function getPosts(page = 1, category = currentPostCategory) {
@@ -715,6 +749,7 @@ function getSearchLocations() {
 
   callAPI(router, data, (locations) => {
     getSearchValueAndNavigate(locations);
+    setFilterValue(locations);
   });
 }
 
@@ -733,23 +768,17 @@ function getHomePosts() {
 }
 //  ABOUT US CONTROLLER ===========================================================================================================================
 function getAboutUsPage() {
-  let router = Router.getCompanyInfo;
+	let router = Router.getCompanyInfo;
 
-  callAPI(router, null, function ({ companyInfo, locations }) {
-    document.getElementById("company_name").innerHTML = companyInfo.name;
-    document.getElementById("company_slogan").innerHTML = companyInfo.slogan;
-    document.getElementById("company_short_description").innerHTML =
-      companyInfo.short_description;
-    document.getElementById("company_description").innerHTML =
-      companyInfo.description;
+	callAPI(router, null, function (companyInfo) {
 
-    document.getElementById("locations_slider").innerHTML = presentor(
-      router,
-      locations
-    );
-
-    refreshAllJS();
-  });
+		document.getElementById("company_name").innerHTML = companyInfo.name;
+		document.getElementById("company_slogan").innerHTML = companyInfo.slogan;
+		document.getElementById("company_short_description").innerHTML = companyInfo.short_description;
+		document.getElementById("company_description").innerHTML = companyInfo.description;
+		
+		refreshAllJS();
+	});
 }
 // Router ===========================================================================================================================
 
@@ -767,8 +796,17 @@ function refresh() {
 	}
 
 	if (currentURL.includes("tours")) {
-		searchLocation = params.get('location');
-		searchDuration = params.get('duration');
+		let searchLocation = params.get('location');
+		let searchDuration = params.get('duration');
+
+		if (searchLocation) {
+			searchLocations.push(searchLocation);
+		}
+
+		if (searchDuration) {
+			searchDurations.push(searchDuration);
+		}
+
 		getTours();
 		getSearchLocations();
 		return;

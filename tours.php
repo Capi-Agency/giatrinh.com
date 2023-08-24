@@ -16,7 +16,7 @@
             <div class="row y-gap-30">
 
                 <div class="col-xl-3 col-lg-4 lg:d-none">
-                    <aside class="sidebar y-gap-40">
+                    <aside class="sidebar y-gap-40" id="tours_itemForm">
                         <div class="sidebar__item -no-border">
                             <div class="px-20 py-20 bg-light-2 rounded-4">
                                 <h5 class="text-18 fw-500 mb-10">Tìm kiếm</h5>
@@ -83,196 +83,91 @@
                         </div>
 
                         <div class="sidebar__item">
-                            <h5 class="text-18 fw-500 mb-10">Duration</h5>
+                            <h5 class="text-18 fw-500 mb-10">Thời gian đi</h5>
                             <div class="sidebar-checkbox">
-
                                 <div class="row y-gap-10 items-center justify-between">
                                     <div class="col-auto">
                                         <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
+                                            <div class="form-checkbox" style="align-items: center;">
+                                                <input type="checkbox" name="name" id="filter_date_3" onchange="getFilterData()">
                                                 <div class="form-checkbox__mark">
                                                     <div class="form-checkbox__icon icon-check"></div>
                                                 </div>
+                                                <div class="text-15 ml-10">3 ngày 2 đêm</div>
                                             </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row y-gap-10 items-center justify-between">
+                                    <div class="col-auto">
+                                        <div class="d-flex items-center">
+                                            <div class="form-checkbox" style="align-items: center;">
+                                                <input type="checkbox" name="name" id="filter_date_4" onchange="getFilterData()">
+                                                <div class="form-checkbox__mark">
+                                                    <div class="form-checkbox__icon icon-check"></div>
+                                                </div>
+                                                <div class="text-15 ml-10">4 ngày 3 đêm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row y-gap-10 items-center justify-between">
+                                    <div class="col-auto">
+                                        <div class="d-flex items-center">
+                                            <div class="form-checkbox" style="align-items: center;">
+                                                <input type="checkbox" name="name" id="filter_date_5" onchange="getFilterData()">
+                                                <div class="form-checkbox__mark">
+                                                    <div class="form-checkbox__icon icon-check"></div>
+                                                </div>
+                                                <div class="text-15 ml-10">5 ngày 4 đêm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row y-gap-10 items-center justify-between">
+                                    <div class="col-auto">
+                                        <div class="d-flex items-center">
+                                            <div class="form-checkbox" style="align-items: center;">
+                                                <input type="checkbox" name="name" id="filter_date_6" onchange="getFilterData()">
+                                                <div class="form-checkbox__mark">
+                                                    <div class="form-checkbox__icon icon-check"></div>
+                                                </div>
+                                                <div class="text-15 ml-10">6 ngày 5 đêm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row y-gap-10 items-center justify-between">
+                                    <div class="col-auto">
+                                        <div class="d-flex items-center">
+                                            <div class="form-checkbox" style="align-items: center;">
+                                                <input type="checkbox" name="name"  id="filter_date_long" onchange="getFilterData()">
+                                                <div class="form-checkbox__mark">
+                                                    <div class="form-checkbox__icon icon-check"></div>
+                                                </div>
+                                                <div class="text-15 ml-10">Tất cả</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
                         <div class="sidebar__item">
-                            <h5 class="text-18 fw-500 mb-10">Duration</h5>
-                            <div class="sidebar-checkbox">
+                            <h5 class="text-18 fw-500 mb-10">Tour trong nước</h5>
+                            <div class="sidebar-checkbox" id="tours_location_in">
 
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
-                        </div>
-
-                        <div class="sidebar__item">
-                            <h5 class="text-18 fw-500 mb-10">Duration</h5>
-                            <div class="sidebar-checkbox">
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        </div>                     
 
 
                         <div class="sidebar__item">
-                            <h5 class="text-18 fw-500 mb-10">Duration</h5>
-                            <div class="sidebar-checkbox">
+                            <h5 class="text-18 fw-500 mb-10">Tour quốc tế</h5>
+                            <div class="sidebar-checkbox" id="tours_location_out">
 
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row y-gap-10 items-center justify-between">
-                                    <div class="col-auto">
-                                        <div class="d-flex items-center">
-                                            <div class="form-checkbox ">
-                                                <input type="checkbox" name="name">
-                                                <div class="form-checkbox__mark">
-                                                    <div class="form-checkbox__icon icon-check"></div>
-                                                </div>
-                                            </div>
-                                            <div class="text-15 ml-10">Up to 1 hour</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
 
@@ -282,8 +177,12 @@
 
                 <div class="col-xl-9 col-lg-8">
                     <div class="row y-gap-10 items-center justify-between">
-                        <div class="col-auto"id="tour_list_meta_content">
-                            
+                        <div class="col-auto" id="tour_list_meta_content"></div>
+                        <div class="col-auto" id="tour_list_filter_content"></div>
+                        <div class="col-auto">
+                            <button class="button -blue-1 h-40 px-20 rounded-100 bg-blue-1-05 text-15 text-blue-1" onclick="clearFilter()"  id="tour_list_meta_content_button" style="display: none;">
+                              Xoá bộ lọc
+                            </button>
                         </div>
                     </div>
 
