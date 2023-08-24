@@ -33,18 +33,18 @@ class Tour {
 		this.groupSize = json.group_size;
 		this.type = json.type;
 
-		var transportation = '';
+		var transportation = "";
 
 		switch (json.transportation) {
-		case 'car':
-			transportation = 'Xe ô tô';
-			break
-		case 'plane':
-			transportation = 'Máy bay';
-			break
-		case 'self-sufficient':
-			transportation = 'Chủ động di chuyển';
-			break
+		case "car":
+			transportation = "Xe ô tô";
+			break;
+		case "plane":
+			transportation = "Máy bay";
+			break;
+		case "self-sufficient":
+			transportation = "Chủ động di chuyển";
+			break;
 		default:
 			break;
 		}
@@ -61,15 +61,16 @@ class Tour {
 
 		let date = new Date(json.date_created);
 
-    	// dateFormat
+    // dateFormat
 
 		this.date_created = date;
 
 		this.price = new Intl.NumberFormat().format(json.price);
 		this.type = json.type;
 		this.review = json?.review_func?.count || 0;
-		this.cover = idToImg( json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
-
+		this.cover = idToImg(
+			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
+			);
 	}
 }
 
@@ -77,23 +78,28 @@ class Banner {
 	constructor(json) {
 		this.id = json.id;
 		this.url = json.url;
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
+		this.cover = idToImg(
+			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
+			);
 	}
 }
 
 class Post {
 	constructor(json) {
 		this.id = json?.id;
-		this.author = json?.author;
-		this.slug = json?.slug;
-
-		this.category = json?.category?.title;
 		this.content = json?.content;
+		this.slug = json?.slug;
 		this.title = json?.title;
 		this.short_description = json?.short_description;
-
+		this.tags = [];
+		if (json?.tags?.length > 0) {
+			json?.tags.map((t) => this.tags.push(t.post_tags_id.name));
+		}
 		this.date_created = changeDate(json?.date_created);
-		this.cover = idToImg(json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9");
+		this.cover = idToImg(
+			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
+			);
+		this.category = json?.categories[0].post_categories_id;
 	}
 }
 
@@ -160,7 +166,9 @@ function callAPI(router, data, handle, metaHandle) {
 		let object = responseHandle(router, responseData);
 		handle(object);
 		let object2 = responseMetaHandle(router, responseData);
-		if (metaHandle) { metaHandle(object2); }
+		if (metaHandle) {
+			metaHandle(object2);
+		}
 	});
 }
 
@@ -197,7 +205,7 @@ function responseHandle(router, data) {
 }
 
 function responseMetaHandle(router, data) {
-	switch(router) {
+	switch (router) {
 	case Router.getTours:
 		let meta = new Aggregated(data.tours_aggregated);
 		return meta;
@@ -260,29 +268,29 @@ function queryBody(router, data) {
 	`;
 
 	let locations = `
+	id
+	name
+	tours_func {
+		count
+	}
+	slug
+	type
+	regions
+	cover {
 		id
-		name
-		tours_func {
-			count
-		}
-		slug
-		type
-		regions
-		cover {
-			id
-		}
+	}
 	`;
 
 	let company_information = `
-		name
-		slogan
-		description
-		short_description
-		email1
-		email2
-		address
-		phone1
-		phone2
+	name
+	slogan
+	description
+	short_description
+	email1
+	email2
+	address
+	phone1
+	phone2
 	`;
 
 	switch(router) {
@@ -293,11 +301,11 @@ function queryBody(router, data) {
 			data.searchDurations.forEach(function(duration){
 				if (duration != 'long' || duration != 'long') {
 					filterString += `
-						{
-			                duration: {
-			                    _eq: "${duration}"
-			                }
-			            }
+					{
+						duration: {
+							_eq: "${duration}"
+						}
+					}
 					`; 
 				}
 			});
@@ -311,13 +319,13 @@ function queryBody(router, data) {
 			var filterString = '_or: [';
 			data.searchLocations.forEach(function(location){
 				filterString += `
-					{
-		                location: {
-                            name: {
-                                _eq: "${location}"
-                            }
-                        }
-		            }
+				{
+					location: {
+						name: {
+							_eq: "${location}"
+						}
+					}
+				}
 				`; 
 			});
 			filterString += ']';
@@ -330,7 +338,7 @@ function queryBody(router, data) {
 			tours (page: ${page} , limit: ${limit},
 			filter: {
 				_and: [
-					${status},
+				${status},
 				]
 			},
 			sort: "-date_created"
@@ -340,7 +348,7 @@ function queryBody(router, data) {
 			tours_aggregated (
 			filter: {
 				_and: [
-					${status},
+				${status},
 				]
 			}){
 				count {
@@ -354,7 +362,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-					${status},
+				${status},
 				]
 			},
 			sort: "-date_created"
@@ -368,7 +376,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-					${status},
+				${status},
 				{
 					location: {
 						type: {
@@ -389,7 +397,7 @@ function queryBody(router, data) {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
-					${status},
+				${status},
 				{
 					location: {
 						type: {
@@ -410,7 +418,7 @@ function queryBody(router, data) {
 			banners (limit: 2,
 			filter: {
 				_and: [
-					${status},
+				${status},
 				]
 			},
 			sort: "-date_created"
@@ -428,7 +436,7 @@ function queryBody(router, data) {
 			locations (page: 1, limit: ${limit},
 			filter: {
 				_and: [
-					${status},
+				${status},
 				]
 			}
 			){
@@ -454,6 +462,47 @@ function queryBody(router, data) {
 		query{
 			company_information {
 				${company_information}
+			}
+		}
+		`;
+	case Router.getPostDetail:
+		return `
+		query {
+			posts(,
+			filter: {
+				_and: [
+				{
+					status: {
+						_eq: "published"
+					}
+				},
+				{
+					slug:{
+						_eq: "${data.slug}"
+					}
+				}
+				]
+			}
+			){
+				id
+				date_created
+				title
+				short_description
+				slug
+				tags{
+					post_tags_id{
+						name
+					}
+				}
+				content
+				cover {
+					id
+				}
+				categories{
+					post_categories_id{
+						name
+					}
+				}
 			}
 		}
 		`;
