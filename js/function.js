@@ -4,12 +4,13 @@
 
 let api = "https://admin.giatrinh.com/graphql";
 
-let limit = 10;
+let limit = 6;
 
 let currentPostCategory = "";
 let currentPage = 1;
 let totalPostCount = 0;
 let totalPostPages = 0;
+let searchKey = "";
 
 // let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
 // let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
@@ -18,37 +19,8 @@ let totalPostPages = 0;
 //  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
-function idToImg(id) {
-	return "https://admin.giatrinh.com/assets/" + id;
-}
 
-function pageToTourList(page, totalPage) {
-	var html = "";
-	for (var i = 1; i <= totalPage; i++) {
-		if (i == page) {
-			html =
-			html +
-			`<div class="col-auto">
-			<button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getTours(` +
-			i +
-			`)" >` +
-			i +
-			`</button>
-			</div>`;
-		} else {
-			html =
-			html +
-			`<div class="col-auto">
-			<button class="btn size-40 flex-center rounded-full" onclick="getTours(` +
-			i +
-			`)" >` +
-			i +
-			`</button>
-			</div>`;
-		}
-	}
-	return html;
-}
+
 //-POST LISTS' PRESENTORS
 function postObjectPostList(posts) {
 	let html = "";
@@ -299,91 +271,30 @@ function searchTourByKey() {
 	getTours(1, value);
 }
 
-function getTours(page, searchKey) {
-	var searchString = "";
-	if (searchKey != "") {
-		searchString = `, { title: {_icontains: "` +
-		searchKey + `"}}`;
-	}
+function getTours() {
+	let router = Router.getTours;
 
-	let filter =
-	`filter: {
-		_and: [
-		{
-			status: {
-				_eq: "published"
-			}
-		}
-		` +
-		searchString +
-		`
-		]
-	}`;
-
-	let data = JSON.stringify({
-		query:
-		`query {
-			tours (page: ` +
-			page +
-			`, limit: ` +
-			limit +
-			`, ` +
-			filter +
-			`) {
-				id
-				title
-				date_created
-				duration
-				price
-				type
-				review_func {
-					count
-				}
-				cover {
-					id
-				}
-			}
-			tours_aggregated (` +
-			filter +
-			`) {
-				count {
-					id
-				}
-			}
-		}`,
-	});
-
-	var settings = {
-		url: api,
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		data: data,
+	let data = {
+		limit: limit,
+		searchKey: searchKey,
+		page: currentPage
 	};
 
-	$.ajax(settings).done(function (response) {
-		let data = response.data;
-		let tours = data.tours;
-		let totalTour = data.tours_aggregated[0].count.id;
-		let totalPage = Math.ceil(totalTour / limit);
-
-		document.getElementById("total_tour_content").innerHTML = totalTour;
-		document.getElementById("tour_list_page_content").innerHTML =
-		pageToTourList(page, totalPage);
-
-		var arrayTour = [];
-
-		for (var i = 0; i < tours.length; i++) {
-			let json = tours[i];
-			let tour = new Tour(json);
-
-			arrayTour.push(tour);
-		}
-
-		let html = tourOtoTourList(arrayTour);
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
 		document.getElementById("tour_list_content").innerHTML = html;
-	});
+		refreshAllJS();
+	}, function(meta){
+		let totalPage = Math.ceil(meta.count/limit);
+
+		document.getElementById("tour_list_meta_content").innerHTML = `<div class="text-18"><span class="fw-500">${meta.count} chuyến đi </span></div>`;
+		document.getElementById("tour_list_page_content").innerHTML = pageToTourList(currentPage, totalPage);
+	})
+}
+
+function getTourPage(page) {
+	currentPage = page;
+	getTours();
 }
 // =========================POSTS' LIST CONTROLLER========================
 function getPosts(page = 1, category = currentPostCategory) {
@@ -829,8 +740,8 @@ function getHomePosts() {
 function refresh() {
 	let currentURL = window.location.href;
 
-	if (currentURL.includes("tourList")) {
-		getTours(1, "");
+	if (currentURL.includes("tours")) {
+		getTours();
 		return;
 	}
 

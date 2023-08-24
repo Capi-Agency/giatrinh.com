@@ -2,6 +2,12 @@
 // Model ============================================================================================================================
 //  =================================================================================================================================
 
+class Aggregated {
+	constructor(json) {
+		this.count = json[0].count.id;
+	}
+}
+
 class Location {
 	constructor(json) {
 		this.id = json.id;
@@ -19,9 +25,27 @@ class Tour {
 		this.name = json.name;
 		this.duration = json.duration;
 		this.description = json.description;
+		this.short_description = json.short_description;
 		this.groupSize = json.group_size;
 		this.type = json.type;
-		this.transportation = json.transportation;
+
+		var transportation = '';
+
+		switch (json.transportation) {
+		case 'car':
+			transportation = 'Xe ô tô';
+			break
+		case 'plane':
+			transportation = 'Máy bay';
+			break
+		case 'self-sufficient':
+			transportation = 'Chủ động di chuyển';
+			break
+		default:
+			break;
+		}
+
+		this.transportation = transportation;
 
 		this.location = new Location(json.location);
 
@@ -84,11 +108,9 @@ class ServicePlane {
 	}
 }
 
-
 //  =================================================================================================================================
 // Service ============================================================================================================================
 //  =================================================================================================================================
-
 
 
 const Router = {
@@ -101,7 +123,7 @@ const Router = {
 	getTours: 6,
 }
 
-function callAPI(router, data, handle) {
+function callAPI(router, data, handle, metaHandle) {
 	let dataToSend = JSON.stringify({
 		query: queryBody(router, data),
 	});
@@ -118,11 +140,16 @@ function callAPI(router, data, handle) {
 		let responseData = response.data;
 		let object = responseHandle(router, responseData);
 		handle(object);
+		let object2 = responseMetaHandle(router, responseData);
+		metaHandle(object2);
 	});
 }
 
 function responseHandle(router, data) {
 	switch(router) {
+	case Router.getTours:
+		return data.tours.map((t) => new Tour(t));
+		break;
 	case Router.getCloseTour:
 		return data.tours.map((t) => new Tour(t));
 		break;
@@ -146,8 +173,20 @@ function responseHandle(router, data) {
 	}
 }
 
+function responseMetaHandle(router, data) {
+	switch(router) {
+	case Router.getTours:
+		let meta = new Aggregated(data.tours_aggregated);
+		return meta;
+		break;
+	default:
+		return null;
+	}
+}
+
 function queryBody(router, data) {
 	let limit = data ? (data.limit ? data.limit : 10) : 10;
+	let page = data ? (data.page ? data.page : 1) : 1;
 
 	let status = `
 		{
@@ -170,6 +209,7 @@ function queryBody(router, data) {
             name
             type
         }
+        short_description
         transportation
         reviews_func {
             count
@@ -209,18 +249,44 @@ function queryBody(router, data) {
 	`;
 
 	switch(router) {
-	case Router.getCloseTour:
+	case Router.getTours:
     	return `
 	    	query {
-			    tours (limit: `+limit+`,
+			    tours (page: ${page} , limit: ${limit},
 			        filter: {
 			            _and: [
-			            	`+status+`,
+			            	${status},
 			            ]
 			        },
 			        sort: "-date_created"
 			    ){
-			    	`+tours+`
+			    	${tours}
+			    }
+				tours_aggregated (
+			        filter: {
+			            _and: [
+			                ${status},
+			            ]
+			        }){
+			        count {
+			            id
+			        }
+			    }
+			}
+		`;
+		break;
+	case Router.getCloseTour:
+    	return `
+	    	query {
+			    tours (limit: ${limit},
+			        filter: {
+			            _and: [
+			            	${status},
+			            ]
+			        },
+			        sort: "-date_created"
+			    ){
+			    	${tours}
 			    }
 			}
 		`;
@@ -228,10 +294,10 @@ function queryBody(router, data) {
 	case Router.getDomesticTours:
 		return `
 			query {
-			    tours (limit: `+limit+`,
+			    tours (limit: ${limit},
 				    filter: {
 				        _and: [
-				            `+status+`,
+				            ${status},
 				            {
 				                location: {
 				                    type: {
@@ -243,7 +309,7 @@ function queryBody(router, data) {
 				    },
 				    sort: "-date_created"
 			    ){
-			        `+tours+`
+			        ${tours}
 			    }   
 			}
 		`;
@@ -251,10 +317,10 @@ function queryBody(router, data) {
 	case Router.getInternationalTours:
 		return `
 			query {
-			    tours (limit: `+limit+`,
+			    tours (limit: ${limit},
 				    filter: {
 				        _and: [
-				            `+status+`,
+				            ${status},
 				            {
 				                location: {
 				                    type: {
@@ -266,7 +332,7 @@ function queryBody(router, data) {
 				    },
 				    sort: "-date_created"
 			    ){
-			        `+tours+`
+			        ${tours}
 			    }   
 			}
 		`;
@@ -277,7 +343,7 @@ function queryBody(router, data) {
 			    banners (limit: 2,
 			        filter: {
 			            _and: [
-			                `+status+`,
+			                ${status},
 			            ]
 			        },
 			        sort: "-date_created"
@@ -294,14 +360,14 @@ function queryBody(router, data) {
 	case Router.getLocations:
 		return `
 			query {
-			    locations (page: 1, limit: `+limit+`,
+			    locations (page: 1, limit: ${limit},
 			    filter: {
 			        _and: [
-			            `+status+`,
+			        	${status},
 			        ]
 			    }
 			    ){
-			        `+locations+`
+			        ${locations}
 			    }
 			}
 		`;
@@ -309,14 +375,14 @@ function queryBody(router, data) {
 	case Router.getPosts:
 		return `
 			query {
-			    posts (page: 1, limit: `+limit+`,
+			    posts (page: 1, limit: ${limit},
 			    filter: {
 			        _and: [
-			            `+status+`,
+			            ${status},
 			        ]
 			    }
 			    ){
-			    	`+posts+`
+			    	${posts}
 			    }
 			}
 		`;
