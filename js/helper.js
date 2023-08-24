@@ -206,51 +206,6 @@ function setFilterValue(locations) {
 	document.getElementById('tours_location_out').innerHTML = outHtml;
 }
 
-function setNavigationTours(locations) {
-	let inHtml = '';
-	let outHtml = '';
-	console.log(locations);
-
-	locations.forEach(function(location){
-		if (location.type == "Trong nước") {
-			inHtml += `
-					<div class="row y-gap-10 items-center justify-between">
-	                    <div class="col-auto">
-	                        <div class="d-flex items-center">
-	                            <div class="form-checkbox" style="align-items: center;">
-	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
-	                                <div class="form-checkbox__mark">
-	                                    <div class="form-checkbox__icon icon-check"></div>
-	                                </div>
-	                                <div class="text-15 ml-10">${location.name}</div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-			`;
-		} else {
-			outHtml += `
-					<div class="row y-gap-10 items-center justify-between">
-	                    <div class="col-auto">
-	                        <div class="d-flex items-center">
-	                            <div class="form-checkbox" style="align-items: center;">
-	                                <input type="checkbox" name="name" id="filter_location_${location.name}" onchange="getFilterData()">
-	                                <div class="form-checkbox__mark">
-	                                    <div class="form-checkbox__icon icon-check"></div>
-	                                </div>
-	                                <div class="text-15 ml-10">${location.name}</div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-			`;
-		}
-	});
-
-	document.getElementById('tours_location_in').innerHTML = inHtml;
-	document.getElementById('tours_location_out').innerHTML = outHtml;
-}
-
 function getFilterData() {
 	    var itemForm = document.getElementById('tours_itemForm'); // getting the parent container of all the checkbox inputs
         var checkBoxes = itemForm.querySelectorAll('input[type="checkbox"]'); // get all the check box

@@ -77,7 +77,7 @@
               <div class="d-flex">
                 <i class="icon-customer text-22 text-blue-1 mr-10"></i>
                 <div class="text-15 lh-15">
-                  Số lượng người:<br> <span id="tour_group_size"></span>
+                  Số lượng người:<br> <span id="tour_group_size">Đi theo đoàn</span>
                 </div>
               </div>
             </div>
@@ -91,6 +91,14 @@
               </div>
             </div>
 
+            <div class="col-md-auto col-6">
+              <div class="d-flex">
+                <i class="icon-access-denied text-22 text-blue-1 mr-10"></i>
+                <div class="text-15 lh-15">
+                  Ăn uống:<br> <span id="tour_foods"></span>
+                </div>
+              </div>
+            </div>
 
           </div>
           <div class="border-top-light mt-40 mb-40"></div>
@@ -131,10 +139,11 @@
         </div>
 
         <div class="col-lg-4">
-          <div class="d-flex justify-end js-pin-content">
+          <div class="d-flex justify-end">
             <div class="w-360 lg:w-full d-flex flex-column items-center">
               <div class="col-lg-12">
-                <div class="d-flex justify-end js-pin-content">
+
+                <div class="d-flex justify-end">
                   <div class="w-360 lg:w-full d-flex flex-column items-center">
                     <div class="px-30 py-30 rounded-4 border-light bg-white shadow-4">
                       <div class="text-14 text-light-1">
@@ -158,7 +167,7 @@
 
                         <div class="col-12">
                           <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
-                            Đặt ngay
+                            Liên hệ đặt chỗ 
                           </button>
                         </div>
                       </div>
@@ -175,17 +184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="w-360 lg:w-full px-30 py-30 mt-20 rounded-4 border-light bg-white shadow-4">
-                <div class="d-flex items-center">
-                  <div class="text-14 lh-16 ml-10 fw-600">Chương trình tour</div>
-                </div>
-                <div class="d-flex items-center pt-20">
-                  <div class="text-14 lh-16 ml-10 fw-600">Chính sách tour</div>
-                </div>
-                <div class="d-flex items-center pt-20">
-                  <div class="text-14 lh-16 ml-10 fw-600">Điều khoản & quy định</div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

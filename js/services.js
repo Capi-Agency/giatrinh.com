@@ -148,6 +148,7 @@ const Router = {
 	getServices: 8,
 	getServiceDetail: 9,
 	getPostDetail: 10,
+	getTourDetail: 11,
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -177,6 +178,9 @@ function callAPI(router, data, handle, metaHandle) {
 function responseHandle(router, data) {
 	switch(router) {
 	case Router.getTours:
+		return data.tours.map((t) => new Tour(t));
+		break;
+	case Router.getTourDetail:
 		return data.tours.map((t) => new Tour(t));
 		break;
 	case Router.getCloseTour:
@@ -356,6 +360,28 @@ function queryBody(router, data) {
 				count {
 					id
 				}
+			}
+		}`;
+		break;
+	case Router.getTourDetail:
+		let slug = data.slug;
+
+		return `query {
+			tours (limit: ${limit},
+			filter: {
+				_and: [
+					${status},
+					{
+		                slug: {
+		                    _eq: "${slug}"
+		                }
+		            }
+				]
+			},
+			sort: "-date_created"
+			){
+				${tours}
+				description
 			}
 		}`;
 		break;

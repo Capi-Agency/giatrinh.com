@@ -491,89 +491,100 @@ function getServiceCar() {
     document.getElementById("service_car_content").innerHTML = content;
   });
 }
-// =====================TOUR DETAIL CONTROLLER================================
-function getTourDetail() {
-  // lấy slug từ url
-  const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id");
-  // nếu không có id redirect về tourList
 
-  if (!id) {
-    window.location.href = tourListUrl;
-    return;
-  }
-  let data = JSON.stringify({
-    query: `
-		query {
-			tours (filter: {
-				_and: [
-				{
-					status: {
-						_eq: "published"
-					}
-				},
-				{
-					id: {
-						_eq: ${id}
-					}
-				}
-				]
-			}){
-				id
-				title
-				date_created
-				duration
-				description
-				price
-				group_size
-				transportation
-				type
-				cover {
-					id
-				}
-			}
-		}
-		`,
-  });
-  let settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data,
+// =====================TOUR DETAIL CONTROLLER================================
+
+function getTourDetail(slug) {
+  let router = Router.getTourDetail;
+
+  let data = {
+    slug: slug,
   };
-  $.ajax(settings).done(function (response) {
-    const { tours } = response.data;
-    if (tours.length === 0) {
-      window.location.href = tourListUrl;
-      return;
-    }
-    const tourDetail = new Tour(tours[0]);
+
+  callAPI(router, data, function (tours) {
+  	let tour = tours[0];
 
     const tourTitle = document.getElementById("tour_title");
     const tourPrice = document.getElementById("tour_price");
     const tourDuration = document.querySelectorAll(".tour_duration");
     const tourDescription = document.getElementById("tour_description");
-    const tourGroupSize = document.getElementById("tour_group_size");
     const tourTransportation = document.getElementById("tour_trans");
+    const tourFoods = document.getElementById("tour_foods");
     const tourCover = document.getElementById("tour_cover");
     const tourType = document.getElementById("tour_type");
 
-    tourCover.src = tourDetail.covers[0];
-    tourTitle.innerHTML = tourDetail.title;
-    tourPrice.innerHTML = tourDetail.price;
-    tourType.innerHTML = tourDetail.type;
-    tourDescription.innerHTML = tourDetail.description;
+    tourCover.src = tour.cover;
+    tourTitle.innerHTML = tour.name;
+    tourPrice.innerHTML = tour.price;
+    tourType.innerHTML = tour.location.name + ", " + tour.location.type;
+    tourDescription.innerHTML = tour.description;
     tourDuration.forEach(
-      (t) => (t.innerHTML = tourDetail.duration + "<span> ngày</span>")
+      (t) => (t.innerHTML = tour.duration + "<span> ngày</span>")
     );
-    tourGroupSize.innerHTML = tourDetail.groupSize;
-    tourTransportation.innerHTML = tourDetail.transportation;
+    tourTransportation.innerHTML = tour.transportation;
+    tourFoods.innerHTML = tour.food_included ? "Bao gồm ăn uống" : "Ăn ngoài";
 
-    getRelatedTourByType(tourDetail.type, tourDetail.id, 4);
-    getAllTourCard();
+    refreshAllJS();
   });
+
+  // if (!id) {
+  //   window.location.href = tourListUrl;
+  //   return;
+  // }
+  // let data = JSON.stringify({
+  //   query: `
+// 		query {
+// 			tours (filter: {
+// 				_and: [
+// 				{
+// 					status: {
+// 						_eq: "published"
+// 					}
+// 				},
+// 				{
+// 					id: {
+// 						_eq: ${id}
+// 					}
+// 				}
+// 				]
+// 			}){
+// 				id
+// 				title
+// 				date_created
+// 				duration
+// 				description
+// 				price
+// 				group_size
+// 				transportation
+// 				type
+// 				cover {
+// 					id
+// 				}
+// 			}
+// 		}
+// 		`,
+  // });
+  // let settings = {
+  //   url: api,
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   data,
+  // };
+  // $.ajax(settings).done(function (response) {
+  //   const { tours } = response.data;
+  //   if (tours.length === 0) {
+  //     window.location.href = tourListUrl;
+  //     return;
+  //   }
+  //   const tourDetail = new Tour(tours[0]);
+
+
+
+    // getRelatedTourByType(tourDetail.type, tourDetail.id, 4);
+    // getAllTourCard();
+  // });
 }
 
 function getRelatedTourByType(type, id, limit = 4) {
@@ -842,20 +853,24 @@ function refresh() {
     getPostDetail();
     return;
   }
-	if (currentURL.includes("tourDetail")) {
-		getTourDetail();
+	if (currentURL.includes("tour-detail")) {
+		const urlParams = new URLSearchParams(window.location.search);
+  		const slug = urlParams.get("slug");
+		getTourDetail(slug);
 		return;
 	}
 	if (currentURL.includes("tourExp")) {
 		getPosts();
 		return;
 	}
-	if (currentURL.includes("servicePlane")) {
+
+	if (currentURL.includes("services/")) {
 		getServicePlane();
 		return;
 	}
-	if (currentURL.includes("serviceCar")) {
-		getServiceCar();
+
+	if (currentURL.includes("service-detail/")) {
+		getServicePlane();
 		return;
 	}
 

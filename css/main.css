@@ -643,7 +643,7 @@ li {
 p {
   margin: 0;
   font-size: 16px;
-  color: var(--color-light-1);
+  color: var(--color-dark-1);
 }
 
 button {

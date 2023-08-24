@@ -234,30 +234,17 @@ function locationOtoListItem(location, type, index) {
   var html = "";
   switch (type) {
     case LocationItemType.card:
-      html =
-        `
-			<div data-anim-child="slide-up delay-3" class="` +
-        (index == 1 || index == 3
-          ? `col-xl-6 col-md-4 col-sm-6 is-in-view`
-          : `col-xl-3 col-md-4 col-sm-6 is-in-view`) +
-        `">
-	            <a href="${url}" class="citiesCard -type-3 d-block rounded-4 ` +
-        (index == 1 || index == 3 ? `h-full` : ``) +
-        `">
-	                <div class="citiesCard__image ` +
-        (index == 1 || index == 3 ? `` : `ratio ratio-1:1`) +
-        `">
-	                    <img class="img-ratio js-lazy loaded" src="` +
-        location.cover +
-        `" alt="image" data-ll-status="loaded">
-	                </div>
-	                <div class="citiesCard__content px-30 py-30">
-	                    <h4 class="text-26 fw-600 text-white">${location.name}</h4>
-	                    <div class="text-15 text-white">${location.count} Điểm đến</div>
-	                </div>
-	            </a>
-	        </div>
-		`;
+      html = `<div data-anim-child="slide-up delay-3" class="` + (index == 1 || index == 3 ? `col-xl-6 col-md-4 col-sm-6 is-in-view` : `col-xl-3 col-md-4 col-sm-6 is-in-view`) + `">
+			<a href="${url}" class="citiesCard -type-3 d-block rounded-4 ` + (index == 1 || index == 3 ? `h-full` : ``) + `">
+			<div class="citiesCard__image ` + (index == 1 || index == 3 ? `` : `ratio ratio-1:1`) + `">
+			<img class="img-ratio js-lazy loaded" src="` + location.cover + `" alt="image" data-ll-status="loaded">
+			</div>
+			<div class="citiesCard__content px-30 py-30">
+			<h4 class="text-26 fw-600 text-white">${location.name}</h4>
+			<div class="text-15 text-white">${location.count} Điểm đến</div>
+			</div>
+			</a>
+			</div>`;
       break;
     case LocationItemType.aboutUsCard:
       html = `
@@ -269,14 +256,8 @@ function locationOtoListItem(location, type, index) {
 			style="height: 200px; object-fit:cover;">
 
 			<div class="mt-10">
-			  <div class="text-18 lh-15 fw-700" style="color:#13357b;">${
-          location.name
-        }</div>
-			  ${
-          location.count == 0
-            ? ""
-            : `<div class='text-14 lh-15'>${location.count} tour</div>`
-        }
+			  <div class="text-18 lh-15 fw-700" style="color:#13357b;">${ location.name }</div>
+			  ${ location.count == 0 ? "" : `<div class='text-14 lh-15'>${location.count} tour</div>` }
 			</div>
 		  </div>
 		  </a>
@@ -307,7 +288,7 @@ function tourOtoTourList(tours, type) {
 }
 
 function tourOtoTourlistItem(tour, type) {
-  let url = domain + "/tours/" + tour.slug;
+  let url = domain + "/tour-detail?slug=" + tour.slug;
 
   var html = "";
 
