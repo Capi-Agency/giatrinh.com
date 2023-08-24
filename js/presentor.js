@@ -2,9 +2,16 @@ function presentor(router, data) {
   var html = "";
   let url = "";
 
-  switch (router) {
-    case Router.getCloseTour:
-      html = tourOtoTourList(data, TourItemType.card);
+	switch(router) {
+	case Router.getTours:
+		html = tourOtoTourList(data, TourItemType.row);
+
+		return html;
+		break;
+
+	case Router.getCloseTour:
+		html = tourOtoTourList(data, TourItemType.card);
+
 
       return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
@@ -36,9 +43,10 @@ function presentor(router, data) {
 			</div>
 			</div>
 			</div>`;
-      break;
-    case Router.getDomesticTours:
-      html = tourOtoTourList(data, TourItemType.card);
+		break;
+
+	case Router.getDomesticTours:
+		html = tourOtoTourList(data, TourItemType.card);
 
       return `<div class="row y-gap-10 justify-between items-end">
 			<div class="col-auto">
@@ -123,7 +131,9 @@ function presentor(router, data) {
     case Router.getCompanyInfo:
       html = locationOtoList(data, LocationItemType.aboutUsCard);
 
-      return html;
+      return `
+			  ${html}
+			  `;
     default:
       return "";
   }
@@ -188,7 +198,7 @@ function postOtoListItem(post, type) {
 			</div>
 			</div>
 			<div class="mt-20">
-			<h4 class="text-dark-1 text-18 fw-700 line-clamp">${post.title}</h4>
+			<h4 class="text-dark-1 text-18 fw-700">${post.title}</h4>
 			<div class="text-light-1 text-15 lh-14 mt-5">${post.date_created}</div>
 			</div>
 			</a>
@@ -200,38 +210,7 @@ function postOtoListItem(post, type) {
   }
   return html;
 }
-function relatedPostList(posts) {
-  html = "";
-  url = domain + "/posts?slug=";
-  posts.map((post) => {
-    html += `
-	
-	<div class="col-lg-3 col-sm-6">
 
-                    <a href="${
-                      url + post.slug
-                    }" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
-                        <div class="blogCard__image">
-                            <div class="ratio ratio-1:1 rounded-4">
-                                <img class="img-ratio js-lazy loaded" src="${
-                                  post.cover
-                                }" alt="image" data-ll-status="loaded">
-                            </div>
-                        </div>
-
-                        <div class="px-20 py-20">
-                            <h4 class="text-dark-1 text-16 lh-18 fw-500">${
-                              post.title
-                            }</h4>
-                            <div class="text-light-1 text-15 lh-14 mt-10">${
-                              post.date_created
-                            }</div>
-                        </div>
-                    </a>
-
-                </div>  `;
-  });
-}
 //======================================================================================================
 //Location =============================================================================================
 //======================================================================================================
@@ -385,52 +364,48 @@ function tourOtoTourlistItem(tour, type) {
 		</a>
 		</div>
 		`;
-      break;
-    case TourItemType.row:
-      html = `
+		break;
+	case TourItemType.row:
+		let rate = Math.ceil(tour.average_rate);
+		var rateHtml = '';
+		for (var i = 0; i < rate; i++) {
+			rateHtml += '<i class="icon-star text-10 text-yellow-1"></i>';
+		}
+
+		html = `
 		<div class="col-12">
-		<div class="border-top-light pt-30">
+		<div class="border-top-light pt-30 pb-30">
 		<div class="row x-gap-20 y-gap-20">
 		<div class="col-md-auto">
 		<div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
 		<div class="cardImage__content">
-		<img class="rounded-4 col-12" src="img/lists/tour/1/1.png" alt="image">
+		<img class="rounded-4 col-12" src="${tour.cover}" alt="${tour.name}">
 		</div>
 		</div>
 		</div>
 		<div class="col-md">
 		<div class="row x-gap-10 items-center">
 		<div class="col-auto">
-		<p class="text-14 lh-14 mb-5">6+ hours</p>
-		</div>
-		<div class="col-auto">
-		<div class="size-3 rounded-full bg-light-1 mb-5"></div>
-		</div>
-		<div class="col-auto">
-		<p class="text-14 lh-14 mb-5">Full-day Tours</p>
+		<p class="text-14 lh-14 mb-5">${tour.location.name}, ${tour.location.type}</p>
 		</div>
 		</div>
-		<h3 class="text-18 lh-16 fw-500">Leeds Castle, Cliffs of Dover and Canterbury Day Trip from London with Guided Cathedral Tour</h3>
-		<p class="text-14 lh-14 mt-5">Westminster Borough, London</p>
+		<h3 class="text-18 lh-16 fw-700">${tour.name}</h3>
+		<p class="text-14 lh-14 mt-5">${tour.short_description}</p>
 
-		<div class="text-14 lh-15 fw-500 mt-20">Taking safety measures</div>
-		<div class="text-14 text-green-2 fw-500 lh-15 mt-5">Free cancellation</div>
+		<div class="text-14 lh-15 fw-500 mt-20">${tour.transportation}</div>
+		<div class="text-14 text-green-2 fw-500 lh-15 mt-5">${foodTag}</div>
 		</div>
 
 		<div class="col-md-auto text-right md:text-left">
 		<div class="d-flex x-gap-5 items-center justify-end md:justify-start">
-		<i class="icon-star text-10 text-yellow-1"></i>
-		<i class="icon-star text-10 text-yellow-1"></i>
-		<i class="icon-star text-10 text-yellow-1"></i>
-		<i class="icon-star text-10 text-yellow-1"></i>
-		<i class="icon-star text-10 text-yellow-1"></i>
+		${rateHtml}
 		</div>
-		<div class="text-14 lh-14 text-light-1 mt-10">3,014 reviews</div>
-		<div class="text-14 text-light-1 mt-50 md:mt-20">From</div>
-		<div class="text-22 lh-12 fw-600 mt-5">US$72</div>
-		<div class="text-14 text-light-1 mt-5">per adult</div>
-		<a href="#" class="button -md -dark-1 bg-blue-1 text-white mt-24">
-		View Detail <div class="icon-arrow-top-right ml-15"></div>
+		<div class="text-14 lh-14 text-light-1 mt-10">${tour.total_review} đánh giá</div>
+		<div class="text-14 text-light-1 mt-50 md:mt-20">Chỉ từ</div>
+		<div class="text-22 lh-12 fw-600 mt-5">${tour.price}</div>
+		<div class="text-14 text-light-1 mt-5"> /1 người</div>
+		<a href="${url}" class="button -md -dark-1 bg-blue-1 text-white mt-24">
+		Chi tiết<div class="icon-arrow-top-right ml-15"></div>
 		</a>
 		</div>
 		</div>
@@ -444,4 +419,3 @@ function tourOtoTourlistItem(tour, type) {
   return html;
 }
 
-//About ===============================================================================================

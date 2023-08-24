@@ -4,12 +4,15 @@
 
 let api = "https://admin.giatrinh.com/graphql";
 
-let limit = 10;
+let limit = 6;
 
 let currentPostCategory = "";
 let currentPage = 1;
 let totalPostCount = 0;
 let totalPostPages = 0;
+let searchKey = "";
+let searchLocation = "";
+let searchDuration = "";
 
 // let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
 // let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
@@ -18,37 +21,7 @@ let totalPostPages = 0;
 //  =================================================================================================================================
 // Presentor ========================================================================================================================
 //  =================================================================================================================================
-function idToImg(id) {
-  return "https://admin.giatrinh.com/assets/" + id;
-}
 
-function pageToTourList(page, totalPage) {
-  var html = "";
-  for (var i = 1; i <= totalPage; i++) {
-    if (i == page) {
-      html =
-        html +
-        `<div class="col-auto">
-			<button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getTours(` +
-        i +
-        `)" >` +
-        i +
-        `</button>
-			</div>`;
-    } else {
-      html =
-        html +
-        `<div class="col-auto">
-			<button class="btn size-40 flex-center rounded-full" onclick="getTours(` +
-        i +
-        `)" >` +
-        i +
-        `</button>
-			</div>`;
-    }
-  }
-  return html;
-}
 //-POST LISTS' PRESENTORS
 function postObjectPostList(posts) {
   let html = "";
@@ -292,90 +265,30 @@ function searchTourByKey() {
   getTours(1, value);
 }
 
-function getTours(page, searchKey) {
-  var searchString = "";
-  if (searchKey != "") {
-    searchString = `, { title: {_icontains: "` + searchKey + `"}}`;
-  }
+function getTours() {
+	let router = Router.getTours;
 
-  let filter =
-    `filter: {
-		_and: [
-		{
-			status: {
-				_eq: "published"
-			}
-		}
-		` +
-    searchString +
-    `
-		]
-	}`;
+	let data = {
+		limit: limit,
+		searchKey: searchKey,
+		page: currentPage
+	};
 
-  let data = JSON.stringify({
-    query:
-      `query {
-			tours (page: ` +
-      page +
-      `, limit: ` +
-      limit +
-      `, ` +
-      filter +
-      `) {
-				id
-				title
-				date_created
-				duration
-				price
-				type
-				review_func {
-					count
-				}
-				cover {
-					id
-				}
-			}
-			tours_aggregated (` +
-      filter +
-      `) {
-				count {
-					id
-				}
-			}
-		}`,
-  });
+	callAPI(router, data, function(tours){
+		let html = presentor(router, tours);
+		document.getElementById("tour_list_content").innerHTML = html;
+		refreshAllJS();
+	}, function(meta){
+		let totalPage = Math.ceil(meta.count/limit);
 
-  var settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data: data,
-  };
+		document.getElementById("tour_list_meta_content").innerHTML = `<div class="text-18"><span class="fw-500">${meta.count} chuyến đi </span></div>`;
+		document.getElementById("tour_list_page_content").innerHTML = pageToTourList(currentPage, totalPage);
+	})
+}
 
-  $.ajax(settings).done(function (response) {
-    let data = response.data;
-    let tours = data.tours;
-    let totalTour = data.tours_aggregated[0].count.id;
-    let totalPage = Math.ceil(totalTour / limit);
-
-    document.getElementById("total_tour_content").innerHTML = totalTour;
-    document.getElementById("tour_list_page_content").innerHTML =
-      pageToTourList(page, totalPage);
-
-    var arrayTour = [];
-
-    for (var i = 0; i < tours.length; i++) {
-      let json = tours[i];
-      let tour = new Tour(json);
-
-      arrayTour.push(tour);
-    }
-
-    let html = tourOtoTourList(arrayTour);
-    document.getElementById("tour_list_content").innerHTML = html;
-  });
+function getTourPage(page) {
+	currentPage = page;
+	getTours();
 }
 // =========================POSTS' LIST CONTROLLER========================
 function getPosts(page = 1, category = currentPostCategory) {
@@ -727,15 +640,6 @@ function getAllTourCard(limit = 4) {
 }
 //===========================HOME CONTROLLER=================================
 
-function getHomeContent() {
-  getTourClose();
-  getBanners();
-  getDomesticTours();
-  getInterTours();
-  getLocations();
-  getHomePosts();
-}
-
 function getBanners() {
   let router = Router.getBanners;
 
@@ -800,7 +704,16 @@ function getLocations() {
     document.getElementById("index_locations_content").innerHTML = html;
     refreshAllJS();
   });
-  callAPI(router, {}, (locations) => {
+}
+
+function getSearchLocations() {
+  let router = Router.getLocations;
+
+  let data = {
+    limit: 100,
+  };
+
+  callAPI(router, data, (locations) => {
     getSearchValueAndNavigate(locations);
   });
 }
@@ -838,65 +751,57 @@ function getAboutUsPage() {
     refreshAllJS();
   });
 }
-//POST DETAIL CONTROLLER===========================================================================================================================
-function getPostDetail() {
-  const router = Router.getPostDetail;
-  const params = new URLSearchParams(window.location.search);
-  const slugParam = params.get("slug");
-
-  if (!slugParam || slugParam == "") {
-    alert("Lỗi, không có slug hoặc slug rỗng!");
-    return;
-  }
-
-  callAPI(router, { slug: slugParam }, function (post) {
-    document.getElementById("post_category").innerHTML = post.category.name;
-    document.getElementById("post_title").innerHTML = post.title;
-    document.getElementById("post_date").innerHTML = post.date_created;
-    document.getElementById("post_cover").src = post?.cover || defaultHeaderImg;
-    document.getElementById("post_content").innerHTML = post.content;
-    refreshAllJS();
-  });
-  callAPI(Router.getPosts, { limit: 4 }, function (datas) {
-    let html = presentor(Router.getPosts, datas);
-    document.getElementById("index_posts_content").innerHTML = html;
-    refreshAllJS();
-  });
-}
 // Router ===========================================================================================================================
 
 function refresh() {
-  let currentURL = window.location.href;
-  if (currentURL.includes("about")) {
-    getAboutUsPage();
-    return;
-  }
-  if (currentURL.includes("tourList")) {
-    getTours(1, "");
-    return;
-  }
-  if (currentURL.includes("postDetail")) {
+	let params = new URLSearchParams(window.location.search);
+	let currentURL = window.location.href;
+
+	if (currentURL.includes("about")) {
+		getAboutUsPage();
+		return;
+	}
+	if (currentURL.includes("tourList")) {
+		getTours(1, "");
+		return;
+	}
+
+	if (currentURL.includes("tours")) {
+		searchLocation = params.get('location');
+		searchDuration = params.get('duration');
+		getTours();
+		getSearchLocations();
+		return;
+	}
+
+	if (currentURL.includes("postDetail")) {
     getPostDetail();
     return;
   }
-  if (currentURL.includes("tourDetail")) {
-    getTourDetail();
-    return;
-  }
-  if (currentURL.includes("tourExp")) {
-    getPosts();
-    return;
-  }
-  if (currentURL.includes("servicePlane")) {
-    getServicePlane();
-    return;
-  }
-  if (currentURL.includes("serviceCar")) {
-    getServiceCar();
-    return;
-  }
+	if (currentURL.includes("tourDetail")) {
+		getTourDetail();
+		return;
+	}
+	if (currentURL.includes("tourExp")) {
+		getPosts();
+		return;
+	}
+	if (currentURL.includes("servicePlane")) {
+		getServicePlane();
+		return;
+	}
+	if (currentURL.includes("serviceCar")) {
+		getServiceCar();
+		return;
+	}
 
-  getHomeContent();
+	getTourClose();
+	getBanners();
+	getDomesticTours();
+	getInterTours();
+	getLocations();
+	getSearchLocations();
+	getHomePosts();
 }
 
 refresh();

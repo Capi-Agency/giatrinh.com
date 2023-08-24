@@ -176,7 +176,7 @@
             return "th";
         }
       },
-      rangeSeparator: " đến ",
+      rangeSeparator: " - ",
       weekAbbreviation: "Wk",
       scrollTitle: "Scroll to increment",
       toggleTitle: "Click to toggle",
