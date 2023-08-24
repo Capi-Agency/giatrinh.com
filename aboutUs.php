@@ -38,56 +38,54 @@
         </div>
       </div>
 
-      <section class="layout-pt-md layout-pb-md">
-        <div data-anim-wrap class="container animated">
-          <div class="row y-gap-20 justify-between">
+      <div class="row y-gap-40 justify-between pt-50" data-anim-child="slide-up delay-2">
 
-            <div data-anim-child="slide-up delay-1" class="col-lg-3 col-sm-6 is-in-view">
+        <div class="col-lg-3 col-sm-6">
 
-              <div class="featureIcon -type-1 ">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/1/1.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-700">Đảm bảo giá tốt nhất</h4>
-                  <p class="text-15 mt-10">Chúng tôi đảm bảo khách hàng sẽ đặt được dịch vụ với giá tốt nhất, những chương trình khuyến mãi hấp dẫn nhất</p>
-                </div>
-              </div>
-
+          <div class="featureIcon -type-1 ">
+            <div class="d-flex justify-center">
+              <img src="#" data-src="img/featureIcons/1/1.svg" alt="image" class="js-lazy">
             </div>
 
-            <div data-anim-child="slide-up delay-2" class="col-lg-3 col-sm-6 is-in-view">
-
-              <div class="featureIcon -type-1 ">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/1/2.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-700">Dịch vụ tin cậy &amp; Giá trị đích thực</h4>
-                  <p class="text-15 mt-10">Đặt lợi ích khách hàng lên trên hết, chúng tôi hỗ trợ khách hàng nhanh và chính xác nhất với dịch vụ tin cậy, giá trị đích thực.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div data-anim-child="slide-up delay-3" class="col-lg-3 col-sm-6 is-in-view">
-
-              <div class="featureIcon -type-1 ">
-                <div class="d-flex justify-center">
-                  <img src="img/featureIcons/1/3.svg" alt="image" class="js-lazy loaded" data-ll-status="loaded">
-                </div>
-
-                <div class="text-center mt-30">
-                  <h4 class="text-18 fw-700">Đảm bảo chất lượng</h4>
-                  <p class="text-15 mt-10">Chúng tôi liên kết chặt chẽ với các đối tác, khảo sát định kỳ để đảm bảo chất lượng tốt nhất của dịch vụ</p>
-                </div>
-              </div>
+            <div class="text-center mt-30">
+              <h4 class="text-18 fw-500">Chi phí tốt nhất</h4>
+              <p class="text-15 mt-10">Đảm bảo chi phí rẻ hơn thị trường.</p>
             </div>
           </div>
+
         </div>
-      </section>
+
+        <div data-anim-child="slide-up delay-3" class="col-lg-3 col-sm-6">
+
+          <div class="featureIcon -type-1 ">
+            <div class="d-flex justify-center">
+              <img src="#" data-src="img/featureIcons/1/2.svg" alt="image" class="js-lazy">
+            </div>
+
+            <div class="text-center mt-30">
+              <h4 class="text-18 fw-500">Đặt vé dễ dàng</h4>
+              <p class="text-15 mt-10">Bạn không cần mất nhiều thời gian để tìm và đặt một chuyến du lịch phù hợp</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div data-anim-child="slide-up delay-4" class="col-lg-3 col-sm-6">
+
+          <div class="featureIcon -type-1 ">
+            <div class="d-flex justify-center">
+              <img src="#" data-src="img/featureIcons/1/3.svg" alt="image" class="js-lazy">
+            </div>
+
+            <div class="text-center mt-30">
+              <h4 class="text-18 fw-500">Chăm sóc khác hàng 24/7</h4>
+              <p class="text-15 mt-10">Đội ngũ phục vụ tận tâm.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
   </section>
 
