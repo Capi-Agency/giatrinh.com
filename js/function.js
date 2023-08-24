@@ -11,6 +11,8 @@ let currentPage = 1;
 let totalPostCount = 0;
 let totalPostPages = 0;
 let searchKey = "";
+let searchLocation = "";
+let searchDuration = "";
 
 // let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
 // let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
@@ -638,15 +640,6 @@ function getAllTourCard(limit = 4) {
 }
 //===========================HOME CONTROLLER=================================
 
-function getHomeContent() {
-  getTourClose();
-  getBanners();
-  getDomesticTours();
-  getInterTours();
-  getLocations();
-  getHomePosts();
-}
-
 function getBanners() {
   let router = Router.getBanners;
 
@@ -711,7 +704,16 @@ function getLocations() {
     document.getElementById("index_locations_content").innerHTML = html;
     refreshAllJS();
   });
-  callAPI(router, {}, (locations) => {
+}
+
+function getSearchLocations() {
+  let router = Router.getLocations;
+
+  let data = {
+    limit: 100,
+  };
+
+  callAPI(router, data, (locations) => {
     getSearchValueAndNavigate(locations);
   });
 }
@@ -752,7 +754,9 @@ function getAboutUsPage() {
 // Router ===========================================================================================================================
 
 function refresh() {
+	let params = new URLSearchParams(window.location.search);
 	let currentURL = window.location.href;
+
 	if (currentURL.includes("about")) {
 		getAboutUsPage();
 		return;
@@ -763,7 +767,10 @@ function refresh() {
 	}
 
 	if (currentURL.includes("tours")) {
+		searchLocation = params.get('location');
+		searchDuration = params.get('duration');
 		getTours();
+		getSearchLocations();
 		return;
 	}
 
@@ -788,7 +795,13 @@ function refresh() {
 		return;
 	}
 
-	getHomeContent();
+	getTourClose();
+	getBanners();
+	getDomesticTours();
+	getInterTours();
+	getLocations();
+	getSearchLocations();
+	getHomePosts();
 }
 
 refresh();

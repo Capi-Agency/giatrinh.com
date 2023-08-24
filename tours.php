@@ -20,11 +20,12 @@
                         <div class="sidebar__item -no-border">
                             <div class="px-20 py-20 bg-light-2 rounded-4">
                                 <h5 class="text-18 fw-500 mb-10">Tìm kiếm</h5>
-                                <div class="row y-gap-20 pt-20">
+                                <div class="row y-gap-20 pt-20" id="js-search-form">
                                     <div class="col-12">
                                         <div class="px-20 py-10 bg-white rounded-4">
 
-                                            <div class="searchMenu-loc  js-form-dd js-liverSearch">
+                                            <div class="searchMenu-loc js-form-dd js-liverSearch">
+                                            
 
                                                 <div class="d-flex" data-x-dd-click="searchMenu-loc">
                                                     <i class="icon-location-2 text-20 text-light-1 mt-5"></i>
@@ -32,7 +33,15 @@
                                                     <div class="ml-10">
                                                         <h4 class="text-15 fw-500 ls-2 lh-16">Địa điểm</h4>
                                                         <div class="text-15 text-light-1 ls-2 lh-16">
-                                                            <input autocomplete="off" type="search" placeholder="London" class="js-search js-dd-focus">
+                                                            <input autocomplete="off" type="search" placeholder="Bạn muốn đi đâu?" class="js-search" id="js-search">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="searchMenu-loc__field shadow-2 js-popup-window" data-x-dd="searchMenu-loc" id="js-popup-window">
+                                                    <div class="bg-white px-30 py-30 sm:px-0 sm:py-15 rounded-4">
+                                                        <div class="y-gap-5 js-results">
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -52,11 +61,8 @@
 
                                                     <div class="ml-10">
                                                         <h4 class="text-15 fw-500 ls-2 lh-16">Ngày đến - Ngày về</h4>
-
                                                         <div class="text-15 text-light-1 ls-2 lh-16">
-                                                            <span class="js-first-date">Wed 2 Mar</span>
-                                                            -
-                                                            <span class="js-last-date">Fri 11 Apr</span>
+                                                            <input type="text" name="duration" placeholder="Vui lòng chọn ngày..." id="js-date-picker" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,7 +73,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
+                                        <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white" id="js-btn-submit">
                                             <i class="icon-search text-20 mr-10"></i>
                                             Tìm kiếm
                                         </button>

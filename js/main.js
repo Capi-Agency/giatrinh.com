@@ -24,12 +24,12 @@ function refreshAllJS() {
 // Reloads all scripts when navigating through pages
 function initComponents() {
   lazyLoading();
-  Accordion.init();
+
   Tabs.init();
   sectionSlider();
   Select.init(".js-select");
   parallaxInit();
-  Events.init();
+  // Events.init();
   // Events.ddInit()
   Header.init();
   Header.headerSticky();
