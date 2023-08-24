@@ -123,9 +123,7 @@ function presentor(router, data) {
     case Router.getCompanyInfo:
       html = locationOtoList(data, LocationItemType.aboutUsCard);
 
-      return `
-			  ${html}
-			  `;
+      return html;
     default:
       return "";
   }
@@ -190,7 +188,7 @@ function postOtoListItem(post, type) {
 			</div>
 			</div>
 			<div class="mt-20">
-			<h4 class="text-dark-1 text-18 fw-700">${post.title}</h4>
+			<h4 class="text-dark-1 text-18 fw-700 line-clamp">${post.title}</h4>
 			<div class="text-light-1 text-15 lh-14 mt-5">${post.date_created}</div>
 			</div>
 			</a>
@@ -202,7 +200,38 @@ function postOtoListItem(post, type) {
   }
   return html;
 }
+function relatedPostList(posts) {
+  html = "";
+  url = domain + "/posts?slug=";
+  posts.map((post) => {
+    html += `
+	
+	<div class="col-lg-3 col-sm-6">
 
+                    <a href="${
+                      url + post.slug
+                    }" class="blogCard -type-2 d-block bg-white rounded-4 shadow-4">
+                        <div class="blogCard__image">
+                            <div class="ratio ratio-1:1 rounded-4">
+                                <img class="img-ratio js-lazy loaded" src="${
+                                  post.cover
+                                }" alt="image" data-ll-status="loaded">
+                            </div>
+                        </div>
+
+                        <div class="px-20 py-20">
+                            <h4 class="text-dark-1 text-16 lh-18 fw-500">${
+                              post.title
+                            }</h4>
+                            <div class="text-light-1 text-15 lh-14 mt-10">${
+                              post.date_created
+                            }</div>
+                        </div>
+                    </a>
+
+                </div>  `;
+  });
+}
 //======================================================================================================
 //Location =============================================================================================
 //======================================================================================================

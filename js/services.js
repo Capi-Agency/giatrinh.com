@@ -62,18 +62,19 @@ class Banner {
 class Post {
   constructor(json) {
     this.id = json?.id;
-    this.author = json?.author;
     this.slug = json?.slug;
-
-    this.category = json?.category?.title;
-    this.content = json?.content;
     this.title = json?.title;
     this.short_description = json?.short_description;
-
+    this.tags = [];
+    if (json?.tags?.length > 0) {
+      json?.tags.map((t) => this.tags.push(t.post_tags_id.name));
+    }
+    this.content = json?.content;
     this.date_created = changeDate(json?.date_created);
     this.cover = idToImg(
       json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
     );
+    this.category = json?.categories[0].post_categories_id;
   }
 }
 
@@ -119,6 +120,7 @@ const Router = {
   getPosts: 5,
   getTours: 6,
   getCompanyInfo: 7,
+  getPostDetail: 8,
 };
 
 function callAPI(router, data, handle) {
@@ -156,11 +158,13 @@ function responseHandle(router, data) {
     case Router.getPosts:
       return data.posts.map((t) => new Post(t));
     case Router.getCompanyInfo:
-      console.log(data);
       return {
         companyInfo: new CompanyInfo(data.company_information),
         locations: data.locations.map((t) => new Location(t)),
       };
+    case Router.getPostDetail:
+      return new Post(data.posts[0]);
+
     default:
       return null;
   }
@@ -168,6 +172,7 @@ function responseHandle(router, data) {
 
 function queryBody(router, data) {
   let limit = data ? (data.limit ? data.limit : 10) : 10;
+  let slug = data?.slug;
 
   let status = `
 		{
@@ -414,6 +419,47 @@ function queryBody(router, data) {
                 count
             }
             slug
+        }
+    }
+      `;
+    case Router.getPostDetail:
+      return `
+      query {
+        posts(,
+        filter: {
+            _and: [
+                {
+                    status: {
+                        _eq: "published"
+                        }
+                },
+                {
+                    slug:{
+                        _eq: "${slug}"
+                    }
+                }
+            ]
+        }
+        ){
+            id
+            date_created
+            title
+            short_description
+            slug
+            tags{
+                post_tags_id{
+                    name
+                }
+            }
+            content
+            cover {
+                id
+            }
+            categories{
+                post_categories_id{
+                    name
+                }
+            }
         }
     }
       `;
