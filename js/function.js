@@ -805,7 +805,18 @@ function getPostDetail() {
     refreshAllJS();
   });
 }
+//SERVICE DETAIL CONTROLLER===========================================================================================================================
 
+function getServiceDetail() {
+  let router = Router.getServiceDetail;
+  let slug = getServiceSlug();
+  callAPI(router, { slug }, function (service) {
+    document.getElementById("service_title").innerHTML = service.title;
+    document.getElementById("service_cover").src =
+      service?.cover || defaultHeaderImg;
+    document.getElementById("service_content").innerHTML = service.content;
+  });
+}
 // Router ===========================================================================================================================
 
 function refresh() {
