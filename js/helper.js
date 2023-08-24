@@ -274,3 +274,37 @@ function clearCheckbox() {
             item.checked = '';
         })
 }
+function getServiceSlug() {
+	let typeOfService = "";
+  
+	const params = new URLSearchParams(window.location.search);
+	const slugParam = params.get("slug");
+  
+	switch (slugParam) {
+	  case "dat-ve-may-bay":
+		typeOfService = "plane_service";
+		break;
+	  case "dich-vu-dat-xe":
+		typeOfService = "car_service";
+		break;
+	  case "dang-ki-visa":
+		typeOfService = "visa_application";
+		break;
+	  case "xkld-han-quoc":
+		typeOfService = "labor_export_korea";
+		break;
+	  case "xkld-uzbekistan":
+		typeOfService = "labor_export_uzbekistan";
+		break;
+	  case "xkld-dai-loan":
+		typeOfService = "labor_export_dailoan";
+		break;
+	  case "xkld-nhat-ban":
+		typeOfService = "labor_export_japan";
+		break;
+  
+	  default:
+		return null;
+	}
+	return typeOfService;
+  }
