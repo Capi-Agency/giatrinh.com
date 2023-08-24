@@ -774,10 +774,10 @@ function refresh() {
 		return;
 	}
 
-	if (currentURL.includes("tourPost")) {
-    // alert("ok");
-		return;
-	}
+	if (currentURL.includes("postDetail")) {
+    getPostDetail();
+    return;
+  }
 	if (currentURL.includes("tourDetail")) {
 		getTourDetail();
 		return;
