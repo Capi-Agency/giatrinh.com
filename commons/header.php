@@ -1,7 +1,6 @@
 <section class="section-bg layout-pt-md layout-pb-md">
   <div class="section-bg__item col-12">
     <img id="header_img" alt="header img" class="js-lazy loaded" data-ll-status="loaded" />
-    <!-- <img src="https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1472&amp;q=80" alt="image"> -->
   </div>
   <div class="container">
     <div class="row justify-center text-center">

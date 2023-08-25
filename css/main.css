@@ -608,6 +608,7 @@ textarea {
   outline: none;
   width: 100%;
   background-color: transparent;
+  resize: none;
 }
 
 main {
@@ -12135,14 +12136,14 @@ div[data-slider] > input[type="range"]::-ms-tooltip {
 
 .form-input textarea:focus,
 .form-input input:focus {
-  border: 2px solid #051036 !important;
+  border: 1px solid #ccc;
 }
 
 .form-input textarea:focus ~ label,
 .form-input textarea:valid ~ label,
 .form-input input:focus ~ label,
 .form-input input:valid ~ label {
-  transform: translateY(-10px);
+  transform: translateY(-16px);
 }
 
 .sidebar.-blog > * + * {
@@ -12458,12 +12459,22 @@ table.table-5 td {
 
 .map-form {
   position: relative;
-  margin-top: -680px;
+  margin-top: -800px;
 }
 
 @media (max-width: 991px) {
   .map-form {
-    margin-top: 40px;
+    top: 200px;
+  }
+}
+@media (max-width: 1281px){
+  .map-form{
+    margin-top: -200px;
+  }
+}
+@media (max-width: 1441px){
+  .map-form{
+    margin-top: -400px;
   }
 }
 
@@ -13908,5 +13919,30 @@ span.flatpickr-weekday {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+  }
+}
+.error{
+  height: 20px;
+  font-size: 12px;
+  color: var(--color-red-1)
+}
+#toast-msg{
+  display: none;
+  position: fixed;
+
+  z-index: 100;
+  top: 120px;
+  right:-500px;
+
+  animation: moveAndShow .5s ease forwards;
+}
+  @keyframes moveAndShow {
+  0%{
+    right: -400px;
+    opacity: 0;
+  }
+    100%{
+    right: 12px;
+    opacity: 1;
   }
 }
