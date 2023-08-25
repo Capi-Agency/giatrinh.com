@@ -132,6 +132,7 @@ class CompanyInfo {
     this.description = json?.description;
     this.short_description = json?.short_description;
     this.address = json?.address;
+	this.header_img = idToImg(json?.header_img.id)
   }
 }
 
@@ -152,6 +153,7 @@ const Router = {
 	getServiceDetail: 9,
 	getPostDetail: 10,
 	getTourDetail: 11,
+	sendContact: 12
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -302,6 +304,9 @@ function queryBody(router, data) {
 	address
 	phone1
 	phone2
+	header_img{
+		id
+	}
 	`;
 
   switch (router) {
@@ -551,6 +556,23 @@ function queryBody(router, data) {
 			}
 		}
 		  `;
+	case Router.sendContact:
+		return `
+		mutation {
+			create_contact_us_item (data:
+				{
+				user_name: "${data.name}",
+				title: "${data.title}",
+				user_email: "${data.email}",
+				content: "${data.content}"},
+				){
+					user_name
+					user_email
+					content
+					title
+			}
+		}
+		`
     default:
       return "";
   }

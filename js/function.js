@@ -828,6 +828,21 @@ function getServiceDetail() {
     document.getElementById("service_content").innerHTML = service.content;
   });
 }
+
+// CONTACT CONTROLLER
+function getContactPage(){
+	sendContactFormValues();
+
+	callAPI(Router.getCompanyInfo,null,function(companyInfo){
+		document.getElementById("header_img").src = companyInfo.header_img
+		document.getElementById("company_address").innerHTML = companyInfo.address
+		document.getElementById("company_email1").href = `mailto:${companyInfo.email1}`
+		document.getElementById("company_email1").textContent = companyInfo.email1
+		document.getElementById("company_phone1").href = `tel:${companyInfo.phone1}`
+		document.getElementById("company_phone1").textContent = companyInfo.phone1
+	})
+}
+
 // Router ===========================================================================================================================
 
 function refresh() {
@@ -836,6 +851,10 @@ function refresh() {
 
 	if (currentURL.includes("about")) {
 		getAboutUsPage();
+		return;
+	}
+	if (currentURL.includes("contact-us")) {
+		getContactPage();
 		return;
 	}
 	if (currentURL.includes("tourList")) {
@@ -859,29 +878,26 @@ function refresh() {
 		getSearchLocations();
 		return;
 	}
-
-	if (currentURL.includes("postDetail")) {
-    getPostDetail();
-    return;
-  }
 	if (currentURL.includes("tour-detail")) {
 		const urlParams = new URLSearchParams(window.location.search);
   		const slug = urlParams.get("slug");
 		getTourDetail(slug);
 		return;
 	}
-	if (currentURL.includes("tourExp")) {
+	if (currentURL.includes("posts")) {
 		getPosts();
 		return;
 	}
-
-	if (currentURL.includes("services/")) {
+	if (currentURL.includes("post-detail")) {
+    getPostDetail();
+    return;
+ 	}
+	if (currentURL.includes("services")) {
 		getServicePlane();
 		return;
 	}
-
-	if (currentURL.includes("service-detail/")) {
-		getServicePlane();
+	if (currentURL.includes("service-detail")) {
+		getServiceDetail();
 		return;
 	}
 

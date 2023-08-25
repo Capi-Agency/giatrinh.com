@@ -58,7 +58,7 @@ function liveSearch(locations) {
 
 		search.addEventListener("input", (event) => {
 
-			searchTerm = changeString(event.target.value.trim());
+			searchTerm = changeString(event.target.value.trim().length == 0);
 
 			showList(searchTerm, results);
 
@@ -142,7 +142,7 @@ function getSearchValueAndNavigate(locations) {
 
 	btnSubmit.addEventListener("click", () => {
 		if (searchInput.value || searchInput.value != "") {
-			let locationParam = `location=${searchInput.value.trim()}`;
+			let locationParam = `location=${searchInput.value.trim().length == 0}`;
 			urlParams.push(locationParam);
 		}
 		if (datePickerInput.value || datePickerInput.value != "") {
@@ -262,4 +262,75 @@ function getServiceSlug() {
 		return null;
 	}
 	return typeOfService;
-  }
+}
+function sendContactFormValues(){
+	const form = document.querySelector("#form");
+	const nameEl = document.querySelector("#js-form-name");
+	const emailEl = document.querySelector("#js-form-email");
+	const titleEl = document.querySelector("#js-form-title");
+	const contentEl = document.querySelector("#js-form-content");
+	const nameValue = document.querySelector("#js-form-name-value");
+	const emailValue = document.querySelector("#js-form-email-value");
+	const titleValue = document.querySelector("#js-form-title-value");
+	const contentValue = document.querySelector("#js-form-content-value");
+	
+
+	const emailError = document.getElementById('email-error');
+	const nameError = document.getElementById('name-error');
+	const titleError = document.getElementById('title-error');
+	const contentError = document.getElementById('content-error');
+
+	if(!form || !nameEl || !emailEl || !titleEl || !contentEl) return
+
+	const ElArray = [nameEl,emailEl,titleEl,contentEl]
+	const ValueArray = [nameValue,emailValue,titleValue,contentValue]
+	const ErrorElArray = [nameError,emailError,titleError,contentError]
+
+	document.addEventListener("DOMContentLoaded", function() {
+		window.scroll(0,200)
+	});
+
+	const resetForm = function(){
+ 		for(let i=0; i <= 3; i++){
+			ValueArray[i].value = ""
+			ErrorElArray[i].innerHTML = ""
+		}
+	}
+
+	let isValid = true;
+	for(let i=0; i <= 3; i++){
+		ElArray[i].addEventListener("input",function(e){
+			console.log(e.target.value)
+			e.target.style.outline =  e.target.value.trim().length < 10 ? "1.5px solid #d93025" : "1px solid #008009"
+			ErrorElArray[i].innerHTML = e.target.value.trim().length < 10 ? 'Vui lòng nhập trên 10 kí tự!':''
+			isValid = e.target.value.trim().length == 0 ? false : true
+		})
+	}
+	form.addEventListener("submit",function(e){
+		e.preventDefault();
+		if(isValid){
+				let router = Router.sendContact;
+				callAPI(
+					router,{
+						name: nameValue.value,
+						email: emailValue.value,
+						title: titleValue.value,
+						content: contentValue.value,
+					},
+					function(){
+						resetForm();
+						showToastMsg();
+					}	
+				)
+		} 
+	})
+}
+function showToastMsg(){
+	document.querySelector("#toast-msg").style.display = "block"
+	document.querySelector("#close-btn").onclick = ()=>{
+		document.querySelector("#toast-msg").style.display = "none"
+	}
+	setTimeout(()=>{
+		document.querySelector("#toast-msg").style.display = "none"
+	},5000)
+}

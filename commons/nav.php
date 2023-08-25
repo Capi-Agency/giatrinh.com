@@ -19,7 +19,7 @@
                                         <a href="https://giatrinh.com">
                                             Trang Chủ
                                         </a>
-                                    </li>   
+                                    </li>
 
                                     <!-- Giới thiệu -->
                                     <li>
@@ -51,7 +51,9 @@
                                                     <div class="tabs__pane -tab-item-1 is-tab-el-active">
                                                         <div class="mega__content">
                                                             <div class="mega__item">
-                                                                <div class="text-15 fw-700"><div><a>Miền bắc</a></div></div>
+                                                                <div class="text-15 fw-700">
+                                                                    <div><a>Miền bắc</a></div>
+                                                                </div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tours?location=Sa%20Pa">Sapa</a></div>
@@ -68,7 +70,9 @@
                                                             </div>
 
                                                             <div class="mega__item">
-                                                            <div class="text-15 fw-700"><div><a>Miền Trung</a></div></div>
+                                                                <div class="text-15 fw-700">
+                                                                    <div><a>Miền Trung</a></div>
+                                                                </div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tours?location=Cửa Lò">Cửa Lò</a></div>
@@ -85,7 +89,9 @@
                                                             </div>
 
                                                             <div class="mega__item">
-                                                            <div class="text-15 fw-700"><div><a>Miền Nam</a></div></div>
+                                                                <div class="text-15 fw-700">
+                                                                    <div><a>Miền Nam</a></div>
+                                                                </div>
                                                                 <div class="y-gap-5 text-15 pt-5">
 
                                                                     <div><a href="tours?location=Phú Quốc">Phú Quốc</a></div>
@@ -96,7 +102,7 @@
 
                                                                     <div><a href="tours?location=Cần Thơ">Cần Thơ</a></div>
 
-                                                                    <div><a  href="tours?location=Cà Mau">Cà Mau</a></div>
+                                                                    <div><a href="tours?location=Cà Mau">Cà Mau</a></div>
 
                                                                 </div>
                                                             </div>
