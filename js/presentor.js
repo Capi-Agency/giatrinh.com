@@ -401,3 +401,61 @@ function tourOtoTourlistItem(tour, type) {
   return html;
 }
 
+// POSTS' PAGE PRESENTOR
+
+function categoryBtnList(categories, currentPostCategory){
+
+	let html = ``
+	categories.map(category=>{
+	  	html += `
+		<div class="col-auto">
+			<button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button ${ currentPostCategory == category.id ? 'is-tab-el-active' : '' }" data-tab-target=".-tab-item-${category.id}" onclick="getPostWithCategoryID(${category.id})">${category.name}</button>
+		</div>`
+		}).join(" ")
+	return html
+}
+function postDataToTabPane(posts,categories){
+	let html = `
+	<div class="tabs__pane row -tab-item-0 is-tab-el-active">
+	${
+		posts.map(post=>{
+			return postDataToListItem(post)
+		}).join("")
+	}
+	</div>
+	`
+	categories.map(category=>{
+		html +=
+		`
+		<div class="tabs__pane row -tab-item-${category.id}">
+		${
+			posts.map(post=>{
+				if(post.category.id == category.id){
+					return postDataToListItem(post)
+				}
+			}).join("")
+		}
+		</div>
+		`
+	}).join(" ")
+	return html
+}
+function postDataToListItem(post){
+	let url = domain + "/post-detail/"+post.slug
+	let html = ''
+	html+= `
+	<div class="col-lg-4 col-sm-6 mb-40">
+		<a href="${url}" class="blogCard -type-1 d-block ">
+			<div class="blogCard__image">
+				<div class="ratio ratio-4:3 rounded-8">
+					<img class="img-ratio js-lazy" src="${post.cover}" data-src="${post.cover}" alt="image">
+				</div>
+			</div>
+			<div class="pt-20">
+				<h4 class="text-dark-1 text-18 fw-500 line-clamp">${post.title}</h4>
+				<div class="text-light-1 text-15 lh-14 mt-5 line-clamp">${post.short_description}</div>
+			</div>
+		</a>
+	</div>`
+	return html
+}

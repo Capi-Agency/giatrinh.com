@@ -32,10 +32,10 @@
     </section>
 
     <!-- Post List -->
-    <section data-anim-wrap="" class="layout-pt-sm layout-pb-lg animated">
+    <section data-anim-wrap class="layout-pt-sm layout-pb-lg animated">
         <div class="container">
             <!-- Title -->
-            <div data-anim-child="slide-up delay-1" class="row justify-center text-center is-in-view">
+            <div data-anim-child="slide-up delay-2" class="row justify-center text-center is-in-view">
                 <div class="col-auto">
                     <div class="sectionTitle -md">
                         <h2 class="sectionTitle__title">Cẩm nang du lịch</h2>
@@ -44,31 +44,24 @@
                 </div>
             </div>
 
-            <!-- Post -->
-            <div data-anim-child="slide-up delay-2" class="tabs -pills-3 pt-30 js-tabs is-in-view">
-                <!-- Tags -->
-                <div class="tabs__controls row x-gap-10 justify-center js-tabs-controls" id="category_list_content">
+            <!-- Posts -->
+            <div data-anim-child="slide-up delay-3" class="tabs -pills-3 pt-30 js-tabs">
+                <div class="tabs__controls row x-gap-10 justify-center js-tabs-controls" id="tab-btn">
+
                 </div>
 
-                <div class="tabs__content pt-30 js-tabs-content">
-                    <div class="tabs__pane -tab-item-1 is-tab-el-active">
-                        <!-- Post List -->
-                        <div class="row y-gap-30" id="post_list_content">
-                        </div>
-                        <!-- end post list -->
+                <div class="tabs__content pt-30 js-tabs-content" id="tab-content">
+                </div>
+                <div class="border-top-light mt-30 pt-30">
+                        <div class="row x-gap-10 y-gap-20 justify-center">
 
-                        <!-- pagination -->
-                        <div class="border-top-light mt-30 pt-30">
-                            <div class="row x-gap-10 y-gap-20 justify-center">
-                                <div class="col-auto">
-                                    <div class="row x-gap-20 y-gap-20 items-center" id="post_pagination">
-                                    </div>
+                            <div class="col-md-auto md:order-3">
+                                <div class="row x-gap-20 y-gap-20 items-center" id="post_list_page_content">
+
                                 </div>
                             </div>
                         </div>
-                        <!--end pagination -->
                     </div>
-                </div>
             </div>
         </div>
     </section>

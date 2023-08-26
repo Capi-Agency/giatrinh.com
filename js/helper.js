@@ -31,6 +31,18 @@ function pageToTourList(page, totalPage) {
 	return html;
 }
 
+function pageToPostList(page, totalPage) {
+	var html = "";
+	for (var i = 1; i <= totalPage; i++) {
+		if (i == page) {
+			html = html + `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getPostPage(` + i + `)" >` + i + `</button> </div>`;
+		} else {
+			html += `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full" onclick="getPostPage(` + i + `)" >` + i + `</button> </div>`;
+		}
+	}
+	return html;
+}
+
 function liveSearch(locations) {
 	searchInput.addEventListener("input", function (e) {
 		popupWindow.classList.add("-is-active");

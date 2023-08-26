@@ -93,7 +93,7 @@ class Post {
     this.short_description = json?.short_description;
     this.tags = [];
     if (json?.tags?.length > 0) {
-      json?.tags.map((t) => this.tags.push(t.post_tags_id.name));
+      json?.tags.map((t) => this.tags.push(t.post_tags_id?.name));
     }
     this.date_created = changeDate(json?.date_created);
     this.cover = idToImg(
@@ -106,8 +106,8 @@ class Post {
 class PostCategory {
   constructor(json) {
     this.id = json.id;
-    this.title = json.title;
-    this.post_count = json.post.count;
+    this.name = json.name;
+    this.slug = json.slug;
   }
 }
 
@@ -132,7 +132,7 @@ class CompanyInfo {
     this.description = json?.description;
     this.short_description = json?.short_description;
     this.address = json?.address;
-	this.header_img = idToImg(json?.header_img.id)
+    this.header_img = idToImg(json?.header_img.id);
   }
 }
 
@@ -141,19 +141,20 @@ class CompanyInfo {
 //  =================================================================================================================================
 
 const Router = {
-	getCloseTour: 0,
-	getDomesticTours: 1,
-	getInternationalTours: 2,
-	getBanners: 3,
-	getLocations: 4,
-	getPosts: 5,
-	getTours: 6,
-	getCompanyInfo: 7,
-	getServices: 8,
-	getServiceDetail: 9,
-	getPostDetail: 10,
-	getTourDetail: 11,
-	sendContact: 12
+  getCloseTour: 0,
+  getDomesticTours: 1,
+  getInternationalTours: 2,
+  getBanners: 3,
+  getLocations: 4,
+  getPosts: 5,
+  getTours: 6,
+  getCompanyInfo: 7,
+  getServices: 8,
+  getServiceDetail: 9,
+  getPostDetail: 10,
+  getTourDetail: 11,
+  sendContact: 12,
+  getPostsPage: 13,
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -212,6 +213,11 @@ function responseHandle(router, data) {
     case Router.getServiceDetail:
       let typeOfService = Object.keys(data);
       return new Service(data[typeOfService[0]]);
+    case Router.getPostsPage:
+		let categories = data.post_categories.map(c=> new PostCategory(c))
+		categories = [ {id: -1, name: "Tất cả", slug:"tat-ca"},...categories]
+		let posts = data.posts.map(p=> new Post(p))
+      return {posts, categories}
     default:
       return null;
   }
@@ -220,9 +226,11 @@ function responseHandle(router, data) {
 function responseMetaHandle(router, data) {
   switch (router) {
     case Router.getTours:
-      let meta = new Aggregated(data.tours_aggregated);
-      return meta;
+      return new Aggregated(data.tours_aggregated);;
       break;
+	case Router.getPostsPage:
+		return new Aggregated(data.posts_aggregated);;
+		break;
     default:
       return null;
   }
@@ -279,6 +287,24 @@ function queryBody(router, data) {
 		id
 	}
 	`;
+
+	let postDetail = `
+	tags{
+		post_tags_id{
+			id
+			name
+		}
+	}
+	content
+	categories{
+		post_categories_id{
+			id
+			name
+			slug
+		}
+	}
+	`;
+
 
   let locations = `
 	id
@@ -371,11 +397,11 @@ function queryBody(router, data) {
 				}
 			}
 		}`;
-		break;
-	case Router.getTourDetail:
-		let slug = data.slug;
+      break;
+    case Router.getTourDetail:
+      let slug = data.slug;
 
-		return `query {
+      return `query {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
@@ -393,9 +419,9 @@ function queryBody(router, data) {
 				description
 			}
 		}`;
-		break;
-	case Router.getCloseTour:
-		return `query {
+      break;
+    case Router.getCloseTour:
+      return `query {
 			tours (limit: ${limit},
 			filter: {
 				_and: [
@@ -488,7 +514,8 @@ function queryBody(router, data) {
 				_and: [
 				${status},
 				]
-			}
+			},
+			sort: "-date_created"
 			){
 				${posts}
 			}
@@ -502,6 +529,57 @@ function queryBody(router, data) {
 			}
 		}
 		`;
+    case Router.getPostsPage:
+		let categoryListString = '';
+		if (data.needCategory) {
+			categoryListString = `,
+			post_categories{
+				id
+				name
+				slug
+			}`;
+		}
+		let categoryString = '';
+		if (data.category != -1) {
+			categoryString = `
+				, {
+					categories: {
+						post_categories_id: {
+							id: {
+								_eq: ${data.category}
+							}
+						}
+					}
+				}
+			`;
+		}
+      return `query {
+		posts(page: ${data.page}, limit: ${data.limit},
+			filter: {
+				_and: [
+					${status}
+					${categoryString}
+				]
+			},
+			sort: "-date_created"
+			){
+				${posts}
+				${postDetail}
+			}
+			${categoryListString},
+			posts_aggregated (
+				filter: {
+					_and: [
+					${status}
+					${categoryString}
+					]
+				}){
+					count {
+						id
+					}
+				}
+		}	
+			  `;
     case Router.getPostDetail:
       return `
 		query {
@@ -556,8 +634,8 @@ function queryBody(router, data) {
 			}
 		}
 		  `;
-	case Router.sendContact:
-		return `
+    case Router.sendContact:
+      return `
 		mutation {
 			create_contact_us_item (data:
 				{
@@ -572,7 +650,7 @@ function queryBody(router, data) {
 					title
 			}
 		}
-		`
+		`;
     default:
       return "";
   }

@@ -6,10 +6,8 @@ let api = "https://admin.giatrinh.com/graphql";
 
 let limit = 6;
 
-let currentPostCategory = "";
+let currentPostCategory = -1;
 let currentPage = 1;
-let totalPostCount = 0;
-let totalPostPages = 0;
 let searchKey = "";
 let searchDurations = [];
 let searchLocations = [];
@@ -51,49 +49,6 @@ function postObjectToHtml(post) {
 		</div>
 		`);
 }
-
-// --tạo categories để lọc
-function postCategoriesToHtml(categories) {
-  let html = `<div class="col-auto">
-	<button class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button
-	${
-    currentPostCategory == "" ? "is-tab-el-active" : ""
-  }"  onclick="getPosts(1,'')">Tất cả</button>
-	</div>`;
-  categories
-    .map((category) => {
-      return (html += `<div class="col-auto">
-			<button
-			class="tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button
-			${category.title == currentPostCategory ? "is-tab-el-active" : ""}
-			"
-			${category?.posts_func?.count == 0 ? "disabled" : ""} 
-			onclick="getPosts(1,'${category.title}')"
-			>${category.title}</button>
-			</div>`);
-    })
-    .join("");
-  return html;
-}
-
-// --tạo nút phân trang
-function postPagination(toTotalPage, category) {
-  let html = "";
-  for (let i = 1; i <= toTotalPage; i++) {
-    if (i === currentPostPage) {
-      html += `<div class="col-auto">
-			<button class="size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getPosts(${i},'${category}')">${i}</button>
-			</div>`;
-    } else {
-      html += `<div class="col-auto">
-			<button class="size-40 flex-center rounded-full"
-			onclick="getPosts(${i},'${category}')">${i}</button>
-			</div>`;
-    }
-  }
-  return html;
-}
-
 // RELATED TOURS PRESENTORS
 function createRelatedTourCard(tours, title) {
   let html = `<div class="row justify-center mb-20">
@@ -325,171 +280,38 @@ function clearFilter() {
 	clearCheckbox();
 }
 // =========================POSTS' LIST CONTROLLER========================
-function getPosts(page = 1, category = currentPostCategory) {
-  getCategories();
-  currentPostPage = page;
-  currentPostCategory = category;
-  let filter = `filter: {
-		_and: [
-		{
-			status: {
-				_eq: "published"
-			}
-		},
-		${
-      category != ""
-        ? `{
-				category: {
-					title: {
-						_eq:"${category}"
-					}
-				}
-			}`
-        : ""
-    }
-		]
-	}`;
-  let data = JSON.stringify({
-    query: `query {
-			posts (page: ${page}, limit: ${limitPostPerPage},${filter}
-			){
-				id
-				date_created
-				title
-				content
-				category{
-					title
-				}
-				short_description
-				cover{
-					id
-				}
-			}
-			posts_aggregated (${filter}) {
-				count {
-					id
-				}
-			}
-		}`,
-  });
-  let settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data,
-  };
-  $.ajax(settings).done(function (response) {
-    const { posts, posts_aggregated } = response.data;
+let categories = [];
 
-    totalPost = posts_aggregated[0].count.id;
-    totalPostPages = Math.ceil(totalPost / limitPostPerPage);
+function getPostsPage() {
+	const routerPosts = Router.getPostsPage
+	let posts=[];
 
-    let html = postObjectPostList(posts.map((p) => new Post(p)));
-    document.getElementById("post_list_content").innerHTML = html;
-    if (totalPostPages == 1) {
-      document.getElementById("post_pagination").innerHTML = "";
-    } else {
-      document.getElementById("post_pagination").innerHTML = postPagination(
-        totalPostPages,
-        category
-      );
-    }
-  });
+	let data = {
+		needCategory: categories.length == 0,
+		page: currentPage,
+		limit: limit,
+		category: currentPostCategory
+	}
+
+	callAPI(routerPosts, data, function({posts, categories}){
+		document.getElementById("tab-btn").innerHTML =	categoryBtnList(categories, currentPostCategory)
+		document.getElementById("tab-content").innerHTML = postDataToTabPane(posts,categories)
+	}, function(meta){
+		let totalPage = Math.ceil(meta.count/limit);
+		document.getElementById("post_list_page_content").innerHTML =
+		pageToPostList(currentPage, totalPage)
+	})
 }
 
-function getCategories() {
-  let data = JSON.stringify({
-    query: `query {
-			categories {
-				id
-				title
-				posts_func{
-					count
-				}
-			}
-		}`,
-  });
-  let settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data,
-  };
-  $.ajax(settings).done(function (response) {
-    const { categories } = response.data;
-    let html = postCategoriesToHtml(categories);
-    document.getElementById("category_list_content").innerHTML = html;
-  });
+function getPostPage(page) {
+	currentPage = page;
+	getPostsPage();
 }
-// =====================PLANE SERVICE CONTROLLER================================
-function getServicePlane() {
-  let data = JSON.stringify({
-    query: `query {
-			vemaybay {
-				title
-				content
-				header_img{
-					id
-				}
-			}
-		}`,
-  });
-  let settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data,
-  };
-  $.ajax(settings).done(function (response) {
-    const {
-      vemaybay: { content, title, header_img },
-    } = response.data;
-    const headerImg = header_img ? idToImg(header_img?.id) : defaultHeaderImg;
-    getHeader(
-      headerImg,
-      "http://localhost/giatrinh.com/servicePlane.php",
-      title
-    );
-    document.getElementById("service_plane_title").innerHTML = title;
-    document.getElementById("service_plane_content").innerHTML = content;
-  });
-}
-// =====================CAR SERVICE CONTROLLER================================
-function getServiceCar() {
-  let data = JSON.stringify({
-    query: `query {
-			vexe {
-				title
-				content
-				header_img{
-					id
-				}
-			}
-		}`,
-  });
-  let settings = {
-    url: api,
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data,
-  };
-  $.ajax(settings).done(function (response) {
-    const {
-      vexe: { content, title, header_img },
-    } = response.data;
-    const headerImg = header_img ? idToImg(header_img?.id) : defaultHeaderImg;
-    getHeader(headerImg, "http://localhost/giatrinh.com/serviceCar.php", title);
-    document.getElementById("service_car_title").innerHTML = title;
-    document.getElementById("service_car_content").innerHTML = content;
-  });
+
+function getPostWithCategoryID(id) {
+	currentPage = 1;
+	currentPostCategory = id;
+	getPostsPage();
 }
 
 // =====================TOUR DETAIL CONTROLLER================================
@@ -526,66 +348,8 @@ function getTourDetail(slug) {
 
     refreshAllJS();
   });
-
-  // if (!id) {
-  //   window.location.href = tourListUrl;
-  //   return;
-  // }
-  // let data = JSON.stringify({
-  //   query: `
-// 		query {
-// 			tours (filter: {
-// 				_and: [
-// 				{
-// 					status: {
-// 						_eq: "published"
-// 					}
-// 				},
-// 				{
-// 					id: {
-// 						_eq: ${id}
-// 					}
-// 				}
-// 				]
-// 			}){
-// 				id
-// 				title
-// 				date_created
-// 				duration
-// 				description
-// 				price
-// 				group_size
-// 				transportation
-// 				type
-// 				cover {
-// 					id
-// 				}
-// 			}
-// 		}
-// 		`,
-  // });
-  // let settings = {
-  //   url: api,
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  //   data,
-  // };
-  // $.ajax(settings).done(function (response) {
-  //   const { tours } = response.data;
-  //   if (tours.length === 0) {
-  //     window.location.href = tourListUrl;
-  //     return;
-  //   }
-  //   const tourDetail = new Tour(tours[0]);
-
-
-
-    // getRelatedTourByType(tourDetail.type, tourDetail.id, 4);
-    // getAllTourCard();
-  // });
 }
+
 
 function getRelatedTourByType(type, id, limit = 4) {
   let data = JSON.stringify({
@@ -885,7 +649,7 @@ function refresh() {
 		return;
 	}
 	if (currentURL.includes("posts")) {
-		getPosts();
+		getPostsPage();
 		return;
 	}
 	if (currentURL.includes("post-detail")) {
