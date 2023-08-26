@@ -1,5 +1,5 @@
 // biến toàn cục
-let domain = "http://localhost:8888";
+let domain = "https://test.giatrinh.com";
 
 // khai báo DOM
 const searchInput = document.querySelector("#js-search");
