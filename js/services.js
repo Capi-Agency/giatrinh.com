@@ -141,20 +141,28 @@ class CompanyInfo {
 //  =================================================================================================================================
 
 const Router = {
-  getCloseTour: 0,
-  getDomesticTours: 1,
-  getInternationalTours: 2,
-  getBanners: 3,
-  getLocations: 4,
-  getPosts: 5,
-  getTours: 6,
-  getCompanyInfo: 7,
-  getServices: 8,
-  getServiceDetail: 9,
-  getPostDetail: 10,
-  getTourDetail: 11,
-  sendContact: 12,
-  getPostsPage: 13,
+// common
+	getBanners: 1,
+	getLocations: 2,
+	getCompanyInfo: 3,
+	sendContact: 4,
+
+// tours
+	getCloseTour: 5,
+	getDomesticTours: 6,
+	getInternationalTours: 7,
+	getTours: 8,
+	getTourDetail: 9,
+
+//   posts
+	getPosts: 10,
+	getPostDetail: 11,
+	getPostsPage: 12,
+
+// services
+	getServices: 13,
+	getServiceDetail: 14,
+	
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -186,6 +194,8 @@ function responseHandle(router, data) {
     case Router.getTours:
       return data.tours.map((t) => new Tour(t));
       break;
+	case Router.getTourDetail:
+	  return new Tour(data.tours[0])
     case Router.getCloseTour:
       return data.tours.map((t) => new Tour(t));
       break;
@@ -210,7 +220,9 @@ function responseHandle(router, data) {
       break;
     case Router.getPostDetail:
       return new Post(data.posts[0]);
-    case Router.getServiceDetail:
+    case Router.getServices:
+	  return new Service(data.labor_export_detail);
+	case Router.getServiceDetail:
       let typeOfService = Object.keys(data);
       return new Service(data[typeOfService[0]]);
     case Router.getPostsPage:
@@ -621,10 +633,10 @@ function queryBody(router, data) {
 			}
 		}
 		`;
-    case Router.getServiceDetail:
-      return `
-		  query {
-			${data.slug}{
+    case Router.getServices:
+		return `
+		query {
+			labor_export_detail{
 				id
 				title
 				content
@@ -633,7 +645,20 @@ function queryBody(router, data) {
 				}
 			}
 		}
-		  `;
+		`
+		case Router.getServiceDetail:
+	return `
+		query {
+		${data.slug}{
+			id
+			title
+			content
+			header_img {
+				id
+			}
+		}
+	}
+		`;
     case Router.sendContact:
       return `
 		mutation {

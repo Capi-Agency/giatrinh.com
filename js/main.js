@@ -388,7 +388,7 @@ function pinOnScroll() {
 
   target.forEach((el) => {
     let itemOffset;
-
+    if(!el.querySelector(".js-pin-content")) return
     if (el.querySelector(".js-pin-content").getAttribute("data-offset")) {
       itemOffset = el
         .querySelector(".js-pin-content")

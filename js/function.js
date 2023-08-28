@@ -12,43 +12,6 @@ let searchKey = "";
 let searchDurations = [];
 let searchLocations = [];
 
-// let tourListUrl = "http://localhost/giatrinh.com/tourList.php";
-// let tourDetailUrl = "http://localhost/giatrinh.com/tourDetail.php";
-// let blogListUrl = "http://localhost/giatrinh.com/tourExp.php";
-
-//  =================================================================================================================================
-// Presentor ========================================================================================================================
-//  =================================================================================================================================
-
-//-POST LISTS' PRESENTORS
-function postObjectPostList(posts) {
-  let html = "";
-
-  posts.forEach((post) => {
-    html += postObjectToHtml(post);
-  });
-  return html;
-}
-
-function postObjectToHtml(post) {
-  let html = "";
-  let url = "/giatrinh.com/tourPost.php";
-  return (html += `
-		<div class="col-lg-4 col-sm-6">
-		<a href="${url}?id=${post.id}" class="blogCard -type-1 d-block ">
-		<div class="blogCard__image">
-		<div class="ratio ratio-4:3 rounded-8">
-		<img class="img-ratio js-lazy loaded" src="${post.cover}" alt="image" data-ll-status="loaded">
-		</div>
-		</div>
-		<div class="pt-20">
-		<h4 class="text-dark-1 text-18 fw-500 line-clamp">${post.title}</h4>
-		<p class="text-light-1 text-14 fw-500 line-clamp">${post.short_description}</p>
-		</div>
-		</a>
-		</div>
-		`);
-}
 // RELATED TOURS PRESENTORS
 function createRelatedTourCard(tours, title) {
   let html = `<div class="row justify-center mb-20">
@@ -202,14 +165,14 @@ function createIndexPostCard(posts) {
 let defaultHeaderImg =
   "https://images.unsplash.com/photo-1507431489734-ef0dbfbf88e1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1472&amp;q=80";
 
-function getHeader(headerImg, headerHref, headerAchor) {
+function getHeader(headerImg, headerHref, headerAnchor) {
   const headerImgEl = document.querySelector("#header_img");
   const headerAnchorEl = document.querySelector("#breadcrumb_anchor");
 
   headerImgEl.src =
     headerImg == null || undefined ? defaultHeaderImg : headerImg;
   headerAnchorEl.href = headerHref;
-  headerAnchorEl.innerHTML = headerAchor;
+  headerAnchorEl.innerHTML = headerAnchor;
 }
 
 // Controller Tour =======================================================================================================================
@@ -318,13 +281,11 @@ function getPostWithCategoryID(id) {
 
 function getTourDetail(slug) {
   let router = Router.getTourDetail;
-
   let data = {
-    slug: slug,
+    slug,
   };
 
-  callAPI(router, data, function (tours) {
-  	let tour = tours[0];
+  callAPI(router, data, function (tour) {
 
     const tourTitle = document.getElementById("tour_title");
     const tourPrice = document.getElementById("tour_price");
@@ -580,6 +541,26 @@ function getPostDetail() {
     refreshAllJS();
   });
 }
+// SERVICES PAGE CONTROLLER
+ 
+function getServicesPage(){
+  let router = Router.getServices ;
+  callAPI(router, null, function (service) {
+    document.getElementById("service_title").innerHTML = service.title;
+    document.getElementById("service_cover").src =
+      service?.cover || defaultHeaderImg;
+    document.getElementById("service_content").innerHTML = service.content;
+  });
+
+//   const serviceSlugs = [`dat-ve-may-bay`,`dich-vu-dat-xe`,`dang-ki-visa`,`xkld-han-quoc`,`xkld-uzbekistan`,`xkld-dai-loan`,`xkld-nhat-ban`]
+// //   document.querySelector("services_list")
+//   serviceSlugs.map(slug=>{
+// 	callAPI(Router.getServiceDetail, {slug}, function(data){
+// 		console.log(data)
+// 	})
+//})
+  
+}
 //SERVICE DETAIL CONTROLLER===========================================================================================================================
 
 function getServiceDetail() {
@@ -653,11 +634,11 @@ function refresh() {
 		return;
 	}
 	if (currentURL.includes("post-detail")) {
-    getPostDetail();
-    return;
+		getPostDetail();
+		return;
  	}
 	if (currentURL.includes("services")) {
-		getServicePlane();
+		getServicesPage();
 		return;
 	}
 	if (currentURL.includes("service-detail")) {
