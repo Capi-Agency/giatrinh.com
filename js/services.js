@@ -384,13 +384,13 @@ function queryBody(router, data) {
 		name
 	}
 	`;
-	let serviceFilter = data?.typeID?.length == 0 ?'':`
+	let serviceFilter = data?.typeSlug?.length == 0 ?'':`
 		,filter:{
 			_and:[
 				{
 					type:{
-						id:{
-							_in: [${data?.typeID}]
+						slug:{
+							_in: [${data?.typeSlug}]
 						}
 					}
 				}
@@ -687,7 +687,9 @@ function queryBody(router, data) {
     case Router.getAllServiceTypes:
 		return `
 		query {
-			service_types{
+			service_types(
+				sort:["name"]
+			){
 				id
 				cover{
 					id
