@@ -1,4 +1,4 @@
-<header class="header bg-green js-header bg-dark-1" data-x="header" data-x-toggle="is-menu-opened">
+<header class="header bg-green js-header bg-dark-1 uppercase" data-x="header" data-x-toggle="is-menu-opened">
     <div data-anim="fade" class="header__container px-30 sm:px-20 is-in-view">
         <div class="row justify-between items-center">
             <div class="col-auto">
@@ -9,10 +9,10 @@
                     </a>
                     <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
                         <div class="mobile-overlay"></div>
-                        <div class="header-menu__content">
+                        <div class="header-menu__content ">
                             <div class="mobile-bg js-mobile-bg"></div>
                             <div class="menu js-navList">
-                                <ul class="menu__nav text-white -is-active">
+                                <ul class="menu__nav text-white -is-active ">
 
                                     <!-- Trang Chủ -->
                                     <li>
@@ -23,12 +23,12 @@
 
                                     <!-- Giới thiệu -->
                                     <li>
-                                        <a href="/about-us">Giới Thiệu</a>
+                                        <a href="https://giatrinh.com/about-us">Giới Thiệu</a>
                                     </li>
 
                                     <!-- Tour Du Lịch -->
                                     <li class="menu-item-has-children -has-mega-menu">
-                                        <a href="/tours">
+                                        <a href="https://giatrinh.com/tours">
                                             <span class="mr-10">Tour Du Lịch</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
@@ -204,58 +204,23 @@
 
                                     </li>
 
-                                    <!-- Kinh Nghiệm Du Lịch -->
+                                    <!-- Bai viet Du Lịch -->
                                     <li>
-                                        <a href="tourExp.php">Kinh Nghiệm Du Lịch</a>
+                                        <a href="https://giatrinh.com/posts">Bài viết</a>
                                     </li>
                                     <!-- Dịch vụ khác -->
                                     <li class="menu-item-has-children">
                                         <a data-barba="">
-                                            <span class="mr-10">Dịch vụ khác</span>
+                                            <span class="mr-10">Dịch vụ</span>
                                             <i class="icon icon-chevron-sm-down"></i>
                                         </a>
-                                        <ul class="subnav">
-                                            <li class="subnav__backBtn js-nav-list-back">
-                                                <a href="#"><i class="icon icon-chevron-sm-down"></i>Dịch vụ khác</a>
-                                            </li>
 
-                                            <!-- Vé Máy Bay -->
-                                            <li><a href="servicePlane.php">Đặt hộ vé Máy Bay</a></li>
-
-                                            <!-- Thuê xe -->
-                                            <li><a href="serviceCar.php">Đặt hộ Xe</a></li>
-
-                                            <!-- Visa -->
-                                            <li><a href="insurance.php">Bảo Hiểm</a></li>
-
-                                            <!-- Tuyển Dụng XKLĐ -->
-                                            <li class="menu-item-has-children">
-                                                <a href="mainLabor.php" data-barba="">
-                                                    <span class="mr-10">Tuyển Dụng XKLĐ</span>
-                                                    <i class="icon icon-chevron-sm-down" style="font-size: 12px;"></i>
-                                                </a>
-
-                                                <ul class="subnav">
-                                                    <li class="subnav__backBtn js-nav-list-back">
-                                                        <a>Xuất Khẩu Lao Động</a>
-                                                    </li>
-
-                                                    <li><a href="mainLabor.php">Tuyển dụng XKLĐ</a></li>
-
-                                                    <li><a href="laborJapan.php">Đi XKLĐ Nhật Bản</a></li>
-
-                                                    <li><a href="laborTaiwan.php">Đi XKLĐ Đài Loan</a></li>
-
-                                                    <li><a href="laborKorean.php">Đi XKLĐ Hàn Quốc</a></li>
-
-                                                    <li><a href="laborUze.php">Đi XKLĐ Uzebekistan</a></li>
-                                                </ul>
-
-                                            </li>
+                                        <ul class="subnav" id="nav_service_types">
                                         </ul>
+
                                     </li>
                                     <li>
-                                        <a href="/contact-us">Liên Hệ</a>
+                                        <a href="https://giatrinh.com/contact-us">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </div>

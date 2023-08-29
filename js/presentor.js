@@ -188,7 +188,7 @@ function postOtoListItem(post, type) {
   var html = "";
   switch (type) {
     case LocationItemType.card:
-      let url = domain + "/posts/" + post.slug;
+      let url = domain + "/post-detail?slug=" + post.slug;
 
       html = `
 			<div data-anim-child="slide-left delay-1" class="col-lg-3 col-sm-6 is-in-view">
@@ -443,7 +443,7 @@ function postDataToTabPane(posts,categories){
 	return html
 }
 function postDataToListItem(post){
-	let url = domain + "/post-detail/"+post.slug
+	let url = domain + "/post-detail?slug="+post.slug
 	let html = ''
 	html+= `
 	<div class="col-lg-4 col-sm-6 mb-40">
@@ -524,7 +524,7 @@ function serviceTypeFilter(types){
 				<div class="d-flex items-center">
 					<div class="form-checkbox">
 						<input type="checkbox" name="name" 
-						onchange="filterByTypeID(${type.id})" >
+						onchange="filterByTypeSlug('${type.slug}')" >
 						<div class="form-checkbox__mark">
 						<div class="form-checkbox__icon icon-check"></div>
 					</div>
@@ -539,4 +539,14 @@ function serviceTypeFilter(types){
 		`
 	));
 	return html
+}
+// navbar
+function navbarServiceTypes(types){
+	let html =''
+	types.map(type=>(
+		html+=`
+		<li><a href="${domain}/services?type=${type.slug}">${type.name}</a></li>
+		`
+	))
+	return html;
 }

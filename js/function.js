@@ -415,7 +415,7 @@ function getBanners() {
   callAPI(router, null, function (banners) {
     let html = presentor(router, banners);
     document.getElementById("index_banners_content").innerHTML = html;
-    refreshAllJS();
+	refreshAllJS();
   });
 }
 
@@ -541,16 +541,19 @@ function getPostDetail() {
   });
 }
 // SERVICES PAGE CONTROLLER
-var IDtoFilter = []
+var typeSlugtoFilter = []
 
 function getServicesPage(
-	{page = currentPage, typeID = IDtoFilter, sortAsc = true}
-	)
-	{
-	let router1 = Router.getAllServiceDetails;
+	{page = currentPage, typeSlug=typeSlugtoFilter, sortAsc = true}
+	){
 	currentPage = page;
+	let router1 = Router.getAllServiceDetails;
+	const params = new URLSearchParams(window.location.search);
 
-	callAPI(router1, {page, typeID, sortAsc }, function (services) {
+  	const typeParam = JSON.stringify(params.get("type"));
+	
+
+	callAPI(router1, {page,typeSlug:[...typeSlug,typeParam], sortAsc }, function (services) {
 		document.getElementById("service_detail_list_content").innerHTML = 
 		serviceDetailOtoList(services);
 	}, function(meta){
@@ -560,6 +563,7 @@ function getServicesPage(
 		`${meta.count} kết quả`;
 		document.getElementById("services_pagination").innerHTML =
 		pageToServiceList(page, totalPage);
+		refreshAllJS();
 	});
 
 	
@@ -568,8 +572,10 @@ function getServiceFilter(){
 	//   tạo bộ lọc
 	let router2 = Router.getAllServiceTypes
 	callAPI(router2, null, function(types){
+		console.log(types);
 		document.getElementById("service_type_filter").innerHTML =
-		serviceTypeFilter(types)
+		serviceTypeFilter(types);
+		refreshAllJS();
 	})
 }
 //SERVICE DETAIL CONTROLLER===========================================================================================================================
@@ -591,6 +597,7 @@ function getServiceDetail() {
 	}else{
 		document.getElementById("service_status").classList.add("text-red-1")
 	}
+	refreshAllJS();
   });
 }
 
@@ -604,16 +611,28 @@ function getContactPage(){
 		document.getElementById("company_email1").href = `mailto:${companyInfo.email1}`
 		document.getElementById("company_email1").textContent = companyInfo.email1
 		document.getElementById("company_phone1").href = `tel:${companyInfo.phone1}`
-		document.getElementById("company_phone1").textContent = companyInfo.phone1
+		document.getElementById("company_phone1").textContent = companyInfo.phone1;
+		refreshAllJS();
 	})
 }
+// NAVBAR- SERVICE CONTROLLER
+function getNavbar(){
+	const router = Router.getAllServiceTypes;
 
+	callAPI(router, null, function(serviceTypes){
+
+		console.log(navbarServiceTypes(serviceTypes));
+
+		document.getElementById("nav_service_types").innerHTML = 
+		navbarServiceTypes(serviceTypes);
+		refreshAllJS();
+	})
+}
 // Router ===========================================================================================================================
 
 function refresh() {
 	let params = new URLSearchParams(window.location.search);
 	let currentURL = window.location.href;
-
 	if (currentURL.includes("about")) {
 		getAboutUsPage();
 		return;
@@ -675,5 +694,5 @@ function refresh() {
 	getSearchLocations();
 	getHomePosts();
 }
-
+getNavbar();
 refresh();

@@ -1,5 +1,5 @@
 // biến toàn cục
-let domain = "https://test.giatrinh.com";
+let domain = "https://giatrinh.com";
 
 // khai báo DOM
 const searchInput = document.querySelector("#js-search");
@@ -224,8 +224,8 @@ function setFilterValue(locations) {
 		}
 	});
 
-	document.getElementById('tours_location_in').innerHTML = inHtml;
-	document.getElementById('tours_location_out').innerHTML = outHtml;
+	document.getElementById('tours_location_in')?.innerHTML = inHtml;
+	document.getElementById('tours_location_out')?.innerHTML = outHtml;
 }
 
 function getFilterData() {
@@ -257,18 +257,19 @@ function clearServiceFilter(){
 	checkBoxes.forEach(item => {
 		item.checked = '';
 	})
-	getServicesPage({typeID:[]})
+	getServicesPage({ typeSlug:[]})
 }
-function filterByTypeID(id){
-	let isIDexisted = IDtoFilter.includes(id);
-
+function filterByTypeSlug(slug){
+	const slugString = JSON.stringify(slug)
+	let isIDexisted = typeSlugtoFilter.includes(slugString);
+	
 	if(!isIDexisted){
-		IDtoFilter.push(id)
+		typeSlugtoFilter.push(slugString);
 		isIDexisted = false
 	}else{
-		IDtoFilter.pop()
+		typeSlugtoFilter.pop()
 	}
-	getServicesPage({typeID: IDtoFilter});
+	getServicesPage({ typeSlug: typeSlugtoFilter});
 }
 function sortByPrice({sortAsc}){
 	getServicesPage({sortAsc})
