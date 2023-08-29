@@ -547,13 +547,16 @@ function getServicesPage(
 	{page = currentPage, typeSlug=typeSlugtoFilter, sortAsc = true}
 	){
 	currentPage = page;
+	let typeParam = []
 	let router1 = Router.getAllServiceDetails;
 	const params = new URLSearchParams(window.location.search);
+	if(params.size > 0){
+		typeParam.push(JSON.stringify(params.get("type"))) 
+	}else{
+		typeParam = []
+	}
 
-  	const typeParam = JSON.stringify(params.get("type"));
-	
-
-	callAPI(router1, {page,typeSlug:[...typeSlug,typeParam], sortAsc }, function (services) {
+	callAPI(router1, {page,typeSlug:[...typeSlug,...typeParam], sortAsc }, function (services) {
 		document.getElementById("service_detail_list_content").innerHTML = 
 		serviceDetailOtoList(services);
 	}, function(meta){
@@ -572,7 +575,6 @@ function getServiceFilter(){
 	//   tạo bộ lọc
 	let router2 = Router.getAllServiceTypes
 	callAPI(router2, null, function(types){
-		console.log(types);
 		document.getElementById("service_type_filter").innerHTML =
 		serviceTypeFilter(types);
 		refreshAllJS();
@@ -620,8 +622,6 @@ function getNavbar(){
 	const router = Router.getAllServiceTypes;
 
 	callAPI(router, null, function(serviceTypes){
-
-		console.log(navbarServiceTypes(serviceTypes));
 
 		document.getElementById("nav_service_types").innerHTML = 
 		navbarServiceTypes(serviceTypes);

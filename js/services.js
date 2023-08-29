@@ -384,7 +384,7 @@ function queryBody(router, data) {
 		name
 	}
 	`;
-	let serviceFilter = data?.typeSlug?.length == 0 ?'':`
+	let serviceFilter = data?.typeSlug.length === 0 ? '': `
 		,filter:{
 			_and:[
 				{

@@ -18,7 +18,6 @@ function changeDate(gmtTimeString) {
 function idToImg(id) {
 	return "https://admin.giatrinh.com/assets/" + id;
 }
-
 function pageToTourList(page, totalPage) {
 	var html = "";
 	for (var i = 1; i <= totalPage; i++) {
@@ -223,9 +222,10 @@ function setFilterValue(locations) {
 			`;
 		}
 	});
-
-	document.getElementById('tours_location_in')?.innerHTML = inHtml;
-	document.getElementById('tours_location_out')?.innerHTML = outHtml;
+	if(document.getElementById('tours_location_in')||document.getElementById('tours_location_out')){
+	  	document.getElementById('tours_location_in').innerHTML = inHtml;
+		document.getElementById('tours_location_out').innerHTML = outHtml;
+	}
 }
 
 function getFilterData() {
