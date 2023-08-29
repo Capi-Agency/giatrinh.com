@@ -107,33 +107,6 @@
             <div class="col-12" id="tour_description">
 
             </div>
-
-            <div class="mt-40 border-top-light">
-              <div class="border-bottom-light row x-gap-40 y-gap-40 py-5">
-                <div class="col-12">
-                  <h3 class="text-22 fw-600">Chính sách tour</h3>
-                  <div class="mt-10">
-                    Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
-                    khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
-                    gió biển phả vào người thật khó để quên. Đến Ninh Thuận, du khách mới nhận thấy đây là quê hương cây
-                    đàn Chapi của nhạc sĩ Trần Tiến. Hang Rái, Vịnh Vĩnh Hy, Đồi Cát, Vườn Nho, Tháp Poklong Garai, Làng
-                    gốm Bàu Trúc sẽ là những điểm nhấn khi đến với Ninh Thuận.
-                  </div>
-                </div>
-              </div>
-              <div class="border-bottom-light row x-gap-40 y-gap-40 py-20">
-                <div class="col-12">
-                  <h3 class="text-22 fw-600">Điều khoản & quy định</h3>
-                  <div class="mt-10">
-                    Ninh Thuận, mảnh đất miền trung với nắng, gió, vườn nho…tạo nên một khung cảnh đẹp đến nao lòng du
-                    khách. Cảm giác đôi chân trần bước trên nền cát mịn của những đồi cát chập trùng, cảm nhận những làn
-                    gió biển phả vào người thật khó để quên. Đến Ninh Thuận, du khách mới nhận thấy đây là quê hương cây
-                    đàn Chapi của nhạc sĩ Trần Tiến. Hang Rái, Vịnh Vĩnh Hy, Đồi Cát, Vườn Nho, Tháp Poklong Garai, Làng
-                    gốm Bàu Trúc sẽ là những điểm nhấn khi đến với Ninh Thuận.
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
         </div>
@@ -161,7 +134,7 @@
                         <div class="col-12">
                           <div class="searchMenu-date px-20 py-10 border-light rounded-4 ">
                             <h4 class="text-15 fw-500 ls-2 lh-16 text-light-1"> Lịch khởi hành</h4>
-                            <h3 class="text-15 ls-2 lh-16 text-blue-1">Tháng 5, 6, 7, 8</h3>
+                            <h3 class="text-15 ls-2 lh-16 text-blue-1"> Quanh năm</h3>
                           </div>
                         </div>
 

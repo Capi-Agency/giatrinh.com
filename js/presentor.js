@@ -133,6 +133,8 @@ function presentor(router, data) {
       return `
 			  ${html}
 			  `;
+	case Router.getAllServiceDetails:
+		return html = ``
     default:
       return "";
   }
@@ -457,5 +459,84 @@ function postDataToListItem(post){
 			</div>
 		</a>
 	</div>`
+	return html
+}
+// SERVICES' PAGE PRESENTOR
+
+function serviceDetailOtoList(services){
+	let html = '';
+	let url = domain + '/service-detail?slug='
+	services.map(service => (
+		html += `
+		<div  class="col-12">
+                <div class="border-top-light pt-30 pb-30">
+				
+                  <div class="row x-gap-20 y-gap-20">
+                    <div class="col-md-auto">
+                      <div class="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
+                        <div class="cardImage__content">
+                          <img class="rounded-4 col-12" src="${service.cover}" alt="image">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="row x-gap-10 items-center">
+                        <div class="col-auto">
+                          <p class="text-14 lh-14 mb-5 button p-2 text-white ${service.status=="đang mở"?"bg-green-2":"bg-red-1"}">${service.status}</p>
+                        </div>
+                        <div class="col-auto">
+                          <div class="size-3 rounded-full bg-light-1 mb-5"></div>
+                        </div>
+                        <div class="col-auto">
+                          <p class="text-14 lh-14 mb-5">${service.serviceTypeName}</p>
+                        </div>
+                      </div>
+
+                      <a href=${url + service.slug} class="text-24 lh-16 fw-700 line-clamp">${service.title}</a>
+                      
+
+                      <div class="text-14 lh-15 fw-500 mt-20 line-clamp">${service?.short_description||'Chưa có mô tả'}</div>
+                    </div>
+
+                    <div class="col-md-auto text-right md:text-left">
+                      <div class="text-14 text-light-1 mt-50 md:mt-20">Chi phí</div>
+                      <div class="text-22 lh-12 fw-600 mt-5">${service?.price || 'Chưa cập nhật'} đ</div>
+                      <div class="text-14 text-light-1 mt-5">/ người</div>
+
+
+                      <a href="${url+service.slug}" class="button -md -dark-1 bg-blue-1 text-white mt-24">
+                        Xem chi tiết <div class="icon-arrow-top-right ml-15"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+		`
+	))
+	return html
+}
+function serviceTypeFilter(types){
+	let html = ''
+	types.map(type =>(
+		html+=`
+		<div class="row y-gap-10 items-center justify-between">
+			<div class="col-auto">
+				<div class="d-flex items-center">
+					<div class="form-checkbox">
+						<input type="checkbox" name="name" 
+						onchange="filterByTypeID(${type.id})" >
+						<div class="form-checkbox__mark">
+						<div class="form-checkbox__icon icon-check"></div>
+					</div>
+				</div>
+				<div class="text-15 ml-10">${type.name}</div>
+				</div>
+			</div>
+			<div class="col-auto">
+				<div class="text-15 text-light-1">${type.count}</div>
+			</div>
+		</div>
+		`
+	));
 	return html
 }

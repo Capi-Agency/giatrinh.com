@@ -246,8 +246,7 @@ function clearFilter() {
 let categories = [];
 
 function getPostsPage() {
-	const routerPosts = Router.getPostsPage
-	let posts=[];
+	const routerPosts = Router.getPostsPage;
 
 	let data = {
 		needCategory: categories.length == 0,
@@ -542,35 +541,56 @@ function getPostDetail() {
   });
 }
 // SERVICES PAGE CONTROLLER
- 
-function getServicesPage(){
-  let router = Router.getServices ;
-  callAPI(router, null, function (service) {
-    document.getElementById("service_title").innerHTML = service.title;
-    document.getElementById("service_cover").src =
-      service?.cover || defaultHeaderImg;
-    document.getElementById("service_content").innerHTML = service.content;
-  });
+var IDtoFilter = []
 
-//   const serviceSlugs = [`dat-ve-may-bay`,`dich-vu-dat-xe`,`dang-ki-visa`,`xkld-han-quoc`,`xkld-uzbekistan`,`xkld-dai-loan`,`xkld-nhat-ban`]
-// //   document.querySelector("services_list")
-//   serviceSlugs.map(slug=>{
-// 	callAPI(Router.getServiceDetail, {slug}, function(data){
-// 		console.log(data)
-// 	})
-//})
-  
+function getServicesPage(
+	{page = currentPage, typeID = IDtoFilter, sortAsc = true}
+	)
+	{
+	let router1 = Router.getAllServiceDetails;
+	currentPage = page;
+
+	callAPI(router1, {page, typeID, sortAsc }, function (services) {
+		document.getElementById("service_detail_list_content").innerHTML = 
+		serviceDetailOtoList(services);
+	}, function(meta){
+		let totalPage = Math.ceil(meta.count/6);
+
+		document.getElementById("service_detail_count_content").innerHTML=
+		`${meta.count} kết quả`;
+		document.getElementById("services_pagination").innerHTML =
+		pageToServiceList(page, totalPage);
+	});
+
+	
+}
+function getServiceFilter(){
+	//   tạo bộ lọc
+	let router2 = Router.getAllServiceTypes
+	callAPI(router2, null, function(types){
+		document.getElementById("service_type_filter").innerHTML =
+		serviceTypeFilter(types)
+	})
 }
 //SERVICE DETAIL CONTROLLER===========================================================================================================================
 
 function getServiceDetail() {
-  let router = Router.getServiceDetail;
-  let slug = getServiceSlug();
+  let router = Router.getOneServiceDetail;
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("slug");
+  
   callAPI(router, { slug }, function (service) {
     document.getElementById("service_title").innerHTML = service.title;
     document.getElementById("service_cover").src =
       service?.cover || defaultHeaderImg;
     document.getElementById("service_content").innerHTML = service.content;
+	document.getElementById("service_price").innerHTML = service.price;
+	document.getElementById("service_status").innerHTML = service.status;
+	if(service.status == "đang mở"){
+		document.getElementById("service_status").classList.add("text-blue-1")
+	}else{
+		document.getElementById("service_status").classList.add("text-red-1")
+	}
   });
 }
 
@@ -638,7 +658,8 @@ function refresh() {
 		return;
  	}
 	if (currentURL.includes("services")) {
-		getServicesPage();
+		getServicesPage({});
+		getServiceFilter();
 		return;
 	}
 	if (currentURL.includes("service-detail")) {
