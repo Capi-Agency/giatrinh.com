@@ -42,7 +42,17 @@ function pageToPostList(page, totalPage) {
 	}
 	return html;
 }
-
+function pageToServiceList(page, totalPage){
+	var html = "";
+	for (var i = 1; i <= totalPage; i++) {
+		if (i == page) {
+			html = html + `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getServicesPage({page:${i}})" >` + i + `</button> </div>`;
+		} else {
+			html += `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full" onclick="getServicesPage({page:${i}})" >` + i + `</button> </div>`;
+		}
+	}
+	return html;
+}
 function liveSearch(locations) {
 	searchInput.addEventListener("input", function (e) {
 		popupWindow.classList.add("-is-active");
@@ -241,40 +251,29 @@ function clearCheckbox() {
             item.checked = '';
         })
 }
-function getServiceSlug() {
-	let typeOfService = "";
-  
-	const params = new URLSearchParams(window.location.search);
-	const slugParam = params.get("slug");
-  
-	switch (slugParam) {
-	  case "dat-ve-may-bay":
-		typeOfService = "plane_service";
-		break;
-	  case "dich-vu-dat-xe":
-		typeOfService = "car_service";
-		break;
-	  case "dang-ki-visa":
-		typeOfService = "visa_application";
-		break;
-	  case "xkld-han-quoc":
-		typeOfService = "labor_export_korea";
-		break;
-	  case "xkld-uzbekistan":
-		typeOfService = "labor_export_uzbekistan";
-		break;
-	  case "xkld-dai-loan":
-		typeOfService = "labor_export_dailoan";
-		break;
-	  case "xkld-nhat-ban":
-		typeOfService = "labor_export_japan";
-		break;
-  
-	  default:
-		return null;
-	}
-	return typeOfService;
+// Services' page helpers
+function clearServiceFilter(){
+	var checkBoxes = document.querySelectorAll('input')
+	checkBoxes.forEach(item => {
+		item.checked = '';
+	})
+	getServicesPage({typeID:[]})
 }
+function filterByTypeID(id){
+	let isIDexisted = IDtoFilter.includes(id);
+
+	if(!isIDexisted){
+		IDtoFilter.push(id)
+		isIDexisted = false
+	}else{
+		IDtoFilter.pop()
+	}
+	getServicesPage({typeID: IDtoFilter});
+}
+function sortByPrice({sortAsc}){
+	getServicesPage({sortAsc})
+}
+// Contact page helpers
 function sendContactFormValues(){
 	const form = document.querySelector("#form");
 	const nameEl = document.querySelector("#js-form-name");
@@ -312,7 +311,6 @@ function sendContactFormValues(){
 	let isValid = true;
 	for(let i=0; i <= 3; i++){
 		ElArray[i].addEventListener("input",function(e){
-			console.log(e.target.value)
 			e.target.style.outline =  e.target.value.trim().length < 10 ? "1.5px solid #d93025" : "1px solid #008009"
 			ErrorElArray[i].innerHTML = e.target.value.trim().length < 10 ? 'Vui lòng nhập trên 10 kí tự!':''
 			isValid = e.target.value.trim().length == 0 ? false : true

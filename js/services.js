@@ -111,14 +111,33 @@ class PostCategory {
   }
 }
 
-class Service {
+class ServiceType {
   constructor(json) {
-    this.title = json.title;
-    this.content = json.content;
+	this.id = json?.id
+    this.name = json?.name;
+	this.slug = json?.slug;
     this.cover = idToImg(
-      json?.header_img?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
+      json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
     );
+	this.count = json?.detail_func.count
   }
+}
+class ServiceDetail{
+	constructor(json){
+		this.id = json?.id;
+		this.date_created = changeDate(json?.date_created);
+		this.price = json?.price.toLocaleString()
+		this.title = json?.title;
+		this.short_description = json?.short_description;
+		this.status = json?.status;
+		this.slug = json?.slug;
+		this.content = json?.content;
+		this.cover = idToImg(
+			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
+		  );
+		this.serviceTypeName = json?.type.name;
+		this.serviceTypeSlug = json?.type.slug;
+	}
 }
 
 class CompanyInfo {
@@ -160,9 +179,9 @@ const Router = {
 	getPostsPage: 12,
 
 // services
-	getServices: 13,
-	getServiceDetail: 14,
-	
+	getAllServiceTypes: 13,
+	getAllServiceDetails: 14,
+	getOneServiceDetail: 15,
 };
 
 function callAPI(router, data, handle, metaHandle) {
@@ -220,16 +239,17 @@ function responseHandle(router, data) {
       break;
     case Router.getPostDetail:
       return new Post(data.posts[0]);
-    case Router.getServices:
-	  return new Service(data.labor_export_detail);
-	case Router.getServiceDetail:
-      let typeOfService = Object.keys(data);
-      return new Service(data[typeOfService[0]]);
     case Router.getPostsPage:
 		let categories = data.post_categories.map(c=> new PostCategory(c))
 		categories = [ {id: -1, name: "Tất cả", slug:"tat-ca"},...categories]
 		let posts = data.posts.map(p=> new Post(p))
-      return {posts, categories}
+      return {posts, categories};
+	case Router.getAllServiceTypes:
+		return data.service_types.map(t=> new ServiceType(t));
+	case Router.getAllServiceDetails:
+		return data.service_detail.map(t=> new ServiceDetail(t));
+	case Router.getOneServiceDetail:
+		return new ServiceDetail(data.service_detail[0]);
     default:
       return null;
   }
@@ -238,11 +258,11 @@ function responseHandle(router, data) {
 function responseMetaHandle(router, data) {
   switch (router) {
     case Router.getTours:
-      return new Aggregated(data.tours_aggregated);;
-      break;
+      return new Aggregated(data.tours_aggregated);
 	case Router.getPostsPage:
-		return new Aggregated(data.posts_aggregated);;
-		break;
+	  return new Aggregated(data.posts_aggregated);
+	case Router.getAllServiceDetails:
+	 return new Aggregated(data.service_detail_aggregated);
     default:
       return null;
   }
@@ -332,7 +352,7 @@ function queryBody(router, data) {
 	}
 	`;
 
-  let company_information = `
+  	let company_information = `
 	name
 	slogan
 	description
@@ -346,7 +366,38 @@ function queryBody(router, data) {
 		id
 	}
 	`;
-
+  	let service_detail = `
+	id
+	short_description
+	date_created
+	slug
+	title
+	content
+	price
+	status
+	cover {
+		id
+	}
+	type{
+		id
+		slug
+		name
+	}
+	`;
+	let serviceFilter = data?.typeID?.length == 0 ?'':`
+		,filter:{
+			_and:[
+				{
+					type:{
+						id:{
+							_in: [${data?.typeID}]
+						}
+					}
+				}
+			]
+		}
+	`;
+	let serviceSort = data?.sortAsc ? `,sort:["price"]`:`,sort:["-price"]`;
   switch (router) {
     case Router.getTours:
       if (data.searchDurations.length != 0) {
@@ -633,32 +684,56 @@ function queryBody(router, data) {
 			}
 		}
 		`;
-    case Router.getServices:
+    case Router.getAllServiceTypes:
 		return `
 		query {
-			labor_export_detail{
+			service_types{
 				id
-				title
-				content
-				header_img {
+				cover{
+					id
+				}
+				name
+				slug
+				detail_func{
+					count
+				}
+			}
+		}
+		`;
+	case Router.getAllServiceDetails:
+		return `
+		query {
+			service_detail(
+				limit:6,
+				page:${data?.page||1}
+				${serviceSort}
+				${serviceFilter}
+				){
+				${service_detail}
+			}
+			service_detail_aggregated (
+				${serviceSort}
+				${serviceFilter}){
+				count{
 					id
 				}
 			}
 		}
-		`
-		case Router.getServiceDetail:
-	return `
+		`;
+	case Router.getOneServiceDetail:
+		return `
 		query {
-		${data.slug}{
-			id
-			title
-			content
-			header_img {
-				id
+			service_detail(
+				filter:{
+					slug: {
+					   _eq: "${data.slug}"
+					}
+				}
+			){
+				${service_detail}
 			}
 		}
-	}
-		`;
+		`
     case Router.sendContact:
       return `
 		mutation {
