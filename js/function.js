@@ -550,7 +550,7 @@ function getServicesPage(
 	let typeParam = []
 	let router1 = Router.getAllServiceDetails;
 	const params = new URLSearchParams(window.location.search);
-	if(params.size > 0){
+	if(params.size > 0 && params.get("type") != ""){
 		typeParam.push(JSON.stringify(params.get("type"))) 
 	}else{
 		typeParam = []
