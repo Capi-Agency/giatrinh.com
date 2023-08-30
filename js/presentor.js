@@ -199,7 +199,7 @@ function postOtoListItem(post, type) {
 			</div>
 			</div>
 			<div class="mt-20">
-			<h4 class="text-dark-1 text-18 fw-700">${post.title}</h4>
+			<h4 class="text-dark-1 text-18 fw-700 line-clamp">${post.title}</h4>
 			<div class="text-light-1 text-15 lh-14 mt-5">${post.date_created}</div>
 			</div>
 			</a>
@@ -548,5 +548,24 @@ function navbarServiceTypes(types){
 		<li><a href="${domain}/services?type=${type.slug}">${type.name}</a></li>
 		`
 	))
+	return html;
+}
+// footer
+function footerServiceTypes(types){
+	let html =''
+	types.map((type)=>{
+		html+=`
+		<li style="padding-right: 32px;" class="row justify-between">
+			<div class="col-auto">
+				<a href="${domain}/services?type=${type.slug}">${type.name}</a>
+			</div>
+			<div class="col-auto">
+				<div class="text-15 text-light-1">${type.count ? type.count : '' }</div>
+			</div>
+		</li>
+		`
+	}
+		
+	)
 	return html;
 }
