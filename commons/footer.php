@@ -37,7 +37,7 @@
     </div>
 
     <div class="py-20 border-top-light">
-      <div class="row justify-between items-center y-gap-10">
+      <div class="row justify-center items-center y-gap-10">
         <div class="col-auto">
           <div class="row x-gap-30 y-gap-10">
             <div class="d-flex items-center">
