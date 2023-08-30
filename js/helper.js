@@ -222,7 +222,7 @@ function setFilterValue(locations) {
 			`;
 		}
 	});
-	if(document.getElementById('tours_location_in')||document.getElementById('tours_location_out')){
+	if(document.getElementById('tours_location_in') && document.getElementById('tours_location_out')){
 	  	document.getElementById('tours_location_in').innerHTML = inHtml;
 		document.getElementById('tours_location_out').innerHTML = outHtml;
 	}
