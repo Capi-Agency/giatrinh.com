@@ -617,7 +617,7 @@ function getContactPage(){
 		refreshAllJS();
 	})
 }
-// NAVBAR- SERVICE CONTROLLER
+// NAVBAR & FOOTER CONTROLLER
 function getNavbar(){
 	const router = Router.getAllServiceTypes;
 
@@ -626,6 +626,21 @@ function getNavbar(){
 		document.getElementById("nav_service_types").innerHTML = 
 		navbarServiceTypes(serviceTypes);
 		refreshAllJS();
+	})
+}
+function getFooter(){
+	const router1 = Router.getCompanyInfo;
+	const router2 = Router.getAllServiceTypes;
+	callAPI(router1, null, function(info){
+		 document.getElementById("footer_phone1").innerHTML = info.phone1;
+		 document.getElementById("footer_phone1").href = `tel:${info.phone1}`;
+		 document.getElementById("footer_phone2").innerHTML = info.phone2;
+		 document.getElementById("footer_phone2").href = `tel:${info.phone2}`;
+		 document.getElementById("footer_email1").innerHTML = info.email1;
+		 document.getElementById("footer_email1").href = `mailto:${info.email1}` ;
+	})
+	callAPI(router2, null, function(services){
+		document.getElementById("footer_services").innerHTML = footerServiceTypes(services);
 	})
 }
 // Router ===========================================================================================================================
@@ -694,5 +709,6 @@ function refresh() {
 	getSearchLocations();
 	getHomePosts();
 }
+getFooter();
 getNavbar();
 refresh();
