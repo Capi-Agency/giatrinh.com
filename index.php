@@ -8,9 +8,6 @@
     <?php include 'commons/nav.php'; ?>
 
     <!-- Body -->
-<<<<<<< HEAD
-
-=======
     <!--  Search -->
     <section data-anim-wrap="" class="masthead -type-1 z-5 animated">
         <div data-anim-child="fade" class="masthead__bg is-in-view">
@@ -131,16 +128,8 @@
 
         </div>
     </section>
->>>>>>> dev
-
-
     <!-- Email -->
     <?php include 'commons/email.php'; ?>
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> dev
     <!-- Footer -->
     <?php include 'commons/footer.php'; ?>
 </body>
