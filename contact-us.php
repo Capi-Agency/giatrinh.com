@@ -157,8 +157,6 @@
 
   </section>
   <!-- js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
-  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
   <!-- Email -->
