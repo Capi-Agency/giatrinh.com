@@ -15,7 +15,7 @@
         <div class="col-auto">
           <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
             <div class="col-auto">
-              <div class=""><a href="index.php">Trang chủ</a></div>
+              <div class=""><a href="https://giatrinh.com">Trang chủ</a></div>
             </div>
             <div class="col-auto">
               <div class="">&gt;</div>
@@ -139,9 +139,11 @@
                         </div>
 
                         <div class="col-12">
-                          <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
-                            Liên hệ đặt chỗ 
-                          </button>
+                          <a href="/contact-us.php">
+                            <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
+                              Liên hệ đặt chỗ 
+                            </button>
+                          </a>
                         </div>
                       </div>
 

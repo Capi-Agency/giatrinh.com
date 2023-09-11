@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="d-inline-block mt-40 md:mt-20">
-                            <a href="./index.php" class="button -md -dark-1 bg-blue-1 text-white">Quay về trang chủ</a>
+                            <a href="https://giatrinh.com" class="button -md -dark-1 bg-blue-1 text-white">Quay về trang chủ</a>
                         </div>
                     </div>
                 </div>

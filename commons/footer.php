@@ -28,9 +28,9 @@
             <a href="/contact-us">Liên hệ</a>
           </div>
         </div>
-        <div class="col-xl-2 col-lg-4 col-sm-6">
+        <div class="col-xl-4 col-lg-4 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Dịch vụ</h5>
-          <ul class="d-flex y-gap-10 flex-column" style="height:160px; flex-wrap: wrap;" id="footer_services">
+          <ul class="d-flex y-gap-10 flex-column" style="max-height:160px; flex-wrap: wrap;" id="footer_services">
           </ul>
         </div>
       </div>
