@@ -919,31 +919,31 @@ const Accordion = (function() {
   }
 })();
 
-const ShowMore = (function() {
-  function init() {
-    const targets = document.querySelectorAll(".js-show-more");
-    if (!targets) return;
+// const ShowMore = (function() {
+//   function init() {
+//     const targets = document.querySelectorAll(".js-show-more");
+//     if (!targets) return;
 
-    targets.forEach((el, i) => {
-      const button = el.querySelector('.show-more__button')
-      const content = el.querySelector('.show-more__content')
+//     targets.forEach((el, i) => {
+//       const button = el.querySelector('.show-more__button')
+//       const content = el.querySelector('.show-more__content')
       
-      button.addEventListener("click", (e) => {
-        el.classList.toggle('is-active')
+//       button.addEventListener("click", (e) => {
+//         el.classList.toggle('is-active')
 
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px"
-        }
-      })
-    })
-  }
+//         if (content.style.maxHeight) {
+//           content.style.maxHeight = null
+//         } else {
+//           content.style.maxHeight = content.scrollHeight + "px"
+//         }
+//       })
+//     })
+//   }
 
-  return {
-    init: init,
-  }
-})();
+//   return {
+//     init: init,
+//   }
+// })();
 
 const Tabs = (function() {
   function init() {
