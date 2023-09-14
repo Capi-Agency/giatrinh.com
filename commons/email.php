@@ -17,11 +17,11 @@
           <div class="col-auto">
             <div class="single-field -w-410 d-flex x-gap-10 y-gap-20">
               <div>
-                <input class="bg-white h-60" type="text" placeholder="Email của bạn">
+                <input class="bg-white h-60" type="text" placeholder="Email của bạn" id="contact_email_address">
               </div>
 
               <div>
-                  <button class="button -md h-60 bg-blue-1 text-white">Đăng ký</button>
+                  <button class="button -md h-60 bg-blue-1 text-white" onclick="sendContactEmailAddress()">Đăng ký</button>
               </div>
             </div>
           </div>
