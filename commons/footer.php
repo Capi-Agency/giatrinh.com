@@ -22,10 +22,10 @@
         <div class="col-xl-2 col-lg-4 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Tổng quan</h5>
           <div class="d-flex y-gap-10 flex-column">
-            <a href="giatrinh.com/about-us">Về chúng tôi</a>
-            <a href="giatrinh.com/tours">Đặt tour</a>
-            <a href="giatrinh.com/posts">Bài viết</a>
-            <a href="giatrinh.com/contact-us">Liên hệ</a>
+            <a href="https://giatrinh.com/about-us">Về chúng tôi</a>
+            <a href="https://giatrinh.com/tours">Đặt tour</a>
+            <a href="https://giatrinh.com/posts">Bài viết</a>
+            <a href="https://giatrinh.com/contact-us">Liên hệ</a>
           </div>
         </div>
         <div class="col-xl-2 col-lg-4 col-sm-6">

@@ -236,7 +236,7 @@
             <div class="col-auto">
                 <div class="d-flex items-center">
                     <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                        <a href="giatrinh.com/contact-us" class="button  px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
+                        <a href="https://giatrinh.com/contact-us" class="button  px-30 fw-400 text-14 -white bg-white h-50 text-dark-1">Liên Hệ Chúng Tôi</a>
                     </div>
                     <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
                         <div><button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>
