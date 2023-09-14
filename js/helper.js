@@ -275,7 +275,7 @@ function sortByPrice({sortAsc}){
 	getServicesPage({sortAsc},true)
 }
 // Contact page helpers
-function sendContactFormValues(){
+function sendContactFormValues(title){
 	const form = document.querySelector("#form");
 	const nameEl = document.querySelector("#js-form-name");
 	const emailEl = document.querySelector("#js-form-email");
@@ -284,8 +284,10 @@ function sendContactFormValues(){
 	const nameValue = document.querySelector("#js-form-name-value");
 	const emailValue = document.querySelector("#js-form-email-value");
 	const titleValue = document.querySelector("#js-form-title-value");
-	const contentValue = document.querySelector("#js-form-content-value");
+
+	titleValue.value = title || "";
 	
+	const contentValue = document.querySelector("#js-form-content-value");
 
 	const emailError = document.getElementById('email-error');
 	const nameError = document.getElementById('name-error');
@@ -304,8 +306,9 @@ function sendContactFormValues(){
 
 	const resetForm = function(){
  		for(let i=0; i <= 3; i++){
-			ValueArray[i].value = ""
-			ErrorElArray[i].innerHTML = ""
+			ValueArray[i].value = "";
+			ErrorElArray[i].innerHTML = "";
+			ValueArray[i].style.outline = "1px solid #ccc";
 		}
 	}
 
@@ -325,7 +328,7 @@ function sendContactFormValues(){
 					router,{
 						name: nameValue.value,
 						email: emailValue.value,
-						title: titleValue.value,
+						title: title || titleValue.value,
 						content: contentValue.value,
 					},
 					function(){
@@ -335,6 +338,21 @@ function sendContactFormValues(){
 				)
 		} 
 	})
+}
+function sendContactEmailAddress(){
+	const contactEmailAddress = document.querySelector("#contact_email_address").value;
+	data = {
+		name: "<Không xác định>",
+		email: contactEmailAddress,
+		title: "Đăng ký email nhận tư vấn",
+		content: `Khách hàng cần tư vấn dịch vụ qua email: ${contactEmailAddress}`,
+
+	}
+
+	callAPI(Router.sendContact, data, function(){
+		showToastMsg();
+		document.querySelector("#contact_email_address").value = "";
+	} )
 }
 function showToastMsg(){
 	document.querySelector("#toast-msg").style.display = "block"

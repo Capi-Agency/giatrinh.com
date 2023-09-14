@@ -11,6 +11,7 @@ let currentPage = 1;
 let searchKey = "";
 let searchDurations = [];
 let searchLocations = [];
+let contactTitle = JSON.parse(localStorage.getItem("contactTitle")) || "";
 
 // RELATED TOURS PRESENTORS
 function createRelatedTourCard(tours, title) {
@@ -306,10 +307,11 @@ function getTourDetail(slug) {
     tourTransportation.innerHTML = tour.transportation;
     tourFoods.innerHTML = tour.food_included ? "Bao gồm ăn uống" : "Ăn ngoài";
 
+	localStorage.setItem("contactTitle", JSON.stringify(tour.name));
+
     refreshAllJS();
   });
 }
-
 
 function getRelatedTourByType(type, id, limit = 4) {
   let data = JSON.stringify({
@@ -605,7 +607,9 @@ function getServiceDetail() {
 
 // CONTACT CONTROLLER
 function getContactPage(){
-	sendContactFormValues();
+	sendContactFormValues(contactTitle);
+	contactTitle = "";
+	localStorage.removeItem("contactTitle");
 
 	callAPI(Router.getCompanyInfo,null,function(companyInfo){
 		document.getElementById("header_img").src = companyInfo.header_img

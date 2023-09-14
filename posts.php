@@ -17,7 +17,7 @@
                 <div class="col-auto">
                     <div class="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
                         <div class="col-auto">
-                            <div class=""><a href="index.php">Trang chủ</a></div>
+                            <div class=""><a href="https://giatrinh.com">Trang chủ</a></div>
                         </div>
                         <div class="col-auto">
                             <div class="">&gt;</div>

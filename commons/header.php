@@ -9,7 +9,7 @@
         <div class="text-white">Người bạn du lịch đồng hành cùng bạn.</div>
       </div>
       <div class="d-flex mt-3 justify-center text-center text-white-1">
-        <div><a class="text-white p-2" href="index.php">Trang chủ</a></div>
+        <div><a class="text-white p-2" href="https://giatrinh.com">Trang chủ</a></div>
         <div class="text-white">&gt;</div>
         <div> <a class="text-white p-2" href="" id="breadcrumb_anchor"></a></div>
       </div>
