@@ -135,8 +135,8 @@ class ServiceDetail{
 		this.cover = idToImg(
 			json?.cover?.id || "f0436575-a3e0-4e4a-badc-5ea5b7d7e7d9"
 		  );
-		this.serviceTypeName = json?.type.name;
-		this.serviceTypeSlug = json?.type.slug;
+		this.serviceTypeName = json?.type?.name || "danh mục chưa xác định";
+		this.serviceTypeSlug = json?.type?.slug || "";
 	}
 }
 
@@ -384,19 +384,7 @@ function queryBody(router, data) {
 		name
 	}
 	`;
-	let serviceFilter = data?.typeSlug?.length === 0 ? '': `
-		,filter:{
-			_and:[
-				{
-					type:{
-						slug:{
-							_in: [${data?.typeSlug}]
-						}
-					}
-				}
-			]
-		}
-	`;
+	
 	let serviceSort = data?.sortAsc ? `,sort:["price"]`:`,sort:["-price"]`;
   switch (router) {
     case Router.getTours:
@@ -703,6 +691,22 @@ function queryBody(router, data) {
 		}
 		`;
 	case Router.getAllServiceDetails:
+		let serviceFilter = "";
+		if(data.typeSlug.length > 0){
+			serviceFilter = `
+			,filter:{
+				_and:[
+					{
+						type:{
+							slug:{
+								_in: [${data?.typeSlug}]
+							}
+						}
+					}
+				]
+			}
+			`
+		}
 		return `
 		query {
 			service_detail(

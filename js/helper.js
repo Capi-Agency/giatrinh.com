@@ -45,7 +45,7 @@ function pageToServiceList(page, totalPage){
 	var html = "";
 	for (var i = 1; i <= totalPage; i++) {
 		if (i == page) {
-			html = html + `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getServicesPage({page:${i}})" >` + i + `</button> </div>`;
+			html = html + `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full bg-dark-1 text-white" onclick="getServicesPage({page:${i}},true)" >` + i + `</button> </div>`;
 		} else {
 			html += `<div class="col-auto"> <button class="btn size-40 flex-center rounded-full" onclick="getServicesPage({page:${i}})" >` + i + `</button> </div>`;
 		}
@@ -253,26 +253,26 @@ function clearCheckbox() {
 }
 // Services' page helpers
 function clearServiceFilter(){
+	getServicesPage({ typeSlug:[]}, false);
 	var checkBoxes = document.querySelectorAll('input')
 	checkBoxes.forEach(item => {
 		item.checked = '';
 	})
-	getServicesPage({ typeSlug:[]})
 }
 function filterByTypeSlug(slug){
-	const slugString = JSON.stringify(slug)
-	let isIDexisted = typeSlugtoFilter.includes(slugString);
+	const slugString = JSON.stringify(slug);
+	let index = typeSlugtoFilter.indexOf((slugString))
 	
-	if(!isIDexisted){
+	if(index == -1){
 		typeSlugtoFilter.push(slugString);
-		isIDexisted = false
 	}else{
-		typeSlugtoFilter.pop()
+		typeSlugtoFilter = typeSlugtoFilter.filter(slug => slug != slugString);
 	}
-	getServicesPage({ typeSlug: typeSlugtoFilter});
+
+	getServicesPage({ typeSlug: typeSlugtoFilter}, true);
 }
 function sortByPrice({sortAsc}){
-	getServicesPage({sortAsc})
+	getServicesPage({sortAsc},true)
 }
 // Contact page helpers
 function sendContactFormValues(){

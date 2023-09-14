@@ -482,13 +482,13 @@ function serviceDetailOtoList(services){
                     <div class="col-md">
                       <div class="row x-gap-10 items-center">
                         <div class="col-auto">
-                          <p class="text-14 lh-14 mb-5 button p-2 text-white ${service.status=="đang mở"?"bg-green-2":"bg-red-1"}">${service.status}</p>
+                          <p class="text-14 lh-14 mb-5 button p-2 uppercase text-white ${service.status=="đang mở"?"bg-green-2":"bg-red-1"}">${service.status}</p>
                         </div>
                         <div class="col-auto">
                           <div class="size-3 rounded-full bg-light-1 mb-5"></div>
                         </div>
                         <div class="col-auto">
-                          <p class="text-14 lh-14 mb-5">${service.serviceTypeName}</p>
+                          <p class="text-14 lh-14 mb-5" style="color: #888">${service?.serviceTypeName}</p>
                         </div>
                       </div>
 
@@ -516,7 +516,7 @@ function serviceDetailOtoList(services){
 	return html
 }
 function serviceTypeFilter(types){
-	let html = ''
+	let html = ``;
 	types.map(type =>(
 		html+=`
 		<div class="row y-gap-10 items-center justify-between">
@@ -533,7 +533,7 @@ function serviceTypeFilter(types){
 				</div>
 			</div>
 			<div class="col-auto">
-				<div class="text-15 text-light-1">${type.count}</div>
+				<div class="text-15 text-light-1" ${type.count === 0 ?"hidden":""}>${type.count}</div>
 			</div>
 		</div>
 		`
