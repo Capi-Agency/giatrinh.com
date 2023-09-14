@@ -1,8 +1,8 @@
 <footer class="footer -type-1">
   <div class="container">
     <div class="pt-60 pb-60">
-      <div class="row y-gap-20 justify-between xl:justify-start">
-        <div class="col-xl-2 col-lg-4 col-sm-6">
+      <div class="row y-gap-40 justify-between">
+        <div class=" col-lg-2 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Liên hệ chúng tôi</h5>
 
           <div class="mt-30">
@@ -18,8 +18,7 @@
             id="footer_email1"></a>
           </div>
         </div>
-
-        <div class="col-xl-2 col-lg-4 col-sm-6">
+        <div class=" col-lg-2 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Tổng quan</h5>
           <div class="d-flex y-gap-10 flex-column">
             <a href="https://giatrinh.com/about-us">Về chúng tôi</a>
@@ -28,9 +27,9 @@
             <a href="https://giatrinh.com/contact-us">Liên hệ</a>
           </div>
         </div>
-        <div class="col-xl-2 col-lg-4 col-sm-6">
+        <div class=" col-lg-6 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Dịch vụ</h5>
-          <ul class="d-flex y-gap-10 flex-column" style="height:160px; flex-wrap: wrap;" id="footer_services">
+          <ul class="d-flex y-gap-10 flex-column" style="max-height:240px; flex-wrap: wrap;" id="footer_services">
           </ul>
         </div>
       </div>
