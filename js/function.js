@@ -546,19 +546,21 @@ function getPostDetail() {
 var typeSlugtoFilter = []
 
 function getServicesPage(
-	{page = currentPage, typeSlug=typeSlugtoFilter, sortAsc = true}
+	{page = currentPage, typeSlug = typeSlugtoFilter, sortAsc = true}, hasSlugParams
 	){
 	currentPage = page;
-	let typeParam = []
+	let typeParam = [];
 	let router1 = Router.getAllServiceDetails;
 	const params = new URLSearchParams(window.location.search);
-	if(params.size > 0 && params.get("type") != ""){
+	if(params.size > 0 && params.get("type") != "" && hasSlugParams){
 		typeParam.push(JSON.stringify(params.get("type"))) 
-	}else{
-		typeParam = []
 	}
-
-	callAPI(router1, {page,typeSlug:[...typeSlug,...typeParam], sortAsc }, function (services) {
+	let data = {
+		page,
+		typeSlug: hasSlugParams ? [...typeParam, ...typeSlug] : [],
+		sortAsc
+	}
+	callAPI(router1, data, function(services) {
 		document.getElementById("service_detail_list_content").innerHTML = 
 		serviceDetailOtoList(services);
 	}, function(meta){
@@ -570,12 +572,10 @@ function getServicesPage(
 		pageToServiceList(page, totalPage);
 		refreshAllJS();
 	});
-
-	
 }
 function getServiceFilter(){
 	//   tạo bộ lọc
-	let router2 = Router.getAllServiceTypes
+	let router2 = Router.getAllServiceTypes;
 	callAPI(router2, null, function(types){
 		document.getElementById("service_type_filter").innerHTML =
 		serviceTypeFilter(types);
@@ -696,7 +696,7 @@ function refresh() {
 		return;
  	}
 	if (currentURL.includes("services")) {
-		getServicesPage({});
+		getServicesPage({}, true);
 		getServiceFilter();
 		return;
 	}

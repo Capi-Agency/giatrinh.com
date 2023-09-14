@@ -139,9 +139,9 @@
                         </div>
 
                         <div class="col-12">
-                          <a href="/contact-us.php">
+                          <a href="https://giatrinh.com/contact-us">
                             <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
-                              Liên hệ đặt chỗ 
+                              Liên hệ đặt chỗ
                             </button>
                           </a>
                         </div>

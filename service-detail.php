@@ -53,9 +53,11 @@
                                                 </div>
 
                                                 <div class="col-12">
+                                                    <a href="https://giatrinh.com/contact-us">
                                                     <button class="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white">
                                                         Liên hệ ngay
                                                     </button>
+                                                    </a>
                                                 </div>
                                             </div>
 

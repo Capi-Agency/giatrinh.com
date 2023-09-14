@@ -1,7 +1,7 @@
 <footer class="footer -type-1">
   <div class="container">
     <div class="pt-60 pb-60">
-      <div class="row y-gap-40 justify-between xl:justify-start">
+      <div class="row y-gap-20 justify-between xl:justify-start">
         <div class="col-xl-2 col-lg-4 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Liên hệ chúng tôi</h5>
 
@@ -22,10 +22,10 @@
         <div class="col-xl-2 col-lg-4 col-sm-6">
           <h5 class="text-16 fw-700 mb-30 border-bottom-light">Tổng quan</h5>
           <div class="d-flex y-gap-10 flex-column">
-            <a href="/about-us">Về chúng tôi</a>
-            <a href="/tours">Đặt tour</a>
-            <a href="/posts">Bài viết</a>
-            <a href="/contact-us">Liên hệ</a>
+            <a href="https://giatrinh.com/about-us">Về chúng tôi</a>
+            <a href="https://giatrinh.com/tours">Đặt tour</a>
+            <a href="https://giatrinh.com/posts">Bài viết</a>
+            <a href="https://giatrinh.com/contact-us">Liên hệ</a>
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-sm-6">
